@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Ignore the entire virtual environment folder
+.venv/
+
+# Make an exception for your CSV data folders so GitHub sees them
+!.venv/cleaned_hospital_data/
+!.venv/hospital_data/
