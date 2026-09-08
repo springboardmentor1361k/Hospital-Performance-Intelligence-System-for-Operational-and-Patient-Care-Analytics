@@ -1,0 +1,501 @@
+Month,Case_No,DOB,Nationality,Gender,DoctorLicense,DoctorName,Doctor Type,Doctor Status,CMI Value,Specialty,Insurance/Payer,InsurancePlanName,Payer Mix,Case type,LOS,Severity,Surgical Mix,Discharge Time,Discharge Before 12PM,Revenue
+01-02-2025,123517868,2002,Pakistan,F,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.048,Emergency,PureWin Insurance,Premium,Insurance,OP,0,1,Medical,07:00:00,Yes,548
+01-10-2025,123810649,1981,Indonesia,F,VBN123,Dr. Peter Novak,Consultant,Active,0.942,Orthopaedics,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,Not Available,Unknown,1198
+01-08-2025,123979661,1990,Egypt,M,FGH123,Dr. Sofia Kim,GP,Active,1.089,Internal Medicine,PureWin Insurance,Premium,Insurance,OP,0,1,Medical,Not Available,Unknown,586
+01-06-2025,123927914,1991,Germany,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.97,Obstetrics & Gynecology,BlueMedic Charity,,Corporate,IP,5,1,Medical,09:13:00,Yes,28717
+01-06-2025,123605097,2000,UAE,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.006,Nephrology,Nextcare Insurance,NC-Blue,Insurance,IP,4,3,Medical,13:39:00,No,117129
+01-11-2025,123702919,1983,Pakistan,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.017,Emergency,PureWin Insurance,Basic,Insurance,OP,0,3,Medical,Not Available,Unknown,1076
+01-02-2025,123744872,1991,USA,F,FGH123,Dr. Sofia Kim,GP,Active,0.71,Internal Medicine,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,Not Available,Unknown,353
+01-09-2025,123590824,1983,UAE,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.998,Gastroenterology,Goodhealth Insurance,GH-2,Insurance,IP,6,1,Medical,16:22:00,No,66031
+01-03-2025,123602168,2000,Oman,M,QWE123,Dr. Omar Khalid,GP,Active,1.033,Family Medicine,PureWin Insurance,Advance,Insurance,IP,3,2,Medical,16:45:00,No,49607
+01-02-2025,123584744,1958,Philippines,F,VBN123,Dr. Peter Novak,Consultant,Active,1.142,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Medical,15:00:00,No,950
+01-07-2025,123997051,1959,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.851,General Surgery,PureWin Insurance,Basic,Insurance,DC,1,3,Medical,Not Available,Unknown,9381
+01-12-2025,123861831,1990,India,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.126,General Surgery,PureWin Insurance,Basic,Insurance,IP,4,1,Medical,07:37:00,Yes,33016
+01-09-2025,123913425,1979,UAE,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.042,Emergency,TotalHealth Insurance,TH-Standard,Insurance,DC,1,1,Medical,16:53:00,No,2145
+01-10-2025,123900212,1973,Indonesia,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.125,Emergency,PureWin Insurance,Basic,Insurance,DC,1,2,Medical,07:31:00,Yes,4630
+01-09-2025,123977773,1996,Indonesia,F,DEF232,Dr. Lily James,Specialist,Active,1.055,Cardiology,BlueMedic Charity,,Corporate,DC,1,3,Medical,Not Available,Unknown,7113
+01-10-2025,123513271,1975,USA,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.191,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,IP,3,3,Medical,15:04:00,No,36501
+01-07-2025,123935607,1990,India,M,DEF232,Dr. Lily James,Specialist,Inactive,0.883,Cardiology,Nextcare Insurance,NC-Blue,Insurance,IP,4,1,Medical,11:06:00,Yes,26141
+01-02-2025,123492207,1998,UAE,F,DEF232,Dr. Lily James,Specialist,Active,1.071,Cardiology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,08:15:00,Yes,925
+01-11-2025,123714628,1958,Sri Lanka,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.903,Pulmonology,BlueMedic Charity,,Corporate,OP,0,1,Medical,Not Available,Unknown,962
+01-06-2025,123779371,1991,India,M,DEF232,Dr. Lily James,Specialist,Active,0.885,Cardiology,PureWin Insurance,Basic,Insurance,IP,3,2,Medical,07:59:00,Yes,16036
+01-07-2025,123650676,1987,Germany,M,DEF232,Dr. Lily James,Specialist,Active,0.948,Cardiology,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Medical,11:36:00,Yes,2195
+01-05-2025,123535518,1997,UAE,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.051,Pulmonology,Goodhealth Insurance,GH-2,Insurance,IP,3,2,Medical,Not Available,Unknown,57483
+01-03-2025,123560611,1960,UAE,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.898,General Surgery,BlueMedic Charity,,Corporate,OP,0,1,Medical,08:16:00,Yes,1208
+01-12-2025,123904616,1995,India,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.038,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,09:37:00,Yes,446
+01-10-2025,123629385,1956,Japan,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.889,Gastroenterology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Surgery,Not Available,Unknown,1562
+01-08-2025,123624821,1992,India,M,DEF232,Dr. Lily James,Specialist,Active,0.897,Cardiology,Nextcare Insurance,NC-Gold,Insurance,OP,0,3,Surgery,Not Available,Unknown,1044
+01-05-2025,123958307,1995,Bangladesh,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.097,Gastroenterology,PureWin Insurance,Basic,Insurance,OP,0,1,Medical,07:49:00,Yes,135
+01-10-2025,123534266,2004,India,M,ABC456,Dr. Ahmed Zayed,Specialist,Inactive,1.13,Gastroenterology,BlueMedic Charity,,Corporate,OP,0,3,Medical,Not Available,Unknown,1329
+01-07-2025,123953904,1993,Netherlands,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.905,Obstetrics & Gynecology,PureWin Insurance,Premium,Insurance,IP,4,1,Medical,14:00:00,No,23382
+01-06-2025,123957007,1988,Sri Lanka,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.96,Pulmonology,PureWin Insurance,Premium,Insurance,OP,0,1,Medical,Not Available,Unknown,589
+01-06-2025,123781615,1994,UAE,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.062,Pulmonology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,06:05:00,Yes,1584
+01-03-2025,123546049,1984,USA,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.002,Pulmonology,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Medical,Not Available,Unknown,532
+01-02-2025,123540788,1982,India,M,VBN123,Dr. Peter Novak,Consultant,Active,1.045,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,1345
+01-07-2025,123610887,1997,Indonesia,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.11,Emergency,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,06:25:00,Yes,2153
+01-11-2025,123770113,1975,UAE,M,FGH123,Dr. Sofia Kim,GP,Inactive,0.937,Internal Medicine,PureWin Insurance,Advance,Insurance,IP,3,1,Medical,11:52:00,Yes,30926
+01-01-2025,123539565,1979,Bangladesh,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.013,Pulmonology,Nextcare Insurance,NC-Gold,Insurance,IP,3,1,Medical,11:15:00,Yes,58089
+01-11-2025,123703877,1995,Egypt,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.958,Obstetrics & Gynecology,BlueMedic Charity,,Corporate,OP,0,1,Medical,Not Available,Unknown,902
+01-10-2025,123518826,1967,UAE,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.933,General Surgery,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Medical,17:35:00,No,360
+01-04-2025,123749914,1968,Sri Lanka,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.001,Emergency,PureWin Insurance,Basic,Insurance,OP,0,3,Medical,Not Available,Unknown,1399
+01-08-2025,123467504,1991,Bangladesh,M,QWE123,Dr. Omar Khalid,GP,Active,1.047,Family Medicine,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Medical,Not Available,Unknown,631
+01-02-2025,123841714,1987,India,F,QWE123,Dr. Omar Khalid,GP,Active,1.083,Family Medicine,BlueMedic Charity,,Corporate,IP,6,1,Surgery,16:50:00,No,33496
+01-10-2025,123486135,2003,Bangladesh,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.895,General Surgery,Nextcare Insurance,NC-Gold,Insurance,OP,0,2,Medical,Not Available,Unknown,351
+01-09-2025,123561982,1999,Germany,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.13,Nephrology,PureWin Insurance,Premium,Insurance,IP,2,2,Medical,21:32:00,No,8006
+01-05-2025,123551004,1999,Egypt,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.942,Nephrology,PureWin Insurance,Advance,Insurance,OP,0,3,Medical,08:58:00,Yes,1466
+01-01-2025,123908059,1975,Egypt,M,QWE123,Dr. Omar Khalid,GP,Active,0.938,Family Medicine,BlueMedic Charity,,Corporate,OP,0,1,Medical,Not Available,Unknown,235
+01-12-2025,123485039,2005,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1,General Surgery,BlueMedic Charity,,Corporate,OP,0,1,Surgery,Not Available,Unknown,923
+01-06-2025,123689516,1991,Indonesia,M,FGH123,Dr. Sofia Kim,GP,Active,1.106,Internal Medicine,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,Not Available,Unknown,1512
+01-11-2025,123777581,1969,Netherlands,F,DEF232,Dr. Lily James,Specialist,Active,0.898,Cardiology,Nextcare Insurance,NC-Gold,Insurance,DC,1,3,Surgery,21:28:00,No,4237
+01-09-2025,123736701,1999,UAE,M,ABC234,Dr. Thomas Muller,Specialist,Inactive,1.089,Nephrology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,07:00:00,Yes,266
+01-10-2025,123826308,1997,India,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.052,Nephrology,PureWin Insurance,Premium,Insurance,IP,4,2,Surgery,20:02:00,No,76346
+01-10-2025,123892886,1984,Egypt,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.132,Pulmonology,Nextcare Insurance,NC-Blue,Insurance,IP,4,1,Medical,16:26:00,No,38591
+01-03-2025,123670134,1963,UAE,M,QWE123,Dr. Omar Khalid,GP,Active,0.952,Family Medicine,Goodhealth Insurance,GH-2,Insurance,OP,0,2,Medical,Not Available,Unknown,601
+01-05-2025,123906549,1960,Japan,M,VBN123,Dr. Peter Novak,Consultant,Active,1.035,Orthopaedics,Goodhealth Insurance,GH-1,Insurance,OP,0,3,Medical,Not Available,Unknown,2134
+01-06-2025,123628986,2004,Pakistan,M,FGH123,Dr. Sofia Kim,GP,Active,1.261,Internal Medicine,BlueMedic Charity,,Corporate,OP,0,2,Surgery,Not Available,Unknown,1149
+01-06-2025,123991524,1979,India,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.972,Nephrology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,Not Available,Unknown,1123
+01-01-2025,123730461,1957,Japan,F,VBN123,Dr. Peter Novak,Consultant,Active,1.244,Orthopaedics,PureWin Insurance,Premium,Insurance,IP,3,2,Surgery,13:42:00,No,88955
+01-07-2025,123856390,1974,Egypt,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.004,Emergency,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,Not Available,Unknown,1779
+01-02-2025,123932001,1999,Japan,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.112,Nephrology,Nextcare Insurance,NC-Gold,Insurance,DC,1,2,Surgery,12:21:00,No,6029
+01-09-2025,123887201,1990,UAE,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.127,General Surgery,Goodhealth Insurance,GH-2,Insurance,IP,4,2,Surgery,07:29:00,Yes,105209
+01-09-2025,123919014,1990,UAE,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.195,Emergency,Self-Pay Corporate,,Corporate,OP,0,3,Surgery,18:49:00,No,2624
+01-12-2025,123747862,1969,Egypt,F,QWE234,Dr. Aisha Rahman,Specialist,Active,0.981,Pulmonology,TotalHealth Insurance,TH-Standard,Insurance,IP,2,2,Medical,17:38:00,No,96767
+01-09-2025,123479650,1963,India,F,VBN123,Dr. Peter Novak,Consultant,Active,0.932,Orthopaedics,PureWin Insurance,Premium,Insurance,OP,0,1,Surgery,Not Available,Unknown,2148
+01-05-2025,123724236,1983,USA,F,VBN123,Dr. Peter Novak,Consultant,Active,0.936,Orthopaedics,PureWin Insurance,Advance,Insurance,DC,1,2,Medical,20:59:00,No,6381
+01-12-2025,123554734,1998,UAE,F,QWE123,Dr. Omar Khalid,GP,Inactive,0.97,Family Medicine,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Medical,Not Available,Unknown,296
+01-05-2025,123939678,1995,Indonesia,F,QWE234,Dr. Aisha Rahman,Specialist,Active,0.938,Pulmonology,Self-Pay Corporate,,Corporate,DC,1,1,Medical,17:41:00,No,3345
+01-04-2025,123584788,1993,Egypt,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.151,General Surgery,PureWin Insurance,Advance,Insurance,IP,5,1,Surgery,21:18:00,No,61857
+01-11-2025,123580069,1998,USA,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.25,Emergency,PureWin Insurance,Basic,Insurance,IP,3,2,Surgery,Not Available,Unknown,95023
+01-05-2025,123591666,1970,Egypt,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.862,Emergency,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,Not Available,Unknown,1052
+01-01-2025,123805555,1988,India,M,VBN123,Dr. Peter Novak,Consultant,Active,1.007,Orthopaedics,PureWin Insurance,Premium,Insurance,IP,3,1,Surgery,20:11:00,No,31904
+01-06-2025,123766749,1990,USA,M,FGH123,Dr. Sofia Kim,GP,Active,0.856,Internal Medicine,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,1428
+01-10-2025,123972168,1984,Pakistan,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.283,Emergency,BlueMedic Charity,,Corporate,IP,3,1,Surgery,07:14:00,Yes,71515
+01-03-2025,123682446,1996,Indonesia,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.03,Pulmonology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,Not Available,Unknown,1055
+01-06-2025,123609559,1990,India,M,VBN123,Dr. Peter Novak,Consultant,Inactive,1.158,Orthopaedics,BlueMedic Charity,,Corporate,OP,0,3,Surgery,Not Available,Unknown,468
+01-02-2025,123482794,1988,Pakistan,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.866,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,Not Available,Unknown,905
+01-09-2025,123459849,1998,India,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.03,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,194
+01-06-2025,123659245,1990,Netherlands,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.011,Pulmonology,BlueMedic Charity,,Corporate,OP,0,1,Medical,Not Available,Unknown,675
+01-04-2025,123959643,1992,Egypt,F,VBN123,Dr. Peter Novak,Consultant,Active,1.095,Orthopaedics,PureWin Insurance,Advance,Insurance,IP,6,2,Surgery,17:15:00,No,96857
+01-03-2025,123740921,1991,Oman,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.108,Obstetrics & Gynecology,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,10:13:00,Yes,1154
+01-07-2025,123942089,1986,India,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.241,Emergency,BlueMedic Charity,,Corporate,IP,5,1,Medical,18:43:00,No,48128
+01-09-2025,123511309,1983,UAE,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.975,Gastroenterology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,2,Surgery,Not Available,Unknown,918
+01-12-2025,123506766,2001,India,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.018,Emergency,BlueMedic Charity,,Corporate,IP,6,2,Surgery,15:44:00,No,112466
+01-06-2025,123909400,1982,India,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.992,Obstetrics & Gynecology,PureWin Insurance,Basic,Insurance,IP,5,1,Surgery,13:02:00,No,69475
+01-02-2025,123514067,1962,Philippines,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.231,Emergency,Self-Pay Corporate,,Corporate,OP,0,2,Surgery,Not Available,Unknown,2259
+01-10-2025,123484267,1997,Oman,M,DEF232,Dr. Lily James,Specialist,Active,1.184,Cardiology,TotalHealth Insurance,TH-Plus,Insurance,IP,5,1,Surgery,16:03:00,No,70638
+01-08-2025,123675826,1983,Philippines,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.946,Emergency,TotalHealth Insurance,TH-Standard,Insurance,DC,1,1,Medical,10:26:00,Yes,7562
+01-09-2025,123959113,1997,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.094,General Surgery,BlueMedic Charity,,Corporate,IP,4,3,Medical,15:57:00,No,24779
+01-02-2025,123831023,1964,India,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.948,Nephrology,PureWin Insurance,Premium,Insurance,OP,0,1,Surgery,13:35:00,No,1046
+01-04-2025,123509917,1997,India,M,DEF232,Dr. Lily James,Specialist,Active,1.089,Cardiology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,2,Medical,Not Available,Unknown,1460
+01-10-2025,123911398,1979,Philippines,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.082,General Surgery,TotalHealth Insurance,TH-Standard,Insurance,IP,6,2,Surgery,11:08:00,Yes,9763
+01-10-2025,123914903,1963,Japan,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.934,General Surgery,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Medical,Not Available,Unknown,220
+01-06-2025,123891578,2003,India,M,VBN123,Dr. Peter Novak,Consultant,Inactive,1.221,Orthopaedics,BlueMedic Charity,,Corporate,IP,4,3,Surgery,21:36:00,No,109430
+01-10-2025,123947042,1988,Pakistan,M,ABC456,Dr. Ahmed Zayed,Specialist,Inactive,0.941,Gastroenterology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,Not Available,Unknown,434
+01-11-2025,123586493,2000,Denmark,F,VBN123,Dr. Peter Novak,Consultant,Inactive,0.987,Orthopaedics,PureWin Insurance,Premium,Insurance,IP,4,1,Medical,07:01:00,Yes,43028
+01-05-2025,123988885,1985,India,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.111,Emergency,PureWin Insurance,Advance,Insurance,OP,0,3,Surgery,18:07:00,No,731
+01-11-2025,123630458,1962,Pakistan,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.15,Nephrology,Self-Pay Corporate,,Corporate,OP,0,2,Surgery,Not Available,Unknown,1255
+01-04-2025,123892301,1959,India,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.235,Gastroenterology,Self-Pay Corporate,,Corporate,DC,1,2,Surgery,10:23:00,Yes,2303
+01-03-2025,123771173,2004,UAE,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.069,Emergency,Self-Pay Corporate,,Corporate,IP,4,1,Medical,09:33:00,Yes,72179
+01-09-2025,123880035,2002,USA,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.09,General Surgery,PureWin Insurance,Basic,Insurance,IP,4,1,Medical,08:21:00,Yes,16447
+01-08-2025,123797533,1999,UAE,F,FGH123,Dr. Sofia Kim,GP,Active,0.98,Internal Medicine,PureWin Insurance,Premium,Insurance,DC,1,2,Medical,Not Available,Unknown,2245
+01-02-2025,123805510,1986,India,M,FGH123,Dr. Sofia Kim,GP,Active,0.889,Internal Medicine,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,07:38:00,Yes,795
+01-10-2025,123791257,2003,Philippines,F,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.025,General Surgery,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,Not Available,Unknown,1766
+01-03-2025,123879773,1997,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,1.017,Orthopaedics,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,Not Available,Unknown,514
+01-10-2025,123858038,1984,Bangladesh,F,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.818,General Surgery,TotalHealth Insurance,TH-Standard,Insurance,OP,0,1,Medical,Not Available,Unknown,1569
+01-01-2025,123529196,1983,Egypt,F,VBN123,Dr. Peter Novak,Consultant,Active,0.927,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,1,Medical,Not Available,Unknown,1595
+01-10-2025,123905373,2002,Sri Lanka,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.022,Emergency,Goodhealth Insurance,GH-1,Insurance,DC,1,1,Surgery,07:58:00,Yes,6359
+01-10-2025,123747620,1987,Philippines,M,DEF232,Dr. Lily James,Specialist,Active,0.949,Cardiology,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,Not Available,Unknown,720
+01-10-2025,123631757,1999,Philippines,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.218,Pulmonology,PureWin Insurance,Basic,Insurance,OP,0,2,Surgery,Not Available,Unknown,1004
+01-08-2025,123735736,1961,Egypt,M,DEF232,Dr. Lily James,Specialist,Active,1.158,Cardiology,PureWin Insurance,Basic,Insurance,OP,0,3,Surgery,19:19:00,No,238
+01-06-2025,123982038,1987,India,M,VBN123,Dr. Peter Novak,Consultant,Active,1.097,Orthopaedics,BlueMedic Charity,,Corporate,OP,0,1,Medical,20:49:00,No,1855
+01-09-2025,123922518,1987,Oman,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.056,General Surgery,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Surgery,Not Available,Unknown,1605
+01-04-2025,123909531,1987,USA,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.128,Gastroenterology,Self-Pay Corporate,,Corporate,IP,3,2,Surgery,15:21:00,No,39264
+01-10-2025,123707762,1997,Netherlands,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.976,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Surgery,06:13:00,Yes,1263
+01-07-2025,123882570,2003,Oman,F,QWE123,Dr. Omar Khalid,GP,Active,1.051,Family Medicine,Goodhealth Insurance,GH-2,Insurance,IP,4,2,Medical,19:49:00,No,24119
+01-06-2025,123665488,2003,Sri Lanka,M,VBN123,Dr. Peter Novak,Consultant,Active,1.091,Orthopaedics,PureWin Insurance,Advance,Insurance,IP,3,3,Medical,15:37:00,No,72650
+01-07-2025,123829273,1957,UAE,F,ABC234,Dr. Thomas Muller,Specialist,Active,0.983,Nephrology,TotalHealth Insurance,TH-Standard,Insurance,IP,5,2,Surgery,08:06:00,Yes,95260
+01-07-2025,123803921,1985,Egypt,M,QWE123,Dr. Omar Khalid,GP,Active,1.066,Family Medicine,PureWin Insurance,Premium,Insurance,IP,4,2,Surgery,21:09:00,No,46494
+01-01-2025,123591890,2004,India,M,DEF232,Dr. Lily James,Specialist,Active,1.008,Cardiology,Nextcare Insurance,NC-Blue,Insurance,OP,0,3,Medical,Not Available,Unknown,1467
+01-02-2025,123600955,1994,UAE,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.001,Obstetrics & Gynecology,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Medical,Not Available,Unknown,861
+01-03-2025,123489256,1971,UAE,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.156,Obstetrics & Gynecology,BlueMedic Charity,,Corporate,OP,0,3,Surgery,Not Available,Unknown,1311
+01-02-2025,123532033,1978,India,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.942,Gastroenterology,PureWin Insurance,Premium,Insurance,DC,1,2,Medical,12:33:00,No,3121
+01-06-2025,123691888,1999,India,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.097,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,IP,5,2,Medical,11:45:00,Yes,8301
+01-09-2025,123715964,2004,UAE,M,FGH123,Dr. Sofia Kim,GP,Active,1.092,Internal Medicine,PureWin Insurance,Advance,Insurance,OP,0,3,Surgery,09:10:00,Yes,1482
+01-08-2025,123545825,1995,India,F,DEF232,Dr. Lily James,Specialist,Active,0.75,Cardiology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,1259
+01-06-2025,123682787,1995,Oman,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.002,Gastroenterology,TotalHealth Insurance,TH-Standard,Insurance,IP,4,2,Medical,14:26:00,No,36156
+01-11-2025,123784671,1999,India,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.118,Pulmonology,Goodhealth Insurance,GH-1,Insurance,IP,5,1,Medical,17:28:00,No,74696
+01-07-2025,123582517,1986,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.832,General Surgery,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,Not Available,Unknown,416
+01-01-2025,123640000,1988,India,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.061,Pulmonology,PureWin Insurance,Advance,Insurance,IP,3,2,Medical,17:07:00,No,57511
+01-10-2025,123655926,1955,India,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.169,General Surgery,Self-Pay Corporate,,Corporate,IP,6,1,Medical,19:25:00,No,30880
+01-07-2025,123730748,1981,UAE,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.974,Nephrology,Self-Pay Corporate,,Corporate,IP,4,2,Medical,11:04:00,Yes,69976
+01-08-2025,123655317,1988,UAE,M,ABC234,Dr. Thomas Muller,Specialist,Inactive,1,Nephrology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Medical,Not Available,Unknown,1011
+01-07-2025,123856897,1998,India,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.87,Emergency,BlueMedic Charity,,Corporate,OP,0,2,Medical,Not Available,Unknown,265
+01-07-2025,123634157,2005,Philippines,F,QWE123,Dr. Omar Khalid,GP,Inactive,1.123,Family Medicine,PureWin Insurance,Basic,Insurance,DC,1,1,Medical,07:09:00,Yes,1486
+01-02-2025,123692039,1977,Egypt,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.992,Gastroenterology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,Not Available,Unknown,601
+01-07-2025,123662428,1990,Egypt,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.035,Pulmonology,BlueMedic Charity,,Corporate,OP,0,1,Surgery,Not Available,Unknown,395
+01-10-2025,123555506,1957,USA,F,QWE123,Dr. Omar Khalid,GP,Active,1.165,Family Medicine,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Surgery,Not Available,Unknown,1915
+01-04-2025,123829043,1955,Netherlands,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.066,General Surgery,Nextcare Insurance,NC-Gold,Insurance,OP,0,2,Medical,Not Available,Unknown,680
+01-08-2025,123584082,1994,India,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.922,General Surgery,Goodhealth Insurance,GH-1,Insurance,IP,3,1,Medical,13:38:00,No,22764
+01-01-2025,123617500,1980,Bangladesh,F,DEF232,Dr. Lily James,Specialist,Active,0.965,Cardiology,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Surgery,Not Available,Unknown,648
+01-05-2025,123887256,1994,Bangladesh,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.099,Obstetrics & Gynecology,TotalHealth Insurance,TH-Standard,Insurance,IP,3,2,Medical,16:21:00,No,53926
+01-06-2025,123972177,1990,Pakistan,F,DEF232,Dr. Lily James,Specialist,Active,0.968,Cardiology,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,Not Available,Unknown,1453
+01-12-2025,123820938,1998,Pakistan,F,VBN123,Dr. Peter Novak,Consultant,Active,0.898,Orthopaedics,PureWin Insurance,Premium,Insurance,OP,0,3,Surgery,19:04:00,No,2806
+01-03-2025,123954492,2002,Indonesia,M,VBN123,Dr. Peter Novak,Consultant,Active,1.035,Orthopaedics,Nextcare Insurance,NC-Blue,Insurance,OP,0,3,Medical,Not Available,Unknown,1031
+01-04-2025,123920678,1960,Bangladesh,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,0.972,Pulmonology,TotalHealth Insurance,TH-Standard,Insurance,IP,3,2,Surgery,10:16:00,Yes,56370
+01-05-2025,123717614,1966,Bangladesh,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.202,Obstetrics & Gynecology,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Medical,Not Available,Unknown,1003
+01-12-2025,123875037,1989,India,M,ABC234,Dr. Thomas Muller,Specialist,Inactive,1.128,Nephrology,BlueMedic Charity,,Corporate,OP,0,3,Surgery,17:55:00,No,1653
+01-11-2025,123634628,1991,Egypt,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.919,Gastroenterology,TotalHealth Insurance,TH-Plus,Insurance,IP,4,1,Medical,09:59:00,Yes,8089
+01-01-2025,123706509,1969,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,1,Orthopaedics,PureWin Insurance,Basic,Insurance,OP,0,2,Surgery,Not Available,Unknown,996
+01-03-2025,123747275,2004,Egypt,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.771,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Medical,18:56:00,No,1380
+01-10-2025,123978507,2002,Bangladesh,F,VBN123,Dr. Peter Novak,Consultant,Inactive,0.89,Orthopaedics,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,Not Available,Unknown,1800
+01-01-2025,123917616,1963,UAE,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.222,Obstetrics & Gynecology,Nextcare Insurance,NC-Blue,Insurance,IP,5,2,Surgery,08:23:00,Yes,112249
+01-11-2025,123722153,1988,Germany,M,FGH123,Dr. Sofia Kim,GP,Active,1.253,Internal Medicine,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Surgery,Not Available,Unknown,1778
+01-04-2025,123811006,1988,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.103,General Surgery,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Surgery,21:47:00,No,1945
+01-12-2025,123566081,2002,Bangladesh,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.031,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,3,Medical,Not Available,Unknown,460
+01-04-2025,123893588,1964,Bangladesh,M,VBN123,Dr. Peter Novak,Consultant,Active,0.917,Orthopaedics,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,Not Available,Unknown,1680
+01-06-2025,123756852,1998,Sri Lanka,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.864,General Surgery,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,Not Available,Unknown,1393
+01-08-2025,123745800,1992,Pakistan,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.166,Gastroenterology,PureWin Insurance,Basic,Insurance,OP,0,1,Medical,16:34:00,No,851
+01-02-2025,123872857,1991,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.981,General Surgery,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,11:55:00,Yes,1042
+01-07-2025,123800306,1961,India,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.252,Pulmonology,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Medical,Not Available,Unknown,2067
+01-07-2025,123495422,2001,Indonesia,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.189,Emergency,PureWin Insurance,Advance,Insurance,IP,6,2,Medical,Not Available,Unknown,88682
+01-10-2025,123612756,1988,UAE,M,DEF232,Dr. Lily James,Specialist,Active,0.826,Cardiology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,2,Medical,Not Available,Unknown,1143
+01-12-2025,123552134,1965,Indonesia,M,HJK123,Dr. Priya Iyer,Specialist,Inactive,0.893,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,12:59:00,No,152
+01-08-2025,123855781,1986,India,F,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.893,General Surgery,Goodhealth Insurance,GH-1,Insurance,DC,1,1,Medical,17:57:00,No,2429
+01-05-2025,123475120,1958,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.112,General Surgery,Nextcare Insurance,NC-Blue,Insurance,IP,5,2,Surgery,09:47:00,Yes,38821
+01-05-2025,123566107,1967,Indonesia,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.154,Nephrology,PureWin Insurance,Advance,Insurance,IP,4,3,Surgery,08:19:00,Yes,122019
+01-06-2025,123781009,2004,Pakistan,F,QWE123,Dr. Omar Khalid,GP,Active,1.37,Family Medicine,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,Not Available,Unknown,252
+01-10-2025,123833969,2004,India,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.892,Obstetrics & Gynecology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,1392
+01-04-2025,123729797,1988,Pakistan,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.093,Gastroenterology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Surgery,15:09:00,No,1722
+01-03-2025,123924230,2001,Indonesia,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.062,Emergency,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,Not Available,Unknown,1297
+01-05-2025,123955902,1956,India,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1,Pulmonology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,16:39:00,No,142
+01-01-2025,123527863,2005,USA,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.011,General Surgery,TotalHealth Insurance,TH-Standard,Insurance,OP,0,2,Medical,12:44:00,No,1127
+01-02-2025,123974165,1974,Indonesia,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,0.896,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,218
+01-02-2025,123790221,1999,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.131,General Surgery,PureWin Insurance,Basic,Insurance,IP,4,2,Surgery,17:50:00,No,160962
+01-10-2025,123802102,2005,USA,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.091,General Surgery,PureWin Insurance,Basic,Insurance,OP,0,3,Medical,Not Available,Unknown,1555
+01-09-2025,123507731,1999,Oman,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.103,General Surgery,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Surgery,Not Available,Unknown,2257
+01-09-2025,123794297,1986,India,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.067,Pulmonology,PureWin Insurance,Advance,Insurance,IP,5,1,Medical,07:08:00,Yes,28855
+01-06-2025,123850788,1999,Denmark,F,QWE123,Dr. Omar Khalid,GP,Active,1.151,Family Medicine,Goodhealth Insurance,GH-2,Insurance,IP,5,1,Medical,Not Available,Unknown,30668
+01-09-2025,123771949,1982,Indonesia,F,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.094,General Surgery,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,Not Available,Unknown,1623
+01-02-2025,123501964,1992,Bangladesh,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.007,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,17:59:00,No,143
+01-11-2025,123740635,1969,India,F,VBN123,Dr. Peter Novak,Consultant,Active,0.953,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,Not Available,Unknown,729
+01-07-2025,123965150,1991,Egypt,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.94,General Surgery,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,07:16:00,Yes,1458
+01-12-2025,123849537,1957,Bangladesh,F,HJK123,Dr. Priya Iyer,Specialist,Inactive,0.988,Obstetrics & Gynecology,TotalHealth Insurance,TH-Standard,Insurance,IP,3,1,Medical,20:10:00,No,27298
+01-02-2025,123530749,1957,Egypt,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.025,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Medical,Not Available,Unknown,753
+01-06-2025,123978205,1964,Bangladesh,F,DEF232,Dr. Lily James,Specialist,Active,1.022,Cardiology,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,20:45:00,No,1203
+01-09-2025,123977629,1996,UAE,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.976,Pulmonology,BlueMedic Charity,,Corporate,OP,0,2,Surgery,Not Available,Unknown,1022
+01-06-2025,123548150,1996,USA,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.881,Nephrology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Medical,11:35:00,Yes,970
+01-06-2025,123891680,1987,Oman,M,VBN123,Dr. Peter Novak,Consultant,Active,0.865,Orthopaedics,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Surgery,Not Available,Unknown,1896
+01-02-2025,123677253,1987,Bangladesh,M,DEF232,Dr. Lily James,Specialist,Active,0.977,Cardiology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,06:44:00,Yes,205
+01-05-2025,123778962,1986,Denmark,M,VBN123,Dr. Peter Novak,Consultant,Inactive,0.853,Orthopaedics,PureWin Insurance,Premium,Insurance,DC,1,2,Medical,16:27:00,No,4916
+01-03-2025,123698180,1992,India,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.99,Nephrology,PureWin Insurance,Premium,Insurance,IP,7,3,Medical,07:26:00,Yes,69189
+01-04-2025,123881746,1995,Egypt,M,QWE123,Dr. Omar Khalid,GP,Active,1.031,Family Medicine,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,Not Available,Unknown,2133
+01-09-2025,123998181,1973,UAE,F,FGH123,Dr. Sofia Kim,GP,Active,0.826,Internal Medicine,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Medical,11:37:00,Yes,904
+01-08-2025,123888541,1990,Denmark,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.158,General Surgery,Goodhealth Insurance,GH-2,Insurance,IP,4,2,Surgery,17:14:00,No,62686
+01-08-2025,123962665,1977,Philippines,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.074,Obstetrics & Gynecology,BlueMedic Charity,,Corporate,OP,0,2,Medical,06:45:00,Yes,217
+01-05-2025,123970637,1985,UAE,F,FGH123,Dr. Sofia Kim,GP,Active,0.905,Internal Medicine,Self-Pay Corporate,,Corporate,OP,0,1,Medical,Not Available,Unknown,551
+01-12-2025,123505017,1997,Sri Lanka,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.116,Obstetrics & Gynecology,PureWin Insurance,Premium,Insurance,IP,5,3,Surgery,15:42:00,No,40266
+01-02-2025,123593840,2001,Bangladesh,M,DEF232,Dr. Lily James,Specialist,Active,1.084,Cardiology,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,18:01:00,No,1015
+01-05-2025,123848689,1987,UAE,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.959,Obstetrics & Gynecology,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Surgery,Not Available,Unknown,676
+01-02-2025,123777000,2002,USA,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.882,Emergency,Self-Pay Corporate,,Corporate,OP,0,1,Medical,Not Available,Unknown,1230
+01-05-2025,123483279,1994,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.08,General Surgery,BlueMedic Charity,,Corporate,OP,0,1,Medical,Not Available,Unknown,350
+01-12-2025,123507706,1957,Philippines,F,HJK123,Dr. Priya Iyer,Specialist,Inactive,1.198,Obstetrics & Gynecology,PureWin Insurance,Advance,Insurance,OP,0,3,Surgery,Not Available,Unknown,1211
+01-05-2025,123739177,1977,UAE,F,VBN123,Dr. Peter Novak,Consultant,Active,1.18,Orthopaedics,PureWin Insurance,Basic,Insurance,IP,7,2,Surgery,08:38:00,Yes,61284
+01-11-2025,123791193,1980,Egypt,F,QWE123,Dr. Omar Khalid,GP,Inactive,1.053,Family Medicine,PureWin Insurance,Basic,Insurance,OP,0,1,Medical,Not Available,Unknown,756
+01-06-2025,123547239,1960,Pakistan,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.872,General Surgery,Nextcare Insurance,NC-Gold,Insurance,OP,0,2,Surgery,Not Available,Unknown,339
+01-09-2025,123549182,1988,Oman,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.185,Obstetrics & Gynecology,TotalHealth Insurance,TH-Standard,Insurance,IP,5,2,Medical,08:52:00,Yes,4489
+01-06-2025,123526360,1956,India,M,VBN123,Dr. Peter Novak,Consultant,Inactive,0.999,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Medical,Not Available,Unknown,1107
+01-04-2025,123763332,2000,Denmark,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.061,General Surgery,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Medical,Not Available,Unknown,908
+01-10-2025,123460272,1983,Philippines,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.039,Gastroenterology,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,Not Available,Unknown,1219
+01-12-2025,123767401,2001,Indonesia,M,DEF232,Dr. Lily James,Specialist,Active,1.015,Cardiology,TotalHealth Insurance,TH-Plus,Insurance,IP,3,1,Medical,15:23:00,No,22502
+01-04-2025,123714904,1986,Oman,F,DEF232,Dr. Lily James,Specialist,Active,0.972,Cardiology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,929
+01-10-2025,123709495,1983,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,1.117,Orthopaedics,TotalHealth Insurance,TH-Plus,Insurance,IP,4,1,Surgery,12:43:00,No,96445
+01-04-2025,123825525,1998,Egypt,F,FGH123,Dr. Sofia Kim,GP,Active,1.089,Internal Medicine,Nextcare Insurance,NC-Gold,Insurance,IP,3,2,Surgery,13:25:00,No,16038
+01-09-2025,123740311,2000,Japan,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.177,Nephrology,TotalHealth Insurance,TH-Plus,Insurance,IP,5,3,Medical,Not Available,Unknown,78660
+01-10-2025,123851894,1995,Pakistan,F,ABC234,Dr. Thomas Muller,Specialist,Active,0.871,Nephrology,PureWin Insurance,Basic,Insurance,DC,1,1,Surgery,Not Available,Unknown,4058
+01-06-2025,123871573,1983,USA,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.956,Emergency,Nextcare Insurance,NC-Blue,Insurance,IP,3,1,Medical,14:08:00,No,40109
+01-09-2025,123956543,1982,Egypt,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.294,Obstetrics & Gynecology,TotalHealth Insurance,TH-Standard,Insurance,IP,5,3,Medical,14:48:00,No,112061
+01-04-2025,123890788,1966,UAE,F,DEF232,Dr. Lily James,Specialist,Active,0.987,Cardiology,PureWin Insurance,Basic,Insurance,IP,6,2,Medical,11:20:00,Yes,74214
+01-01-2025,123737631,1991,UAE,M,QWE123,Dr. Omar Khalid,GP,Active,1.096,Family Medicine,PureWin Insurance,Basic,Insurance,IP,3,2,Surgery,08:33:00,Yes,43086
+01-02-2025,123723730,1972,Egypt,F,FGH123,Dr. Sofia Kim,GP,Active,0.922,Internal Medicine,TotalHealth Insurance,TH-Plus,Insurance,IP,4,1,Medical,08:42:00,Yes,4470
+01-06-2025,123584225,1987,Egypt,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.994,Emergency,PureWin Insurance,Basic,Insurance,DC,1,1,Medical,10:14:00,Yes,3416
+01-11-2025,123782178,1985,India,F,QWE234,Dr. Aisha Rahman,Specialist,Active,0.996,Pulmonology,PureWin Insurance,Basic,Insurance,OP,0,2,Surgery,10:53:00,Yes,733
+01-02-2025,123531689,2004,India,M,QWE123,Dr. Omar Khalid,GP,Active,1.071,Family Medicine,PureWin Insurance,Advance,Insurance,IP,4,3,Medical,Not Available,Unknown,64342
+01-06-2025,123962591,1984,Japan,M,HJK123,Dr. Priya Iyer,Specialist,Inactive,1.045,Obstetrics & Gynecology,PureWin Insurance,Basic,Insurance,OP,0,1,Medical,Not Available,Unknown,1180
+01-09-2025,123915703,1957,Indonesia,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.98,General Surgery,Goodhealth Insurance,GH-1,Insurance,IP,4,2,Medical,14:15:00,No,89005
+01-03-2025,123521134,1990,Oman,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.079,General Surgery,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,20:35:00,No,957
+01-09-2025,123883559,1974,Pakistan,M,DEF232,Dr. Lily James,Specialist,Active,1.162,Cardiology,PureWin Insurance,Advance,Insurance,IP,3,1,Surgery,07:43:00,Yes,53133
+01-04-2025,123519704,1970,India,M,VBN123,Dr. Peter Novak,Consultant,Inactive,1.115,Orthopaedics,TotalHealth Insurance,TH-Plus,Insurance,IP,2,1,Medical,09:26:00,Yes,7372
+01-10-2025,123848345,1958,Philippines,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.974,Obstetrics & Gynecology,PureWin Insurance,Advance,Insurance,DC,1,1,Medical,Not Available,Unknown,4459
+01-07-2025,123503713,1956,UAE,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.394,Emergency,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,Not Available,Unknown,710
+01-07-2025,123721576,1987,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.155,General Surgery,PureWin Insurance,Basic,Insurance,IP,4,2,Medical,11:27:00,Yes,110590
+01-03-2025,123813876,2005,Germany,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.152,Gastroenterology,Nextcare Insurance,NC-Blue,Insurance,IP,4,2,Surgery,10:51:00,Yes,100152
+01-06-2025,123852472,1996,India,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.942,Emergency,Self-Pay Corporate,,Corporate,DC,1,1,Surgery,17:12:00,No,3793
+01-11-2025,123683722,1968,Germany,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.99,Nephrology,Goodhealth Insurance,GH-1,Insurance,DC,1,2,Medical,09:51:00,Yes,6436
+01-01-2025,123957362,1978,UAE,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.213,Pulmonology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,Not Available,Unknown,1057
+01-10-2025,123877230,1983,Egypt,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.171,Nephrology,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,12:37:00,No,636
+01-06-2025,123569295,1966,Philippines,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.218,Nephrology,PureWin Insurance,Basic,Insurance,OP,0,2,Surgery,17:34:00,No,934
+01-09-2025,123821149,2000,Pakistan,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.039,General Surgery,Nextcare Insurance,NC-Blue,Insurance,DC,1,1,Medical,21:19:00,No,8024
+01-08-2025,123853410,1969,UAE,F,DEF232,Dr. Lily James,Specialist,Inactive,0.944,Cardiology,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,11:02:00,Yes,1744
+01-06-2025,123637498,1987,India,M,QWE123,Dr. Omar Khalid,GP,Active,1.099,Family Medicine,Self-Pay Corporate,,Corporate,IP,4,2,Medical,07:29:00,Yes,6629
+01-04-2025,123857597,1992,India,M,VBN123,Dr. Peter Novak,Consultant,Active,0.996,Orthopaedics,TotalHealth Insurance,TH-Standard,Insurance,IP,3,2,Surgery,17:08:00,No,83100
+01-08-2025,123944710,2003,Netherlands,F,QWE234,Dr. Aisha Rahman,Specialist,Active,0.811,Pulmonology,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Medical,Not Available,Unknown,770
+01-02-2025,123900509,1959,India,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.094,Emergency,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Surgery,16:58:00,No,2078
+01-08-2025,123870816,1957,UAE,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.122,Obstetrics & Gynecology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,16:18:00,No,1821
+01-02-2025,123801165,1991,India,M,DEF232,Dr. Lily James,Specialist,Inactive,1.1,Cardiology,Nextcare Insurance,NC-Gold,Insurance,IP,4,1,Medical,06:44:00,Yes,9984
+01-08-2025,123603170,1978,India,F,VBN123,Dr. Peter Novak,Consultant,Active,1.09,Orthopaedics,PureWin Insurance,Premium,Insurance,OP,0,3,Medical,Not Available,Unknown,538
+01-08-2025,123888600,1998,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.093,General Surgery,Nextcare Insurance,NC-Gold,Insurance,OP,0,3,Medical,17:18:00,No,1950
+01-02-2025,123654120,2001,Oman,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.982,Obstetrics & Gynecology,Goodhealth Insurance,GH-2,Insurance,IP,4,1,Surgery,06:18:00,Yes,22457
+01-10-2025,123745514,1994,India,F,DEF232,Dr. Lily James,Specialist,Active,1.06,Cardiology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,20:29:00,No,791
+01-05-2025,123627055,1984,Germany,M,DEF232,Dr. Lily James,Specialist,Inactive,0.899,Cardiology,Nextcare Insurance,NC-Blue,Insurance,IP,3,2,Medical,Not Available,Unknown,60133
+01-10-2025,123626280,1984,India,M,QWE123,Dr. Omar Khalid,GP,Inactive,0.84,Family Medicine,PureWin Insurance,Premium,Insurance,OP,0,3,Medical,20:06:00,No,173
+01-01-2025,123541740,1991,India,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.104,Emergency,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,867
+01-03-2025,123978944,1961,Netherlands,F,DEF232,Dr. Lily James,Specialist,Inactive,0.885,Cardiology,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Medical,Not Available,Unknown,867
+01-06-2025,123536394,1994,Bangladesh,M,VBN123,Dr. Peter Novak,Consultant,Active,1.087,Orthopaedics,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Medical,15:00:00,No,939
+01-03-2025,123502924,1969,India,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.071,Obstetrics & Gynecology,BlueMedic Charity,,Corporate,OP,0,1,Medical,16:20:00,No,621
+01-04-2025,123965252,1993,Denmark,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.058,Emergency,TotalHealth Insurance,TH-Standard,Insurance,IP,5,2,Surgery,07:05:00,Yes,7883
+01-08-2025,123757926,1987,Egypt,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.059,Gastroenterology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,19:59:00,No,329
+01-02-2025,123694219,1976,USA,M,HJK123,Dr. Priya Iyer,Specialist,Inactive,0.964,Obstetrics & Gynecology,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,10:19:00,Yes,198
+01-09-2025,123857194,2000,Pakistan,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.815,Obstetrics & Gynecology,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,Not Available,Unknown,375
+01-02-2025,123664525,1996,Bangladesh,F,VBN123,Dr. Peter Novak,Consultant,Active,1.122,Orthopaedics,Self-Pay Corporate,,Corporate,OP,0,3,Surgery,10:11:00,Yes,2624
+01-03-2025,123525589,1963,UAE,F,VBN123,Dr. Peter Novak,Consultant,Active,0.953,Orthopaedics,PureWin Insurance,Advance,Insurance,DC,1,2,Medical,Not Available,Unknown,5065
+01-08-2025,123852948,2005,Indonesia,F,QWE123,Dr. Omar Khalid,GP,Active,0.956,Family Medicine,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Medical,Not Available,Unknown,683
+01-10-2025,123551743,1980,Philippines,M,VBN123,Dr. Peter Novak,Consultant,Active,1.158,Orthopaedics,PureWin Insurance,Advance,Insurance,DC,1,1,Medical,17:19:00,No,6784
+01-03-2025,123756827,1965,Egypt,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.877,Gastroenterology,PureWin Insurance,Premium,Insurance,OP,0,1,Surgery,06:33:00,Yes,1845
+01-04-2025,123972291,1964,Japan,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.148,Emergency,TotalHealth Insurance,TH-Plus,Insurance,OP,0,3,Surgery,Not Available,Unknown,603
+01-12-2025,123965259,1955,UAE,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.901,Nephrology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,Not Available,Unknown,456
+01-12-2025,123652265,1982,Denmark,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.091,Emergency,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,13:54:00,No,1177
+01-07-2025,123880483,1968,UAE,M,FGH123,Dr. Sofia Kim,GP,Active,1.12,Internal Medicine,BlueMedic Charity,,Corporate,IP,3,3,Medical,10:46:00,Yes,15256
+01-06-2025,123789295,1964,Philippines,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.068,General Surgery,PureWin Insurance,Premium,Insurance,OP,0,1,Surgery,Not Available,Unknown,1795
+01-05-2025,123716776,1979,USA,M,VBN123,Dr. Peter Novak,Consultant,Active,0.906,Orthopaedics,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Medical,Not Available,Unknown,1487
+01-08-2025,123532120,1966,Philippines,M,HJK123,Dr. Priya Iyer,Specialist,Inactive,1.003,Obstetrics & Gynecology,PureWin Insurance,Basic,Insurance,IP,4,1,Surgery,14:46:00,No,46347
+01-08-2025,123660739,2005,Pakistan,F,FGH123,Dr. Sofia Kim,GP,Active,1.173,Internal Medicine,Nextcare Insurance,NC-Blue,Insurance,IP,6,1,Surgery,10:19:00,Yes,54256
+01-04-2025,123810642,1971,Germany,M,DEF232,Dr. Lily James,Specialist,Inactive,1.247,Cardiology,PureWin Insurance,Premium,Insurance,DC,1,2,Surgery,15:32:00,No,4547
+01-01-2025,123992726,1988,Sri Lanka,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.048,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,DC,1,2,Medical,21:22:00,No,1797
+01-02-2025,123458660,1987,Philippines,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.07,Gastroenterology,PureWin Insurance,Basic,Insurance,IP,4,3,Surgery,12:07:00,No,111745
+01-12-2025,123846460,1991,Pakistan,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.114,Emergency,Nextcare Insurance,NC-Blue,Insurance,IP,4,1,Surgery,18:22:00,No,51469
+01-06-2025,123916406,1968,Pakistan,F,VBN123,Dr. Peter Novak,Consultant,Active,1.333,Orthopaedics,Nextcare Insurance,NC-Blue,Insurance,IP,2,3,Medical,06:22:00,Yes,21474
+01-06-2025,123973448,1991,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.01,General Surgery,BlueMedic Charity,,Corporate,OP,0,2,Medical,11:01:00,Yes,388
+01-06-2025,123686548,1985,Netherlands,F,VBN123,Dr. Peter Novak,Consultant,Active,1.266,Orthopaedics,PureWin Insurance,Premium,Insurance,IP,3,2,Surgery,17:34:00,No,84130
+01-10-2025,123520452,1977,India,M,QWE123,Dr. Omar Khalid,GP,Active,1.036,Family Medicine,Self-Pay Corporate,,Corporate,OP,0,3,Surgery,,Unknown,1033
+01-01-2025,123603405,1989,Pakistan,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.046,Nephrology,PureWin Insurance,Advance,Insurance,IP,3,2,Medical,20:44:00,No,39307
+01-01-2025,123918689,1997,Germany,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.132,Emergency,PureWin Insurance,Basic,Insurance,DC,1,2,Surgery,17:25:00,No,7498
+01-04-2025,123933595,1962,Indonesia,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.07,Emergency,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,21:37:00,No,585
+01-06-2025,123802567,1989,Oman,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.933,Emergency,PureWin Insurance,Advance,Insurance,IP,5,1,Medical,Not Available,Unknown,80723
+01-09-2025,123522770,1988,India,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.029,Pulmonology,Goodhealth Insurance,GH-2,Insurance,DC,1,3,Surgery,09:47:00,Yes,9706
+01-06-2025,123522325,2000,Philippines,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.099,General Surgery,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,Not Available,Unknown,1152
+01-06-2025,123716125,1997,India,M,DEF232,Dr. Lily James,Specialist,Active,1.149,Cardiology,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,Not Available,Unknown,836
+01-12-2025,123776011,2001,UAE,F,VBN123,Dr. Peter Novak,Consultant,Active,1.181,Orthopaedics,TotalHealth Insurance,TH-Standard,Insurance,DC,1,1,Surgery,19:23:00,No,4350
+01-02-2025,123473613,2003,Pakistan,M,VBN123,Dr. Peter Novak,Consultant,Active,1.25,Orthopaedics,Nextcare Insurance,NC-Blue,Insurance,DC,1,2,Surgery,20:14:00,No,1885
+01-07-2025,123829235,2001,Bangladesh,F,QWE123,Dr. Omar Khalid,GP,Active,1.083,Family Medicine,TotalHealth Insurance,TH-Standard,Insurance,OP,0,2,Surgery,Not Available,Unknown,1600
+01-07-2025,123752212,2004,Oman,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.999,Gastroenterology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Surgery,Not Available,Unknown,209
+01-06-2025,123462692,1990,India,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.255,General Surgery,PureWin Insurance,Advance,Insurance,IP,5,2,Surgery,21:44:00,No,33201
+01-10-2025,123508048,1978,Egypt,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.071,Obstetrics & Gynecology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,Not Available,Unknown,1350
+01-04-2025,123703148,1988,Philippines,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.902,Emergency,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,1373
+01-12-2025,123849085,1986,Sri Lanka,M,VBN123,Dr. Peter Novak,Consultant,Active,0.927,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,576
+01-04-2025,123905016,1968,India,F,FGH123,Dr. Sofia Kim,GP,Active,1.049,Internal Medicine,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,Not Available,Unknown,144
+01-07-2025,123690627,1956,India,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.942,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,Not Available,Unknown,539
+01-07-2025,123616675,2000,UAE,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.047,Pulmonology,PureWin Insurance,Advance,Insurance,IP,3,2,Medical,15:31:00,No,60717
+01-11-2025,123982759,1976,Philippines,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.227,Pulmonology,TotalHealth Insurance,TH-Standard,Insurance,IP,3,2,Surgery,17:21:00,No,44659
+01-06-2025,123705449,1969,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.196,General Surgery,PureWin Insurance,Advance,Insurance,IP,3,2,Surgery,21:28:00,No,67213
+01-04-2025,123627571,1985,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,1.163,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Surgery,Not Available,Unknown,1768
+01-01-2025,123696618,2003,Philippines,F,VBN123,Dr. Peter Novak,Consultant,Active,0.917,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Surgery,Not Available,Unknown,2805
+01-05-2025,123462577,1986,Egypt,F,FGH123,Dr. Sofia Kim,GP,Inactive,1.055,Internal Medicine,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,Not Available,Unknown,1296
+01-10-2025,123620248,1983,Philippines,F,QWE123,Dr. Omar Khalid,GP,Active,1.069,Family Medicine,Goodhealth Insurance,GH-2,Insurance,OP,0,2,Medical,08:46:00,Yes,561
+01-01-2025,123736461,1994,Japan,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.887,Emergency,TotalHealth Insurance,TH-Standard,Insurance,OP,0,3,Medical,Not Available,Unknown,833
+01-11-2025,123955631,2002,USA,F,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.005,Pulmonology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Surgery,Not Available,Unknown,1869
+01-07-2025,123857594,1959,Indonesia,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.956,Emergency,PureWin Insurance,Basic,Insurance,OP,0,3,Medical,Not Available,Unknown,2166
+01-02-2025,123881023,1979,India,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.072,Nephrology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Surgery,Not Available,Unknown,1313
+01-04-2025,123752425,1988,USA,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.213,Nephrology,PureWin Insurance,Premium,Insurance,IP,4,2,Medical,10:16:00,Yes,22859
+01-07-2025,123516159,1962,Indonesia,M,VBN123,Dr. Peter Novak,Consultant,Active,1.252,Orthopaedics,PureWin Insurance,Basic,Insurance,IP,4,2,Medical,20:08:00,No,68195
+01-04-2025,123668663,1988,Sri Lanka,M,DEF232,Dr. Lily James,Specialist,Active,0.989,Cardiology,PureWin Insurance,Advance,Insurance,DC,1,2,Surgery,11:41:00,Yes,7921
+01-02-2025,123998385,1993,Pakistan,M,DEF232,Dr. Lily James,Specialist,Active,1.063,Cardiology,Goodhealth Insurance,GH-2,Insurance,IP,5,1,Medical,12:51:00,No,64050
+01-08-2025,123480028,1967,Egypt,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.056,Emergency,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,128
+01-09-2025,123934283,1962,UAE,M,HJK123,Dr. Priya Iyer,Specialist,Inactive,0.999,Obstetrics & Gynecology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,1,Medical,17:28:00,No,1103
+01-02-2025,123828364,1993,India,F,VBN123,Dr. Peter Novak,Consultant,Active,1.08,Orthopaedics,PureWin Insurance,Premium,Insurance,OP,0,3,Medical,Not Available,Unknown,1521
+01-04-2025,123610445,1981,Oman,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.99,Emergency,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,Not Available,Unknown,1329
+01-03-2025,123879225,1959,India,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.199,Emergency,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,648
+01-08-2025,123911270,1980,India,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.22,Pulmonology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,3,Surgery,Not Available,Unknown,1816
+01-09-2025,123479511,1982,Oman,F,ABC234,Dr. Thomas Muller,Specialist,Active,0.854,Nephrology,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Medical,Not Available,Unknown,1128
+01-09-2025,123513892,1991,Bangladesh,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.15,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,06:31:00,Yes,385
+01-12-2025,123818167,2002,USA,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.139,General Surgery,PureWin Insurance,Premium,Insurance,IP,6,2,Medical,13:38:00,No,36248
+01-10-2025,123999511,1972,Pakistan,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.041,Gastroenterology,Goodhealth Insurance,GH-2,Insurance,IP,3,1,Medical,Not Available,Unknown,10293
+01-04-2025,123469037,1968,UAE,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.123,Nephrology,Self-Pay Corporate,,Corporate,IP,5,1,Medical,10:36:00,Yes,48786
+01-02-2025,123818131,1980,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,1.139,Orthopaedics,Self-Pay Corporate,,Corporate,IP,4,2,Surgery,10:36:00,Yes,105149
+01-08-2025,123530269,1958,Indonesia,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.98,Emergency,PureWin Insurance,Premium,Insurance,OP,0,1,Medical,Not Available,Unknown,2056
+01-11-2025,123809667,1996,UAE,F,FGH123,Dr. Sofia Kim,GP,Inactive,1.042,Internal Medicine,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Surgery,Not Available,Unknown,747
+01-12-2025,123795082,1999,India,F,FGH123,Dr. Sofia Kim,GP,Active,0.878,Internal Medicine,PureWin Insurance,Premium,Insurance,IP,3,1,Surgery,21:30:00,No,11895
+01-03-2025,123505199,1976,Egypt,M,VBN123,Dr. Peter Novak,Consultant,Inactive,1.062,Orthopaedics,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,Not Available,Unknown,466
+01-03-2025,123826315,1988,India,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.893,General Surgery,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,Not Available,Unknown,440
+01-01-2025,123943985,1978,Oman,M,DEF232,Dr. Lily James,Specialist,Inactive,0.841,Cardiology,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Medical,Not Available,Unknown,546
+01-02-2025,123925712,1980,Denmark,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.213,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,DC,1,2,Surgery,14:48:00,No,6837
+01-07-2025,123471775,1958,USA,M,VBN123,Dr. Peter Novak,Consultant,Active,1.1,Orthopaedics,Nextcare Insurance,NC-Blue,Insurance,IP,6,2,Medical,08:14:00,Yes,40832
+01-07-2025,123589778,1981,Denmark,M,DEF232,Dr. Lily James,Specialist,Inactive,1.027,Cardiology,PureWin Insurance,Premium,Insurance,OP,0,1,Surgery,07:05:00,Yes,371
+01-05-2025,123587010,2002,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.954,General Surgery,TotalHealth Insurance,TH-Standard,Insurance,IP,2,1,Medical,09:52:00,Yes,102497
+01-04-2025,123702590,1986,Bangladesh,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.14,General Surgery,PureWin Insurance,Premium,Insurance,OP,0,3,Surgery,Not Available,Unknown,744
+01-10-2025,123533803,2001,UAE,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.099,Obstetrics & Gynecology,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,20:32:00,No,1072
+01-06-2025,123920763,1994,Indonesia,M,VBN123,Dr. Peter Novak,Consultant,Active,0.917,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,2276
+01-10-2025,123878560,1994,Philippines,M,VBN123,Dr. Peter Novak,Consultant,Active,1,Orthopaedics,Self-Pay Corporate,,Corporate,OP,0,2,Medical,Not Available,Unknown,1575
+01-12-2025,123895741,1991,Pakistan,M,VBN123,Dr. Peter Novak,Consultant,Active,1.167,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,IP,5,1,Surgery,08:23:00,Yes,11167
+01-04-2025,123563822,2001,India,M,ABC234,Dr. Thomas Muller,Specialist,Inactive,0.846,Nephrology,PureWin Insurance,Basic,Insurance,OP,0,3,Medical,Not Available,Unknown,1249
+01-03-2025,123463927,1981,Denmark,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.084,General Surgery,TotalHealth Insurance,TH-Standard,Insurance,IP,5,3,Medical,11:42:00,Yes,85494
+01-12-2025,123951386,1982,UAE,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.997,Emergency,Self-Pay Corporate,,Corporate,OP,0,3,Medical,11:20:00,Yes,128
+01-08-2025,123613165,1965,Oman,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.997,Obstetrics & Gynecology,BlueMedic Charity,,Corporate,IP,6,1,Medical,08:48:00,Yes,59712
+01-04-2025,123813009,1990,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.96,General Surgery,Goodhealth Insurance,GH-2,Insurance,IP,4,1,Medical,08:42:00,Yes,41440
+01-08-2025,123950732,1994,Philippines,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.094,General Surgery,PureWin Insurance,Premium,Insurance,IP,3,1,Surgery,15:13:00,No,117884
+01-07-2025,123475672,1999,India,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.202,Nephrology,TotalHealth Insurance,TH-Standard,Insurance,IP,5,1,Medical,12:59:00,No,75631
+01-11-2025,123458977,1966,Philippines,M,DEF232,Dr. Lily James,Specialist,Active,0.998,Cardiology,Nextcare Insurance,NC-Gold,Insurance,DC,1,1,Surgery,Not Available,Unknown,5550
+01-04-2025,123458953,1986,UAE,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.029,Pulmonology,BlueMedic Charity,,Corporate,OP,0,2,Medical,Not Available,Unknown,1116
+01-12-2025,123541041,1988,Pakistan,M,DEF232,Dr. Lily James,Specialist,Active,1.279,Cardiology,Nextcare Insurance,NC-Blue,Insurance,IP,5,1,Surgery,12:20:00,No,39884
+01-12-2025,123484101,1999,Bangladesh,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.105,Emergency,Goodhealth Insurance,GH-2,Insurance,IP,4,3,Surgery,16:40:00,No,67644
+01-03-2025,123902068,1961,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,1.141,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,1,Medical,Not Available,Unknown,399
+01-02-2025,123785622,1993,UAE,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.961,General Surgery,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Medical,Not Available,Unknown,225
+01-07-2025,123989144,1959,UAE,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.218,General Surgery,PureWin Insurance,Basic,Insurance,OP,0,3,Medical,Not Available,Unknown,1791
+01-01-2025,123892005,1964,Pakistan,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.075,General Surgery,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,1458
+01-04-2025,123979973,1998,India,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.101,Obstetrics & Gynecology,Goodhealth Insurance,GH-2,Insurance,OP,0,2,Surgery,Not Available,Unknown,721
+01-06-2025,123585772,1992,Netherlands,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.063,Nephrology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Surgery,Not Available,Unknown,919
+01-12-2025,123612562,1973,Indonesia,F,VBN123,Dr. Peter Novak,Consultant,Active,1.018,Orthopaedics,BlueMedic Charity,,Corporate,IP,5,1,Surgery,07:32:00,Yes,80733
+01-12-2025,123918077,1989,Bangladesh,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,0.968,Gastroenterology,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,Not Available,Unknown,331
+01-02-2025,123589215,1990,USA,M,VBN123,Dr. Peter Novak,Consultant,Active,1.14,Orthopaedics,BlueMedic Charity,,Corporate,IP,3,2,Medical,20:54:00,No,14636
+01-11-2025,123487134,1985,USA,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.999,General Surgery,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Medical,Not Available,Unknown,967
+01-02-2025,123820006,1996,Egypt,M,VBN123,Dr. Peter Novak,Consultant,Active,1.018,Orthopaedics,TotalHealth Insurance,TH-Plus,Insurance,IP,4,2,Medical,10:41:00,Yes,104964
+01-09-2025,123891723,1985,Oman,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.005,General Surgery,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,09:38:00,Yes,1869
+01-11-2025,123982697,1996,Bangladesh,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.099,General Surgery,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,14:36:00,No,900
+01-11-2025,123960719,1999,UAE,F,QWE123,Dr. Omar Khalid,GP,Active,1.123,Family Medicine,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,Not Available,Unknown,1092
+01-03-2025,123521405,2005,Japan,F,ABC234,Dr. Thomas Muller,Specialist,Active,0.943,Nephrology,PureWin Insurance,Advance,Insurance,IP,6,1,Medical,19:37:00,No,98139
+01-11-2025,123876026,1983,Pakistan,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.963,Emergency,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,Not Available,Unknown,418
+01-02-2025,123916292,1957,Philippines,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.108,General Surgery,Nextcare Insurance,NC-Gold,Insurance,DC,1,2,Surgery,08:46:00,Yes,11108
+01-07-2025,123835777,1982,Philippines,F,ABC123,Dr. Shawn Martin,Consultant,Active,1.153,Emergency,Nextcare Insurance,NC-Gold,Insurance,OP,0,2,Medical,Not Available,Unknown,986
+01-06-2025,123901970,1988,India,F,FGH234,Dr. Hana Suzuki,Consultant,Active,1.185,General Surgery,Self-Pay Corporate,,Corporate,OP,0,2,Surgery,Not Available,Unknown,1354
+01-04-2025,123911860,1984,Indonesia,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.875,Pulmonology,Self-Pay Corporate,,Corporate,OP,0,2,Medical,14:22:00,No,165
+01-01-2025,123698922,1976,India,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.094,Gastroenterology,BlueMedic Charity,,Corporate,IP,3,2,Surgery,Not Available,Unknown,79363
+01-10-2025,123477842,1960,USA,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.867,Emergency,PureWin Insurance,Basic,Insurance,OP,0,1,Medical,15:33:00,No,1783
+01-05-2025,123704169,1981,Japan,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,0.973,Pulmonology,BlueMedic Charity,,Corporate,OP,0,2,Medical,Not Available,Unknown,99
+01-08-2025,123565769,1979,India,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.12,General Surgery,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Medical,Not Available,Unknown,502
+01-05-2025,123517868,1981,India,F,ABC123,Dr. Shawn Martin,Consultant,Inactive,0.928,Emergency,BlueMedic Charity,,Corporate,OP,0,2,Surgery,Not Available,Unknown,510
+01-05-2025,123523958,1990,India,F,ABC234,Dr. Thomas Muller,Specialist,Active,0.868,Nephrology,PureWin Insurance,Premium,Insurance,OP,0,1,Surgery,Not Available,Unknown,1574
+01-11-2025,123835370,1998,India,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.947,Emergency,PureWin Insurance,Basic,Insurance,DC,1,1,Surgery,10:46:00,Yes,3487
+01-02-2025,123730464,2005,UAE,F,DEF232,Dr. Lily James,Specialist,Active,1.029,Cardiology,BlueMedic Charity,,Corporate,OP,0,2,Medical,15:04:00,No,336
+01-09-2025,123749671,2002,Pakistan,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.132,Nephrology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,17:46:00,No,2014
+01-09-2025,123861381,1983,Sri Lanka,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.044,General Surgery,PureWin Insurance,Premium,Insurance,DC,1,2,Medical,18:22:00,No,5046
+01-05-2025,123754257,2005,UAE,M,QWE123,Dr. Omar Khalid,GP,Active,1.188,Family Medicine,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Surgery,20:15:00,No,819
+01-04-2025,123798725,1996,Philippines,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,0.934,Emergency,PureWin Insurance,Basic,Insurance,OP,0,3,Surgery,Not Available,Unknown,1325
+01-01-2025,123502797,1984,Pakistan,M,DEF232,Dr. Lily James,Specialist,Active,1.209,Cardiology,PureWin Insurance,Premium,Insurance,IP,4,3,Medical,11:47:00,Yes,27959
+01-12-2025,123919014,1991,India,F,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.009,Emergency,Self-Pay Corporate,,Corporate,DC,1,3,Medical,17:15:00,No,7374
+01-12-2025,123700136,2003,Oman,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.123,Pulmonology,BlueMedic Charity,,Corporate,IP,7,2,Medical,07:21:00,Yes,31800
+01-03-2025,123540435,1990,UAE,F,ABC234,Dr. Thomas Muller,Specialist,Active,0.868,Nephrology,BlueMedic Charity,,Corporate,OP,0,2,Medical,19:30:00,No,533
+01-01-2025,123898449,1963,UAE,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1,Pulmonology,PureWin Insurance,Basic,Insurance,DC,1,2,Medical,21:13:00,No,3318
+01-02-2025,123855633,2002,Bangladesh,M,DEF232,Dr. Lily James,Specialist,Active,1.024,Cardiology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,757
+01-01-2025,123484846,2004,Egypt,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.076,Emergency,Goodhealth Insurance,GH-1,Insurance,DC,1,1,Medical,Not Available,Unknown,7462
+01-10-2025,123561014,1956,UAE,M,FGH123,Dr. Sofia Kim,GP,Inactive,0.961,Internal Medicine,Goodhealth Insurance,GH-2,Insurance,IP,5,2,Surgery,10:42:00,Yes,63741
+01-11-2025,123464567,1958,Philippines,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.963,Emergency,PureWin Insurance,Advance,Insurance,DC,1,1,Medical,14:58:00,No,8257
+01-02-2025,123603292,2002,UAE,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.851,Emergency,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Medical,Not Available,Unknown,652
+01-09-2025,123510389,1991,Sri Lanka,M,DEF232,Dr. Lily James,Specialist,Active,1.161,Cardiology,Self-Pay Corporate,,Corporate,OP,0,3,Surgery,Not Available,Unknown,1673
+01-03-2025,123842187,1984,Philippines,F,FGH123,Dr. Sofia Kim,GP,Active,1.088,Internal Medicine,Goodhealth Insurance,GH-2,Insurance,IP,6,1,Medical,19:09:00,No,66597
+01-05-2025,123740268,1964,India,M,QWE234,Dr. Aisha Rahman,Specialist,Inactive,1.129,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,09:40:00,Yes,140
+01-08-2025,123989230,1977,UAE,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.946,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,08:22:00,Yes,261
+01-09-2025,123863685,1992,Sri Lanka,M,FGH123,Dr. Sofia Kim,GP,Active,1.123,Internal Medicine,PureWin Insurance,Advance,Insurance,DC,1,1,Surgery,19:07:00,No,6052
+01-11-2025,123788679,1997,Egypt,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.226,Emergency,PureWin Insurance,Premium,Insurance,IP,4,3,Medical,Not Available,Unknown,29827
+01-01-2025,123733065,1971,India,F,FGH123,Dr. Sofia Kim,GP,Active,0.796,Internal Medicine,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Medical,Not Available,Unknown,1503
+01-03-2025,123485648,1970,Oman,M,DEF232,Dr. Lily James,Specialist,Active,1.171,Cardiology,Goodhealth Insurance,GH-1,Insurance,OP,0,3,Surgery,Not Available,Unknown,2308
+01-04-2025,123494189,1974,UAE,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.166,Pulmonology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Surgery,Not Available,Unknown,301
+01-04-2025,123791271,1999,Netherlands,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.004,General Surgery,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Surgery,Not Available,Unknown,2124
+01-12-2025,123458382,1980,Sri Lanka,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.909,General Surgery,PureWin Insurance,Premium,Insurance,OP,0,1,Surgery,Not Available,Unknown,1634
+01-10-2025,123479038,1975,Bangladesh,M,ABC456,Dr. Ahmed Zayed,Specialist,Inactive,1.104,Gastroenterology,PureWin Insurance,Basic,Insurance,IP,7,1,Medical,19:56:00,No,19233
+01-04-2025,123575209,1976,Philippines,F,DEF232,Dr. Lily James,Specialist,Active,0.93,Cardiology,PureWin Insurance,Basic,Insurance,IP,3,2,Medical,09:08:00,Yes,97916
+01-12-2025,123936974,1994,Pakistan,M,FGH123,Dr. Sofia Kim,GP,Inactive,1.012,Internal Medicine,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,1141
+01-06-2025,123705657,1989,Bangladesh,F,FGH234,Dr. Hana Suzuki,Consultant,Inactive,1.106,General Surgery,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Surgery,Not Available,Unknown,251
+01-07-2025,123842009,2001,India,M,VBN123,Dr. Peter Novak,Consultant,Inactive,1.082,Orthopaedics,Nextcare Insurance,NC-Blue,Insurance,IP,4,1,Medical,18:06:00,No,7155
+01-06-2025,123679889,1989,Netherlands,M,FGH123,Dr. Sofia Kim,GP,Active,1.097,Internal Medicine,BlueMedic Charity,,Corporate,IP,4,3,Surgery,Not Available,Unknown,82656
+01-02-2025,123550181,1978,India,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.942,Emergency,TotalHealth Insurance,TH-Standard,Insurance,IP,5,1,Medical,18:34:00,No,23319
+01-12-2025,123657908,1958,India,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.12,Gastroenterology,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Surgery,Not Available,Unknown,1251
+01-01-2025,123505896,1963,Egypt,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.181,Pulmonology,PureWin Insurance,Premium,Insurance,IP,6,1,Surgery,11:44:00,Yes,76734
+01-03-2025,123875016,1993,Philippines,M,VBN123,Dr. Peter Novak,Consultant,Active,1.229,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,OP,0,2,Medical,Not Available,Unknown,1666
+01-03-2025,123555841,1981,Egypt,M,DEF232,Dr. Lily James,Specialist,Active,0.919,Cardiology,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,Not Available,Unknown,2459
+01-04-2025,123660748,2004,Indonesia,F,QWE123,Dr. Omar Khalid,GP,Active,1.042,Family Medicine,BlueMedic Charity,,Corporate,IP,5,1,Medical,17:16:00,No,15474
+01-02-2025,123989133,1995,Netherlands,M,VBN123,Dr. Peter Novak,Consultant,Active,1.001,Orthopaedics,Goodhealth Insurance,GH-1,Insurance,OP,0,3,Surgery,Not Available,Unknown,1875
+01-01-2025,123778027,1989,USA,M,FGH234,Dr. Hana Suzuki,Consultant,Active,1.062,General Surgery,PureWin Insurance,Advance,Insurance,OP,0,1,Medical,Not Available,Unknown,1413
+01-09-2025,123705456,1992,UAE,M,DEF232,Dr. Lily James,Specialist,Active,0.906,Cardiology,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,Not Available,Unknown,1346
+01-12-2025,123751398,1970,India,F,ABC234,Dr. Thomas Muller,Specialist,Active,0.933,Nephrology,PureWin Insurance,Basic,Insurance,OP,0,2,Medical,16:01:00,No,933
+01-02-2025,123882539,1978,USA,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.011,Obstetrics & Gynecology,BlueMedic Charity,,Corporate,OP,0,2,Surgery,Not Available,Unknown,216
+01-04-2025,123594437,1987,UAE,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.002,Emergency,PureWin Insurance,Advance,Insurance,IP,4,1,Medical,21:30:00,No,108750
+01-07-2025,123802205,1990,Egypt,F,VBN123,Dr. Peter Novak,Consultant,Inactive,0.992,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,1,Medical,Not Available,Unknown,1491
+01-12-2025,123930743,1963,UAE,M,FGH123,Dr. Sofia Kim,GP,Inactive,1.078,Internal Medicine,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,Not Available,Unknown,821
+01-09-2025,123767392,1999,Oman,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.079,Emergency,Nextcare Insurance,NC-Gold,Insurance,IP,4,1,Surgery,10:32:00,Yes,149242
+01-10-2025,123698917,1982,Bangladesh,M,DEF232,Dr. Lily James,Specialist,Active,0.827,Cardiology,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Medical,Not Available,Unknown,1119
+01-07-2025,123534950,2001,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,1.183,Orthopaedics,TotalHealth Insurance,TH-Plus,Insurance,DC,1,3,Surgery,11:57:00,Yes,6419
+01-06-2025,123591069,1965,Pakistan,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.995,Emergency,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,225
+01-03-2025,123970636,1959,Philippines,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.116,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,205
+01-11-2025,123750444,1970,UAE,M,VBN123,Dr. Peter Novak,Consultant,Active,0.999,Orthopaedics,BlueMedic Charity,,Corporate,OP,0,2,Surgery,Not Available,Unknown,875
+01-10-2025,123619930,1990,Philippines,F,QWE234,Dr. Aisha Rahman,Specialist,Inactive,0.85,Pulmonology,PureWin Insurance,Premium,Insurance,IP,4,1,Medical,15:08:00,No,67805
+01-01-2025,123683591,1999,Germany,M,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.997,General Surgery,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,Not Available,Unknown,417
+01-09-2025,123770440,1987,Philippines,M,VBN123,Dr. Peter Novak,Consultant,Inactive,1.16,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,DC,1,1,Surgery,10:23:00,Yes,3155
+01-02-2025,123748425,1959,Bangladesh,F,QWE234,Dr. Aisha Rahman,Specialist,Active,0.976,Pulmonology,PureWin Insurance,Advance,Insurance,OP,0,1,Medical,07:58:00,Yes,508
+01-09-2025,123836677,1993,Philippines,F,DEF232,Dr. Lily James,Specialist,Active,1.05,Cardiology,PureWin Insurance,Basic,Insurance,OP,0,2,Surgery,Not Available,Unknown,1935
+01-10-2025,123596075,1984,Denmark,F,QWE234,Dr. Aisha Rahman,Specialist,Inactive,0.983,Pulmonology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Surgery,10:51:00,Yes,1467
+01-02-2025,123809182,1988,India,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.216,Gastroenterology,Goodhealth Insurance,GH-2,Insurance,OP,0,3,Medical,Not Available,Unknown,795
+01-06-2025,123696815,1991,Philippines,F,VBN123,Dr. Peter Novak,Consultant,Active,0.927,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,657
+01-02-2025,123967682,1960,Egypt,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.927,General Surgery,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,321
+01-07-2025,123541909,1996,Denmark,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.087,Nephrology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,1,Surgery,Not Available,Unknown,302
+01-12-2025,123536750,1973,Philippines,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.824,Emergency,PureWin Insurance,Advance,Insurance,IP,4,1,Medical,10:33:00,Yes,27872
+01-01-2025,123707141,2001,Indonesia,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.197,Nephrology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,Not Available,Unknown,199
+01-05-2025,123732543,1959,Philippines,M,ABC123,Dr. Shawn Martin,Consultant,Active,1.022,Emergency,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,Not Available,Unknown,770
+01-12-2025,123831835,1972,Egypt,M,FGH123,Dr. Sofia Kim,GP,Active,1.09,Internal Medicine,TotalHealth Insurance,TH-Plus,Insurance,OP,0,2,Medical,Not Available,Unknown,1040
+01-04-2025,123675794,1980,Oman,M,DEF232,Dr. Lily James,Specialist,Active,1.056,Cardiology,Self-Pay Corporate,,Corporate,OP,0,2,Medical,Not Available,Unknown,747
+01-02-2025,123953060,1974,India,M,HJK123,Dr. Priya Iyer,Specialist,Active,0.944,Obstetrics & Gynecology,PureWin Insurance,Premium,Insurance,OP,0,1,Medical,Not Available,Unknown,1190
+01-06-2025,123713947,1985,Netherlands,M,DEF232,Dr. Lily James,Specialist,Active,0.984,Cardiology,PureWin Insurance,Premium,Insurance,IP,2,3,Medical,11:04:00,Yes,20053
+01-07-2025,123526358,1995,USA,F,ABC234,Dr. Thomas Muller,Specialist,Inactive,0.986,Nephrology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Medical,21:44:00,No,395
+01-08-2025,123520854,1957,Denmark,F,FGH234,Dr. Hana Suzuki,Consultant,Active,0.952,General Surgery,TotalHealth Insurance,TH-Plus,Insurance,IP,4,2,Medical,06:51:00,Yes,19358
+01-04-2025,123985531,2000,UAE,M,ABC234,Dr. Thomas Muller,Specialist,Active,1.049,Nephrology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,10:28:00,Yes,769
+01-12-2025,123528947,1996,Indonesia,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.121,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,OP,0,3,Medical,Not Available,Unknown,1212
+01-07-2025,123971630,2000,Denmark,M,FGH123,Dr. Sofia Kim,GP,Active,1.158,Internal Medicine,PureWin Insurance,Advance,Insurance,IP,6,1,Medical,06:41:00,Yes,57806
+01-04-2025,123607272,1984,Denmark,F,HJK123,Dr. Priya Iyer,Specialist,Inactive,1.107,Obstetrics & Gynecology,Nextcare Insurance,NC-Blue,Insurance,OP,0,2,Surgery,Not Available,Unknown,1247
+01-12-2025,123506814,2001,Germany,F,DEF232,Dr. Lily James,Specialist,Active,1.092,Cardiology,Nextcare Insurance,NC-Gold,Insurance,OP,0,2,Medical,07:18:00,Yes,442
+01-12-2025,123621758,1967,Philippines,M,VBN123,Dr. Peter Novak,Consultant,Active,0.93,Orthopaedics,Goodhealth Insurance,GH-2,Insurance,DC,1,1,Medical,06:52:00,Yes,5187
+01-06-2025,123790395,1978,Germany,F,DEF232,Dr. Lily James,Specialist,Active,1.022,Cardiology,Self-Pay Corporate,,Corporate,DC,1,2,Surgery,Not Available,Unknown,6678
+01-01-2025,123688778,1965,Bangladesh,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.207,Gastroenterology,Self-Pay Corporate,,Corporate,IP,5,3,Surgery,07:38:00,Yes,92729
+01-08-2025,123883354,2001,Germany,F,QWE123,Dr. Omar Khalid,GP,Inactive,0.961,Family Medicine,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,Not Available,Unknown,106
+01-07-2025,123788376,1992,Netherlands,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.027,Nephrology,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,Not Available,Unknown,1800
+01-02-2025,123674026,2001,Sri Lanka,M,DEF232,Dr. Lily James,Specialist,Inactive,0.964,Cardiology,TotalHealth Insurance,TH-Standard,Insurance,DC,1,2,Surgery,07:42:00,Yes,6262
+01-08-2025,123801237,2004,UAE,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.022,Emergency,PureWin Insurance,Premium,Insurance,DC,1,3,Surgery,15:07:00,No,7790
+01-11-2025,123984474,1992,India,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.174,Nephrology,PureWin Insurance,Advance,Insurance,OP,0,3,Surgery,Not Available,Unknown,762
+01-02-2025,123680024,1981,USA,F,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.089,Gastroenterology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,06:55:00,Yes,1476
+01-09-2025,123539473,1988,Pakistan,F,HJK123,Dr. Priya Iyer,Specialist,Active,0.861,Obstetrics & Gynecology,Self-Pay Corporate,,Corporate,OP,0,1,Medical,Not Available,Unknown,1385
+01-02-2025,123678377,1985,Philippines,M,FGH123,Dr. Sofia Kim,GP,Active,1.027,Internal Medicine,Goodhealth Insurance,GH-2,Insurance,OP,0,1,Medical,Not Available,Yes,458
+01-09-2025,123913021,1979,UAE,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.997,Emergency,Nextcare Insurance,NC-Gold,Insurance,IP,5,2,Medical,Not Available,No,69454
+01-06-2025,123574389,1956,Sri Lanka,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.042,Pulmonology,PureWin Insurance,Premium,Insurance,OP,0,3,Medical,20:54:00,Unknown,1659
+01-01-2025,123972332,1992,India,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.212,Nephrology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,Not Available,Unknown,2570
+01-12-2025,123776038,1985,Philippines,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.041,Pulmonology,BlueMedic Charity,,Corporate,OP,0,1,Medical,08:02:00,Yes,996
+01-02-2025,123783255,1987,Bangladesh,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.11,Nephrology,PureWin Insurance,Advance,Insurance,OP,0,1,Surgery,Not Available,Unknown,632
+01-08-2025,123628469,1960,Sri Lanka,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.261,Nephrology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,Not Available,Unknown,461
+01-03-2025,123956727,1980,Sri Lanka,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.97,Pulmonology,PureWin Insurance,Basic,Insurance,OP,0,3,Medical,08:18:00,Yes,928
+01-12-2025,123475616,1970,India,M,DEF232,Dr. Lily James,Specialist,Inactive,0.861,Cardiology,TotalHealth Insurance,TH-Plus,Insurance,OP,0,1,Medical,11:17:00,Yes,389
+01-09-2025,123618476,1970,Indonesia,M,FGH234,Dr. Hana Suzuki,Consultant,Active,0.998,General Surgery,PureWin Insurance,Advance,Insurance,DC,1,2,Surgery,18:12:00,No,4945
+01-10-2025,123683609,1956,Pakistan,F,VBN123,Dr. Peter Novak,Consultant,Active,0.975,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,233
+01-06-2025,123715637,1969,Philippines,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.805,Emergency,PureWin Insurance,Premium,Insurance,OP,0,3,Medical,Not Available,Unknown,1580
+01-06-2025,123713927,1985,USA,M,ABC456,Dr. Ahmed Zayed,Specialist,Active,1.009,Gastroenterology,PureWin Insurance,Basic,Insurance,OP,0,1,Surgery,Not Available,Unknown,1696
+01-08-2025,123536470,1982,India,M,QWE123,Dr. Omar Khalid,GP,Active,1.056,Family Medicine,PureWin Insurance,Premium,Insurance,OP,0,3,Surgery,Not Available,Unknown,2656
+01-10-2025,123578722,1990,UAE,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.148,Obstetrics & Gynecology,Goodhealth Insurance,GH-1,Insurance,OP,0,2,Surgery,Not Available,Unknown,1440
+01-11-2025,123507811,1993,UAE,M,VBN123,Dr. Peter Novak,Consultant,Inactive,1.035,Orthopaedics,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,2235
+01-01-2025,123767416,1984,Oman,F,VBN123,Dr. Peter Novak,Consultant,Inactive,0.9,Orthopaedics,PureWin Insurance,Basic,Insurance,OP,0,1,Medical,Not Available,Unknown,266
+01-08-2025,123646872,1982,India,F,VBN123,Dr. Peter Novak,Consultant,Inactive,1.059,Orthopaedics,TotalHealth Insurance,TH-Standard,Insurance,OP,0,2,Medical,20:30:00,No,654
+01-02-2025,123763779,1966,Egypt,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.192,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,IP,4,2,Surgery,10:00:00,Yes,102342
+01-04-2025,123776804,1996,USA,F,QWE234,Dr. Aisha Rahman,Specialist,Active,0.883,Pulmonology,PureWin Insurance,Basic,Insurance,OP,0,1,Medical,Not Available,Unknown,1911
+01-10-2025,123837888,2002,India,M,ABC234,Dr. Thomas Muller,Specialist,Active,0.951,Nephrology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,14:17:00,No,1905
+01-04-2025,123753586,1984,UAE,F,ABC123,Dr. Shawn Martin,Consultant,Inactive,0.777,Emergency,PureWin Insurance,Premium,Insurance,OP,0,2,Medical,Not Available,Unknown,146
+01-10-2025,123808483,1988,India,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.961,Pulmonology,Self-Pay Corporate,,Corporate,OP,0,2,Surgery,Not Available,Unknown,162
+01-06-2025,123775409,1972,Bangladesh,F,ABC123,Dr. Shawn Martin,Consultant,Active,0.886,Emergency,PureWin Insurance,Advance,Insurance,OP,0,1,Medical,Not Available,Unknown,820
+01-03-2025,123810922,1989,India,F,ABC234,Dr. Thomas Muller,Specialist,Active,1.007,Nephrology,PureWin Insurance,Advance,Insurance,OP,0,2,Medical,Not Available,Unknown,481
+01-05-2025,123791453,1986,Bangladesh,M,ABC123,Dr. Shawn Martin,Consultant,Active,0.935,Emergency,Goodhealth Insurance,GH-1,Insurance,OP,0,1,Surgery,Not Available,Unknown,2164
+01-07-2025,123628020,1974,Bangladesh,F,QWE234,Dr. Aisha Rahman,Specialist,Active,1.059,Pulmonology,PureWin Insurance,Basic,Insurance,OP,0,3,Surgery,06:41:00,Yes,483
+01-10-2025,123589978,1993,UAE,F,DEF232,Dr. Lily James,Specialist,Active,0.987,Cardiology,PureWin Insurance,Advance,Insurance,DC,1,3,Surgery,18:45:00,No,6872
+01-08-2025,123884362,1989,Sri Lanka,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.047,Pulmonology,PureWin Insurance,Premium,Insurance,DC,1,1,Surgery,08:26:00,Yes,2684
+01-12-2025,123642429,1988,Egypt,M,HJK123,Dr. Priya Iyer,Specialist,Active,1.003,Obstetrics & Gynecology,TotalHealth Insurance,TH-Plus,Insurance,DC,1,1,Medical,19:24:00,No,4985
+01-11-2025,123754733,1986,Indonesia,F,HJK123,Dr. Priya Iyer,Specialist,Active,1.07,Obstetrics & Gynecology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,1,Surgery,19:52:00,No,401
+01-10-2025,123563153,2004,UAE,M,ABC234,Dr. Thomas Muller,Specialist,Inactive,1.071,Nephrology,TotalHealth Insurance,TH-Standard,Insurance,OP,0,2,Surgery,11:17:00,Yes,1718
+01-08-2025,123690691,1976,Egypt,M,QWE234,Dr. Aisha Rahman,Specialist,Active,0.886,Pulmonology,Nextcare Insurance,NC-Gold,Insurance,OP,0,3,Medical,14:26:00,No,1451
+01-04-2025,123744136,1990,Pakistan,M,QWE234,Dr. Aisha Rahman,Specialist,Active,1.008,Pulmonology,PureWin Insurance,Premium,Insurance,OP,0,2,Surgery,Not Available,Unknown,1170
+01-05-2025,123796550,1985,USA,F,FGH234,Dr. Hana Suzuki,Consultant,Inactive,0.989,General Surgery,BlueMedic Charity,,Corporate,OP,0,1,Surgery,09:07:00,Yes,907
+01-02-2025,123742348,2000,Netherlands,M,VBN123,Dr. Peter Novak,Consultant,Active,0.92,Orthopaedics,Nextcare Insurance,NC-Gold,Insurance,OP,0,1,Medical,Not Available,Unknown,1685
+01-05-2025,123652197,1963,India,M,DEF232,Dr. Lily James,Specialist,Active,1.037,Cardiology,Nextcare Insurance,NC-Blue,Insurance,OP,0,1,Surgery,Not Available,Unknown,1552
+01-12-2025,123979202,1980,Bangladesh,F,FGH123,Dr. Sofia Kim,GP,Active,1.253,Internal Medicine,TotalHealth Insurance,TH-Plus,Insurance,OP,0,3,Surgery,Not Available,Unknown,2013
+01-06-2025,123734929,1971,USA,M,ABC123,Dr. Shawn Martin,Consultant,Inactive,1.151,Emergency,PureWin Insurance,Advance,Insurance,OP,0,2,Surgery,Not Available,Unknown,1533
