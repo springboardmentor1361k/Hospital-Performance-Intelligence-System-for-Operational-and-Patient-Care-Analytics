@@ -1,0 +1,7 @@
+kpi,value,unit,formula,source
+Total Admissions,45000,count,COUNTD(admission_id),hospital_overview_dataset
+Occupancy Rate,30.28,%,sum(occupied_beds_count) / sum(total_beds) x 100,department_analytics_dataset
+Average Length of Stay,5.16,days,mean(discharge_date - admission_date),hospital_overview_dataset
+Readmission Rate,2.19,%,count(readmission_flag=1) / count(all admissions) x 100 [30-day same-patient proxy],hospital_overview_dataset
+Bed Utilization Rate,30.28,%,sum(units_in_use) / sum(total_units_available) x 100 [Bed resource_type only],resource_utilization_dataset
+Department Efficiency Score,see department_efficiency_scores.csv,0-100 scale,30% occupancy-fit + 30% LOS-rank + 25% readmission + 15% satisfaction (re-weighted when a component is unavailable),department_analytics_dataset
