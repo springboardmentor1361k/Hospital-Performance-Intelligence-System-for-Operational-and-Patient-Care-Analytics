@@ -20,6 +20,6 @@ __pycache__/
 *.swo
 
 # Local directory junctions
-notebook/data
 notebooks/data
+
 
