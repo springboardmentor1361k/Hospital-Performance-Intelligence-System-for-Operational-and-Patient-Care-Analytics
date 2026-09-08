@@ -1,0 +1,404 @@
+==========================================================================================
+FILE: patients.csv
+==========================================================================================
+
+--- shape ---
+(1000, 7)
+
+--- columns ---
+['patient_id', 'name', 'age', 'arrival_date', 'departure_date', 'service', 'satisfaction']
+
+--- head ---
+     patient_id               name  age arrival_date departure_date           service  satisfaction
+0  PAT-09484753  Richard Rodriguez   24   2025-03-16     2025-03-22           surgery            61
+1  PAT-f0644084     Shannon Walker    6   2025-12-13     2025-12-14           surgery            83
+2  PAT-ac6162e4       Julia Torres   24   2025-06-29     2025-07-05  general_medicine            83
+3  PAT-3dda2bb5    Crystal Johnson   32   2025-10-12     2025-10-23         emergency            81
+4  PAT-08591375        Garrett Lin   25   2025-02-18     2025-02-25               ICU            76
+
+--- info ---
+<class 'pandas.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 7 columns):
+ #   Column          Non-Null Count  Dtype
+---  ------          --------------  -----
+ 0   patient_id      1000 non-null   str  
+ 1   name            1000 non-null   str  
+ 2   age             1000 non-null   int64
+ 3   arrival_date    1000 non-null   str  
+ 4   departure_date  1000 non-null   str  
+ 5   service         1000 non-null   str  
+ 6   satisfaction    1000 non-null   int64
+dtypes: int64(2), str(5)
+memory usage: 54.8 KB
+
+--- describe (numeric) ---
+               age  satisfaction
+count  1000.000000   1000.000000
+mean     45.337000     79.597000
+std      25.999912     11.550325
+min       0.000000     60.000000
+25%      23.000000     70.000000
+50%      46.000000     80.000000
+75%      68.000000     89.250000
+max      89.000000     99.000000
+
+--- describe (all, incl categorical) ---
+          patient_id           name          age arrival_date departure_date    service  satisfaction
+count           1000           1000  1000.000000         1000           1000       1000   1000.000000
+unique          1000            993          NaN          344            337          4           NaN
+top     PAT-09484753  Matthew Moore          NaN   2025-01-19     2025-10-16  emergency           NaN
+freq               1              2          NaN            9              8        263           NaN
+mean             NaN            NaN    45.337000          NaN            NaN        NaN     79.597000
+std              NaN            NaN    25.999912          NaN            NaN        NaN     11.550325
+min              NaN            NaN     0.000000          NaN            NaN        NaN     60.000000
+25%              NaN            NaN    23.000000          NaN            NaN        NaN     70.000000
+50%              NaN            NaN    46.000000          NaN            NaN        NaN     80.000000
+75%              NaN            NaN    68.000000          NaN            NaN        NaN     89.250000
+max              NaN            NaN    89.000000          NaN            NaN        NaN     99.000000
+
+--- isnull().sum() ---
+patient_id        0
+name              0
+age               0
+arrival_date      0
+departure_date    0
+service           0
+satisfaction      0
+dtype: int64
+
+--- duplicated().sum() ---
+0
+
+--- nunique() ---
+patient_id        1000
+name               993
+age                 90
+arrival_date       344
+departure_date     337
+service              4
+satisfaction        40
+dtype: int64
+
+
+==========================================================================================
+FILE: services_weekly.csv
+==========================================================================================
+
+--- shape ---
+(208, 10)
+
+--- columns ---
+['week', 'month', 'service', 'available_beds', 'patients_request', 'patients_admitted', 'patients_refused', 'patient_satisfaction', 'staff_morale', 'event']
+
+--- head ---
+   week  month           service  available_beds  patients_request  patients_admitted  patients_refused  patient_satisfaction  staff_morale event
+0     1      1         emergency              32                76                 32                44                    67            70  none
+1     1      1           surgery              45               130                 45                85                    83            78   flu
+2     1      1  general_medicine              37               201                 37               164                    97            43   flu
+3     1      1               ICU              22                31                 22                 9                    84            91   flu
+4     2      1         emergency              28               169                 28               141                    75            64  none
+
+--- info ---
+<class 'pandas.DataFrame'>
+RangeIndex: 208 entries, 0 to 207
+Data columns (total 10 columns):
+ #   Column                Non-Null Count  Dtype
+---  ------                --------------  -----
+ 0   week                  208 non-null    int64
+ 1   month                 208 non-null    int64
+ 2   service               208 non-null    str  
+ 3   available_beds        208 non-null    int64
+ 4   patients_request      208 non-null    int64
+ 5   patients_admitted     208 non-null    int64
+ 6   patients_refused      208 non-null    int64
+ 7   patient_satisfaction  208 non-null    int64
+ 8   staff_morale          208 non-null    int64
+ 9   event                 208 non-null    str  
+dtypes: int64(8), str(2)
+memory usage: 16.4 KB
+
+--- describe (numeric) ---
+             week       month  available_beds  patients_request  patients_admitted  patients_refused  patient_satisfaction  staff_morale
+count  208.000000  208.000000      208.000000        208.000000         208.000000        208.000000            208.000000    208.000000
+mean    26.500000    6.923077       30.346154         64.870192          28.129808         36.740385             80.000000     72.567308
+std     15.044539    3.634755       15.172929         58.738572          14.676791         55.015763             11.125546     15.457759
+min      1.000000    1.000000        8.000000          5.000000           5.000000          0.000000             60.000000     31.000000
+25%     13.750000    4.000000       18.000000         23.750000          16.000000          0.000000             70.000000     60.000000
+50%     26.500000    7.000000       27.500000         49.000000          26.000000         13.500000             81.000000     73.000000
+75%     39.250000   10.000000       40.000000         86.000000          37.000000         52.500000             89.000000     86.000000
+max     52.000000   12.000000       74.000000        388.000000          74.000000        363.000000             99.000000     99.000000
+
+--- describe (all, incl categorical) ---
+              week       month    service  available_beds  patients_request  patients_admitted  patients_refused  patient_satisfaction  staff_morale event
+count   208.000000  208.000000        208      208.000000        208.000000         208.000000        208.000000            208.000000    208.000000   208
+unique         NaN         NaN          4             NaN               NaN                NaN               NaN                   NaN           NaN     4
+top            NaN         NaN  emergency             NaN               NaN                NaN               NaN                   NaN           NaN  none
+freq           NaN         NaN         52             NaN               NaN                NaN               NaN                   NaN           NaN   164
+mean     26.500000    6.923077        NaN       30.346154         64.870192          28.129808         36.740385             80.000000     72.567308   NaN
+std      15.044539    3.634755        NaN       15.172929         58.738572          14.676791         55.015763             11.125546     15.457759   NaN
+min       1.000000    1.000000        NaN        8.000000          5.000000           5.000000          0.000000             60.000000     31.000000   NaN
+25%      13.750000    4.000000        NaN       18.000000         23.750000          16.000000          0.000000             70.000000     60.000000   NaN
+50%      26.500000    7.000000        NaN       27.500000         49.000000          26.000000         13.500000             81.000000     73.000000   NaN
+75%      39.250000   10.000000        NaN       40.000000         86.000000          37.000000         52.500000             89.000000     86.000000   NaN
+max      52.000000   12.000000        NaN       74.000000        388.000000          74.000000        363.000000             99.000000     99.000000   NaN
+
+--- isnull().sum() ---
+week                    0
+month                   0
+service                 0
+available_beds          0
+patients_request        0
+patients_admitted       0
+patients_refused        0
+patient_satisfaction    0
+staff_morale            0
+event                   0
+dtype: int64
+
+--- duplicated().sum() ---
+0
+
+--- nunique() ---
+week                     52
+month                    12
+service                   4
+available_beds           56
+patients_request        110
+patients_admitted        56
+patients_refused         80
+patient_satisfaction     40
+staff_morale             55
+event                     4
+dtype: int64
+
+
+==========================================================================================
+FILE: staff.csv
+==========================================================================================
+
+--- shape ---
+(110, 4)
+
+--- columns ---
+['staff_id', 'staff_name', 'role', 'service']
+
+--- head ---
+       staff_id       staff_name    role    service
+0  STF-5ca26577     Allison Hill  doctor  emergency
+1  STF-02ae59ca      Noah Rhodes  doctor  emergency
+2  STF-d8006e7c  Angie Henderson  doctor  emergency
+3  STF-212d8b31    Daniel Wagner  doctor  emergency
+4  STF-107a58e4  Cristian Santos  doctor  emergency
+
+--- info ---
+<class 'pandas.DataFrame'>
+RangeIndex: 110 entries, 0 to 109
+Data columns (total 4 columns):
+ #   Column      Non-Null Count  Dtype
+---  ------      --------------  -----
+ 0   staff_id    110 non-null    str  
+ 1   staff_name  110 non-null    str  
+ 2   role        110 non-null    str  
+ 3   service     110 non-null    str  
+dtypes: str(4)
+memory usage: 3.6 KB
+
+--- describe (numeric) ---
+            staff_id    staff_name   role service
+count            110           110    110     110
+unique           110           110      3       4
+top     STF-5ca26577  Allison Hill  nurse     ICU
+freq               1             1     69      32
+
+--- describe (all, incl categorical) ---
+            staff_id    staff_name   role service
+count            110           110    110     110
+unique           110           110      3       4
+top     STF-5ca26577  Allison Hill  nurse     ICU
+freq               1             1     69      32
+
+--- isnull().sum() ---
+staff_id      0
+staff_name    0
+role          0
+service       0
+dtype: int64
+
+--- duplicated().sum() ---
+0
+
+--- nunique() ---
+staff_id      110
+staff_name    110
+role            3
+service         4
+dtype: int64
+
+
+==========================================================================================
+FILE: staff_schedule.csv
+==========================================================================================
+
+--- shape ---
+(6552, 6)
+
+--- columns ---
+['week', 'staff_id', 'staff_name', 'role', 'service', 'present']
+
+--- head ---
+   week      staff_id    staff_name    role    service  present
+0     1  STF-b77cdc60  Allison Hill  doctor  emergency        1
+1     2  STF-b77cdc60  Allison Hill  doctor  emergency        1
+2     3  STF-b77cdc60  Allison Hill  doctor  emergency        0
+3     4  STF-b77cdc60  Allison Hill  doctor  emergency        1
+4     5  STF-b77cdc60  Allison Hill  doctor  emergency        1
+
+--- info ---
+<class 'pandas.DataFrame'>
+RangeIndex: 6552 entries, 0 to 6551
+Data columns (total 6 columns):
+ #   Column      Non-Null Count  Dtype
+---  ------      --------------  -----
+ 0   week        6552 non-null   int64
+ 1   staff_id    6552 non-null   str  
+ 2   staff_name  6552 non-null   str  
+ 3   role        6552 non-null   str  
+ 4   service     6552 non-null   str  
+ 5   present     6552 non-null   int64
+dtypes: int64(2), str(4)
+memory usage: 307.3 KB
+
+--- describe (numeric) ---
+              week      present
+count  6552.000000  6552.000000
+mean     26.500000     0.599817
+std      15.009476     0.489973
+min       1.000000     0.000000
+25%      13.750000     0.000000
+50%      26.500000     1.000000
+75%      39.250000     1.000000
+max      52.000000     1.000000
+
+--- describe (all, incl categorical) ---
+               week      staff_id    staff_name   role    service      present
+count   6552.000000          6552          6552   6552       6552  6552.000000
+unique          NaN           126           126      3          4          NaN
+top             NaN  STF-b77cdc60  Allison Hill  nurse  emergency          NaN
+freq            NaN            52            52   3796       2028          NaN
+mean      26.500000           NaN           NaN    NaN        NaN     0.599817
+std       15.009476           NaN           NaN    NaN        NaN     0.489973
+min        1.000000           NaN           NaN    NaN        NaN     0.000000
+25%       13.750000           NaN           NaN    NaN        NaN     0.000000
+50%       26.500000           NaN           NaN    NaN        NaN     1.000000
+75%       39.250000           NaN           NaN    NaN        NaN     1.000000
+max       52.000000           NaN           NaN    NaN        NaN     1.000000
+
+--- isnull().sum() ---
+week          0
+staff_id      0
+staff_name    0
+role          0
+service       0
+present       0
+dtype: int64
+
+--- duplicated().sum() ---
+0
+
+--- nunique() ---
+week           52
+staff_id      126
+staff_name    126
+role            3
+service         4
+present         2
+dtype: int64
+
+
+==========================================================================================
+FILE: hospital_insights_summary.csv
+==========================================================================================
+
+--- shape ---
+(208, 8)
+
+--- columns ---
+['week', 'service', 'patients_admitted', 'avg_stay', 'avg_satisfaction', 'max_occupancy', 'staff_count', 'recommended_staff']
+
+--- head ---
+   week           service  patients_admitted   avg_stay  avg_satisfaction  max_occupancy  staff_count  recommended_staff
+0     1               ICU                  7   5.428571         84.857143             14           34                2.0
+1     1         emergency                  4   9.250000         86.000000             13           39                1.0
+2     1  general_medicine                  5   7.400000         77.400000             12           28                1.0
+3     1           surgery                  6  10.000000         84.666667             11           25                2.0
+4     2               ICU                  4   8.000000         69.250000             13           34                1.0
+
+--- info ---
+<class 'pandas.DataFrame'>
+RangeIndex: 208 entries, 0 to 207
+Data columns (total 8 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   week               208 non-null    int64  
+ 1   service            208 non-null    str    
+ 2   patients_admitted  208 non-null    int64  
+ 3   avg_stay           208 non-null    float64
+ 4   avg_satisfaction   208 non-null    float64
+ 5   max_occupancy      208 non-null    int64  
+ 6   staff_count        208 non-null    int64  
+ 7   recommended_staff  208 non-null    float64
+dtypes: float64(3), int64(4), str(1)
+memory usage: 13.1 KB
+
+--- describe (numeric) ---
+             week  patients_admitted    avg_stay  avg_satisfaction  max_occupancy  staff_count  recommended_staff
+count  208.000000         208.000000  208.000000        208.000000     208.000000   208.000000         208.000000
+mean    26.500000           4.807692    7.494813         79.429424      11.427885    31.500000           1.326923
+std     15.044539           2.113115    2.207160          5.987425       2.656610     5.421375           0.470221
+min      1.000000           1.000000    2.000000         60.000000       3.000000    25.000000           1.000000
+25%     13.750000           3.000000    6.000000         75.650000      10.000000    27.250000           1.000000
+50%     26.500000           5.000000    7.500000         79.514286      12.000000    31.000000           1.000000
+75%     39.250000           6.000000    8.750000         83.500000      13.000000    35.250000           2.000000
+max     52.000000          10.000000   14.000000         96.500000      14.000000    39.000000           2.000000
+
+--- describe (all, incl categorical) ---
+              week service  patients_admitted    avg_stay  avg_satisfaction  max_occupancy  staff_count  recommended_staff
+count   208.000000     208         208.000000  208.000000        208.000000     208.000000   208.000000         208.000000
+unique         NaN       4                NaN         NaN               NaN            NaN          NaN                NaN
+top            NaN     ICU                NaN         NaN               NaN            NaN          NaN                NaN
+freq           NaN      52                NaN         NaN               NaN            NaN          NaN                NaN
+mean     26.500000     NaN           4.807692    7.494813         79.429424      11.427885    31.500000           1.326923
+std      15.044539     NaN           2.113115    2.207160          5.987425       2.656610     5.421375           0.470221
+min       1.000000     NaN           1.000000    2.000000         60.000000       3.000000    25.000000           1.000000
+25%      13.750000     NaN           3.000000    6.000000         75.650000      10.000000    27.250000           1.000000
+50%      26.500000     NaN           5.000000    7.500000         79.514286      12.000000    31.000000           1.000000
+75%      39.250000     NaN           6.000000    8.750000         83.500000      13.000000    35.250000           2.000000
+max      52.000000     NaN          10.000000   14.000000         96.500000      14.000000    39.000000           2.000000
+
+--- isnull().sum() ---
+week                 0
+service              0
+patients_admitted    0
+avg_stay             0
+avg_satisfaction     0
+max_occupancy        0
+staff_count          0
+recommended_staff    0
+dtype: int64
+
+--- duplicated().sum() ---
+0
+
+--- nunique() ---
+week                  52
+service                4
+patients_admitted     10
+avg_stay              93
+avg_satisfaction     142
+max_occupancy         12
+staff_count            4
+recommended_staff      2
+dtype: int64
+
+
