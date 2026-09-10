@@ -1,0 +1,501 @@
+resource_utilization_id,date,hospital_id,hospital_name,department_id,department_name,resource_type,resource_category,total_units_available,units_in_use,units_under_maintenance,utilization_rate_pct,shortage_flag,capacity_hours,utilized_hours,idle_hours,downtime_hours,nurses_on_duty_snapshot,doctors_on_duty_snapshot,overtime_hours,avg_response_time_minutes,resource_condition,maintenance_due_flag,last_maintenance_date
+R0001,2026-01-01,H001,CityCare General Hospital,D01,Emergency Department,Bed,General Bed,28,21,2,75.0,0,24,18.0,6.0,0.77,11,2,2.39,22.77,Good,0,2025-10-01
+R0002,2026-01-06,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Patient Monitor,5,2,1,40.0,0,24,9.6,14.4,4.86,10,2,0.84,21.07,Good,0,2025-09-14
+R0003,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,7,3,2,42.86,0,12,5.14,6.86,0.1,8,5,0.93,21.49,Fair,0,2025-10-04
+R0004,2026-01-16,H001,CityCare General Hospital,D02,General Medicine,Bed,ICU Bed,14,10,1,71.43,0,24,17.14,6.86,4.98,13,2,2.09,10.19,Good,0,2025-11-12
+R0005,2026-01-21,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Ventilator,18,10,2,55.56,0,24,13.33,10.67,3.87,3,3,4.28,15.7,Good,0,2025-10-24
+R0006,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,28,17,1,60.71,0,12,7.29,4.71,0.01,14,2,3.64,10.23,Good,0,2025-12-08
+R0007,2026-01-31,H001,CityCare General Hospital,D03,Cardiology,Bed,Private Bed,14,12,1,85.71,0,24,20.57,3.43,0.21,11,5,0.33,18.97,Good,0,2026-01-14
+R0008,2026-02-05,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,X-Ray Unit,18,11,1,61.11,0,24,14.67,9.33,2.62,3,5,4.34,9.83,Good,0,2026-01-05
+R0009,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,27,18,1,66.67,0,12,8.0,4.0,1.68,9,4,3.54,22.89,Good,0,2025-12-17
+R0010,2026-02-15,H001,CityCare General Hospital,D04,Orthopedics,Bed,Semi-Private Bed,38,31,4,81.58,0,24,19.58,4.42,4.92,6,2,4.99,9.6,Fair,1,2025-11-19
+R0011,2026-02-20,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Infusion Pump,27,17,2,62.96,0,24,15.11,8.89,3.81,8,2,3.47,15.35,Good,1,2025-11-14
+R0012,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,29,17,2,58.62,0,12,7.03,4.97,1.02,10,2,3.56,11.33,Good,0,2025-11-13
+R0013,2026-03-02,H001,CityCare General Hospital,D05,ICU,Bed,General Bed,18,11,1,61.11,0,24,14.67,9.33,4.54,8,2,3.2,3.05,Needs Maintenance,1,2025-11-08
+R0014,2026-03-07,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Patient Monitor,10,5,2,50.0,0,24,12.0,12.0,1.17,9,1,3.97,7.28,Needs Maintenance,1,2026-01-03
+R0015,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,13,7,2,53.85,0,12,6.46,5.54,0.9,14,2,0.92,11.81,Good,0,2025-12-03
+R0016,2026-03-17,H001,CityCare General Hospital,D06,Pediatrics,Bed,ICU Bed,21,11,0,52.38,0,24,12.57,11.43,2.55,3,2,2.01,11.21,Needs Maintenance,1,2025-12-03
+R0017,2026-03-22,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Ventilator,15,10,2,66.67,0,24,16.0,8.0,2.84,7,3,1.59,15.8,Needs Maintenance,1,2025-11-26
+R0018,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,25,16,1,64.0,0,12,7.68,4.32,0.51,10,1,3.22,14.4,Good,0,2025-12-19
+R0019,2026-04-01,H001,CityCare General Hospital,D07,General Surgery,Bed,Private Bed,17,14,1,82.35,0,24,19.76,4.24,2.48,3,1,2.56,15.13,Good,0,2026-03-20
+R0020,2026-04-06,H002,Green Valley Medical Center,D05,ICU,Equipment,X-Ray Unit,26,21,1,80.77,0,24,19.38,4.62,1.48,10,2,1.74,14.9,Good,0,2026-02-04
+R0021,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,5,2,0,40.0,0,12,4.8,7.2,1.25,11,3,0.17,10.07,Good,0,2025-12-22
+R0022,2026-04-16,H001,CityCare General Hospital,D01,Emergency Department,Bed,Semi-Private Bed,10,4,0,40.0,0,24,9.6,14.4,1.02,12,5,2.24,23.56,Good,0,2026-03-03
+R0023,2026-04-21,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Infusion Pump,16,12,1,75.0,0,24,18.0,6.0,0.24,7,1,4.79,16.13,Good,1,2026-03-07
+R0024,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,26,20,3,76.92,0,12,9.23,2.77,1.73,7,3,2.95,20.24,Good,0,2026-02-19
+R0025,2026-05-01,H001,CityCare General Hospital,D02,General Medicine,Bed,General Bed,27,13,2,48.15,0,24,11.56,12.44,3.49,5,3,2.57,21.27,Good,0,2026-01-31
+R0026,2026-05-06,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Patient Monitor,29,22,2,75.86,0,24,18.21,5.79,3.77,3,4,3.1,21.84,Good,0,2026-01-26
+R0027,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,30,17,2,56.67,0,12,6.8,5.2,1.39,4,4,2.55,12.4,Good,0,2026-02-19
+R0028,2026-05-16,H001,CityCare General Hospital,D03,Cardiology,Bed,ICU Bed,29,24,2,82.76,0,24,19.86,4.14,3.76,5,5,3.61,14.13,Good,0,2026-02-03
+R0029,2026-05-21,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Ventilator,19,10,1,52.63,0,24,12.63,11.37,4.19,5,3,3.88,19.22,Fair,0,2026-04-22
+R0030,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,30,27,1,90.0,1,12,10.8,1.2,1.85,3,5,0.73,24.44,Good,0,2026-05-02
+R0031,2026-05-31,H001,CityCare General Hospital,D04,Orthopedics,Bed,Private Bed,26,14,5,53.85,0,24,12.92,11.08,3.47,9,3,3.92,7.93,Good,1,2026-04-30
+R0032,2026-06-05,H002,Green Valley Medical Center,D02,General Medicine,Equipment,X-Ray Unit,17,7,0,41.18,0,24,9.88,14.12,1.63,6,5,1.99,4.63,Good,0,2026-03-01
+R0033,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,11,6,0,54.55,0,12,6.55,5.45,1.52,5,5,3.83,23.41,Needs Maintenance,1,2026-03-23
+R0034,2026-06-15,H001,CityCare General Hospital,D05,ICU,Bed,Semi-Private Bed,27,18,1,66.67,0,24,16.0,8.0,1.87,14,4,4.44,23.48,Good,0,2026-05-10
+R0035,2026-06-20,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Infusion Pump,11,6,0,54.55,0,24,13.09,10.91,2.52,8,4,2.36,13.62,Good,0,2026-04-17
+R0036,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,30,15,3,50.0,0,12,6.0,6.0,1.9,4,1,1.16,7.89,Fair,1,2026-05-07
+R0037,2026-01-01,H001,CityCare General Hospital,D06,Pediatrics,Bed,General Bed,40,27,3,67.5,0,24,16.2,7.8,2.88,13,5,0.52,15.17,Fair,0,2025-12-13
+R0038,2026-01-06,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Patient Monitor,19,14,2,73.68,0,24,17.68,6.32,3.59,8,5,0.82,12.45,Good,0,2025-11-08
+R0039,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,25,14,3,56.0,0,12,6.72,5.28,1.54,13,1,4.43,4.75,Good,0,2025-10-14
+R0040,2026-01-16,H001,CityCare General Hospital,D07,General Surgery,Bed,ICU Bed,50,25,4,50.0,0,24,12.0,12.0,0.34,8,4,3.68,10.47,Good,0,2025-10-23
+R0041,2026-01-21,H002,Green Valley Medical Center,D05,ICU,Equipment,Ventilator,17,5,0,29.41,0,24,7.06,16.94,3.84,7,5,3.83,16.18,Good,0,2025-12-08
+R0042,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,8,6,0,75.0,0,12,9.0,3.0,1.73,13,3,3.65,8.21,Good,0,2025-12-13
+R0043,2026-01-31,H001,CityCare General Hospital,D01,Emergency Department,Bed,Private Bed,50,32,2,64.0,0,24,15.36,8.64,0.81,10,4,0.97,19.17,Good,0,2026-01-16
+R0044,2026-02-05,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,X-Ray Unit,11,5,0,45.45,0,24,10.91,13.09,0.93,3,2,2.61,17.81,Good,0,2025-12-17
+R0045,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,15,10,1,66.67,0,12,8.0,4.0,0.74,4,3,1.5,5.97,Good,1,2025-12-20
+R0046,2026-02-15,H001,CityCare General Hospital,D02,General Medicine,Bed,Semi-Private Bed,39,30,2,76.92,0,24,18.46,5.54,2.21,13,4,2.84,10.5,Fair,0,2025-12-13
+R0047,2026-02-20,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Infusion Pump,5,4,0,80.0,0,24,19.2,4.8,4.35,14,5,4.42,10.53,Good,0,2026-02-08
+R0048,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,20,11,2,55.0,0,12,6.6,5.4,0.62,11,3,1.43,22.64,Fair,0,2025-12-01
+R0049,2026-03-02,H001,CityCare General Hospital,D03,Cardiology,Bed,General Bed,32,13,2,40.62,0,24,9.75,14.25,1.0,14,3,0.43,18.89,Good,1,2025-11-02
+R0050,2026-03-07,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Patient Monitor,15,15,0,100.0,1,24,24.0,0.0,0.96,8,1,2.77,8.0,Fair,0,2026-01-12
+R0051,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,13,8,2,61.54,0,12,7.38,4.62,1.4,4,3,3.81,21.27,Good,1,2026-02-10
+R0052,2026-03-17,H001,CityCare General Hospital,D04,Orthopedics,Bed,ICU Bed,25,10,2,40.0,0,24,9.6,14.4,2.87,14,5,1.38,20.55,Needs Maintenance,1,2026-02-01
+R0053,2026-03-22,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Ventilator,10,6,0,60.0,0,24,14.4,9.6,2.76,9,1,0.04,10.57,Fair,0,2025-11-29
+R0054,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,22,14,1,63.64,0,12,7.64,4.36,1.25,8,1,2.28,16.64,Good,0,2026-01-14
+R0055,2026-04-01,H001,CityCare General Hospital,D05,ICU,Bed,Private Bed,31,21,3,67.74,0,24,16.26,7.74,0.21,14,5,4.95,14.74,Good,0,2026-03-08
+R0056,2026-04-06,H002,Green Valley Medical Center,D03,Cardiology,Equipment,X-Ray Unit,13,3,2,23.08,0,24,5.54,18.46,3.03,6,5,0.36,10.66,Fair,0,2026-01-09
+R0057,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,5,3,0,60.0,0,12,7.2,4.8,0.69,14,5,2.05,7.3,Needs Maintenance,1,2026-01-09
+R0058,2026-04-16,H001,CityCare General Hospital,D06,Pediatrics,Bed,Semi-Private Bed,14,8,2,57.14,0,24,13.71,10.29,1.16,4,2,3.28,8.11,Needs Maintenance,1,2026-03-30
+R0059,2026-04-21,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Infusion Pump,30,22,1,73.33,0,24,17.6,6.4,1.61,3,4,2.28,21.0,Good,0,2026-04-09
+R0060,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,8,7,0,87.5,0,12,10.5,1.5,0.38,8,1,1.96,22.23,Good,0,2026-01-15
+R0061,2026-05-01,H001,CityCare General Hospital,D07,General Surgery,Bed,General Bed,41,21,5,51.22,0,24,12.29,11.71,4.81,7,3,0.89,6.19,Good,1,2026-04-19
+R0062,2026-05-06,H002,Green Valley Medical Center,D05,ICU,Equipment,Patient Monitor,16,8,0,50.0,0,24,12.0,12.0,4.79,4,2,1.78,24.96,Good,0,2026-03-25
+R0063,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,29,20,1,68.97,0,12,8.28,3.72,0.54,14,5,4.09,14.3,Good,0,2026-03-20
+R0064,2026-05-16,H001,CityCare General Hospital,D01,Emergency Department,Bed,ICU Bed,42,21,2,50.0,0,24,12.0,12.0,0.16,8,5,3.66,4.94,Fair,0,2026-01-20
+R0065,2026-05-21,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Ventilator,24,10,3,41.67,0,24,10.0,14.0,0.44,6,5,0.31,16.86,Good,0,2026-04-17
+R0066,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,12,4,1,33.33,0,12,4.0,8.0,0.26,6,1,2.95,22.67,Good,0,2026-02-26
+R0067,2026-05-31,H001,CityCare General Hospital,D02,General Medicine,Bed,Private Bed,16,8,1,50.0,0,24,12.0,12.0,1.33,13,3,3.81,14.35,Fair,0,2026-03-12
+R0068,2026-06-05,H002,Green Valley Medical Center,D07,General Surgery,Equipment,X-Ray Unit,18,11,1,61.11,0,24,14.67,9.33,3.43,3,2,4.04,15.15,Good,0,2026-02-17
+R0069,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,14,6,0,42.86,0,12,5.14,6.86,0.6,11,3,1.05,15.29,Needs Maintenance,1,2026-03-11
+R0070,2026-06-15,H001,CityCare General Hospital,D03,Cardiology,Bed,Semi-Private Bed,38,31,0,81.58,0,24,19.58,4.42,2.52,10,3,0.36,13.62,Fair,0,2026-05-11
+R0071,2026-06-20,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Infusion Pump,14,12,0,85.71,0,24,20.57,3.43,2.13,9,3,2.85,16.04,Fair,0,2026-05-13
+R0072,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,29,18,4,62.07,0,12,7.45,4.55,0.32,7,5,2.14,22.55,Good,0,2026-04-01
+R0073,2026-01-01,H001,CityCare General Hospital,D04,Orthopedics,Bed,General Bed,50,39,3,78.0,0,24,18.72,5.28,0.78,5,3,2.47,20.62,Good,0,2025-11-16
+R0074,2026-01-06,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Patient Monitor,9,4,1,44.44,0,24,10.67,13.33,0.43,13,1,3.95,24.39,Good,0,2025-09-30
+R0075,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,29,17,1,58.62,0,12,7.03,4.97,1.19,6,2,2.3,24.22,Fair,0,2025-12-09
+R0076,2026-01-16,H001,CityCare General Hospital,D05,ICU,Bed,ICU Bed,18,11,0,61.11,0,24,14.67,9.33,4.88,6,4,4.07,21.9,Good,0,2025-12-06
+R0077,2026-01-21,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Ventilator,19,12,2,63.16,0,24,15.16,8.84,3.24,12,3,4.76,20.44,Good,0,2025-12-03
+R0078,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,8,5,1,62.5,0,12,7.5,4.5,1.24,10,3,3.11,3.43,Good,1,2025-10-06
+R0079,2026-01-31,H001,CityCare General Hospital,D06,Pediatrics,Bed,Private Bed,40,36,0,90.0,1,24,21.6,2.4,0.95,14,5,0.98,20.7,Good,0,2025-10-23
+R0080,2026-02-05,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,X-Ray Unit,10,6,2,60.0,0,24,14.4,9.6,2.53,4,1,0.77,7.83,Fair,0,2025-10-10
+R0081,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,10,10,0,100.0,1,12,12.0,0.0,1.09,9,5,3.63,8.75,Needs Maintenance,1,2025-12-04
+R0082,2026-02-15,H001,CityCare General Hospital,D07,General Surgery,Bed,Semi-Private Bed,31,24,2,77.42,0,24,18.58,5.42,3.58,10,3,4.81,11.48,Fair,0,2025-12-26
+R0083,2026-02-20,H002,Green Valley Medical Center,D05,ICU,Equipment,Infusion Pump,9,7,1,77.78,0,24,18.67,5.33,2.42,13,4,2.15,16.42,Fair,0,2026-01-12
+R0084,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,14,8,1,57.14,0,12,6.86,5.14,1.43,4,4,2.4,6.26,Good,0,2026-02-05
+R0085,2026-03-02,H001,CityCare General Hospital,D01,Emergency Department,Bed,General Bed,20,12,0,60.0,0,24,14.4,9.6,0.35,14,4,0.31,11.85,Good,0,2026-02-20
+R0086,2026-03-07,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Patient Monitor,17,9,0,52.94,0,24,12.71,11.29,0.81,6,5,3.64,15.13,Good,0,2025-12-19
+R0087,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,25,13,4,52.0,0,12,6.24,5.76,0.0,12,3,1.58,15.86,Good,0,2026-02-03
+R0088,2026-03-17,H001,CityCare General Hospital,D02,General Medicine,Bed,ICU Bed,36,21,2,58.33,0,24,14.0,10.0,1.75,3,2,4.95,23.58,Good,0,2026-02-27
+R0089,2026-03-22,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Ventilator,15,2,1,13.33,0,24,3.2,20.8,0.24,4,4,1.2,9.94,Good,0,2025-11-22
+R0090,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,7,6,0,85.71,0,12,10.29,1.71,0.89,6,5,3.18,20.42,Good,0,2026-02-28
+R0091,2026-04-01,H001,CityCare General Hospital,D03,Cardiology,Bed,Private Bed,13,5,1,38.46,0,24,9.23,14.77,0.9,13,4,2.13,8.1,Good,0,2026-03-18
+R0092,2026-04-06,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,X-Ray Unit,20,13,2,65.0,0,24,15.6,8.4,2.24,9,4,3.79,20.45,Good,1,2026-03-15
+R0093,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,10,4,1,40.0,0,12,4.8,7.2,1.68,7,1,0.22,18.7,Fair,0,2026-01-08
+R0094,2026-04-16,H001,CityCare General Hospital,D04,Orthopedics,Bed,Semi-Private Bed,26,13,1,50.0,0,24,12.0,12.0,1.16,11,3,2.33,14.67,Fair,0,2026-01-06
+R0095,2026-04-21,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Infusion Pump,8,4,2,50.0,0,24,12.0,12.0,4.12,12,2,3.32,5.28,Good,1,2026-04-03
+R0096,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,5,1,0,20.0,0,12,2.4,9.6,1.61,13,3,2.93,20.01,Good,0,2026-01-28
+R0097,2026-05-01,H001,CityCare General Hospital,D05,ICU,Bed,General Bed,34,21,5,61.76,0,24,14.82,9.18,0.98,9,3,3.28,4.22,Good,1,2026-01-01
+R0098,2026-05-06,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Patient Monitor,14,8,2,57.14,0,24,13.71,10.29,3.03,11,4,4.33,18.95,Good,0,2026-01-17
+R0099,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,21,16,0,76.19,0,12,9.14,2.86,0.19,13,1,0.68,21.26,Good,0,2026-02-19
+R0100,2026-05-16,H001,CityCare General Hospital,D06,Pediatrics,Bed,ICU Bed,10,4,0,40.0,0,24,9.6,14.4,2.2,11,2,2.25,21.24,Fair,0,2026-01-18
+R0101,2026-05-21,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Ventilator,5,4,0,80.0,0,24,19.2,4.8,0.05,12,5,4.5,18.32,Needs Maintenance,1,2026-02-27
+R0102,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,29,21,2,72.41,0,12,8.69,3.31,0.42,7,5,2.83,12.83,Fair,0,2026-02-18
+R0103,2026-05-31,H001,CityCare General Hospital,D07,General Surgery,Bed,Private Bed,19,10,0,52.63,0,24,12.63,11.37,2.7,4,2,1.15,8.65,Good,0,2026-05-05
+R0104,2026-06-05,H002,Green Valley Medical Center,D05,ICU,Equipment,X-Ray Unit,28,10,3,35.71,0,24,8.57,15.43,2.99,7,2,3.2,4.68,Good,0,2026-02-27
+R0105,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,11,9,0,81.82,0,12,9.82,2.18,0.5,9,2,4.85,19.4,Good,0,2026-02-15
+R0106,2026-06-15,H001,CityCare General Hospital,D01,Emergency Department,Bed,Semi-Private Bed,49,27,4,55.1,0,24,13.22,10.78,4.9,4,4,4.78,17.08,Good,0,2026-05-05
+R0107,2026-06-20,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Infusion Pump,24,11,2,45.83,0,24,11.0,13.0,4.76,4,1,1.06,3.87,Good,0,2026-04-21
+R0108,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,11,6,1,54.55,0,12,6.55,5.45,0.05,9,4,2.82,10.82,Good,0,2026-03-28
+R0109,2026-01-01,H001,CityCare General Hospital,D02,General Medicine,Bed,General Bed,30,20,2,66.67,0,24,16.0,8.0,2.21,8,5,4.93,24.3,Good,0,2025-11-18
+R0110,2026-01-06,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Patient Monitor,16,13,0,81.25,0,24,19.5,4.5,0.89,3,5,4.58,23.53,Good,0,2025-10-15
+R0111,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,19,12,1,63.16,0,12,7.58,4.42,0.41,7,5,4.92,7.91,Good,0,2025-09-20
+R0112,2026-01-16,H001,CityCare General Hospital,D03,Cardiology,Bed,ICU Bed,28,17,1,60.71,0,24,14.57,9.43,1.65,12,5,0.47,3.92,Good,1,2025-11-21
+R0113,2026-01-21,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Ventilator,16,7,2,43.75,0,24,10.5,13.5,1.51,7,4,0.18,18.68,Fair,0,2025-10-01
+R0114,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,20,15,2,75.0,0,12,9.0,3.0,0.24,7,3,2.85,13.83,Good,0,2025-10-07
+R0115,2026-01-31,H001,CityCare General Hospital,D04,Orthopedics,Bed,Private Bed,38,24,0,63.16,0,24,15.16,8.84,2.16,11,4,1.39,14.69,Good,0,2025-12-26
+R0116,2026-02-05,H002,Green Valley Medical Center,D02,General Medicine,Equipment,X-Ray Unit,22,9,0,40.91,0,24,9.82,14.18,2.14,9,2,4.07,10.57,Fair,0,2026-01-08
+R0117,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,7,2,0,28.57,0,12,3.43,8.57,0.02,7,5,4.63,11.46,Good,0,2025-10-13
+R0118,2026-02-15,H001,CityCare General Hospital,D05,ICU,Bed,Semi-Private Bed,22,10,2,45.45,0,24,10.91,13.09,1.86,3,5,0.73,15.4,Needs Maintenance,1,2026-01-23
+R0119,2026-02-20,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Infusion Pump,17,14,2,82.35,0,24,19.76,4.24,4.96,10,2,0.69,9.84,Good,0,2026-01-08
+R0120,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,30,14,2,46.67,0,12,5.6,6.4,1.37,4,4,4.38,11.5,Fair,0,2026-01-10
+R0121,2026-03-02,H001,CityCare General Hospital,D06,Pediatrics,Bed,General Bed,15,11,1,73.33,0,24,17.6,6.4,4.68,9,1,0.65,21.53,Fair,0,2025-12-25
+R0122,2026-03-07,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Patient Monitor,18,16,1,88.89,0,24,21.33,2.67,1.01,5,1,1.85,24.05,Fair,0,2025-12-16
+R0123,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,22,19,1,86.36,0,12,10.36,1.64,1.87,14,1,0.71,17.69,Good,0,2026-01-20
+R0124,2026-03-17,H001,CityCare General Hospital,D07,General Surgery,Bed,ICU Bed,47,37,3,78.72,0,24,18.89,5.11,3.84,6,1,4.19,14.97,Fair,0,2025-12-21
+R0125,2026-03-22,H002,Green Valley Medical Center,D05,ICU,Equipment,Ventilator,27,15,2,55.56,0,24,13.33,10.67,4.52,8,1,4.35,3.56,Good,1,2026-02-20
+R0126,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,14,9,3,64.29,0,12,7.71,4.29,1.02,6,3,4.8,6.91,Good,1,2025-12-26
+R0127,2026-04-01,H001,CityCare General Hospital,D01,Emergency Department,Bed,Private Bed,15,14,0,93.33,1,24,22.4,1.6,2.57,5,5,1.21,17.03,Good,0,2026-03-16
+R0128,2026-04-06,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,X-Ray Unit,16,14,1,87.5,0,24,21.0,3.0,3.81,6,2,4.82,15.92,Good,0,2025-12-20
+R0129,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,8,6,0,75.0,0,12,9.0,3.0,1.74,9,3,1.54,14.96,Good,0,2026-03-22
+R0130,2026-04-16,H001,CityCare General Hospital,D02,General Medicine,Bed,Semi-Private Bed,31,14,3,45.16,0,24,10.84,13.16,1.76,5,5,1.49,3.16,Good,0,2026-03-15
+R0131,2026-04-21,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Infusion Pump,7,5,1,71.43,0,24,17.14,6.86,3.38,7,1,2.85,17.13,Good,1,2026-01-08
+R0132,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,8,6,1,75.0,0,12,9.0,3.0,1.67,13,5,4.08,12.97,Good,0,2026-03-09
+R0133,2026-05-01,H001,CityCare General Hospital,D03,Cardiology,Bed,General Bed,15,6,2,40.0,0,24,9.6,14.4,4.16,9,5,3.9,14.94,Good,0,2026-01-07
+R0134,2026-05-06,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Patient Monitor,14,7,1,50.0,0,24,12.0,12.0,2.9,14,3,1.36,13.46,Good,0,2026-01-28
+R0135,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,11,5,1,45.45,0,12,5.45,6.55,0.64,12,5,4.96,14.17,Good,0,2026-05-01
+R0136,2026-05-16,H001,CityCare General Hospital,D04,Orthopedics,Bed,ICU Bed,17,13,2,76.47,0,24,18.35,5.65,3.29,3,2,4.46,9.09,Good,0,2026-04-04
+R0137,2026-05-21,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Ventilator,13,8,1,61.54,0,24,14.77,9.23,3.91,12,5,2.59,15.17,Good,0,2026-04-07
+R0138,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,14,9,0,64.29,0,12,7.71,4.29,0.21,7,2,2.89,19.33,Good,0,2026-03-08
+R0139,2026-05-31,H001,CityCare General Hospital,D05,ICU,Bed,Private Bed,35,30,1,85.71,0,24,20.57,3.43,4.13,6,3,1.5,4.27,Good,0,2026-02-14
+R0140,2026-06-05,H002,Green Valley Medical Center,D03,Cardiology,Equipment,X-Ray Unit,19,9,1,47.37,0,24,11.37,12.63,0.99,9,2,1.69,19.96,Good,0,2026-04-13
+R0141,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,30,14,2,46.67,0,12,5.6,6.4,0.58,10,3,0.66,11.83,Good,0,2026-05-22
+R0142,2026-06-15,H001,CityCare General Hospital,D06,Pediatrics,Bed,Semi-Private Bed,47,17,3,36.17,0,24,8.68,15.32,2.39,6,2,2.58,18.73,Good,0,2026-05-07
+R0143,2026-06-20,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Infusion Pump,14,9,1,64.29,0,24,15.43,8.57,0.36,5,5,4.05,11.22,Fair,0,2026-06-07
+R0144,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,30,23,1,76.67,0,12,9.2,2.8,1.07,13,5,1.14,17.06,Good,0,2026-05-26
+R0145,2026-01-01,H001,CityCare General Hospital,D07,General Surgery,Bed,General Bed,34,18,3,52.94,0,24,12.71,11.29,3.91,12,2,0.6,6.54,Good,0,2025-11-09
+R0146,2026-01-06,H002,Green Valley Medical Center,D05,ICU,Equipment,Patient Monitor,14,14,0,100.0,1,24,24.0,0.0,4.56,14,4,4.12,11.29,Good,0,2025-11-11
+R0147,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,30,23,3,76.67,0,12,9.2,2.8,1.5,6,1,4.64,15.81,Fair,0,2025-11-04
+R0148,2026-01-16,H001,CityCare General Hospital,D01,Emergency Department,Bed,ICU Bed,32,18,1,56.25,0,24,13.5,10.5,0.05,14,3,2.8,11.43,Good,0,2025-12-16
+R0149,2026-01-21,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Ventilator,29,18,2,62.07,0,24,14.9,9.1,1.44,8,2,1.67,21.18,Fair,0,2025-11-29
+R0150,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,14,10,1,71.43,0,12,8.57,3.43,1.14,10,4,3.63,23.31,Good,0,2025-12-22
+R0151,2026-01-31,H001,CityCare General Hospital,D02,General Medicine,Bed,Private Bed,35,21,0,60.0,0,24,14.4,9.6,2.51,11,4,1.11,8.39,Good,1,2025-10-25
+R0152,2026-02-05,H002,Green Valley Medical Center,D07,General Surgery,Equipment,X-Ray Unit,14,12,1,85.71,0,24,20.57,3.43,0.27,5,2,4.44,14.63,Fair,0,2025-11-14
+R0153,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,6,5,0,83.33,0,12,10.0,2.0,0.58,13,5,0.14,10.27,Fair,0,2025-10-14
+R0154,2026-02-15,H001,CityCare General Hospital,D03,Cardiology,Bed,Semi-Private Bed,36,14,3,38.89,0,24,9.33,14.67,1.33,9,2,0.59,23.96,Good,0,2025-11-25
+R0155,2026-02-20,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Infusion Pump,27,14,2,51.85,0,24,12.44,11.56,1.26,6,4,0.76,23.69,Good,0,2025-11-30
+R0156,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,23,13,3,56.52,0,12,6.78,5.22,0.2,14,5,4.21,7.39,Fair,0,2025-11-03
+R0157,2026-03-02,H001,CityCare General Hospital,D04,Orthopedics,Bed,General Bed,38,28,1,73.68,0,24,17.68,6.32,1.43,8,5,1.01,20.78,Good,0,2025-11-26
+R0158,2026-03-07,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Patient Monitor,23,20,2,86.96,0,24,20.87,3.13,1.71,6,5,4.65,3.21,Good,0,2026-01-22
+R0159,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,25,14,1,56.0,0,12,6.72,5.28,0.71,5,4,2.28,7.58,Good,0,2026-02-22
+R0160,2026-03-17,H001,CityCare General Hospital,D05,ICU,Bed,ICU Bed,39,15,4,38.46,0,24,9.23,14.77,3.01,14,4,3.17,23.93,Good,0,2025-12-21
+R0161,2026-03-22,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Ventilator,23,17,0,73.91,0,24,17.74,6.26,1.73,7,1,0.26,19.57,Good,0,2025-11-22
+R0162,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,11,6,2,54.55,0,12,6.55,5.45,0.36,5,4,3.87,4.79,Fair,0,2025-12-16
+R0163,2026-04-01,H001,CityCare General Hospital,D06,Pediatrics,Bed,Private Bed,40,24,5,60.0,0,24,14.4,9.6,0.56,8,3,2.32,23.93,Good,0,2026-02-09
+R0164,2026-04-06,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,X-Ray Unit,20,12,1,60.0,0,24,14.4,9.6,0.02,11,5,1.1,23.9,Good,1,2025-12-12
+R0165,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,9,6,0,66.67,0,12,8.0,4.0,1.08,11,4,3.63,4.79,Good,0,2025-12-26
+R0166,2026-04-16,H001,CityCare General Hospital,D07,General Surgery,Bed,Semi-Private Bed,43,35,1,81.4,0,24,19.54,4.46,4.63,13,4,0.92,6.47,Good,0,2026-01-28
+R0167,2026-04-21,H002,Green Valley Medical Center,D05,ICU,Equipment,Infusion Pump,23,14,0,60.87,0,24,14.61,9.39,4.41,13,3,2.34,18.92,Fair,0,2026-01-26
+R0168,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,24,14,1,58.33,0,12,7.0,5.0,1.35,13,1,1.78,15.57,Fair,0,2026-01-12
+R0169,2026-05-01,H001,CityCare General Hospital,D01,Emergency Department,Bed,General Bed,15,3,3,20.0,0,24,4.8,19.2,1.15,11,3,2.72,21.52,Fair,0,2026-03-27
+R0170,2026-05-06,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Patient Monitor,25,11,1,44.0,0,24,10.56,13.44,1.68,6,3,3.19,11.38,Good,0,2026-02-23
+R0171,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,10,4,0,40.0,0,12,4.8,7.2,1.51,9,2,2.45,23.81,Needs Maintenance,1,2026-01-17
+R0172,2026-05-16,H001,CityCare General Hospital,D02,General Medicine,Bed,ICU Bed,29,18,1,62.07,0,24,14.9,9.1,0.94,6,1,2.49,20.5,Good,0,2026-01-18
+R0173,2026-05-21,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Ventilator,7,3,2,42.86,0,24,10.29,13.71,3.12,14,5,3.99,20.17,Good,1,2026-04-29
+R0174,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,26,22,2,84.62,0,12,10.15,1.85,0.8,6,2,2.85,22.34,Good,0,2026-03-05
+R0175,2026-05-31,H001,CityCare General Hospital,D03,Cardiology,Bed,Private Bed,44,36,2,81.82,0,24,19.64,4.36,2.73,10,1,1.9,6.45,Good,0,2026-05-05
+R0176,2026-06-05,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,X-Ray Unit,5,4,0,80.0,0,24,19.2,4.8,3.12,13,2,1.06,9.29,Fair,0,2026-05-21
+R0177,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,26,14,2,53.85,0,12,6.46,5.54,1.11,13,5,1.4,3.13,Good,0,2026-04-01
+R0178,2026-06-15,H001,CityCare General Hospital,D04,Orthopedics,Bed,Semi-Private Bed,21,17,0,80.95,0,24,19.43,4.57,4.89,9,5,1.97,23.81,Good,0,2026-03-24
+R0179,2026-06-20,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Infusion Pump,14,8,0,57.14,0,24,13.71,10.29,0.1,14,3,0.8,16.55,Fair,0,2026-04-12
+R0180,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,13,10,2,76.92,0,12,9.23,2.77,0.72,11,3,0.88,23.6,Fair,0,2026-04-04
+R0181,2026-01-01,H001,CityCare General Hospital,D05,ICU,Bed,General Bed,44,30,1,68.18,0,24,16.36,7.64,0.46,6,1,3.56,3.67,Good,0,2025-11-13
+R0182,2026-01-06,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Patient Monitor,23,13,1,56.52,0,24,13.56,10.44,4.5,13,1,4.71,12.51,Good,0,2025-11-23
+R0183,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,15,10,1,66.67,0,12,8.0,4.0,0.35,5,3,1.72,17.66,Needs Maintenance,1,2025-10-18
+R0184,2026-01-16,H001,CityCare General Hospital,D06,Pediatrics,Bed,ICU Bed,23,18,2,78.26,0,24,18.78,5.22,0.5,13,5,1.64,7.85,Good,0,2025-12-23
+R0185,2026-01-21,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Ventilator,11,7,1,63.64,0,24,15.27,8.73,4.93,14,2,3.22,21.82,Good,0,2025-10-17
+R0186,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,24,16,2,66.67,0,12,8.0,4.0,1.6,10,4,3.47,7.09,Good,0,2025-12-26
+R0187,2026-01-31,H001,CityCare General Hospital,D07,General Surgery,Bed,Private Bed,37,24,1,64.86,0,24,15.57,8.43,1.78,5,3,4.98,8.63,Fair,0,2025-11-27
+R0188,2026-02-05,H002,Green Valley Medical Center,D05,ICU,Equipment,X-Ray Unit,30,17,0,56.67,0,24,13.6,10.4,1.71,14,2,3.99,18.14,Needs Maintenance,1,2026-01-21
+R0189,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,26,16,2,61.54,0,12,7.38,4.62,1.04,14,3,3.27,3.73,Good,0,2025-11-18
+R0190,2026-02-15,H001,CityCare General Hospital,D01,Emergency Department,Bed,Semi-Private Bed,34,18,2,52.94,0,24,12.71,11.29,4.64,10,5,1.26,24.77,Good,0,2026-01-31
+R0191,2026-02-20,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Infusion Pump,28,9,0,32.14,0,24,7.71,16.29,1.74,12,3,2.01,3.56,Good,0,2026-01-25
+R0192,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,10,7,0,70.0,0,12,8.4,3.6,0.61,7,2,2.36,10.41,Good,0,2026-01-01
+R0193,2026-03-02,H001,CityCare General Hospital,D02,General Medicine,Bed,General Bed,29,22,1,75.86,0,24,18.21,5.79,0.03,14,4,3.78,18.01,Good,0,2026-02-15
+R0194,2026-03-07,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Patient Monitor,15,13,2,86.67,0,24,20.8,3.2,3.94,8,4,2.43,16.82,Good,0,2026-01-27
+R0195,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,23,16,2,69.57,0,12,8.35,3.65,1.22,13,5,0.97,17.85,Good,0,2026-01-10
+R0196,2026-03-17,H001,CityCare General Hospital,D03,Cardiology,Bed,ICU Bed,40,29,3,72.5,0,24,17.4,6.6,2.2,6,2,3.46,7.71,Needs Maintenance,1,2026-01-11
+R0197,2026-03-22,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Ventilator,13,7,1,53.85,0,24,12.92,11.08,2.26,10,5,4.4,12.42,Good,0,2026-02-16
+R0198,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,21,16,1,76.19,0,12,9.14,2.86,1.3,8,5,4.81,9.03,Good,0,2026-01-14
+R0199,2026-04-01,H001,CityCare General Hospital,D04,Orthopedics,Bed,Private Bed,41,34,2,82.93,0,24,19.9,4.1,4.6,10,2,3.51,7.43,Good,0,2025-12-27
+R0200,2026-04-06,H002,Green Valley Medical Center,D02,General Medicine,Equipment,X-Ray Unit,11,8,0,72.73,0,24,17.46,6.54,1.75,12,1,4.47,5.68,Good,0,2025-12-16
+R0201,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,15,4,2,26.67,0,12,3.2,8.8,1.28,3,5,2.5,14.43,Good,0,2026-03-15
+R0202,2026-04-16,H001,CityCare General Hospital,D05,ICU,Bed,Semi-Private Bed,33,23,1,69.7,0,24,16.73,7.27,4.37,3,2,2.76,8.55,Good,0,2026-03-28
+R0203,2026-04-21,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Infusion Pump,20,17,0,85.0,0,24,20.4,3.6,1.62,9,3,3.07,20.16,Good,0,2026-01-16
+R0204,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,23,16,1,69.57,0,12,8.35,3.65,0.89,11,4,4.86,17.12,Good,0,2026-01-22
+R0205,2026-05-01,H001,CityCare General Hospital,D06,Pediatrics,Bed,General Bed,32,27,1,84.38,0,24,20.25,3.75,4.7,4,4,4.9,9.81,Fair,0,2026-02-25
+R0206,2026-05-06,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Patient Monitor,5,4,0,80.0,0,24,19.2,4.8,2.04,11,3,0.26,17.61,Good,1,2026-03-13
+R0207,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,25,9,1,36.0,0,12,4.32,7.68,1.22,13,1,3.64,20.02,Fair,0,2026-03-30
+R0208,2026-05-16,H001,CityCare General Hospital,D07,General Surgery,Bed,ICU Bed,50,28,4,56.0,0,24,13.44,10.56,2.39,7,5,2.99,9.14,Fair,0,2026-01-16
+R0209,2026-05-21,H002,Green Valley Medical Center,D05,ICU,Equipment,Ventilator,9,7,0,77.78,0,24,18.67,5.33,0.96,6,1,3.95,18.49,Good,0,2026-04-11
+R0210,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,16,9,3,56.25,0,12,6.75,5.25,0.62,6,1,2.56,9.75,Fair,0,2026-04-23
+R0211,2026-05-31,H001,CityCare General Hospital,D01,Emergency Department,Bed,Private Bed,16,15,0,93.75,1,24,22.5,1.5,2.25,6,4,2.41,12.97,Fair,1,2026-02-28
+R0212,2026-06-05,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,X-Ray Unit,17,10,1,58.82,0,24,14.12,9.88,2.59,14,5,3.11,12.85,Good,0,2026-03-02
+R0213,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,25,17,1,68.0,0,12,8.16,3.84,1.59,13,5,3.43,13.72,Fair,0,2026-05-04
+R0214,2026-06-15,H001,CityCare General Hospital,D02,General Medicine,Bed,Semi-Private Bed,46,20,4,43.48,0,24,10.44,13.56,0.76,4,2,2.12,17.42,Good,1,2026-02-15
+R0215,2026-06-20,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Infusion Pump,14,5,2,35.71,0,24,8.57,15.43,2.52,8,3,0.97,18.28,Good,0,2026-04-05
+R0216,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,17,9,1,52.94,0,12,6.35,5.65,1.07,8,2,3.06,6.29,Good,0,2026-05-17
+R0217,2026-01-01,H001,CityCare General Hospital,D03,Cardiology,Bed,General Bed,39,23,1,58.97,0,24,14.15,9.85,1.87,4,3,1.03,12.16,Good,0,2025-10-21
+R0218,2026-01-06,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Patient Monitor,8,7,0,87.5,0,24,21.0,3.0,0.55,7,5,0.19,6.99,Good,0,2025-11-14
+R0219,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,28,22,1,78.57,0,12,9.43,2.57,0.7,10,4,0.04,9.72,Good,0,2025-10-06
+R0220,2026-01-16,H001,CityCare General Hospital,D04,Orthopedics,Bed,ICU Bed,10,8,1,80.0,0,24,19.2,4.8,0.56,7,3,1.25,3.04,Good,1,2025-10-03
+R0221,2026-01-21,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Ventilator,26,11,1,42.31,0,24,10.15,13.85,1.16,10,5,1.85,7.19,Fair,0,2025-12-12
+R0222,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,16,13,1,81.25,0,12,9.75,2.25,0.18,4,1,1.74,7.5,Fair,0,2025-12-12
+R0223,2026-01-31,H001,CityCare General Hospital,D05,ICU,Bed,Private Bed,36,17,3,47.22,0,24,11.33,12.67,2.49,6,1,1.86,18.71,Good,0,2025-11-30
+R0224,2026-02-05,H002,Green Valley Medical Center,D03,Cardiology,Equipment,X-Ray Unit,20,12,0,60.0,0,24,14.4,9.6,4.79,14,1,2.49,11.06,Good,0,2025-11-17
+R0225,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,26,16,2,61.54,0,12,7.38,4.62,1.62,6,5,2.49,14.59,Good,0,2025-10-19
+R0226,2026-02-15,H001,CityCare General Hospital,D06,Pediatrics,Bed,Semi-Private Bed,39,30,1,76.92,0,24,18.46,5.54,3.4,5,1,3.73,3.3,Good,0,2026-01-08
+R0227,2026-02-20,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Infusion Pump,7,3,0,42.86,0,24,10.29,13.71,4.32,6,3,3.48,3.26,Good,0,2026-01-15
+R0228,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,23,14,2,60.87,0,12,7.3,4.7,0.94,6,3,4.64,6.11,Good,1,2026-01-09
+R0229,2026-03-02,H001,CityCare General Hospital,D07,General Surgery,Bed,General Bed,26,21,1,80.77,0,24,19.38,4.62,4.22,7,4,4.84,20.58,Needs Maintenance,1,2025-11-15
+R0230,2026-03-07,H002,Green Valley Medical Center,D05,ICU,Equipment,Patient Monitor,22,17,3,77.27,0,24,18.54,5.46,1.15,14,1,0.42,11.99,Fair,0,2026-01-18
+R0231,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,20,14,1,70.0,0,12,8.4,3.6,1.83,7,5,0.33,11.68,Fair,0,2026-01-09
+R0232,2026-03-17,H001,CityCare General Hospital,D01,Emergency Department,Bed,ICU Bed,36,25,7,69.44,0,24,16.67,7.33,2.81,13,1,4.03,3.81,Good,0,2026-03-04
+R0233,2026-03-22,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Ventilator,6,4,1,66.67,0,24,16.0,8.0,3.69,10,4,0.41,19.07,Good,0,2026-02-05
+R0234,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,30,27,1,90.0,1,12,10.8,1.2,1.06,14,4,0.16,22.59,Good,1,2025-12-29
+R0235,2026-04-01,H001,CityCare General Hospital,D02,General Medicine,Bed,Private Bed,46,24,2,52.17,0,24,12.52,11.48,0.06,7,4,0.66,21.11,Fair,0,2026-02-27
+R0236,2026-04-06,H002,Green Valley Medical Center,D07,General Surgery,Equipment,X-Ray Unit,28,16,2,57.14,0,24,13.71,10.29,3.13,6,5,4.46,16.05,Good,0,2026-02-04
+R0237,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,26,23,1,88.46,0,12,10.62,1.38,0.2,8,2,0.37,21.4,Good,0,2026-03-07
+R0238,2026-04-16,H001,CityCare General Hospital,D03,Cardiology,Bed,Semi-Private Bed,21,14,0,66.67,0,24,16.0,8.0,2.41,14,5,3.1,14.86,Good,0,2026-03-10
+R0239,2026-04-21,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Infusion Pump,27,18,5,66.67,0,24,16.0,8.0,4.44,5,3,0.67,12.36,Good,0,2026-03-01
+R0240,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,17,10,0,58.82,0,12,7.06,4.94,0.78,13,3,1.22,4.06,Good,1,2026-04-04
+R0241,2026-05-01,H001,CityCare General Hospital,D04,Orthopedics,Bed,General Bed,22,22,0,100.0,1,24,24.0,0.0,3.71,6,3,4.62,23.11,Good,0,2026-01-31
+R0242,2026-05-06,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Patient Monitor,19,18,0,94.74,1,24,22.74,1.26,4.42,9,4,1.2,16.07,Good,0,2026-03-06
+R0243,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,17,10,3,58.82,0,12,7.06,4.94,1.22,8,3,1.78,12.22,Fair,1,2026-03-27
+R0244,2026-05-16,H001,CityCare General Hospital,D05,ICU,Bed,ICU Bed,43,28,5,65.12,0,24,15.63,8.37,3.79,8,3,2.4,4.78,Fair,0,2026-03-10
+R0245,2026-05-21,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Ventilator,12,11,1,91.67,1,24,22.0,2.0,0.17,12,1,1.12,12.53,Needs Maintenance,1,2026-02-15
+R0246,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,20,13,2,65.0,0,12,7.8,4.2,1.83,12,3,3.41,16.62,Good,0,2026-03-16
+R0247,2026-05-31,H001,CityCare General Hospital,D06,Pediatrics,Bed,Private Bed,27,17,1,62.96,0,24,15.11,8.89,4.34,11,3,2.64,4.98,Good,0,2026-02-19
+R0248,2026-06-05,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,X-Ray Unit,12,8,0,66.67,0,24,16.0,8.0,1.53,14,2,1.25,18.01,Good,0,2026-02-20
+R0249,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,10,10,0,100.0,1,12,12.0,0.0,0.86,7,1,4.02,20.77,Fair,0,2026-02-20
+R0250,2026-06-15,H001,CityCare General Hospital,D07,General Surgery,Bed,Semi-Private Bed,10,6,2,60.0,0,24,14.4,9.6,0.05,9,3,4.29,20.47,Needs Maintenance,1,2026-04-09
+R0251,2026-06-20,H002,Green Valley Medical Center,D05,ICU,Equipment,Infusion Pump,24,11,3,45.83,0,24,11.0,13.0,0.5,3,3,4.89,11.35,Fair,1,2026-03-20
+R0252,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,20,15,3,75.0,0,12,9.0,3.0,0.06,4,3,0.5,24.05,Fair,0,2026-02-25
+R0253,2026-01-01,H001,CityCare General Hospital,D01,Emergency Department,Bed,General Bed,33,16,3,48.48,0,24,11.64,12.36,2.41,13,5,0.61,12.09,Good,1,2025-09-07
+R0254,2026-01-06,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Patient Monitor,27,21,1,77.78,0,24,18.67,5.33,2.84,8,4,1.4,16.31,Fair,0,2025-11-10
+R0255,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,11,11,0,100.0,1,12,12.0,0.0,0.12,9,4,0.81,17.17,Fair,0,2025-09-21
+R0256,2026-01-16,H001,CityCare General Hospital,D02,General Medicine,Bed,ICU Bed,36,19,1,52.78,0,24,12.67,11.33,4.59,9,4,4.6,19.94,Good,1,2026-01-04
+R0257,2026-01-21,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Ventilator,12,10,0,83.33,0,24,20.0,4.0,0.84,9,4,3.57,4.25,Good,0,2025-10-23
+R0258,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,22,19,2,86.36,0,12,10.36,1.64,0.54,7,4,1.98,13.92,Good,0,2026-01-06
+R0259,2026-01-31,H001,CityCare General Hospital,D03,Cardiology,Bed,Private Bed,24,13,1,54.17,0,24,13.0,11.0,3.87,9,4,2.72,10.87,Good,0,2025-10-31
+R0260,2026-02-05,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,X-Ray Unit,12,11,0,91.67,1,24,22.0,2.0,2.18,11,1,0.43,7.09,Good,0,2025-12-20
+R0261,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,18,14,2,77.78,0,12,9.33,2.67,1.13,9,3,4.58,13.52,Fair,0,2025-11-02
+R0262,2026-02-15,H001,CityCare General Hospital,D04,Orthopedics,Bed,Semi-Private Bed,38,29,3,76.32,0,24,18.32,5.68,3.52,13,1,3.61,11.35,Good,0,2026-01-01
+R0263,2026-02-20,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Infusion Pump,18,14,1,77.78,0,24,18.67,5.33,0.28,9,3,3.75,12.84,Good,0,2026-01-10
+R0264,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,5,2,1,40.0,0,12,4.8,7.2,1.57,12,3,1.62,3.3,Fair,0,2025-12-27
+R0265,2026-03-02,H001,CityCare General Hospital,D05,ICU,Bed,General Bed,19,13,1,68.42,0,24,16.42,7.58,1.96,14,2,3.31,5.58,Good,0,2026-01-26
+R0266,2026-03-07,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Patient Monitor,29,17,3,58.62,0,24,14.07,9.93,0.49,8,5,2.68,3.82,Good,0,2025-11-29
+R0267,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,28,24,2,85.71,0,12,10.29,1.71,0.99,4,3,0.97,13.53,Good,0,2026-01-18
+R0268,2026-03-17,H001,CityCare General Hospital,D06,Pediatrics,Bed,ICU Bed,28,20,4,71.43,0,24,17.14,6.86,1.78,9,5,1.12,15.35,Good,0,2026-02-02
+R0269,2026-03-22,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Ventilator,14,11,0,78.57,0,24,18.86,5.14,1.39,13,2,4.8,20.4,Good,0,2025-12-19
+R0270,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,21,15,0,71.43,0,12,8.57,3.43,1.44,14,1,3.77,6.95,Needs Maintenance,1,2025-12-12
+R0271,2026-04-01,H001,CityCare General Hospital,D07,General Surgery,Bed,Private Bed,41,27,2,65.85,0,24,15.8,8.2,4.48,10,5,2.89,8.28,Fair,0,2025-12-22
+R0272,2026-04-06,H002,Green Valley Medical Center,D05,ICU,Equipment,X-Ray Unit,13,10,0,76.92,0,24,18.46,5.54,1.54,11,5,1.54,18.94,Good,1,2026-02-27
+R0273,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,18,13,0,72.22,0,12,8.67,3.33,0.55,11,4,1.35,17.6,Good,0,2025-12-15
+R0274,2026-04-16,H001,CityCare General Hospital,D01,Emergency Department,Bed,Semi-Private Bed,34,22,1,64.71,0,24,15.53,8.47,2.94,9,4,3.75,9.66,Fair,0,2025-12-28
+R0275,2026-04-21,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Infusion Pump,15,12,2,80.0,0,24,19.2,4.8,3.47,4,1,4.93,10.95,Fair,0,2026-03-31
+R0276,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,29,19,0,65.52,0,12,7.86,4.14,0.32,14,1,3.97,13.29,Fair,0,2026-03-20
+R0277,2026-05-01,H001,CityCare General Hospital,D02,General Medicine,Bed,General Bed,26,11,0,42.31,0,24,10.15,13.85,4.66,6,1,2.82,11.59,Good,0,2026-01-13
+R0278,2026-05-06,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Patient Monitor,5,2,0,40.0,0,24,9.6,14.4,1.69,4,4,4.12,18.46,Good,0,2026-03-20
+R0279,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,19,8,2,42.11,0,12,5.05,6.95,0.27,14,2,3.58,6.64,Fair,0,2026-03-20
+R0280,2026-05-16,H001,CityCare General Hospital,D03,Cardiology,Bed,ICU Bed,18,6,3,33.33,0,24,8.0,16.0,3.78,5,1,1.03,9.17,Good,0,2026-03-04
+R0281,2026-05-21,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Ventilator,13,11,0,84.62,0,24,20.31,3.69,2.12,11,1,1.63,14.86,Good,0,2026-02-06
+R0282,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,18,14,1,77.78,0,12,9.33,2.67,0.29,5,1,1.68,16.42,Good,0,2026-02-03
+R0283,2026-05-31,H001,CityCare General Hospital,D04,Orthopedics,Bed,Private Bed,38,14,2,36.84,0,24,8.84,15.16,3.97,6,2,1.2,10.13,Good,0,2026-04-12
+R0284,2026-06-05,H002,Green Valley Medical Center,D02,General Medicine,Equipment,X-Ray Unit,25,14,1,56.0,0,24,13.44,10.56,3.96,9,1,0.74,21.71,Good,0,2026-02-25
+R0285,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,7,3,1,42.86,0,12,5.14,6.86,0.44,11,5,3.18,23.32,Good,0,2026-03-08
+R0286,2026-06-15,H001,CityCare General Hospital,D05,ICU,Bed,Semi-Private Bed,27,10,2,37.04,0,24,8.89,15.11,1.24,11,5,0.97,23.55,Good,0,2026-03-02
+R0287,2026-06-20,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Infusion Pump,9,7,0,77.78,0,24,18.67,5.33,3.02,4,4,0.02,24.47,Good,0,2026-05-20
+R0288,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,18,11,2,61.11,0,12,7.33,4.67,0.54,9,4,1.84,22.76,Fair,0,2026-04-22
+R0289,2026-01-01,H001,CityCare General Hospital,D06,Pediatrics,Bed,General Bed,37,13,3,35.14,0,24,8.43,15.57,0.85,7,2,1.0,9.31,Fair,0,2025-09-13
+R0290,2026-01-06,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Patient Monitor,12,4,0,33.33,0,24,8.0,16.0,4.23,3,2,2.98,22.09,Good,0,2025-10-09
+R0291,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,26,16,2,61.54,0,12,7.38,4.62,0.31,3,1,1.91,10.3,Good,0,2025-12-03
+R0292,2026-01-16,H001,CityCare General Hospital,D07,General Surgery,Bed,ICU Bed,24,11,2,45.83,0,24,11.0,13.0,1.42,4,3,3.5,9.45,Good,0,2025-12-16
+R0293,2026-01-21,H002,Green Valley Medical Center,D05,ICU,Equipment,Ventilator,21,11,1,52.38,0,24,12.57,11.43,0.13,11,1,4.56,22.94,Good,0,2025-11-01
+R0294,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,11,8,0,72.73,0,12,8.73,3.27,1.0,3,2,1.45,10.31,Good,0,2025-12-30
+R0295,2026-01-31,H001,CityCare General Hospital,D01,Emergency Department,Bed,Private Bed,27,15,3,55.56,0,24,13.33,10.67,2.75,7,1,3.85,21.29,Good,0,2025-10-26
+R0296,2026-02-05,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,X-Ray Unit,23,12,0,52.17,0,24,12.52,11.48,1.86,4,1,3.67,3.48,Good,0,2026-01-16
+R0297,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,9,7,1,77.78,0,12,9.33,2.67,1.62,10,5,2.5,18.41,Good,0,2025-10-21
+R0298,2026-02-15,H001,CityCare General Hospital,D02,General Medicine,Bed,Semi-Private Bed,31,13,4,41.94,0,24,10.07,13.93,2.7,10,2,2.84,13.08,Good,0,2026-02-03
+R0299,2026-02-20,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Infusion Pump,17,12,0,70.59,0,24,16.94,7.06,3.31,6,4,3.32,9.82,Good,0,2025-10-29
+R0300,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,11,6,0,54.55,0,12,6.55,5.45,0.44,5,3,1.8,23.61,Good,0,2025-10-28
+R0301,2026-03-02,H001,CityCare General Hospital,D03,Cardiology,Bed,General Bed,33,24,2,72.73,0,24,17.46,6.54,0.41,6,4,0.38,5.18,Good,0,2026-02-07
+R0302,2026-03-07,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Patient Monitor,15,5,1,33.33,0,24,8.0,16.0,1.22,12,4,4.01,4.99,Good,0,2025-11-11
+R0303,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,20,17,2,85.0,0,12,10.2,1.8,0.02,5,2,0.3,23.38,Good,0,2026-01-03
+R0304,2026-03-17,H001,CityCare General Hospital,D04,Orthopedics,Bed,ICU Bed,17,11,2,64.71,0,24,15.53,8.47,0.25,9,4,4.8,22.47,Good,0,2026-01-23
+R0305,2026-03-22,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Ventilator,21,15,1,71.43,0,24,17.14,6.86,2.37,12,1,4.44,17.91,Good,0,2026-01-18
+R0306,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,28,8,3,28.57,0,12,3.43,8.57,0.31,6,1,2.16,19.32,Needs Maintenance,1,2025-12-10
+R0307,2026-04-01,H001,CityCare General Hospital,D05,ICU,Bed,Private Bed,34,23,2,67.65,0,24,16.24,7.76,0.62,8,3,3.82,24.28,Good,0,2026-02-23
+R0308,2026-04-06,H002,Green Valley Medical Center,D03,Cardiology,Equipment,X-Ray Unit,14,10,1,71.43,0,24,17.14,6.86,2.84,6,1,3.3,17.48,Fair,0,2026-03-23
+R0309,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,18,11,2,61.11,0,12,7.33,4.67,0.34,4,5,0.42,16.56,Good,0,2025-12-21
+R0310,2026-04-16,H001,CityCare General Hospital,D06,Pediatrics,Bed,Semi-Private Bed,15,13,1,86.67,0,24,20.8,3.2,0.0,11,1,4.6,15.71,Fair,0,2026-01-20
+R0311,2026-04-21,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Infusion Pump,7,5,0,71.43,0,24,17.14,6.86,3.49,10,5,3.78,6.1,Good,0,2026-03-21
+R0312,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,23,15,3,65.22,0,12,7.83,4.17,0.37,8,4,2.35,17.91,Good,0,2026-02-12
+R0313,2026-05-01,H001,CityCare General Hospital,D07,General Surgery,Bed,General Bed,40,16,1,40.0,0,24,9.6,14.4,0.62,6,3,3.46,17.51,Good,0,2026-03-18
+R0314,2026-05-06,H002,Green Valley Medical Center,D05,ICU,Equipment,Patient Monitor,16,13,1,81.25,0,24,19.5,4.5,4.92,11,5,0.46,12.46,Good,0,2026-02-18
+R0315,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,13,7,1,53.85,0,12,6.46,5.54,1.56,9,4,4.85,3.55,Good,0,2026-03-10
+R0316,2026-05-16,H001,CityCare General Hospital,D01,Emergency Department,Bed,ICU Bed,37,32,1,86.49,0,24,20.76,3.24,0.0,12,3,1.96,24.06,Good,1,2026-02-12
+R0317,2026-05-21,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Ventilator,9,7,1,77.78,0,24,18.67,5.33,3.27,3,3,2.99,14.54,Fair,1,2026-03-29
+R0318,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,29,24,1,82.76,0,12,9.93,2.07,0.62,3,4,0.11,15.3,Good,0,2026-02-22
+R0319,2026-05-31,H001,CityCare General Hospital,D02,General Medicine,Bed,Private Bed,14,7,1,50.0,0,24,12.0,12.0,3.83,9,2,3.09,3.0,Good,0,2026-02-26
+R0320,2026-06-05,H002,Green Valley Medical Center,D07,General Surgery,Equipment,X-Ray Unit,26,19,2,73.08,0,24,17.54,6.46,2.09,9,4,0.19,20.74,Good,0,2026-04-19
+R0321,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,6,5,0,83.33,0,12,10.0,2.0,1.02,9,3,1.15,6.12,Good,0,2026-02-19
+R0322,2026-06-15,H001,CityCare General Hospital,D03,Cardiology,Bed,Semi-Private Bed,46,26,4,56.52,0,24,13.56,10.44,2.56,14,2,3.85,24.67,Fair,0,2026-04-04
+R0323,2026-06-20,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Infusion Pump,12,8,1,66.67,0,24,16.0,8.0,4.6,12,3,0.23,21.43,Fair,0,2026-04-07
+R0324,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,29,23,1,79.31,0,12,9.52,2.48,1.44,14,2,3.91,17.16,Good,0,2026-05-12
+R0325,2026-01-01,H001,CityCare General Hospital,D04,Orthopedics,Bed,General Bed,25,21,2,84.0,0,24,20.16,3.84,4.01,13,5,3.49,4.68,Good,0,2025-11-27
+R0326,2026-01-06,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Patient Monitor,27,17,1,62.96,0,24,15.11,8.89,0.24,3,2,3.22,16.25,Good,0,2025-11-03
+R0327,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,29,13,2,44.83,0,12,5.38,6.62,1.33,6,1,2.99,14.75,Good,0,2025-11-29
+R0328,2026-01-16,H001,CityCare General Hospital,D05,ICU,Bed,ICU Bed,49,40,2,81.63,0,24,19.59,4.41,0.39,11,1,0.65,17.01,Good,0,2025-11-02
+R0329,2026-01-21,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Ventilator,8,5,0,62.5,0,24,15.0,9.0,1.69,6,4,4.31,22.46,Fair,0,2026-01-05
+R0330,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,9,5,1,55.56,0,12,6.67,5.33,0.65,11,5,3.8,21.05,Good,0,2026-01-05
+R0331,2026-01-31,H001,CityCare General Hospital,D06,Pediatrics,Bed,Private Bed,28,14,2,50.0,0,24,12.0,12.0,0.91,4,5,3.53,21.81,Good,0,2025-10-15
+R0332,2026-02-05,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,X-Ray Unit,12,9,0,75.0,0,24,18.0,6.0,4.07,3,4,4.3,6.67,Good,0,2025-10-09
+R0333,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,12,6,0,50.0,0,12,6.0,6.0,0.15,10,5,0.0,18.33,Good,0,2025-11-25
+R0334,2026-02-15,H001,CityCare General Hospital,D07,General Surgery,Bed,Semi-Private Bed,14,13,1,92.86,1,24,22.29,1.71,0.05,3,1,0.76,20.71,Good,0,2025-10-18
+R0335,2026-02-20,H002,Green Valley Medical Center,D05,ICU,Equipment,Infusion Pump,6,5,0,83.33,0,24,20.0,4.0,2.59,3,5,4.45,4.22,Fair,0,2025-12-10
+R0336,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,22,11,2,50.0,0,12,6.0,6.0,1.41,13,1,0.24,17.33,Good,0,2025-11-13
+R0337,2026-03-02,H001,CityCare General Hospital,D01,Emergency Department,Bed,General Bed,15,8,0,53.33,0,24,12.8,11.2,4.56,7,2,1.18,10.04,Good,0,2025-12-19
+R0338,2026-03-07,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Patient Monitor,7,4,0,57.14,0,24,13.71,10.29,3.93,13,5,2.54,5.91,Fair,0,2025-11-08
+R0339,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,30,16,2,53.33,0,12,6.4,5.6,0.97,14,5,3.82,11.81,Good,0,2025-11-19
+R0340,2026-03-17,H001,CityCare General Hospital,D02,General Medicine,Bed,ICU Bed,12,8,2,66.67,0,24,16.0,8.0,4.53,10,4,3.98,11.97,Good,0,2026-02-02
+R0341,2026-03-22,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Ventilator,20,11,2,55.0,0,24,13.2,10.8,1.72,9,1,2.44,12.74,Good,0,2026-02-12
+R0342,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,15,8,0,53.33,0,12,6.4,5.6,1.34,11,4,0.18,11.66,Fair,0,2026-03-12
+R0343,2026-04-01,H001,CityCare General Hospital,D03,Cardiology,Bed,Private Bed,21,11,1,52.38,0,24,12.57,11.43,0.32,5,5,2.31,11.94,Good,0,2025-12-19
+R0344,2026-04-06,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,X-Ray Unit,22,13,1,59.09,0,24,14.18,9.82,3.07,5,2,2.8,20.68,Good,0,2026-02-24
+R0345,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,21,13,0,61.9,0,12,7.43,4.57,0.06,6,4,2.99,24.28,Fair,0,2025-12-24
+R0346,2026-04-16,H001,CityCare General Hospital,D04,Orthopedics,Bed,Semi-Private Bed,30,15,0,50.0,0,24,12.0,12.0,0.62,11,2,4.12,20.2,Fair,0,2025-12-19
+R0347,2026-04-21,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Infusion Pump,23,14,2,60.87,0,24,14.61,9.39,4.26,3,5,0.29,23.35,Needs Maintenance,1,2026-03-23
+R0348,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,22,13,3,59.09,0,12,7.09,4.91,1.0,13,3,3.27,17.02,Good,0,2026-02-24
+R0349,2026-05-01,H001,CityCare General Hospital,D05,ICU,Bed,General Bed,12,9,0,75.0,0,24,18.0,6.0,3.66,14,4,2.05,18.01,Good,0,2026-03-27
+R0350,2026-05-06,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Patient Monitor,10,7,0,70.0,0,24,16.8,7.2,4.68,10,5,3.11,21.18,Good,1,2026-02-13
+R0351,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,10,8,0,80.0,0,12,9.6,2.4,0.47,6,2,2.96,13.84,Fair,0,2026-04-15
+R0352,2026-05-16,H001,CityCare General Hospital,D06,Pediatrics,Bed,ICU Bed,39,31,0,79.49,0,24,19.08,4.92,1.82,6,4,0.67,15.75,Good,0,2026-04-10
+R0353,2026-05-21,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Ventilator,18,16,2,88.89,0,24,21.33,2.67,1.97,14,1,1.34,20.9,Needs Maintenance,1,2026-03-18
+R0354,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,9,6,0,66.67,0,12,8.0,4.0,0.93,14,5,0.98,5.96,Good,0,2026-02-25
+R0355,2026-05-31,H001,CityCare General Hospital,D07,General Surgery,Bed,Private Bed,10,6,0,60.0,0,24,14.4,9.6,2.15,3,2,2.7,9.11,Fair,0,2026-03-22
+R0356,2026-06-05,H002,Green Valley Medical Center,D05,ICU,Equipment,X-Ray Unit,30,14,1,46.67,0,24,11.2,12.8,1.01,10,3,2.03,6.9,Fair,0,2026-03-01
+R0357,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,14,12,0,85.71,0,12,10.29,1.71,0.47,14,5,4.37,14.4,Good,0,2026-04-24
+R0358,2026-06-15,H001,CityCare General Hospital,D01,Emergency Department,Bed,Semi-Private Bed,33,26,2,78.79,0,24,18.91,5.09,4.18,8,1,2.58,24.24,Good,0,2026-03-16
+R0359,2026-06-20,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Infusion Pump,13,2,0,15.38,0,24,3.69,20.31,1.62,6,1,3.35,16.24,Good,0,2026-05-06
+R0360,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,18,16,1,88.89,0,12,10.67,1.33,1.71,10,5,4.2,13.89,Good,0,2026-03-22
+R0361,2026-01-01,H001,CityCare General Hospital,D02,General Medicine,Bed,General Bed,31,19,2,61.29,0,24,14.71,9.29,3.63,12,5,3.36,20.68,Good,0,2025-10-11
+R0362,2026-01-06,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Patient Monitor,26,18,1,69.23,0,24,16.62,7.38,0.85,12,1,0.63,8.39,Good,1,2025-10-12
+R0363,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,18,15,1,83.33,0,12,10.0,2.0,1.69,12,3,2.31,14.63,Good,0,2025-12-22
+R0364,2026-01-16,H001,CityCare General Hospital,D03,Cardiology,Bed,ICU Bed,49,25,4,51.02,0,24,12.24,11.76,4.93,11,4,0.2,23.82,Good,0,2025-12-05
+R0365,2026-01-21,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Ventilator,10,6,0,60.0,0,24,14.4,9.6,4.93,13,3,3.5,18.53,Good,0,2025-11-26
+R0366,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,14,8,0,57.14,0,12,6.86,5.14,0.93,14,1,4.69,22.86,Fair,0,2025-10-25
+R0367,2026-01-31,H001,CityCare General Hospital,D04,Orthopedics,Bed,Private Bed,25,8,2,32.0,0,24,7.68,16.32,0.67,8,1,0.58,23.23,Good,0,2025-10-30
+R0368,2026-02-05,H002,Green Valley Medical Center,D02,General Medicine,Equipment,X-Ray Unit,15,5,1,33.33,0,24,8.0,16.0,1.69,6,2,1.45,14.0,Fair,0,2025-11-29
+R0369,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,25,14,0,56.0,0,12,6.72,5.28,1.89,6,1,0.72,18.94,Good,0,2025-12-09
+R0370,2026-02-15,H001,CityCare General Hospital,D05,ICU,Bed,Semi-Private Bed,23,12,1,52.17,0,24,12.52,11.48,4.61,14,5,4.03,23.61,Good,0,2026-01-02
+R0371,2026-02-20,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Infusion Pump,28,19,2,67.86,0,24,16.29,7.71,0.82,10,5,3.74,18.95,Good,0,2025-12-21
+R0372,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,21,13,3,61.9,0,12,7.43,4.57,1.64,8,2,3.26,19.22,Good,0,2025-10-29
+R0373,2026-03-02,H001,CityCare General Hospital,D06,Pediatrics,Bed,General Bed,21,13,3,61.9,0,24,14.86,9.14,4.49,11,1,0.6,12.28,Good,1,2025-11-09
+R0374,2026-03-07,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Patient Monitor,13,10,1,76.92,0,24,18.46,5.54,2.09,7,2,0.35,16.42,Good,0,2026-02-07
+R0375,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,8,7,0,87.5,0,12,10.5,1.5,1.33,13,5,3.75,22.05,Good,0,2026-02-03
+R0376,2026-03-17,H001,CityCare General Hospital,D07,General Surgery,Bed,ICU Bed,43,17,1,39.53,0,24,9.49,14.51,1.89,5,4,2.86,3.94,Good,0,2026-03-05
+R0377,2026-03-22,H002,Green Valley Medical Center,D05,ICU,Equipment,Ventilator,5,4,0,80.0,0,24,19.2,4.8,1.85,14,4,0.8,14.91,Good,0,2026-02-23
+R0378,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,21,15,0,71.43,0,12,8.57,3.43,1.54,5,3,3.97,17.17,Fair,0,2026-03-07
+R0379,2026-04-01,H001,CityCare General Hospital,D01,Emergency Department,Bed,Private Bed,14,5,0,35.71,0,24,8.57,15.43,1.51,12,2,3.79,16.23,Needs Maintenance,1,2026-03-07
+R0380,2026-04-06,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,X-Ray Unit,30,24,1,80.0,0,24,19.2,4.8,4.81,7,5,4.72,16.54,Good,1,2026-01-14
+R0381,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,6,3,0,50.0,0,12,6.0,6.0,0.42,5,4,1.51,18.74,Good,0,2026-01-15
+R0382,2026-04-16,H001,CityCare General Hospital,D02,General Medicine,Bed,Semi-Private Bed,11,8,1,72.73,0,24,17.46,6.54,4.21,13,1,2.89,3.12,Fair,0,2026-03-29
+R0383,2026-04-21,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Infusion Pump,29,24,3,82.76,0,24,19.86,4.14,0.2,10,4,2.73,15.78,Fair,0,2026-01-10
+R0384,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,14,8,2,57.14,0,12,6.86,5.14,0.26,14,4,1.74,24.59,Fair,0,2026-04-06
+R0385,2026-05-01,H001,CityCare General Hospital,D03,Cardiology,Bed,General Bed,27,20,3,74.07,0,24,17.78,6.22,1.96,7,2,0.54,14.83,Fair,0,2026-04-19
+R0386,2026-05-06,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Patient Monitor,28,26,1,92.86,1,24,22.29,1.71,2.23,14,2,0.48,12.05,Good,0,2026-04-22
+R0387,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,9,2,1,22.22,0,12,2.67,9.33,1.19,4,4,2.19,3.61,Good,1,2026-03-03
+R0388,2026-05-16,H001,CityCare General Hospital,D04,Orthopedics,Bed,ICU Bed,40,20,2,50.0,0,24,12.0,12.0,3.22,8,2,2.31,18.8,Fair,0,2026-03-11
+R0389,2026-05-21,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Ventilator,27,17,0,62.96,0,24,15.11,8.89,2.79,8,5,4.79,16.47,Good,0,2026-04-02
+R0390,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,13,7,0,53.85,0,12,6.46,5.54,1.01,8,1,0.18,7.92,Good,0,2026-03-25
+R0391,2026-05-31,H001,CityCare General Hospital,D05,ICU,Bed,Private Bed,11,7,0,63.64,0,24,15.27,8.73,2.1,12,5,0.18,7.91,Good,0,2026-03-07
+R0392,2026-06-05,H002,Green Valley Medical Center,D03,Cardiology,Equipment,X-Ray Unit,21,10,4,47.62,0,24,11.43,12.57,0.09,11,1,4.67,9.95,Good,0,2026-02-14
+R0393,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,30,21,2,70.0,0,12,8.4,3.6,1.81,13,1,3.67,14.76,Good,0,2026-05-02
+R0394,2026-06-15,H001,CityCare General Hospital,D06,Pediatrics,Bed,Semi-Private Bed,37,21,2,56.76,0,24,13.62,10.38,3.72,5,3,2.77,18.3,Good,0,2026-03-31
+R0395,2026-06-20,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Infusion Pump,25,13,3,52.0,0,24,12.48,11.52,1.51,3,4,0.94,10.9,Good,0,2026-05-03
+R0396,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,14,5,1,35.71,0,12,4.29,7.71,1.14,7,1,2.09,18.68,Good,0,2026-03-29
+R0397,2026-01-01,H001,CityCare General Hospital,D07,General Surgery,Bed,General Bed,33,16,4,48.48,0,24,11.64,12.36,2.2,8,3,3.29,7.93,Good,0,2025-10-16
+R0398,2026-01-06,H002,Green Valley Medical Center,D05,ICU,Equipment,Patient Monitor,25,13,1,52.0,0,24,12.48,11.52,2.56,3,4,2.57,4.58,Good,0,2025-12-25
+R0399,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,22,16,0,72.73,0,12,8.73,3.27,1.87,13,3,1.44,18.51,Good,0,2025-10-15
+R0400,2026-01-16,H001,CityCare General Hospital,D01,Emergency Department,Bed,ICU Bed,30,12,2,40.0,0,24,9.6,14.4,1.04,8,3,3.41,21.17,Fair,0,2025-10-25
+R0401,2026-01-21,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Ventilator,28,15,0,53.57,0,24,12.86,11.14,1.86,13,1,1.03,6.29,Good,0,2025-10-19
+R0402,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,13,11,0,84.62,0,12,10.15,1.85,0.49,13,5,0.55,19.46,Good,0,2026-01-03
+R0403,2026-01-31,H001,CityCare General Hospital,D02,General Medicine,Bed,Private Bed,32,19,1,59.38,0,24,14.25,9.75,0.95,4,2,4.1,6.77,Fair,0,2026-01-19
+R0404,2026-02-05,H002,Green Valley Medical Center,D07,General Surgery,Equipment,X-Ray Unit,19,3,2,15.79,0,24,3.79,20.21,3.36,11,2,4.77,20.98,Good,0,2025-12-04
+R0405,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,16,4,1,25.0,0,12,3.0,9.0,1.18,4,2,0.34,9.17,Good,1,2025-12-28
+R0406,2026-02-15,H001,CityCare General Hospital,D03,Cardiology,Bed,Semi-Private Bed,44,27,2,61.36,0,24,14.73,9.27,4.24,11,2,3.93,14.7,Fair,0,2026-02-03
+R0407,2026-02-20,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Infusion Pump,23,11,2,47.83,0,24,11.48,12.52,3.69,8,4,3.62,13.89,Good,0,2025-11-20
+R0408,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,11,8,0,72.73,0,12,8.73,3.27,0.01,14,1,2.46,17.12,Good,0,2025-12-01
+R0409,2026-03-02,H001,CityCare General Hospital,D04,Orthopedics,Bed,General Bed,15,12,1,80.0,0,24,19.2,4.8,1.61,9,2,2.52,14.32,Needs Maintenance,1,2025-12-30
+R0410,2026-03-07,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Patient Monitor,21,7,2,33.33,0,24,8.0,16.0,2.95,4,3,2.79,18.0,Good,0,2026-01-10
+R0411,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,5,1,0,20.0,0,12,2.4,9.6,0.54,14,1,0.3,13.28,Good,0,2026-02-06
+R0412,2026-03-17,H001,CityCare General Hospital,D05,ICU,Bed,ICU Bed,29,18,2,62.07,0,24,14.9,9.1,2.92,12,2,0.44,19.76,Good,0,2025-12-18
+R0413,2026-03-22,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Ventilator,16,8,3,50.0,0,24,12.0,12.0,1.34,4,5,1.24,22.17,Good,0,2026-01-06
+R0414,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,9,7,1,77.78,0,12,9.33,2.67,0.33,7,1,0.78,21.77,Good,0,2026-01-12
+R0415,2026-04-01,H001,CityCare General Hospital,D06,Pediatrics,Bed,Private Bed,47,19,2,40.43,0,24,9.7,14.3,0.46,10,4,3.14,5.79,Good,0,2025-12-22
+R0416,2026-04-06,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,X-Ray Unit,26,16,4,61.54,0,24,14.77,9.23,0.79,10,2,3.53,6.26,Good,1,2026-01-23
+R0417,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,30,21,2,70.0,0,12,8.4,3.6,0.95,11,5,0.35,12.45,Good,0,2026-03-21
+R0418,2026-04-16,H001,CityCare General Hospital,D07,General Surgery,Bed,Semi-Private Bed,14,8,2,57.14,0,24,13.71,10.29,4.79,12,5,4.97,15.5,Good,0,2026-01-16
+R0419,2026-04-21,H002,Green Valley Medical Center,D05,ICU,Equipment,Infusion Pump,17,7,3,41.18,0,24,9.88,14.12,1.84,11,5,2.17,11.34,Needs Maintenance,1,2026-01-01
+R0420,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,22,19,0,86.36,0,12,10.36,1.64,0.82,9,2,0.9,7.31,Good,0,2025-12-29
+R0421,2026-05-01,H001,CityCare General Hospital,D01,Emergency Department,Bed,General Bed,49,40,3,81.63,0,24,19.59,4.41,1.41,9,2,1.91,21.01,Needs Maintenance,1,2026-04-15
+R0422,2026-05-06,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Patient Monitor,7,7,0,100.0,1,24,24.0,0.0,4.47,10,4,0.03,21.3,Good,1,2026-02-13
+R0423,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,14,7,0,50.0,0,12,6.0,6.0,1.51,4,4,2.85,17.72,Fair,0,2026-04-19
+R0424,2026-05-16,H001,CityCare General Hospital,D02,General Medicine,Bed,ICU Bed,41,33,3,80.49,0,24,19.32,4.68,4.9,8,1,1.89,23.47,Good,0,2026-04-19
+R0425,2026-05-21,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Ventilator,27,22,2,81.48,0,24,19.56,4.44,4.05,4,1,0.36,19.64,Good,0,2026-04-04
+R0426,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,16,9,0,56.25,0,12,6.75,5.25,1.32,8,5,2.83,21.55,Good,0,2026-05-15
+R0427,2026-05-31,H001,CityCare General Hospital,D03,Cardiology,Bed,Private Bed,27,14,1,51.85,0,24,12.44,11.56,4.51,11,3,2.13,7.57,Good,0,2026-02-14
+R0428,2026-06-05,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,X-Ray Unit,27,20,0,74.07,0,24,17.78,6.22,2.93,14,5,2.11,18.92,Good,0,2026-02-10
+R0429,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,16,13,2,81.25,0,12,9.75,2.25,0.63,3,2,3.35,9.82,Good,0,2026-04-13
+R0430,2026-06-15,H001,CityCare General Hospital,D04,Orthopedics,Bed,Semi-Private Bed,18,8,2,44.44,0,24,10.67,13.33,3.49,7,2,3.67,20.57,Fair,0,2026-05-05
+R0431,2026-06-20,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Infusion Pump,16,15,0,93.75,1,24,22.5,1.5,4.67,12,5,0.86,6.26,Good,0,2026-05-16
+R0432,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,28,15,1,53.57,0,12,6.43,5.57,1.34,8,5,2.05,16.5,Good,0,2026-04-16
+R0433,2026-01-01,H001,CityCare General Hospital,D05,ICU,Bed,General Bed,21,18,1,85.71,0,24,20.57,3.43,2.4,10,3,4.01,8.36,Good,0,2025-12-21
+R0434,2026-01-06,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Patient Monitor,11,6,4,54.55,0,24,13.09,10.91,0.05,13,1,1.95,16.93,Good,0,2025-10-07
+R0435,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,11,9,0,81.82,0,12,9.82,2.18,1.43,11,3,2.67,8.85,Fair,0,2025-09-20
+R0436,2026-01-16,H001,CityCare General Hospital,D06,Pediatrics,Bed,ICU Bed,11,9,0,81.82,0,24,19.64,4.36,0.03,12,4,4.12,5.07,Fair,0,2025-10-16
+R0437,2026-01-21,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Ventilator,24,11,1,45.83,0,24,11.0,13.0,0.21,8,4,2.6,15.96,Fair,0,2025-11-19
+R0438,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,8,7,0,87.5,0,12,10.5,1.5,0.14,12,2,3.56,17.37,Good,0,2025-10-26
+R0439,2026-01-31,H001,CityCare General Hospital,D07,General Surgery,Bed,Private Bed,32,14,4,43.75,0,24,10.5,13.5,4.59,13,2,1.04,21.91,Good,0,2025-11-11
+R0440,2026-02-05,H002,Green Valley Medical Center,D05,ICU,Equipment,X-Ray Unit,14,7,0,50.0,0,24,12.0,12.0,1.86,13,3,2.67,11.51,Fair,1,2025-10-28
+R0441,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,17,13,1,76.47,0,12,9.18,2.82,1.7,4,5,3.41,23.85,Good,0,2026-01-27
+R0442,2026-02-15,H001,CityCare General Hospital,D01,Emergency Department,Bed,Semi-Private Bed,18,11,3,61.11,0,24,14.67,9.33,2.13,12,2,1.73,14.13,Good,0,2025-12-07
+R0443,2026-02-20,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Infusion Pump,15,7,0,46.67,0,24,11.2,12.8,4.42,7,1,2.04,7.01,Good,0,2025-12-11
+R0444,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,24,11,0,45.83,0,12,5.5,6.5,0.85,4,4,0.53,24.48,Needs Maintenance,1,2025-11-18
+R0445,2026-03-02,H001,CityCare General Hospital,D02,General Medicine,Bed,General Bed,49,44,2,89.8,0,24,21.55,2.45,3.66,3,5,3.24,19.71,Fair,0,2025-11-21
+R0446,2026-03-07,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Patient Monitor,28,21,2,75.0,0,24,18.0,6.0,0.05,12,4,4.17,6.25,Good,0,2026-01-12
+R0447,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,30,11,1,36.67,0,12,4.4,7.6,1.97,7,2,1.2,22.54,Fair,0,2026-02-26
+R0448,2026-03-17,H001,CityCare General Hospital,D03,Cardiology,Bed,ICU Bed,16,14,2,87.5,0,24,21.0,3.0,1.02,6,1,3.9,16.46,Good,0,2026-02-11
+R0449,2026-03-22,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Ventilator,13,12,1,92.31,1,24,22.15,1.85,2.6,12,1,2.7,15.62,Good,0,2026-02-16
+R0450,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,14,7,1,50.0,0,12,6.0,6.0,0.52,11,2,1.35,13.05,Fair,0,2025-12-08
+R0451,2026-04-01,H001,CityCare General Hospital,D04,Orthopedics,Bed,Private Bed,39,24,4,61.54,0,24,14.77,9.23,4.45,12,5,0.29,12.12,Good,0,2025-12-15
+R0452,2026-04-06,H002,Green Valley Medical Center,D02,General Medicine,Equipment,X-Ray Unit,21,8,2,38.1,0,24,9.14,14.86,2.36,9,2,0.81,5.25,Good,0,2025-12-14
+R0453,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,24,16,3,66.67,0,12,8.0,4.0,1.64,13,3,3.0,10.4,Good,0,2026-01-25
+R0454,2026-04-16,H001,CityCare General Hospital,D05,ICU,Bed,Semi-Private Bed,15,13,1,86.67,0,24,20.8,3.2,4.63,3,3,0.77,6.69,Needs Maintenance,1,2025-12-28
+R0455,2026-04-21,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Infusion Pump,10,7,1,70.0,0,24,16.8,7.2,1.39,12,3,0.58,13.16,Good,0,2026-01-07
+R0456,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,30,16,4,53.33,0,12,6.4,5.6,0.63,14,5,0.47,15.88,Fair,0,2026-04-07
+R0457,2026-05-01,H001,CityCare General Hospital,D06,Pediatrics,Bed,General Bed,32,24,1,75.0,0,24,18.0,6.0,3.29,9,4,3.25,12.82,Good,0,2026-02-15
+R0458,2026-05-06,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Patient Monitor,8,7,0,87.5,0,24,21.0,3.0,0.51,14,3,1.61,16.13,Good,0,2026-03-10
+R0459,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Nursing Staff,22,15,1,68.18,0,12,8.18,3.82,1.42,4,1,3.42,21.28,Good,0,2026-04-21
+R0460,2026-05-16,H001,CityCare General Hospital,D07,General Surgery,Bed,ICU Bed,29,16,3,55.17,0,24,13.24,10.76,4.02,13,5,2.98,15.94,Good,0,2026-04-01
+R0461,2026-05-21,H002,Green Valley Medical Center,D05,ICU,Equipment,Ventilator,10,7,1,70.0,0,24,16.8,7.2,3.03,6,1,4.87,11.36,Good,0,2026-04-19
+R0462,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Doctors,25,10,4,40.0,0,12,4.8,7.2,0.27,3,4,4.4,14.03,Good,0,2026-02-17
+R0463,2026-05-31,H001,CityCare General Hospital,D01,Emergency Department,Bed,Private Bed,43,32,4,74.42,0,24,17.86,6.14,0.56,12,1,2.12,23.23,Good,0,2026-05-13
+R0464,2026-06-05,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,X-Ray Unit,28,10,3,35.71,0,24,8.57,15.43,4.72,6,4,1.02,21.33,Good,0,2026-05-08
+R0465,2026-06-10,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Nursing Staff,13,12,0,92.31,1,12,11.08,0.92,1.28,8,4,1.15,3.13,Good,0,2026-05-26
+R0466,2026-06-15,H001,CityCare General Hospital,D02,General Medicine,Bed,Semi-Private Bed,27,19,0,70.37,0,24,16.89,7.11,1.37,13,2,1.66,10.77,Good,0,2026-03-23
+R0467,2026-06-20,H002,Green Valley Medical Center,D07,General Surgery,Equipment,Infusion Pump,21,10,0,47.62,0,24,11.43,12.57,0.92,5,5,3.59,17.77,Fair,1,2026-05-20
+R0468,2026-06-25,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Doctors,24,16,1,66.67,0,12,8.0,4.0,1.16,8,4,4.88,24.01,Fair,0,2026-04-21
+R0469,2026-01-01,H001,CityCare General Hospital,D03,Cardiology,Bed,General Bed,28,21,1,75.0,0,24,18.0,6.0,1.51,14,2,4.58,3.92,Good,0,2025-12-20
+R0470,2026-01-06,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Patient Monitor,11,10,0,90.91,1,24,21.82,2.18,1.36,14,5,1.49,6.3,Good,0,2025-09-15
+R0471,2026-01-11,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Nursing Staff,27,16,1,59.26,0,12,7.11,4.89,1.29,9,1,0.23,3.85,Good,0,2025-12-28
+R0472,2026-01-16,H001,CityCare General Hospital,D04,Orthopedics,Bed,ICU Bed,35,28,1,80.0,0,24,19.2,4.8,1.36,6,2,0.78,10.23,Needs Maintenance,1,2025-10-22
+R0473,2026-01-21,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Ventilator,14,5,1,35.71,0,24,8.57,15.43,1.55,6,1,2.46,19.04,Good,0,2025-10-28
+R0474,2026-01-26,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Doctors,14,7,0,50.0,0,12,6.0,6.0,0.17,5,1,0.42,13.32,Good,0,2026-01-04
+R0475,2026-01-31,H001,CityCare General Hospital,D05,ICU,Bed,Private Bed,39,15,2,38.46,0,24,9.23,14.77,1.07,14,4,0.87,4.49,Good,0,2025-12-20
+R0476,2026-02-05,H002,Green Valley Medical Center,D03,Cardiology,Equipment,X-Ray Unit,28,25,1,89.29,0,24,21.43,2.57,2.92,6,1,4.17,5.87,Good,0,2025-12-27
+R0477,2026-02-10,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Nursing Staff,8,6,0,75.0,0,12,9.0,3.0,1.6,7,1,3.06,11.9,Good,1,2025-12-18
+R0478,2026-02-15,H001,CityCare General Hospital,D06,Pediatrics,Bed,Semi-Private Bed,33,18,3,54.55,0,24,13.09,10.91,3.94,7,2,3.38,20.07,Good,1,2025-11-17
+R0479,2026-02-20,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,Infusion Pump,25,16,0,64.0,0,24,15.36,8.64,0.45,9,3,1.94,23.91,Good,0,2025-11-24
+R0480,2026-02-25,H003,Sunrise Multi-Specialty Hospital,D02,General Medicine,Clinical Staff,Doctors,28,15,2,53.57,0,12,6.43,5.57,1.34,10,2,3.55,7.52,Good,0,2026-02-15
+R0481,2026-03-02,H001,CityCare General Hospital,D07,General Surgery,Bed,General Bed,24,18,0,75.0,0,24,18.0,6.0,3.78,8,5,2.45,11.06,Good,1,2025-12-29
+R0482,2026-03-07,H002,Green Valley Medical Center,D05,ICU,Equipment,Patient Monitor,7,3,0,42.86,0,24,10.29,13.71,2.51,9,4,0.32,6.68,Fair,0,2026-01-20
+R0483,2026-03-12,H003,Sunrise Multi-Specialty Hospital,D03,Cardiology,Clinical Staff,Nursing Staff,18,9,1,50.0,0,12,6.0,6.0,1.87,10,2,4.05,21.28,Good,0,2025-12-09
+R0484,2026-03-17,H001,CityCare General Hospital,D01,Emergency Department,Bed,ICU Bed,38,32,0,84.21,0,24,20.21,3.79,3.26,5,1,1.57,3.47,Fair,0,2025-12-10
+R0485,2026-03-22,H002,Green Valley Medical Center,D06,Pediatrics,Equipment,Ventilator,10,6,1,60.0,0,24,14.4,9.6,2.2,10,3,2.31,3.21,Good,0,2026-01-29
+R0486,2026-03-27,H003,Sunrise Multi-Specialty Hospital,D04,Orthopedics,Clinical Staff,Doctors,20,10,1,50.0,0,12,6.0,6.0,2.0,5,4,3.14,5.45,Good,0,2026-02-24
+R0487,2026-04-01,H001,CityCare General Hospital,D02,General Medicine,Bed,Private Bed,26,11,3,42.31,0,24,10.15,13.85,1.24,13,1,3.5,22.03,Fair,0,2026-01-15
+R0488,2026-04-06,H002,Green Valley Medical Center,D07,General Surgery,Equipment,X-Ray Unit,20,10,0,50.0,0,24,12.0,12.0,4.81,10,3,2.12,13.17,Good,0,2026-01-08
+R0489,2026-04-11,H003,Sunrise Multi-Specialty Hospital,D05,ICU,Clinical Staff,Nursing Staff,15,12,1,80.0,0,12,9.6,2.4,0.23,12,4,1.85,10.36,Fair,0,2026-03-18
+R0490,2026-04-16,H001,CityCare General Hospital,D03,Cardiology,Bed,Semi-Private Bed,15,13,1,86.67,0,24,20.8,3.2,3.18,8,1,1.12,16.29,Good,0,2026-01-12
+R0491,2026-04-21,H002,Green Valley Medical Center,D01,Emergency Department,Equipment,Infusion Pump,9,7,0,77.78,0,24,18.67,5.33,1.91,14,5,3.29,9.59,Good,1,2026-03-29
+R0492,2026-04-26,H003,Sunrise Multi-Specialty Hospital,D06,Pediatrics,Clinical Staff,Doctors,20,18,0,90.0,1,12,10.8,1.2,0.75,3,4,2.75,16.42,Good,0,2025-12-28
+R0493,2026-05-01,H001,CityCare General Hospital,D04,Orthopedics,Bed,General Bed,22,15,0,68.18,0,24,16.36,7.64,2.67,5,1,3.99,14.08,Good,0,2026-02-15
+R0494,2026-05-06,H002,Green Valley Medical Center,D02,General Medicine,Equipment,Patient Monitor,21,18,0,85.71,0,24,20.57,3.43,1.09,14,4,1.51,24.69,Good,0,2026-02-23
+R0495,2026-05-11,H003,Sunrise Multi-Specialty Hospital,D07,General Surgery,Clinical Staff,Nursing Staff,28,13,4,46.43,0,12,5.57,6.43,0.79,9,1,3.54,24.43,Good,0,2026-03-21
+R0496,2026-05-16,H001,CityCare General Hospital,D05,ICU,Bed,ICU Bed,16,9,1,56.25,0,24,13.5,10.5,2.84,14,3,2.7,4.6,Good,0,2026-03-04
+R0497,2026-05-21,H002,Green Valley Medical Center,D03,Cardiology,Equipment,Ventilator,24,11,3,45.83,0,24,11.0,13.0,2.77,9,4,2.72,6.92,Fair,0,2026-03-30
+R0498,2026-05-26,H003,Sunrise Multi-Specialty Hospital,D01,Emergency Department,Clinical Staff,Doctors,24,11,2,45.83,0,12,5.5,6.5,0.71,11,4,0.61,18.52,Needs Maintenance,1,2026-03-25
+R0499,2026-05-31,H001,CityCare General Hospital,D06,Pediatrics,Bed,Private Bed,30,16,0,53.33,0,24,12.8,11.2,1.45,13,1,1.33,21.69,Good,0,2026-01-31
+R0500,2026-06-05,H002,Green Valley Medical Center,D04,Orthopedics,Equipment,X-Ray Unit,24,10,3,41.67,0,24,10.0,14.0,3.57,9,2,3.34,21.22,Good,0,2026-04-02

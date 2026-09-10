@@ -1,0 +1,501 @@
+movement_id,admission_id,patient_id,hospital_id,movement_sequence,movement_type,from_department_id,current_department_id,from_department_name,current_department_name,bed_id,movement_datetime,movement_date,duration_in_department_hours,year,month,day_of_week,hour_of_day,shift,is_peak_hour
+M0001,A0001,P0001,H003,1,Discharge,D00,D99,Outside Hospital,Discharge,B3-001,2026-03-15 20:00:00,2026-03-15,15.5,2026,March,Sunday,20,Evening,1
+M0002,A0002,P0002,H001,2,Transfer,D01,D07,Emergency Department,General Surgery,B1-002,2026-01-03 22:00:00,2026-01-03,8.2,2026,January,Saturday,22,Evening,0
+M0003,A0003,P0003,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-003,2026-05-26 13:00:00,2026-05-26,18.3,2026,May,Tuesday,13,Afternoon,0
+M0004,A0004,P0004,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-004,2026-06-29 15:00:00,2026-06-29,23.5,2026,June,Monday,15,Afternoon,0
+M0005,A0005,P0005,H001,2,Transfer,D01,D05,Emergency Department,ICU,B1-005,2026-05-10 12:00:00,2026-05-10,16.7,2026,May,Sunday,12,Afternoon,0
+M0006,A0006,P0006,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-006,2026-03-03 21:00:00,2026-03-03,34.8,2026,March,Tuesday,21,Evening,0
+M0007,A0007,P0007,H003,1,Admission,D00,D07,Outside Hospital,General Surgery,B3-007,2026-02-03 18:00:00,2026-02-03,18.4,2026,February,Tuesday,18,Evening,1
+M0008,A0008,P0008,H002,2,Transfer,D01,D07,Emergency Department,General Surgery,B2-008,2026-06-07 16:00:00,2026-06-07,17.3,2026,June,Sunday,16,Afternoon,0
+M0009,A0009,P0009,H003,3,Department Transfer,D07,D07,General Surgery,General Surgery,B3-009,2026-02-01 15:00:00,2026-02-01,16.8,2026,February,Sunday,15,Afternoon,0
+M0010,A0010,P0010,H003,1,Admission,D00,D05,Outside Hospital,ICU,B3-010,2026-03-01 18:00:00,2026-03-01,4.4,2026,March,Sunday,18,Evening,1
+M0011,A0011,P0011,H003,2,Transfer,D01,D06,Emergency Department,Pediatrics,B3-011,2026-06-22 23:00:00,2026-06-22,11.6,2026,June,Monday,23,Evening,0
+M0012,A0012,P0012,H003,3,Discharge,D05,D99,ICU,Discharge,B3-012,2026-02-03 02:00:00,2026-02-03,26.8,2026,February,Tuesday,2,Night,0
+M0013,A0013,P0013,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-013,2026-05-24 10:00:00,2026-05-24,14.6,2026,May,Sunday,10,Morning,1
+M0014,A0014,P0014,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-014,2026-06-20 21:00:00,2026-06-20,34.3,2026,June,Saturday,21,Evening,0
+M0015,A0015,P0015,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-015,2026-01-19 17:00:00,2026-01-19,28.4,2026,January,Monday,17,Afternoon,1
+M0016,A0016,P0016,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-016,2026-01-22 18:00:00,2026-01-22,5.6,2026,January,Thursday,18,Evening,1
+M0017,A0017,P0017,H002,2,Transfer,D01,D05,Emergency Department,ICU,B2-017,2026-01-04 08:00:00,2026-01-04,17.2,2026,January,Sunday,8,Morning,1
+M0018,A0018,P0018,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-018,2026-03-21 03:00:00,2026-03-21,34.3,2026,March,Saturday,3,Night,0
+M0019,A0019,P0019,H002,1,Admission,D00,D05,Outside Hospital,ICU,B2-019,2026-04-27 22:00:00,2026-04-27,3.8,2026,April,Monday,22,Evening,0
+M0020,A0020,P0020,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-020,2026-06-26 20:00:00,2026-06-26,10.2,2026,June,Friday,20,Evening,1
+M0021,A0021,P0021,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-021,2026-04-26 05:00:00,2026-04-26,17.1,2026,April,Sunday,5,Night,0
+M0022,A0022,P0022,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-022,2026-04-25 05:00:00,2026-04-25,35.2,2026,April,Saturday,5,Night,0
+M0023,A0023,P0023,H002,2,Discharge,D01,D99,Emergency Department,Discharge,B2-023,2026-06-18 03:00:00,2026-06-18,12.9,2026,June,Thursday,3,Night,0
+M0024,A0024,P0024,H002,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B2-024,2026-06-28 03:00:00,2026-06-28,4.8,2026,June,Sunday,3,Night,0
+M0025,A0025,P0025,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-025,2026-03-06 12:00:00,2026-03-06,17.0,2026,March,Friday,12,Afternoon,0
+M0026,A0026,P0026,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-026,2026-05-14 17:00:00,2026-05-14,10.4,2026,May,Thursday,17,Afternoon,1
+M0027,A0027,P0027,H001,3,Department Transfer,D05,D05,ICU,ICU,B1-027,2026-05-12 18:00:00,2026-05-12,35.6,2026,May,Tuesday,18,Evening,1
+M0028,A0028,P0028,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-028,2026-01-08 14:00:00,2026-01-08,15.1,2026,January,Thursday,14,Afternoon,0
+M0029,A0029,P0029,H003,2,Transfer,D01,D05,Emergency Department,ICU,B3-029,2026-06-07 19:00:00,2026-06-07,29.2,2026,June,Sunday,19,Evening,1
+M0030,A0030,P0030,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-030,2026-02-24 07:00:00,2026-02-24,34.7,2026,February,Tuesday,7,Morning,0
+M0031,A0031,P0031,H002,1,Admission,D00,D02,Outside Hospital,General Medicine,B2-031,2026-04-14 12:00:00,2026-04-14,27.2,2026,April,Tuesday,12,Afternoon,0
+M0032,A0032,P0032,H003,2,Transfer,D01,D03,Emergency Department,Cardiology,B3-032,2026-05-13 02:00:00,2026-05-13,19.0,2026,May,Wednesday,2,Night,0
+M0033,A0033,P0033,H002,3,Department Transfer,D05,D05,ICU,ICU,B2-033,2026-02-01 16:00:00,2026-02-01,28.7,2026,February,Sunday,16,Afternoon,0
+M0034,A0034,P0034,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-034,2026-01-10 10:00:00,2026-01-10,24.6,2026,January,Saturday,10,Morning,1
+M0035,A0035,P0035,H003,2,Transfer,D01,D07,Emergency Department,General Surgery,B3-035,2026-04-20 22:00:00,2026-04-20,13.3,2026,April,Monday,22,Evening,0
+M0036,A0036,P0036,H002,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B2-036,2026-06-13 18:00:00,2026-06-13,26.9,2026,June,Saturday,18,Evening,1
+M0037,A0037,P0037,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-037,2026-05-10 03:00:00,2026-05-10,7.8,2026,May,Sunday,3,Night,0
+M0038,A0038,P0038,H003,2,Transfer,D01,D07,Emergency Department,General Surgery,B3-038,2026-04-01 16:00:00,2026-04-01,11.9,2026,April,Wednesday,16,Afternoon,0
+M0039,A0039,P0039,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-039,2026-02-24 21:00:00,2026-02-24,6.0,2026,February,Tuesday,21,Evening,0
+M0040,A0040,P0040,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-040,2026-02-03 20:00:00,2026-02-03,11.6,2026,February,Tuesday,20,Evening,1
+M0041,A0041,P0041,H001,2,Transfer,D01,D04,Emergency Department,Orthopedics,B1-001,2026-06-27 13:00:00,2026-06-27,10.9,2026,June,Saturday,13,Afternoon,0
+M0042,A0042,P0042,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-002,2026-05-17 13:00:00,2026-05-17,3.1,2026,May,Sunday,13,Afternoon,0
+M0043,A0043,P0043,H003,1,Admission,D00,D06,Outside Hospital,Pediatrics,B3-003,2026-04-07 02:00:00,2026-04-07,28.5,2026,April,Tuesday,2,Night,0
+M0044,A0044,P0044,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-004,2026-01-08 02:00:00,2026-01-08,21.1,2026,January,Thursday,2,Night,0
+M0045,A0045,P0045,H001,3,Discharge,D02,D99,General Medicine,Discharge,B1-005,2026-03-08 14:00:00,2026-03-08,14.7,2026,March,Sunday,14,Afternoon,0
+M0046,A0046,P0046,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-006,2026-02-26 05:00:00,2026-02-26,12.6,2026,February,Thursday,5,Night,0
+M0047,A0047,P0047,H002,2,Transfer,D01,D07,Emergency Department,General Surgery,B2-007,2026-03-08 09:00:00,2026-03-08,25.5,2026,March,Sunday,9,Morning,1
+M0048,A0048,P0048,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-008,2026-03-18 18:00:00,2026-03-18,31.8,2026,March,Wednesday,18,Evening,1
+M0049,A0049,P0049,H002,1,Admission,D00,D02,Outside Hospital,General Medicine,B2-009,2026-02-25 13:00:00,2026-02-25,23.9,2026,February,Wednesday,13,Afternoon,0
+M0050,A0050,P0050,H002,2,Transfer,D01,D05,Emergency Department,ICU,B2-010,2026-03-08 06:00:00,2026-03-08,20.7,2026,March,Sunday,6,Morning,0
+M0051,A0051,P0051,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-011,2026-02-20 05:00:00,2026-02-20,2.8,2026,February,Friday,5,Night,0
+M0052,A0052,P0052,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-012,2026-04-14 23:00:00,2026-04-14,12.4,2026,April,Tuesday,23,Evening,0
+M0053,A0053,P0053,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-013,2026-04-03 23:00:00,2026-04-03,10.6,2026,April,Friday,23,Evening,0
+M0054,A0054,P0054,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-014,2026-01-10 03:00:00,2026-01-10,24.9,2026,January,Saturday,3,Night,0
+M0055,A0055,P0055,H002,1,Admission,D00,D03,Outside Hospital,Cardiology,B2-015,2026-06-16 12:00:00,2026-06-16,5.5,2026,June,Tuesday,12,Afternoon,0
+M0056,A0056,P0056,H003,2,Discharge,D01,D99,Emergency Department,Discharge,B3-016,2026-02-06 00:00:00,2026-02-06,5.6,2026,February,Friday,0,Night,0
+M0057,A0057,P0057,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-017,2026-04-13 11:00:00,2026-04-13,8.2,2026,April,Monday,11,Morning,1
+M0058,A0058,P0058,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-018,2026-04-01 02:00:00,2026-04-01,31.6,2026,April,Wednesday,2,Night,0
+M0059,A0059,P0059,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-019,2026-03-21 22:00:00,2026-03-21,15.7,2026,March,Saturday,22,Evening,0
+M0060,A0060,P0060,H003,3,Department Transfer,D07,D07,General Surgery,General Surgery,B3-020,2026-02-01 16:00:00,2026-02-01,21.4,2026,February,Sunday,16,Afternoon,0
+M0061,A0061,P0061,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-021,2026-04-30 19:00:00,2026-04-30,6.3,2026,April,Thursday,19,Evening,1
+M0062,A0062,P0062,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-022,2026-02-18 23:00:00,2026-02-18,26.5,2026,February,Wednesday,23,Evening,0
+M0063,A0063,P0063,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-023,2026-05-27 09:00:00,2026-05-27,14.8,2026,May,Wednesday,9,Morning,1
+M0064,A0064,P0064,H002,1,Admission,D00,D05,Outside Hospital,ICU,B2-024,2026-06-18 07:00:00,2026-06-18,2.7,2026,June,Thursday,7,Morning,0
+M0065,A0065,P0065,H002,2,Transfer,D01,D03,Emergency Department,Cardiology,B2-025,2026-05-23 07:00:00,2026-05-23,25.3,2026,May,Saturday,7,Morning,0
+M0066,A0066,P0066,H002,3,Department Transfer,D03,D03,Cardiology,Cardiology,B2-026,2026-02-25 11:00:00,2026-02-25,35.5,2026,February,Wednesday,11,Morning,1
+M0067,A0067,P0067,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-027,2026-06-27 17:00:00,2026-06-27,29.7,2026,June,Saturday,17,Afternoon,1
+M0068,A0068,P0068,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-028,2026-01-07 18:00:00,2026-01-07,8.8,2026,January,Wednesday,18,Evening,1
+M0069,A0069,P0069,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-029,2026-03-15 19:00:00,2026-03-15,12.1,2026,March,Sunday,19,Evening,1
+M0070,A0070,P0070,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-030,2026-01-09 09:00:00,2026-01-09,11.8,2026,January,Friday,9,Morning,1
+M0071,A0071,P0071,H003,2,Transfer,D01,D02,Emergency Department,General Medicine,B3-031,2026-06-10 08:00:00,2026-06-10,8.7,2026,June,Wednesday,8,Morning,1
+M0072,A0072,P0072,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-032,2026-06-03 13:00:00,2026-06-03,3.9,2026,June,Wednesday,13,Afternoon,0
+M0073,A0073,P0073,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-033,2026-04-02 07:00:00,2026-04-02,2.2,2026,April,Thursday,7,Morning,0
+M0074,A0074,P0074,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-034,2026-05-27 11:00:00,2026-05-27,4.3,2026,May,Wednesday,11,Morning,1
+M0075,A0075,P0075,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-035,2026-04-26 21:00:00,2026-04-26,13.6,2026,April,Sunday,21,Evening,0
+M0076,A0076,P0076,H002,1,Admission,D00,D07,Outside Hospital,General Surgery,B2-036,2026-05-05 12:00:00,2026-05-05,7.1,2026,May,Tuesday,12,Afternoon,0
+M0077,A0077,P0077,H002,2,Transfer,D01,D07,Emergency Department,General Surgery,B2-037,2026-05-27 07:00:00,2026-05-27,9.0,2026,May,Wednesday,7,Morning,0
+M0078,A0078,P0078,H003,3,Discharge,D01,D99,Emergency Department,Discharge,B3-038,2026-02-10 02:00:00,2026-02-10,13.2,2026,February,Tuesday,2,Night,0
+M0079,A0079,P0079,H003,1,Admission,D00,D06,Outside Hospital,Pediatrics,B3-039,2026-01-30 07:00:00,2026-01-30,31.7,2026,January,Friday,7,Morning,0
+M0080,A0080,P0080,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-040,2026-03-23 17:00:00,2026-03-23,25.6,2026,March,Monday,17,Afternoon,1
+M0081,A0081,P0081,H003,3,Department Transfer,D05,D05,ICU,ICU,B3-001,2026-01-10 18:00:00,2026-01-10,9.0,2026,January,Saturday,18,Evening,1
+M0082,A0082,P0082,H001,1,Admission,D00,D07,Outside Hospital,General Surgery,B1-002,2026-05-09 16:00:00,2026-05-09,27.8,2026,May,Saturday,16,Afternoon,0
+M0083,A0083,P0083,H002,2,Transfer,D01,D05,Emergency Department,ICU,B2-003,2026-02-19 08:00:00,2026-02-19,4.2,2026,February,Thursday,8,Morning,1
+M0084,A0084,P0084,H001,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B1-004,2026-06-02 14:00:00,2026-06-02,2.1,2026,June,Tuesday,14,Afternoon,0
+M0085,A0085,P0085,H001,1,Admission,D00,D07,Outside Hospital,General Surgery,B1-005,2026-01-11 01:00:00,2026-01-11,33.9,2026,January,Sunday,1,Night,0
+M0086,A0086,P0086,H002,2,Transfer,D01,D06,Emergency Department,Pediatrics,B2-006,2026-05-10 13:00:00,2026-05-10,15.8,2026,May,Sunday,13,Afternoon,0
+M0087,A0087,P0087,H003,3,Department Transfer,D03,D03,Cardiology,Cardiology,B3-007,2026-04-29 01:00:00,2026-04-29,4.0,2026,April,Wednesday,1,Night,0
+M0088,A0088,P0088,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-008,2026-05-21 10:00:00,2026-05-21,31.7,2026,May,Thursday,10,Morning,1
+M0089,A0089,P0089,H002,2,Discharge,D01,D99,Emergency Department,Discharge,B2-009,2026-01-25 08:00:00,2026-01-25,7.9,2026,January,Sunday,8,Morning,1
+M0090,A0090,P0090,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-010,2026-01-07 08:00:00,2026-01-07,33.5,2026,January,Wednesday,8,Morning,1
+M0091,A0091,P0091,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-011,2026-02-07 05:00:00,2026-02-07,21.0,2026,February,Saturday,5,Night,0
+M0092,A0092,P0092,H001,2,Transfer,D01,D04,Emergency Department,Orthopedics,B1-012,2026-06-15 17:00:00,2026-06-15,14.5,2026,June,Monday,17,Afternoon,1
+M0093,A0093,P0093,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-013,2026-05-18 02:00:00,2026-05-18,21.1,2026,May,Monday,2,Night,0
+M0094,A0094,P0094,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-014,2026-03-03 23:00:00,2026-03-03,12.0,2026,March,Tuesday,23,Evening,0
+M0095,A0095,P0095,H001,2,Transfer,D01,D07,Emergency Department,General Surgery,B1-015,2026-06-23 10:00:00,2026-06-23,29.3,2026,June,Tuesday,10,Morning,1
+M0096,A0096,P0096,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-016,2026-04-10 10:00:00,2026-04-10,5.3,2026,April,Friday,10,Morning,1
+M0097,A0097,P0097,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-017,2026-03-28 11:00:00,2026-03-28,13.6,2026,March,Saturday,11,Morning,1
+M0098,A0098,P0098,H003,2,Transfer,D01,D07,Emergency Department,General Surgery,B3-018,2026-04-21 18:00:00,2026-04-21,20.7,2026,April,Tuesday,18,Evening,1
+M0099,A0099,P0099,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-019,2026-01-26 11:00:00,2026-01-26,6.3,2026,January,Monday,11,Morning,1
+M0100,A0100,P0100,H001,1,Discharge,D00,D99,Outside Hospital,Discharge,B1-020,2026-03-25 14:00:00,2026-03-25,16.4,2026,March,Wednesday,14,Afternoon,0
+M0101,A0101,P0101,H003,2,Transfer,D01,D05,Emergency Department,ICU,B3-021,2026-06-09 04:00:00,2026-06-09,8.9,2026,June,Tuesday,4,Night,0
+M0102,A0102,P0102,H003,3,Department Transfer,D03,D03,Cardiology,Cardiology,B3-022,2026-04-30 21:00:00,2026-04-30,19.9,2026,April,Thursday,21,Evening,0
+M0103,A0103,P0103,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-023,2026-03-03 21:00:00,2026-03-03,5.8,2026,March,Tuesday,21,Evening,0
+M0104,A0104,P0104,H001,2,Transfer,D01,D05,Emergency Department,ICU,B1-024,2026-05-09 08:00:00,2026-05-09,10.6,2026,May,Saturday,8,Morning,1
+M0105,A0105,P0105,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-025,2026-04-24 05:00:00,2026-04-24,5.5,2026,April,Friday,5,Night,0
+M0106,A0106,P0106,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-026,2026-04-25 22:00:00,2026-04-25,7.2,2026,April,Saturday,22,Evening,0
+M0107,A0107,P0107,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-027,2026-01-17 09:00:00,2026-01-17,13.2,2026,January,Saturday,9,Morning,1
+M0108,A0108,P0108,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-028,2026-01-10 00:00:00,2026-01-10,26.8,2026,January,Saturday,0,Night,0
+M0109,A0109,P0109,H001,1,Admission,D00,D03,Outside Hospital,Cardiology,B1-029,2026-02-11 14:00:00,2026-02-11,13.3,2026,February,Wednesday,14,Afternoon,0
+M0110,A0110,P0110,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-030,2026-01-30 11:00:00,2026-01-30,9.3,2026,January,Friday,11,Morning,1
+M0111,A0111,P0111,H003,3,Discharge,D06,D99,Pediatrics,Discharge,B3-031,2026-04-13 03:00:00,2026-04-13,33.0,2026,April,Monday,3,Night,0
+M0112,A0112,P0112,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-032,2026-01-24 04:00:00,2026-01-24,28.9,2026,January,Saturday,4,Night,0
+M0113,A0113,P0113,H001,2,Transfer,D01,D06,Emergency Department,Pediatrics,B1-033,2026-01-05 04:00:00,2026-01-05,35.3,2026,January,Monday,4,Night,0
+M0114,A0114,P0114,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-034,2026-06-03 18:00:00,2026-06-03,8.9,2026,June,Wednesday,18,Evening,1
+M0115,A0115,P0115,H001,1,Admission,D00,D05,Outside Hospital,ICU,B1-035,2026-01-31 00:00:00,2026-01-31,10.6,2026,January,Saturday,0,Night,0
+M0116,A0116,P0116,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-036,2026-04-26 00:00:00,2026-04-26,6.4,2026,April,Sunday,0,Night,0
+M0117,A0117,P0117,H001,3,Department Transfer,D03,D03,Cardiology,Cardiology,B1-037,2026-04-08 08:00:00,2026-04-08,29.0,2026,April,Wednesday,8,Morning,1
+M0118,A0118,P0118,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-038,2026-02-06 12:00:00,2026-02-06,2.7,2026,February,Friday,12,Afternoon,0
+M0119,A0119,P0119,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-039,2026-03-17 20:00:00,2026-03-17,12.9,2026,March,Tuesday,20,Evening,1
+M0120,A0120,P0120,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-040,2026-03-11 10:00:00,2026-03-11,24.3,2026,March,Wednesday,10,Morning,1
+M0121,A0121,P0121,H001,1,Admission,D00,D03,Outside Hospital,Cardiology,B1-001,2026-05-30 05:00:00,2026-05-30,22.8,2026,May,Saturday,5,Night,0
+M0122,A0122,P0122,H003,2,Discharge,D01,D99,Emergency Department,Discharge,B3-002,2026-05-10 23:00:00,2026-05-10,4.1,2026,May,Sunday,23,Evening,0
+M0123,A0123,P0123,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-003,2026-03-29 06:00:00,2026-03-29,18.8,2026,March,Sunday,6,Morning,0
+M0124,A0124,P0124,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-004,2026-02-12 05:00:00,2026-02-12,22.0,2026,February,Thursday,5,Night,0
+M0125,A0125,P0125,H003,2,Transfer,D01,D02,Emergency Department,General Medicine,B3-005,2026-04-10 09:00:00,2026-04-10,24.1,2026,April,Friday,9,Morning,1
+M0126,A0126,P0126,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-006,2026-02-13 02:00:00,2026-02-13,19.3,2026,February,Friday,2,Night,0
+M0127,A0127,P0127,H003,1,Admission,D00,D07,Outside Hospital,General Surgery,B3-007,2026-06-15 17:00:00,2026-06-15,15.5,2026,June,Monday,17,Afternoon,1
+M0128,A0128,P0128,H001,2,Transfer,D01,D07,Emergency Department,General Surgery,B1-008,2026-02-04 10:00:00,2026-02-04,13.4,2026,February,Wednesday,10,Morning,1
+M0129,A0129,P0129,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-009,2026-01-17 09:00:00,2026-01-17,2.9,2026,January,Saturday,9,Morning,1
+M0130,A0130,P0130,H002,1,Admission,D00,D05,Outside Hospital,ICU,B2-010,2026-06-14 19:00:00,2026-06-14,13.2,2026,June,Sunday,19,Evening,1
+M0131,A0131,P0131,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-011,2026-06-02 11:00:00,2026-06-02,6.3,2026,June,Tuesday,11,Morning,1
+M0132,A0132,P0132,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-012,2026-05-04 13:00:00,2026-05-04,2.6,2026,May,Monday,13,Afternoon,0
+M0133,A0133,P0133,H001,1,Discharge,D00,D99,Outside Hospital,Discharge,B1-013,2026-03-17 13:00:00,2026-03-17,32.5,2026,March,Tuesday,13,Afternoon,0
+M0134,A0134,P0134,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-014,2026-03-31 13:00:00,2026-03-31,35.0,2026,March,Tuesday,13,Afternoon,0
+M0135,A0135,P0135,H003,3,Department Transfer,D07,D07,General Surgery,General Surgery,B3-015,2026-04-29 02:00:00,2026-04-29,28.7,2026,April,Wednesday,2,Night,0
+M0136,A0136,P0136,H003,1,Admission,D00,D05,Outside Hospital,ICU,B3-016,2026-04-19 16:00:00,2026-04-19,8.4,2026,April,Sunday,16,Afternoon,0
+M0137,A0137,P0137,H002,2,Transfer,D01,D03,Emergency Department,Cardiology,B2-017,2026-04-01 20:00:00,2026-04-01,30.2,2026,April,Wednesday,20,Evening,1
+M0138,A0138,P0138,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-018,2026-01-28 16:00:00,2026-01-28,25.7,2026,January,Wednesday,16,Afternoon,0
+M0139,A0139,P0139,H003,1,Admission,D00,D07,Outside Hospital,General Surgery,B3-019,2026-02-28 02:00:00,2026-02-28,30.2,2026,February,Saturday,2,Night,0
+M0140,A0140,P0140,H001,2,Transfer,D01,D07,Emergency Department,General Surgery,B1-020,2026-01-31 09:00:00,2026-01-31,19.5,2026,January,Saturday,9,Morning,1
+M0141,A0141,P0141,H003,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B3-021,2026-05-17 14:00:00,2026-05-17,9.3,2026,May,Sunday,14,Afternoon,0
+M0142,A0142,P0142,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-022,2026-06-17 12:00:00,2026-06-17,21.9,2026,June,Wednesday,12,Afternoon,0
+M0143,A0143,P0143,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-023,2026-04-08 22:00:00,2026-04-08,8.1,2026,April,Wednesday,22,Evening,0
+M0144,A0144,P0144,H002,3,Discharge,D02,D99,General Medicine,Discharge,B2-024,2026-01-12 19:00:00,2026-01-12,27.8,2026,January,Monday,19,Evening,1
+M0145,A0145,P0145,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-025,2026-02-26 19:00:00,2026-02-26,19.3,2026,February,Thursday,19,Evening,1
+M0146,A0146,P0146,H003,2,Transfer,D01,D05,Emergency Department,ICU,B3-026,2026-05-23 03:00:00,2026-05-23,11.2,2026,May,Saturday,3,Night,0
+M0147,A0147,P0147,H003,3,Department Transfer,D03,D03,Cardiology,Cardiology,B3-027,2026-06-27 21:00:00,2026-06-27,31.2,2026,June,Saturday,21,Evening,0
+M0148,A0148,P0148,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-028,2026-06-07 11:00:00,2026-06-07,15.5,2026,June,Sunday,11,Morning,1
+M0149,A0149,P0149,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-029,2026-06-03 03:00:00,2026-06-03,31.5,2026,June,Wednesday,3,Night,0
+M0150,A0150,P0150,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-030,2026-05-04 10:00:00,2026-05-04,31.2,2026,May,Monday,10,Morning,1
+M0151,A0151,P0151,H002,1,Admission,D00,D02,Outside Hospital,General Medicine,B2-031,2026-02-18 19:00:00,2026-02-18,5.6,2026,February,Wednesday,19,Evening,1
+M0152,A0152,P0152,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-032,2026-03-08 17:00:00,2026-03-08,25.7,2026,March,Sunday,17,Afternoon,1
+M0153,A0153,P0153,H003,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B3-033,2026-05-13 00:00:00,2026-05-13,20.5,2026,May,Wednesday,0,Night,0
+M0154,A0154,P0154,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-034,2026-02-24 13:00:00,2026-02-24,4.2,2026,February,Tuesday,13,Afternoon,0
+M0155,A0155,P0155,H001,2,Discharge,D01,D99,Emergency Department,Discharge,B1-035,2026-04-20 11:00:00,2026-04-20,24.9,2026,April,Monday,11,Morning,1
+M0156,A0156,P0156,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-036,2026-02-21 00:00:00,2026-02-21,32.7,2026,February,Saturday,0,Night,0
+M0157,A0157,P0157,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-037,2026-07-04 04:00:00,2026-07-04,32.7,2026,July,Saturday,4,Night,0
+M0158,A0158,P0158,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-038,2026-02-09 15:00:00,2026-02-09,27.3,2026,February,Monday,15,Afternoon,0
+M0159,A0159,P0159,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-039,2026-04-27 22:00:00,2026-04-27,16.6,2026,April,Monday,22,Evening,0
+M0160,A0160,P0160,H003,1,Admission,D00,D07,Outside Hospital,General Surgery,B3-040,2026-01-27 18:00:00,2026-01-27,28.7,2026,January,Tuesday,18,Evening,1
+M0161,A0161,P0161,H003,2,Transfer,D01,D03,Emergency Department,Cardiology,B3-001,2026-01-29 04:00:00,2026-01-29,34.0,2026,January,Thursday,4,Night,0
+M0162,A0162,P0162,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-002,2026-05-29 11:00:00,2026-05-29,13.4,2026,May,Friday,11,Morning,1
+M0163,A0163,P0163,H002,1,Admission,D00,D07,Outside Hospital,General Surgery,B2-003,2026-01-14 13:00:00,2026-01-14,28.7,2026,January,Wednesday,13,Afternoon,0
+M0164,A0164,P0164,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-004,2026-02-10 19:00:00,2026-02-10,7.6,2026,February,Tuesday,19,Evening,1
+M0165,A0165,P0165,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-005,2026-01-12 21:00:00,2026-01-12,8.1,2026,January,Monday,21,Evening,0
+M0166,A0166,P0166,H001,1,Discharge,D00,D99,Outside Hospital,Discharge,B1-006,2026-06-17 23:00:00,2026-06-17,2.4,2026,June,Wednesday,23,Evening,0
+M0167,A0167,P0167,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-007,2026-04-24 09:00:00,2026-04-24,27.6,2026,April,Friday,9,Morning,1
+M0168,A0168,P0168,H001,3,Department Transfer,D03,D03,Cardiology,Cardiology,B1-008,2026-02-09 23:00:00,2026-02-09,26.9,2026,February,Monday,23,Evening,0
+M0169,A0169,P0169,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-009,2026-02-23 08:00:00,2026-02-23,17.9,2026,February,Monday,8,Morning,1
+M0170,A0170,P0170,H002,2,Transfer,D01,D03,Emergency Department,Cardiology,B2-010,2026-04-12 12:00:00,2026-04-12,16.8,2026,April,Sunday,12,Afternoon,0
+M0171,A0171,P0171,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-011,2026-02-24 16:00:00,2026-02-24,3.7,2026,February,Tuesday,16,Afternoon,0
+M0172,A0172,P0172,H002,1,Admission,D00,D02,Outside Hospital,General Medicine,B2-012,2026-04-24 01:00:00,2026-04-24,18.6,2026,April,Friday,1,Night,0
+M0173,A0173,P0173,H003,2,Transfer,D01,D06,Emergency Department,Pediatrics,B3-013,2026-06-04 09:00:00,2026-06-04,8.7,2026,June,Thursday,9,Morning,1
+M0174,A0174,P0174,H002,3,Department Transfer,D03,D03,Cardiology,Cardiology,B2-014,2026-05-30 06:00:00,2026-05-30,13.8,2026,May,Saturday,6,Morning,0
+M0175,A0175,P0175,H003,1,Admission,D00,D06,Outside Hospital,Pediatrics,B3-015,2026-03-11 17:00:00,2026-03-11,20.0,2026,March,Wednesday,17,Afternoon,1
+M0176,A0176,P0176,H001,2,Transfer,D01,D04,Emergency Department,Orthopedics,B1-016,2026-02-27 22:00:00,2026-02-27,19.9,2026,February,Friday,22,Evening,0
+M0177,A0177,P0177,H003,3,Discharge,D01,D99,Emergency Department,Discharge,B3-017,2026-02-04 16:00:00,2026-02-04,30.7,2026,February,Wednesday,16,Afternoon,0
+M0178,A0178,P0178,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-018,2026-02-05 16:00:00,2026-02-05,9.9,2026,February,Thursday,16,Afternoon,0
+M0179,A0179,P0179,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-019,2026-05-28 06:00:00,2026-05-28,23.3,2026,May,Thursday,6,Morning,0
+M0180,A0180,P0180,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-020,2026-03-27 12:00:00,2026-03-27,28.0,2026,March,Friday,12,Afternoon,0
+M0181,A0181,P0181,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-021,2026-04-20 14:00:00,2026-04-20,34.9,2026,April,Monday,14,Afternoon,0
+M0182,A0182,P0182,H003,2,Transfer,D01,D05,Emergency Department,ICU,B3-022,2026-06-03 14:00:00,2026-06-03,17.3,2026,June,Wednesday,14,Afternoon,0
+M0183,A0183,P0183,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-023,2026-03-16 03:00:00,2026-03-16,7.3,2026,March,Monday,3,Night,0
+M0184,A0184,P0184,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-024,2026-02-11 04:00:00,2026-02-11,25.4,2026,February,Wednesday,4,Night,0
+M0185,A0185,P0185,H001,2,Transfer,D01,D07,Emergency Department,General Surgery,B1-025,2026-01-17 15:00:00,2026-01-17,20.3,2026,January,Saturday,15,Afternoon,0
+M0186,A0186,P0186,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-026,2026-05-10 06:00:00,2026-05-10,12.0,2026,May,Sunday,6,Morning,0
+M0187,A0187,P0187,H003,1,Admission,D00,D06,Outside Hospital,Pediatrics,B3-027,2026-03-02 11:00:00,2026-03-02,9.7,2026,March,Monday,11,Morning,1
+M0188,A0188,P0188,H003,2,Discharge,D01,D99,Emergency Department,Discharge,B3-028,2026-06-29 11:00:00,2026-06-29,7.5,2026,June,Monday,11,Morning,1
+M0189,A0189,P0189,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-029,2026-04-14 18:00:00,2026-04-14,13.0,2026,April,Tuesday,18,Evening,1
+M0190,A0190,P0190,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-030,2026-02-11 12:00:00,2026-02-11,30.2,2026,February,Wednesday,12,Afternoon,0
+M0191,A0191,P0191,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-031,2026-01-26 07:00:00,2026-01-26,18.7,2026,January,Monday,7,Morning,0
+M0192,A0192,P0192,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-032,2026-02-09 20:00:00,2026-02-09,25.9,2026,February,Monday,20,Evening,1
+M0193,A0193,P0193,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-033,2026-02-05 01:00:00,2026-02-05,18.0,2026,February,Thursday,1,Night,0
+M0194,A0194,P0194,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-034,2026-05-15 14:00:00,2026-05-15,22.6,2026,May,Friday,14,Afternoon,0
+M0195,A0195,P0195,H003,3,Department Transfer,D07,D07,General Surgery,General Surgery,B3-035,2026-04-23 14:00:00,2026-04-23,35.0,2026,April,Thursday,14,Afternoon,0
+M0196,A0196,P0196,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-036,2026-06-24 11:00:00,2026-06-24,26.3,2026,June,Wednesday,11,Morning,1
+M0197,A0197,P0197,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-037,2026-06-28 09:00:00,2026-06-28,4.2,2026,June,Sunday,9,Morning,1
+M0198,A0198,P0198,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-038,2026-04-18 20:00:00,2026-04-18,22.1,2026,April,Saturday,20,Evening,1
+M0199,A0199,P0199,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-039,2026-04-11 21:00:00,2026-04-11,31.2,2026,April,Saturday,21,Evening,0
+M0200,A0200,P0200,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-040,2026-01-14 15:00:00,2026-01-14,14.5,2026,January,Wednesday,15,Afternoon,0
+M0201,A0201,P0201,H001,3,Department Transfer,D03,D03,Cardiology,Cardiology,B1-001,2026-01-19 22:00:00,2026-01-19,33.7,2026,January,Monday,22,Evening,0
+M0202,A0202,P0202,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-002,2026-04-12 21:00:00,2026-04-12,30.8,2026,April,Sunday,21,Evening,0
+M0203,A0203,P0203,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-003,2026-02-13 14:00:00,2026-02-13,17.5,2026,February,Friday,14,Afternoon,0
+M0204,A0204,P0204,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-004,2026-02-18 06:00:00,2026-02-18,2.1,2026,February,Wednesday,6,Morning,0
+M0205,A0205,P0205,H002,1,Admission,D00,D07,Outside Hospital,General Surgery,B2-005,2026-01-17 21:00:00,2026-01-17,4.3,2026,January,Saturday,21,Evening,0
+M0206,A0206,P0206,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-006,2026-03-19 12:00:00,2026-03-19,14.9,2026,March,Thursday,12,Afternoon,0
+M0207,A0207,P0207,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-007,2026-02-26 01:00:00,2026-02-26,13.7,2026,February,Thursday,1,Night,0
+M0208,A0208,P0208,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-008,2026-02-25 20:00:00,2026-02-25,13.9,2026,February,Wednesday,20,Evening,1
+M0209,A0209,P0209,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-009,2026-02-16 23:00:00,2026-02-16,27.9,2026,February,Monday,23,Evening,0
+M0210,A0210,P0210,H001,3,Discharge,D03,D99,Cardiology,Discharge,B1-010,2026-01-13 02:00:00,2026-01-13,3.6,2026,January,Tuesday,2,Night,0
+M0211,A0211,P0211,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-011,2026-03-03 08:00:00,2026-03-03,21.4,2026,March,Tuesday,8,Morning,1
+M0212,A0212,P0212,H001,2,Transfer,D01,D05,Emergency Department,ICU,B1-012,2026-03-26 11:00:00,2026-03-26,14.9,2026,March,Thursday,11,Morning,1
+M0213,A0213,P0213,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-013,2026-03-27 12:00:00,2026-03-27,10.6,2026,March,Friday,12,Afternoon,0
+M0214,A0214,P0214,H001,1,Admission,D00,D07,Outside Hospital,General Surgery,B1-014,2026-01-09 02:00:00,2026-01-09,2.4,2026,January,Friday,2,Night,0
+M0215,A0215,P0215,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-015,2026-06-03 03:00:00,2026-06-03,28.6,2026,June,Wednesday,3,Night,0
+M0216,A0216,P0216,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-016,2026-03-22 08:00:00,2026-03-22,6.0,2026,March,Sunday,8,Morning,1
+M0217,A0217,P0217,H002,1,Admission,D00,D04,Outside Hospital,Orthopedics,B2-017,2026-04-28 05:00:00,2026-04-28,2.1,2026,April,Tuesday,5,Night,0
+M0218,A0218,P0218,H003,2,Transfer,D01,D05,Emergency Department,ICU,B3-018,2026-02-02 16:00:00,2026-02-02,6.4,2026,February,Monday,16,Afternoon,0
+M0219,A0219,P0219,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-019,2026-04-01 06:00:00,2026-04-01,22.0,2026,April,Wednesday,6,Morning,0
+M0220,A0220,P0220,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-020,2026-01-12 08:00:00,2026-01-12,11.1,2026,January,Monday,8,Morning,1
+M0221,A0221,P0221,H001,2,Discharge,D01,D99,Emergency Department,Discharge,B1-021,2026-05-24 08:00:00,2026-05-24,34.7,2026,May,Sunday,8,Morning,1
+M0222,A0222,P0222,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-022,2026-02-28 03:00:00,2026-02-28,13.3,2026,February,Saturday,3,Night,0
+M0223,A0223,P0223,H002,1,Admission,D00,D03,Outside Hospital,Cardiology,B2-023,2026-06-06 19:00:00,2026-06-06,24.8,2026,June,Saturday,19,Evening,1
+M0224,A0224,P0224,H002,2,Transfer,D01,D07,Emergency Department,General Surgery,B2-024,2026-04-19 15:00:00,2026-04-19,11.2,2026,April,Sunday,15,Afternoon,0
+M0225,A0225,P0225,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-025,2026-01-27 21:00:00,2026-01-27,24.2,2026,January,Tuesday,21,Evening,0
+M0226,A0226,P0226,H002,1,Admission,D00,D04,Outside Hospital,Orthopedics,B2-026,2026-02-17 01:00:00,2026-02-17,10.8,2026,February,Tuesday,1,Night,0
+M0227,A0227,P0227,H002,2,Transfer,D01,D05,Emergency Department,ICU,B2-027,2026-02-02 20:00:00,2026-02-02,25.4,2026,February,Monday,20,Evening,1
+M0228,A0228,P0228,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-028,2026-01-15 22:00:00,2026-01-15,31.2,2026,January,Thursday,22,Evening,0
+M0229,A0229,P0229,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-029,2026-01-16 14:00:00,2026-01-16,10.2,2026,January,Friday,14,Afternoon,0
+M0230,A0230,P0230,H003,2,Transfer,D01,D06,Emergency Department,Pediatrics,B3-030,2026-05-25 18:00:00,2026-05-25,24.9,2026,May,Monday,18,Evening,1
+M0231,A0231,P0231,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-031,2026-06-03 16:00:00,2026-06-03,23.6,2026,June,Wednesday,16,Afternoon,0
+M0232,A0232,P0232,H001,1,Discharge,D00,D99,Outside Hospital,Discharge,B1-032,2026-01-26 13:00:00,2026-01-26,34.1,2026,January,Monday,13,Afternoon,0
+M0233,A0233,P0233,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-033,2026-03-29 08:00:00,2026-03-29,27.1,2026,March,Sunday,8,Morning,1
+M0234,A0234,P0234,H002,3,Department Transfer,D05,D05,ICU,ICU,B2-034,2026-05-18 16:00:00,2026-05-18,34.5,2026,May,Monday,16,Afternoon,0
+M0235,A0235,P0235,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-035,2026-01-14 08:00:00,2026-01-14,27.3,2026,January,Wednesday,8,Morning,1
+M0236,A0236,P0236,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-036,2026-03-21 16:00:00,2026-03-21,11.2,2026,March,Saturday,16,Afternoon,0
+M0237,A0237,P0237,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-037,2026-05-08 06:00:00,2026-05-08,35.9,2026,May,Friday,6,Morning,0
+M0238,A0238,P0238,H002,1,Admission,D00,D02,Outside Hospital,General Medicine,B2-038,2026-01-10 22:00:00,2026-01-10,5.4,2026,January,Saturday,22,Evening,0
+M0239,A0239,P0239,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-039,2026-05-17 15:00:00,2026-05-17,12.0,2026,May,Sunday,15,Afternoon,0
+M0240,A0240,P0240,H003,3,Department Transfer,D03,D03,Cardiology,Cardiology,B3-040,2026-04-25 06:00:00,2026-04-25,5.2,2026,April,Saturday,6,Morning,0
+M0241,A0241,P0241,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-001,2026-06-26 20:00:00,2026-06-26,11.6,2026,June,Friday,20,Evening,1
+M0242,A0242,P0242,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-002,2026-03-13 12:00:00,2026-03-13,3.8,2026,March,Friday,12,Afternoon,0
+M0243,A0243,P0243,H003,3,Discharge,D05,D99,ICU,Discharge,B3-003,2026-03-03 21:00:00,2026-03-03,25.0,2026,March,Tuesday,21,Evening,0
+M0244,A0244,P0244,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-004,2026-03-23 22:00:00,2026-03-23,24.1,2026,March,Monday,22,Evening,0
+M0245,A0245,P0245,H001,2,Transfer,D01,D05,Emergency Department,ICU,B1-005,2026-04-27 23:00:00,2026-04-27,15.3,2026,April,Monday,23,Evening,0
+M0246,A0246,P0246,H003,3,Department Transfer,D03,D03,Cardiology,Cardiology,B3-006,2026-06-17 21:00:00,2026-06-17,10.4,2026,June,Wednesday,21,Evening,0
+M0247,A0247,P0247,H003,1,Admission,D00,D07,Outside Hospital,General Surgery,B3-007,2026-05-26 09:00:00,2026-05-26,16.3,2026,May,Tuesday,9,Morning,1
+M0248,A0248,P0248,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-008,2026-04-19 20:00:00,2026-04-19,26.5,2026,April,Sunday,20,Evening,1
+M0249,A0249,P0249,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-009,2026-01-21 05:00:00,2026-01-21,5.1,2026,January,Wednesday,5,Night,0
+M0250,A0250,P0250,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-010,2026-01-19 02:00:00,2026-01-19,8.2,2026,January,Monday,2,Night,0
+M0251,A0251,P0251,H003,2,Transfer,D01,D02,Emergency Department,General Medicine,B3-011,2026-06-12 20:00:00,2026-06-12,29.2,2026,June,Friday,20,Evening,1
+M0252,A0252,P0252,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-012,2026-06-02 16:00:00,2026-06-02,34.0,2026,June,Tuesday,16,Afternoon,0
+M0253,A0253,P0253,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-013,2026-04-19 03:00:00,2026-04-19,11.8,2026,April,Sunday,3,Night,0
+M0254,A0254,P0254,H001,2,Discharge,D01,D99,Emergency Department,Discharge,B1-014,2026-02-15 10:00:00,2026-02-15,35.8,2026,February,Sunday,10,Morning,1
+M0255,A0255,P0255,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-015,2026-04-08 21:00:00,2026-04-08,6.7,2026,April,Wednesday,21,Evening,0
+M0256,A0256,P0256,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-016,2026-05-11 03:00:00,2026-05-11,16.4,2026,May,Monday,3,Night,0
+M0257,A0257,P0257,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-017,2026-02-19 23:00:00,2026-02-19,22.7,2026,February,Thursday,23,Evening,0
+M0258,A0258,P0258,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-018,2026-06-25 03:00:00,2026-06-25,26.9,2026,June,Thursday,3,Night,0
+M0259,A0259,P0259,H003,1,Admission,D00,D07,Outside Hospital,General Surgery,B3-019,2026-06-18 05:00:00,2026-06-18,6.0,2026,June,Thursday,5,Night,0
+M0260,A0260,P0260,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-020,2026-04-20 12:00:00,2026-04-20,33.1,2026,April,Monday,12,Afternoon,0
+M0261,A0261,P0261,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-021,2026-02-08 17:00:00,2026-02-08,8.3,2026,February,Sunday,17,Afternoon,1
+M0262,A0262,P0262,H002,1,Admission,D00,D02,Outside Hospital,General Medicine,B2-022,2026-01-20 19:00:00,2026-01-20,26.2,2026,January,Tuesday,19,Evening,1
+M0263,A0263,P0263,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-023,2026-05-01 15:00:00,2026-05-01,12.9,2026,May,Friday,15,Afternoon,0
+M0264,A0264,P0264,H003,3,Department Transfer,D03,D03,Cardiology,Cardiology,B3-024,2026-01-06 00:00:00,2026-01-06,16.1,2026,January,Tuesday,0,Night,0
+M0265,A0265,P0265,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-025,2026-04-03 21:00:00,2026-04-03,33.4,2026,April,Friday,21,Evening,0
+M0266,A0266,P0266,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-026,2026-06-08 04:00:00,2026-06-08,14.1,2026,June,Monday,4,Night,0
+M0267,A0267,P0267,H003,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B3-027,2026-05-28 11:00:00,2026-05-28,18.6,2026,May,Thursday,11,Morning,1
+M0268,A0268,P0268,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-028,2026-06-11 13:00:00,2026-06-11,16.5,2026,June,Thursday,13,Afternoon,0
+M0269,A0269,P0269,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-029,2026-01-17 02:00:00,2026-01-17,18.6,2026,January,Saturday,2,Night,0
+M0270,A0270,P0270,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-030,2026-06-19 08:00:00,2026-06-19,17.1,2026,June,Friday,8,Morning,1
+M0271,A0271,P0271,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-031,2026-04-18 04:00:00,2026-04-18,15.3,2026,April,Saturday,4,Night,0
+M0272,A0272,P0272,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-032,2026-05-06 21:00:00,2026-05-06,23.6,2026,May,Wednesday,21,Evening,0
+M0273,A0273,P0273,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-033,2026-02-24 15:00:00,2026-02-24,2.6,2026,February,Tuesday,15,Afternoon,0
+M0274,A0274,P0274,H002,1,Admission,D00,D04,Outside Hospital,Orthopedics,B2-034,2026-06-21 01:00:00,2026-06-21,15.8,2026,June,Sunday,1,Night,0
+M0275,A0275,P0275,H001,2,Transfer,D01,D07,Emergency Department,General Surgery,B1-035,2026-02-04 13:00:00,2026-02-04,20.4,2026,February,Wednesday,13,Afternoon,0
+M0276,A0276,P0276,H001,3,Discharge,D02,D99,General Medicine,Discharge,B1-036,2026-06-08 23:00:00,2026-06-08,8.0,2026,June,Monday,23,Evening,0
+M0277,A0277,P0277,H003,1,Admission,D00,D06,Outside Hospital,Pediatrics,B3-037,2026-01-13 14:00:00,2026-01-13,32.2,2026,January,Tuesday,14,Afternoon,0
+M0278,A0278,P0278,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-038,2026-05-24 12:00:00,2026-05-24,27.0,2026,May,Sunday,12,Afternoon,0
+M0279,A0279,P0279,H001,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B1-039,2026-01-22 01:00:00,2026-01-22,21.9,2026,January,Thursday,1,Night,0
+M0280,A0280,P0280,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-040,2026-06-11 21:00:00,2026-06-11,6.3,2026,June,Thursday,21,Evening,0
+M0281,A0281,P0281,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-001,2026-04-09 16:00:00,2026-04-09,24.4,2026,April,Thursday,16,Afternoon,0
+M0282,A0282,P0282,H003,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B3-002,2026-05-03 07:00:00,2026-05-03,13.4,2026,May,Sunday,7,Morning,0
+M0283,A0283,P0283,H003,1,Admission,D00,D05,Outside Hospital,ICU,B3-003,2026-02-11 08:00:00,2026-02-11,29.3,2026,February,Wednesday,8,Morning,1
+M0284,A0284,P0284,H002,2,Transfer,D01,D06,Emergency Department,Pediatrics,B2-004,2026-02-16 22:00:00,2026-02-16,30.8,2026,February,Monday,22,Evening,0
+M0285,A0285,P0285,H001,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B1-005,2026-02-01 21:00:00,2026-02-01,5.3,2026,February,Sunday,21,Evening,0
+M0286,A0286,P0286,H003,1,Admission,D00,D01,Outside Hospital,Emergency Department,B3-006,2026-03-08 23:00:00,2026-03-08,34.6,2026,March,Sunday,23,Evening,0
+M0287,A0287,P0287,H001,2,Discharge,D01,D99,Emergency Department,Discharge,B1-007,2026-01-18 01:00:00,2026-01-18,16.0,2026,January,Sunday,1,Night,0
+M0288,A0288,P0288,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-008,2026-05-01 14:00:00,2026-05-01,35.8,2026,May,Friday,14,Afternoon,0
+M0289,A0289,P0289,H002,1,Admission,D00,D03,Outside Hospital,Cardiology,B2-009,2026-01-10 15:00:00,2026-01-10,14.1,2026,January,Saturday,15,Afternoon,0
+M0290,A0290,P0290,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-010,2026-06-08 03:00:00,2026-06-08,10.7,2026,June,Monday,3,Night,0
+M0291,A0291,P0291,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-011,2026-06-06 09:00:00,2026-06-06,7.8,2026,June,Saturday,9,Morning,1
+M0292,A0292,P0292,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-012,2026-04-15 15:00:00,2026-04-15,34.8,2026,April,Wednesday,15,Afternoon,0
+M0293,A0293,P0293,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-013,2026-03-26 19:00:00,2026-03-26,12.0,2026,March,Thursday,19,Evening,1
+M0294,A0294,P0294,H001,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B1-014,2026-05-14 18:00:00,2026-05-14,18.6,2026,May,Thursday,18,Evening,1
+M0295,A0295,P0295,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-015,2026-03-06 05:00:00,2026-03-06,17.2,2026,March,Friday,5,Night,0
+M0296,A0296,P0296,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-016,2026-06-27 17:00:00,2026-06-27,15.2,2026,June,Saturday,17,Afternoon,1
+M0297,A0297,P0297,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-017,2026-01-03 04:00:00,2026-01-03,8.8,2026,January,Saturday,4,Night,0
+M0298,A0298,P0298,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-018,2026-06-24 19:00:00,2026-06-24,36.0,2026,June,Wednesday,19,Evening,1
+M0299,A0299,P0299,H002,2,Transfer,D01,D03,Emergency Department,Cardiology,B2-019,2026-05-24 22:00:00,2026-05-24,25.0,2026,May,Sunday,22,Evening,0
+M0300,A0300,P0300,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-020,2026-05-03 10:00:00,2026-05-03,24.4,2026,May,Sunday,10,Morning,1
+M0301,A0301,P0301,H003,1,Admission,D00,D05,Outside Hospital,ICU,B3-021,2026-06-12 17:00:00,2026-06-12,4.1,2026,June,Friday,17,Afternoon,1
+M0302,A0302,P0302,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-022,2026-03-10 02:00:00,2026-03-10,7.4,2026,March,Tuesday,2,Night,0
+M0303,A0303,P0303,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-023,2026-05-31 11:00:00,2026-05-31,32.1,2026,May,Sunday,11,Morning,1
+M0304,A0304,P0304,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-024,2026-02-09 23:00:00,2026-02-09,17.8,2026,February,Monday,23,Evening,0
+M0305,A0305,P0305,H001,2,Transfer,D01,D04,Emergency Department,Orthopedics,B1-025,2026-06-04 15:00:00,2026-06-04,6.7,2026,June,Thursday,15,Afternoon,0
+M0306,A0306,P0306,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-026,2026-06-25 02:00:00,2026-06-25,27.9,2026,June,Thursday,2,Night,0
+M0307,A0307,P0307,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-027,2026-06-30 15:00:00,2026-06-30,24.8,2026,June,Tuesday,15,Afternoon,0
+M0308,A0308,P0308,H003,2,Transfer,D01,D02,Emergency Department,General Medicine,B3-028,2026-03-14 03:00:00,2026-03-14,27.1,2026,March,Saturday,3,Night,0
+M0309,A0309,P0309,H003,3,Discharge,D02,D99,General Medicine,Discharge,B3-029,2026-05-26 16:00:00,2026-05-26,32.8,2026,May,Tuesday,16,Afternoon,0
+M0310,A0310,P0310,H001,1,Admission,D00,D07,Outside Hospital,General Surgery,B1-030,2026-02-19 21:00:00,2026-02-19,20.5,2026,February,Thursday,21,Evening,0
+M0311,A0311,P0311,H001,2,Transfer,D01,D04,Emergency Department,Orthopedics,B1-031,2026-05-02 13:00:00,2026-05-02,4.3,2026,May,Saturday,13,Afternoon,0
+M0312,A0312,P0312,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-032,2026-03-29 17:00:00,2026-03-29,19.7,2026,March,Sunday,17,Afternoon,1
+M0313,A0313,P0313,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-033,2026-05-20 03:00:00,2026-05-20,2.0,2026,May,Wednesday,3,Night,0
+M0314,A0314,P0314,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-034,2026-02-08 05:00:00,2026-02-08,26.3,2026,February,Sunday,5,Night,0
+M0315,A0315,P0315,H003,3,Department Transfer,D07,D07,General Surgery,General Surgery,B3-035,2026-03-02 23:00:00,2026-03-02,30.0,2026,March,Monday,23,Evening,0
+M0316,A0316,P0316,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-036,2026-06-23 00:00:00,2026-06-23,17.4,2026,June,Tuesday,0,Night,0
+M0317,A0317,P0317,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-037,2026-05-06 16:00:00,2026-05-06,23.4,2026,May,Wednesday,16,Afternoon,0
+M0318,A0318,P0318,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-038,2026-02-12 09:00:00,2026-02-12,18.6,2026,February,Thursday,9,Morning,1
+M0319,A0319,P0319,H002,1,Admission,D00,D03,Outside Hospital,Cardiology,B2-039,2026-03-07 02:00:00,2026-03-07,31.8,2026,March,Saturday,2,Night,0
+M0320,A0320,P0320,H002,2,Discharge,D01,D99,Emergency Department,Discharge,B2-040,2026-02-16 23:00:00,2026-02-16,13.2,2026,February,Monday,23,Evening,0
+M0321,A0321,P0321,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-001,2026-04-03 09:00:00,2026-04-03,21.4,2026,April,Friday,9,Morning,1
+M0322,A0322,P0322,H003,1,Admission,D00,D06,Outside Hospital,Pediatrics,B3-002,2026-01-11 19:00:00,2026-01-11,9.9,2026,January,Sunday,19,Evening,1
+M0323,A0323,P0323,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-003,2026-03-06 00:00:00,2026-03-06,35.4,2026,March,Friday,0,Night,0
+M0324,A0324,P0324,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-004,2026-03-24 10:00:00,2026-03-24,5.3,2026,March,Tuesday,10,Morning,1
+M0325,A0325,P0325,H003,1,Admission,D00,D01,Outside Hospital,Emergency Department,B3-005,2026-06-02 15:00:00,2026-06-02,23.9,2026,June,Tuesday,15,Afternoon,0
+M0326,A0326,P0326,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-006,2026-02-21 01:00:00,2026-02-21,30.7,2026,February,Saturday,1,Night,0
+M0327,A0327,P0327,H001,3,Department Transfer,D05,D05,ICU,ICU,B1-007,2026-01-11 17:00:00,2026-01-11,35.5,2026,January,Sunday,17,Afternoon,1
+M0328,A0328,P0328,H002,1,Admission,D00,D07,Outside Hospital,General Surgery,B2-008,2026-03-06 02:00:00,2026-03-06,2.7,2026,March,Friday,2,Night,0
+M0329,A0329,P0329,H001,2,Transfer,D01,D07,Emergency Department,General Surgery,B1-009,2026-03-14 10:00:00,2026-03-14,29.2,2026,March,Saturday,10,Morning,1
+M0330,A0330,P0330,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-010,2026-05-30 12:00:00,2026-05-30,10.8,2026,May,Saturday,12,Afternoon,0
+M0331,A0331,P0331,H001,1,Discharge,D00,D99,Outside Hospital,Discharge,B1-011,2026-04-03 19:00:00,2026-04-03,17.9,2026,April,Friday,19,Evening,1
+M0332,A0332,P0332,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-012,2026-03-05 18:00:00,2026-03-05,9.5,2026,March,Thursday,18,Evening,1
+M0333,A0333,P0333,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-013,2026-03-01 17:00:00,2026-03-01,20.4,2026,March,Sunday,17,Afternoon,1
+M0334,A0334,P0334,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-014,2026-04-28 11:00:00,2026-04-28,29.5,2026,April,Tuesday,11,Morning,1
+M0335,A0335,P0335,H003,2,Transfer,D01,D06,Emergency Department,Pediatrics,B3-015,2026-04-20 03:00:00,2026-04-20,34.2,2026,April,Monday,3,Night,0
+M0336,A0336,P0336,H001,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B1-016,2026-03-20 23:00:00,2026-03-20,32.2,2026,March,Friday,23,Evening,0
+M0337,A0337,P0337,H001,1,Admission,D00,D05,Outside Hospital,ICU,B1-017,2026-04-20 18:00:00,2026-04-20,30.1,2026,April,Monday,18,Evening,1
+M0338,A0338,P0338,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-018,2026-03-01 05:00:00,2026-03-01,16.2,2026,March,Sunday,5,Night,0
+M0339,A0339,P0339,H001,3,Department Transfer,D03,D03,Cardiology,Cardiology,B1-019,2026-06-18 04:00:00,2026-06-18,11.0,2026,June,Thursday,4,Night,0
+M0340,A0340,P0340,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-020,2026-01-03 17:00:00,2026-01-03,17.3,2026,January,Saturday,17,Afternoon,1
+M0341,A0341,P0341,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-021,2026-05-01 13:00:00,2026-05-01,33.5,2026,May,Friday,13,Afternoon,0
+M0342,A0342,P0342,H002,3,Discharge,D07,D99,General Surgery,Discharge,B2-022,2026-01-06 01:00:00,2026-01-06,26.4,2026,January,Tuesday,1,Night,0
+M0343,A0343,P0343,H003,1,Admission,D00,D05,Outside Hospital,ICU,B3-023,2026-01-05 12:00:00,2026-01-05,24.1,2026,January,Monday,12,Afternoon,0
+M0344,A0344,P0344,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-024,2026-01-06 20:00:00,2026-01-06,16.0,2026,January,Tuesday,20,Evening,1
+M0345,A0345,P0345,H001,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B1-025,2026-02-27 12:00:00,2026-02-27,19.0,2026,February,Friday,12,Afternoon,0
+M0346,A0346,P0346,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-026,2026-02-17 10:00:00,2026-02-17,14.6,2026,February,Tuesday,10,Morning,1
+M0347,A0347,P0347,H001,2,Transfer,D01,D05,Emergency Department,ICU,B1-027,2026-06-26 04:00:00,2026-06-26,20.3,2026,June,Friday,4,Night,0
+M0348,A0348,P0348,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-028,2026-01-13 23:00:00,2026-01-13,15.4,2026,January,Tuesday,23,Evening,0
+M0349,A0349,P0349,H001,1,Admission,D00,D01,Outside Hospital,Emergency Department,B1-029,2026-04-09 10:00:00,2026-04-09,31.9,2026,April,Thursday,10,Morning,1
+M0350,A0350,P0350,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-030,2026-01-21 11:00:00,2026-01-21,35.1,2026,January,Wednesday,11,Morning,1
+M0351,A0351,P0351,H003,3,Department Transfer,D07,D07,General Surgery,General Surgery,B3-031,2026-05-02 19:00:00,2026-05-02,3.2,2026,May,Saturday,19,Evening,1
+M0352,A0352,P0352,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-032,2026-03-02 08:00:00,2026-03-02,34.7,2026,March,Monday,8,Morning,1
+M0353,A0353,P0353,H003,2,Discharge,D01,D99,Emergency Department,Discharge,B3-033,2026-05-04 05:00:00,2026-05-04,8.0,2026,May,Monday,5,Night,0
+M0354,A0354,P0354,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-034,2026-06-12 23:00:00,2026-06-12,2.9,2026,June,Friday,23,Evening,0
+M0355,A0355,P0355,H001,1,Admission,D00,D03,Outside Hospital,Cardiology,B1-035,2026-06-28 04:00:00,2026-06-28,9.5,2026,June,Sunday,4,Night,0
+M0356,A0356,P0356,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-036,2026-03-23 04:00:00,2026-03-23,20.6,2026,March,Monday,4,Night,0
+M0357,A0357,P0357,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-037,2026-03-05 19:00:00,2026-03-05,4.0,2026,March,Thursday,19,Evening,1
+M0358,A0358,P0358,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-038,2026-05-25 16:00:00,2026-05-25,19.0,2026,May,Monday,16,Afternoon,0
+M0359,A0359,P0359,H002,2,Transfer,D01,D05,Emergency Department,ICU,B2-039,2026-01-03 19:00:00,2026-01-03,26.1,2026,January,Saturday,19,Evening,1
+M0360,A0360,P0360,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-040,2026-06-10 04:00:00,2026-06-10,15.6,2026,June,Wednesday,4,Night,0
+M0361,A0361,P0361,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-001,2026-01-13 20:00:00,2026-01-13,36.0,2026,January,Tuesday,20,Evening,1
+M0362,A0362,P0362,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-002,2026-05-01 19:00:00,2026-05-01,8.0,2026,May,Friday,19,Evening,1
+M0363,A0363,P0363,H002,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B2-003,2026-05-05 15:00:00,2026-05-05,15.4,2026,May,Tuesday,15,Afternoon,0
+M0364,A0364,P0364,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-004,2026-04-01 02:00:00,2026-04-01,21.9,2026,April,Wednesday,2,Night,0
+M0365,A0365,P0365,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-005,2026-03-14 04:00:00,2026-03-14,24.0,2026,March,Saturday,4,Night,0
+M0366,A0366,P0366,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-006,2026-03-10 15:00:00,2026-03-10,8.4,2026,March,Tuesday,15,Afternoon,0
+M0367,A0367,P0367,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-007,2026-05-23 20:00:00,2026-05-23,2.8,2026,May,Saturday,20,Evening,1
+M0368,A0368,P0368,H003,2,Transfer,D01,D07,Emergency Department,General Surgery,B3-008,2026-04-12 09:00:00,2026-04-12,11.0,2026,April,Sunday,9,Morning,1
+M0369,A0369,P0369,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-009,2026-04-09 04:00:00,2026-04-09,19.6,2026,April,Thursday,4,Night,0
+M0370,A0370,P0370,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-010,2026-01-13 19:00:00,2026-01-13,4.1,2026,January,Tuesday,19,Evening,1
+M0371,A0371,P0371,H002,2,Transfer,D01,D07,Emergency Department,General Surgery,B2-011,2026-04-18 00:00:00,2026-04-18,18.0,2026,April,Saturday,0,Night,0
+M0372,A0372,P0372,H003,3,Department Transfer,D07,D07,General Surgery,General Surgery,B3-012,2026-03-08 03:00:00,2026-03-08,17.6,2026,March,Sunday,3,Night,0
+M0373,A0373,P0373,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-013,2026-05-04 17:00:00,2026-05-04,30.2,2026,May,Monday,17,Afternoon,1
+M0374,A0374,P0374,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-014,2026-01-31 09:00:00,2026-01-31,24.0,2026,January,Saturday,9,Morning,1
+M0375,A0375,P0375,H002,3,Discharge,D07,D99,General Surgery,Discharge,B2-015,2026-05-21 12:00:00,2026-05-21,19.2,2026,May,Thursday,12,Afternoon,0
+M0376,A0376,P0376,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-016,2026-06-05 19:00:00,2026-06-05,31.4,2026,June,Friday,19,Evening,1
+M0377,A0377,P0377,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-017,2026-03-20 14:00:00,2026-03-20,4.3,2026,March,Friday,14,Afternoon,0
+M0378,A0378,P0378,H001,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B1-018,2026-06-20 16:00:00,2026-06-20,23.7,2026,June,Saturday,16,Afternoon,0
+M0379,A0379,P0379,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-019,2026-01-13 12:00:00,2026-01-13,11.8,2026,January,Tuesday,12,Afternoon,0
+M0380,A0380,P0380,H003,2,Transfer,D01,D06,Emergency Department,Pediatrics,B3-020,2026-02-09 16:00:00,2026-02-09,16.5,2026,February,Monday,16,Afternoon,0
+M0381,A0381,P0381,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-021,2026-01-25 19:00:00,2026-01-25,30.7,2026,January,Sunday,19,Evening,1
+M0382,A0382,P0382,H003,1,Admission,D00,D06,Outside Hospital,Pediatrics,B3-022,2026-01-06 09:00:00,2026-01-06,3.1,2026,January,Tuesday,9,Morning,1
+M0383,A0383,P0383,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-023,2026-05-22 20:00:00,2026-05-22,32.0,2026,May,Friday,20,Evening,1
+M0384,A0384,P0384,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-024,2026-05-05 12:00:00,2026-05-05,12.7,2026,May,Tuesday,12,Afternoon,0
+M0385,A0385,P0385,H003,1,Admission,D00,D05,Outside Hospital,ICU,B3-025,2026-02-13 05:00:00,2026-02-13,25.8,2026,February,Friday,5,Night,0
+M0386,A0386,P0386,H002,2,Discharge,D01,D99,Emergency Department,Discharge,B2-026,2026-03-17 12:00:00,2026-03-17,15.2,2026,March,Tuesday,12,Afternoon,0
+M0387,A0387,P0387,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-027,2026-05-14 20:00:00,2026-05-14,26.6,2026,May,Thursday,20,Evening,1
+M0388,A0388,P0388,H002,1,Admission,D00,D04,Outside Hospital,Orthopedics,B2-028,2026-06-27 01:00:00,2026-06-27,9.3,2026,June,Saturday,1,Night,0
+M0389,A0389,P0389,H001,2,Transfer,D01,D05,Emergency Department,ICU,B1-029,2026-04-01 00:00:00,2026-04-01,24.3,2026,April,Wednesday,0,Night,0
+M0390,A0390,P0390,H001,3,Department Transfer,D03,D03,Cardiology,Cardiology,B1-030,2026-05-26 11:00:00,2026-05-26,8.0,2026,May,Tuesday,11,Morning,1
+M0391,A0391,P0391,H002,1,Admission,D00,D05,Outside Hospital,ICU,B2-031,2026-02-08 16:00:00,2026-02-08,35.2,2026,February,Sunday,16,Afternoon,0
+M0392,A0392,P0392,H003,2,Transfer,D01,D07,Emergency Department,General Surgery,B3-032,2026-03-03 23:00:00,2026-03-03,18.3,2026,March,Tuesday,23,Evening,0
+M0393,A0393,P0393,H001,3,Department Transfer,D05,D05,ICU,ICU,B1-033,2026-06-25 02:00:00,2026-06-25,4.7,2026,June,Thursday,2,Night,0
+M0394,A0394,P0394,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-034,2026-01-28 08:00:00,2026-01-28,16.5,2026,January,Wednesday,8,Morning,1
+M0395,A0395,P0395,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-035,2026-03-26 15:00:00,2026-03-26,22.4,2026,March,Thursday,15,Afternoon,0
+M0396,A0396,P0396,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-036,2026-04-24 23:00:00,2026-04-24,11.6,2026,April,Friday,23,Evening,0
+M0397,A0397,P0397,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-037,2026-02-09 15:00:00,2026-02-09,3.8,2026,February,Monday,15,Afternoon,0
+M0398,A0398,P0398,H003,2,Transfer,D01,D03,Emergency Department,Cardiology,B3-038,2026-02-18 19:00:00,2026-02-18,3.0,2026,February,Wednesday,19,Evening,1
+M0399,A0399,P0399,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-039,2026-03-05 04:00:00,2026-03-05,27.9,2026,March,Thursday,4,Night,0
+M0400,A0400,P0400,H003,1,Admission,D00,D01,Outside Hospital,Emergency Department,B3-040,2026-04-05 21:00:00,2026-04-05,6.2,2026,April,Sunday,21,Evening,0
+M0401,A0401,P0401,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-001,2026-04-28 11:00:00,2026-04-28,22.7,2026,April,Tuesday,11,Morning,1
+M0402,A0402,P0402,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-002,2026-03-10 16:00:00,2026-03-10,10.5,2026,March,Tuesday,16,Afternoon,0
+M0403,A0403,P0403,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-003,2026-02-28 06:00:00,2026-02-28,30.3,2026,February,Saturday,6,Morning,0
+M0404,A0404,P0404,H003,2,Transfer,D01,D02,Emergency Department,General Medicine,B3-004,2026-02-09 10:00:00,2026-02-09,9.3,2026,February,Monday,10,Morning,1
+M0405,A0405,P0405,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-005,2026-04-08 06:00:00,2026-04-08,13.1,2026,April,Wednesday,6,Morning,0
+M0406,A0406,P0406,H003,1,Admission,D00,D05,Outside Hospital,ICU,B3-006,2026-02-10 01:00:00,2026-02-10,16.2,2026,February,Tuesday,1,Night,0
+M0407,A0407,P0407,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-007,2026-04-02 15:00:00,2026-04-02,2.7,2026,April,Thursday,15,Afternoon,0
+M0408,A0408,P0408,H002,3,Discharge,D07,D99,General Surgery,Discharge,B2-008,2026-02-02 21:00:00,2026-02-02,29.4,2026,February,Monday,21,Evening,0
+M0409,A0409,P0409,H003,1,Admission,D00,D03,Outside Hospital,Cardiology,B3-009,2026-01-07 07:00:00,2026-01-07,32.6,2026,January,Wednesday,7,Morning,0
+M0410,A0410,P0410,H002,2,Transfer,D01,D06,Emergency Department,Pediatrics,B2-010,2026-05-28 02:00:00,2026-05-28,22.1,2026,May,Thursday,2,Night,0
+M0411,A0411,P0411,H001,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B1-011,2026-03-21 21:00:00,2026-03-21,28.9,2026,March,Saturday,21,Evening,0
+M0412,A0412,P0412,H002,1,Admission,D00,D07,Outside Hospital,General Surgery,B2-012,2026-06-17 13:00:00,2026-06-17,10.9,2026,June,Wednesday,13,Afternoon,0
+M0413,A0413,P0413,H002,2,Transfer,D01,D06,Emergency Department,Pediatrics,B2-013,2026-04-03 23:00:00,2026-04-03,10.7,2026,April,Friday,23,Evening,0
+M0414,A0414,P0414,H002,3,Department Transfer,D05,D05,ICU,ICU,B2-014,2026-04-11 07:00:00,2026-04-11,18.7,2026,April,Saturday,7,Morning,0
+M0415,A0415,P0415,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-015,2026-03-03 14:00:00,2026-03-03,16.0,2026,March,Tuesday,14,Afternoon,0
+M0416,A0416,P0416,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-016,2026-02-28 06:00:00,2026-02-28,6.3,2026,February,Saturday,6,Morning,0
+M0417,A0417,P0417,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-017,2026-02-20 18:00:00,2026-02-20,5.8,2026,February,Friday,18,Evening,1
+M0418,A0418,P0418,H002,1,Admission,D00,D05,Outside Hospital,ICU,B2-018,2026-06-19 22:00:00,2026-06-19,28.3,2026,June,Friday,22,Evening,0
+M0419,A0419,P0419,H003,2,Discharge,D01,D99,Emergency Department,Discharge,B3-019,2026-01-17 10:00:00,2026-01-17,29.6,2026,January,Saturday,10,Morning,1
+M0420,A0420,P0420,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-020,2026-04-17 20:00:00,2026-04-17,12.5,2026,April,Friday,20,Evening,1
+M0421,A0421,P0421,H003,1,Admission,D00,D01,Outside Hospital,Emergency Department,B3-021,2026-02-15 05:00:00,2026-02-15,21.3,2026,February,Sunday,5,Night,0
+M0422,A0422,P0422,H001,2,Transfer,D01,D04,Emergency Department,Orthopedics,B1-022,2026-04-10 15:00:00,2026-04-10,18.9,2026,April,Friday,15,Afternoon,0
+M0423,A0423,P0423,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-023,2026-07-01 11:00:00,2026-07-01,8.3,2026,July,Wednesday,11,Morning,1
+M0424,A0424,P0424,H001,1,Admission,D00,D03,Outside Hospital,Cardiology,B1-024,2026-06-21 10:00:00,2026-06-21,32.5,2026,June,Sunday,10,Morning,1
+M0425,A0425,P0425,H001,2,Transfer,D01,D04,Emergency Department,Orthopedics,B1-025,2026-04-10 17:00:00,2026-04-10,19.3,2026,April,Friday,17,Afternoon,1
+M0426,A0426,P0426,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-026,2026-06-14 10:00:00,2026-06-14,26.4,2026,June,Sunday,10,Morning,1
+M0427,A0427,P0427,H002,1,Admission,D00,D04,Outside Hospital,Orthopedics,B2-027,2026-06-15 20:00:00,2026-06-15,13.0,2026,June,Monday,20,Evening,1
+M0428,A0428,P0428,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-028,2026-01-12 00:00:00,2026-01-12,6.7,2026,January,Monday,0,Night,0
+M0429,A0429,P0429,H002,3,Department Transfer,D03,D03,Cardiology,Cardiology,B2-029,2026-05-17 15:00:00,2026-05-17,18.4,2026,May,Sunday,15,Afternoon,0
+M0430,A0430,P0430,H003,1,Discharge,D00,D99,Outside Hospital,Discharge,B3-030,2026-02-16 10:00:00,2026-02-16,18.2,2026,February,Monday,10,Morning,1
+M0431,A0431,P0431,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-031,2026-02-27 06:00:00,2026-02-27,18.3,2026,February,Friday,6,Morning,0
+M0432,A0432,P0432,H003,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B3-032,2026-02-01 22:00:00,2026-02-01,27.6,2026,February,Sunday,22,Evening,0
+M0433,A0433,P0433,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-033,2026-01-23 20:00:00,2026-01-23,16.1,2026,January,Friday,20,Evening,1
+M0434,A0434,P0434,H002,2,Transfer,D01,D05,Emergency Department,ICU,B2-034,2026-06-24 13:00:00,2026-06-24,19.7,2026,June,Wednesday,13,Afternoon,0
+M0435,A0435,P0435,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-035,2026-05-19 10:00:00,2026-05-19,6.2,2026,May,Tuesday,10,Morning,1
+M0436,A0436,P0436,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-036,2026-06-10 21:00:00,2026-06-10,22.6,2026,June,Wednesday,21,Evening,0
+M0437,A0437,P0437,H003,2,Transfer,D01,D07,Emergency Department,General Surgery,B3-037,2026-04-19 23:00:00,2026-04-19,30.8,2026,April,Sunday,23,Evening,0
+M0438,A0438,P0438,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-038,2026-06-30 14:00:00,2026-06-30,23.1,2026,June,Tuesday,14,Afternoon,0
+M0439,A0439,P0439,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-039,2026-06-07 01:00:00,2026-06-07,26.1,2026,June,Sunday,1,Night,0
+M0440,A0440,P0440,H003,2,Transfer,D01,D03,Emergency Department,Cardiology,B3-040,2026-02-09 23:00:00,2026-02-09,14.1,2026,February,Monday,23,Evening,0
+M0441,A0441,P0441,H002,3,Discharge,D02,D99,General Medicine,Discharge,B2-001,2026-06-09 08:00:00,2026-06-09,17.6,2026,June,Tuesday,8,Morning,1
+M0442,A0442,P0442,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-002,2026-03-24 15:00:00,2026-03-24,4.9,2026,March,Tuesday,15,Afternoon,0
+M0443,A0443,P0443,H002,2,Transfer,D01,D07,Emergency Department,General Surgery,B2-003,2026-04-13 14:00:00,2026-04-13,12.3,2026,April,Monday,14,Afternoon,0
+M0444,A0444,P0444,H001,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B1-004,2026-01-04 06:00:00,2026-01-04,6.6,2026,January,Sunday,6,Morning,0
+M0445,A0445,P0445,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-005,2026-03-19 08:00:00,2026-03-19,13.2,2026,March,Thursday,8,Morning,1
+M0446,A0446,P0446,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-006,2026-01-14 22:00:00,2026-01-14,30.6,2026,January,Wednesday,22,Evening,0
+M0447,A0447,P0447,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-007,2026-02-10 05:00:00,2026-02-10,13.7,2026,February,Tuesday,5,Night,0
+M0448,A0448,P0448,H003,1,Admission,D00,D04,Outside Hospital,Orthopedics,B3-008,2026-01-15 08:00:00,2026-01-15,26.5,2026,January,Thursday,8,Morning,1
+M0449,A0449,P0449,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-009,2026-02-26 10:00:00,2026-02-26,34.1,2026,February,Thursday,10,Morning,1
+M0450,A0450,P0450,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-010,2026-06-08 07:00:00,2026-06-08,12.5,2026,June,Monday,7,Morning,0
+M0451,A0451,P0451,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-011,2026-04-23 13:00:00,2026-04-23,21.9,2026,April,Thursday,13,Afternoon,0
+M0452,A0452,P0452,H001,2,Discharge,D01,D99,Emergency Department,Discharge,B1-012,2026-01-23 14:00:00,2026-01-23,28.6,2026,January,Friday,14,Afternoon,0
+M0453,A0453,P0453,H002,3,Department Transfer,D05,D05,ICU,ICU,B2-013,2026-04-15 17:00:00,2026-04-15,21.5,2026,April,Wednesday,17,Afternoon,1
+M0454,A0454,P0454,H002,1,Admission,D00,D06,Outside Hospital,Pediatrics,B2-014,2026-04-09 10:00:00,2026-04-09,21.0,2026,April,Thursday,10,Morning,1
+M0455,A0455,P0455,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-015,2026-03-30 01:00:00,2026-03-30,4.8,2026,March,Monday,1,Night,0
+M0456,A0456,P0456,H003,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B3-016,2026-04-19 18:00:00,2026-04-19,8.3,2026,April,Sunday,18,Evening,1
+M0457,A0457,P0457,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-017,2026-06-13 18:00:00,2026-06-13,24.3,2026,June,Saturday,18,Evening,1
+M0458,A0458,P0458,H002,2,Transfer,D01,D01,Emergency Department,Emergency Department,B2-018,2026-03-12 08:00:00,2026-03-12,3.5,2026,March,Thursday,8,Morning,1
+M0459,A0459,P0459,H002,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B2-019,2026-06-08 13:00:00,2026-06-08,19.9,2026,June,Monday,13,Afternoon,0
+M0460,A0460,P0460,H001,1,Admission,D00,D07,Outside Hospital,General Surgery,B1-020,2026-03-15 13:00:00,2026-03-15,3.0,2026,March,Sunday,13,Afternoon,0
+M0461,A0461,P0461,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-021,2026-03-04 09:00:00,2026-03-04,33.3,2026,March,Wednesday,9,Morning,1
+M0462,A0462,P0462,H001,3,Department Transfer,D02,D02,General Medicine,General Medicine,B1-022,2026-06-06 22:00:00,2026-06-06,35.8,2026,June,Saturday,22,Evening,0
+M0463,A0463,P0463,H001,1,Discharge,D00,D99,Outside Hospital,Discharge,B1-023,2026-03-02 13:00:00,2026-03-02,4.2,2026,March,Monday,13,Afternoon,0
+M0464,A0464,P0464,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-024,2026-03-21 22:00:00,2026-03-21,23.1,2026,March,Saturday,22,Evening,0
+M0465,A0465,P0465,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-025,2026-02-07 02:00:00,2026-02-07,31.3,2026,February,Saturday,2,Night,0
+M0466,A0466,P0466,H003,1,Admission,D00,D02,Outside Hospital,General Medicine,B3-026,2026-01-23 22:00:00,2026-01-23,26.6,2026,January,Friday,22,Evening,0
+M0467,A0467,P0467,H001,2,Transfer,D01,D02,Emergency Department,General Medicine,B1-027,2026-05-28 21:00:00,2026-05-28,16.2,2026,May,Thursday,21,Evening,0
+M0468,A0468,P0468,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-028,2026-04-06 03:00:00,2026-04-06,17.4,2026,April,Monday,3,Night,0
+M0469,A0469,P0469,H001,1,Admission,D00,D04,Outside Hospital,Orthopedics,B1-029,2026-03-10 05:00:00,2026-03-10,13.9,2026,March,Tuesday,5,Night,0
+M0470,A0470,P0470,H003,2,Transfer,D01,D02,Emergency Department,General Medicine,B3-030,2026-01-24 07:00:00,2026-01-24,5.3,2026,January,Saturday,7,Morning,0
+M0471,A0471,P0471,H003,3,Department Transfer,D06,D06,Pediatrics,Pediatrics,B3-031,2026-01-16 07:00:00,2026-01-16,33.4,2026,January,Friday,7,Morning,0
+M0472,A0472,P0472,H002,1,Admission,D00,D02,Outside Hospital,General Medicine,B2-032,2026-06-01 11:00:00,2026-06-01,7.2,2026,June,Monday,11,Morning,1
+M0473,A0473,P0473,H003,2,Transfer,D01,D06,Emergency Department,Pediatrics,B3-033,2026-05-29 15:00:00,2026-05-29,13.3,2026,May,Friday,15,Afternoon,0
+M0474,A0474,P0474,H001,3,Discharge,D04,D99,Orthopedics,Discharge,B1-034,2026-05-21 23:00:00,2026-05-21,7.8,2026,May,Thursday,23,Evening,0
+M0475,A0475,P0475,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-035,2026-04-29 09:00:00,2026-04-29,33.1,2026,April,Wednesday,9,Morning,1
+M0476,A0476,P0476,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-036,2026-01-25 07:00:00,2026-01-25,29.6,2026,January,Sunday,7,Morning,0
+M0477,A0477,P0477,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-037,2026-05-01 14:00:00,2026-05-01,4.1,2026,May,Friday,14,Afternoon,0
+M0478,A0478,P0478,H002,1,Admission,D00,D07,Outside Hospital,General Surgery,B2-038,2026-02-28 01:00:00,2026-02-28,12.6,2026,February,Saturday,1,Night,0
+M0479,A0479,P0479,H001,2,Transfer,D01,D03,Emergency Department,Cardiology,B1-039,2026-01-16 08:00:00,2026-01-16,8.3,2026,January,Friday,8,Morning,1
+M0480,A0480,P0480,H003,3,Department Transfer,D03,D03,Cardiology,Cardiology,B3-040,2026-06-25 10:00:00,2026-06-25,7.9,2026,June,Thursday,10,Morning,1
+M0481,A0481,P0481,H001,1,Admission,D00,D07,Outside Hospital,General Surgery,B1-001,2026-01-31 08:00:00,2026-01-31,18.8,2026,January,Saturday,8,Morning,1
+M0482,A0482,P0482,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-002,2026-06-17 20:00:00,2026-06-17,6.8,2026,June,Wednesday,20,Evening,1
+M0483,A0483,P0483,H002,3,Department Transfer,D01,D01,Emergency Department,Emergency Department,B2-003,2026-07-03 09:00:00,2026-07-03,3.8,2026,July,Friday,9,Morning,1
+M0484,A0484,P0484,H002,1,Admission,D00,D07,Outside Hospital,General Surgery,B2-004,2026-05-06 09:00:00,2026-05-06,4.6,2026,May,Wednesday,9,Morning,1
+M0485,A0485,P0485,H001,2,Discharge,D01,D99,Emergency Department,Discharge,B1-005,2026-01-09 07:00:00,2026-01-09,13.1,2026,January,Friday,7,Morning,0
+M0486,A0486,P0486,H002,3,Department Transfer,D04,D04,Orthopedics,Orthopedics,B2-006,2026-01-29 02:00:00,2026-01-29,33.0,2026,January,Thursday,2,Night,0
+M0487,A0487,P0487,H002,1,Admission,D00,D01,Outside Hospital,Emergency Department,B2-007,2026-05-19 04:00:00,2026-05-19,27.7,2026,May,Tuesday,4,Night,0
+M0488,A0488,P0488,H001,2,Transfer,D01,D01,Emergency Department,Emergency Department,B1-008,2026-02-02 19:00:00,2026-02-02,20.1,2026,February,Monday,19,Evening,1
+M0489,A0489,P0489,H003,3,Department Transfer,D02,D02,General Medicine,General Medicine,B3-009,2026-05-17 06:00:00,2026-05-17,23.7,2026,May,Sunday,6,Morning,0
+M0490,A0490,P0490,H001,1,Admission,D00,D06,Outside Hospital,Pediatrics,B1-010,2026-04-21 08:00:00,2026-04-21,5.8,2026,April,Tuesday,8,Morning,1
+M0491,A0491,P0491,H002,2,Transfer,D01,D02,Emergency Department,General Medicine,B2-011,2026-03-24 06:00:00,2026-03-24,35.5,2026,March,Tuesday,6,Morning,0
+M0492,A0492,P0492,H002,3,Department Transfer,D02,D02,General Medicine,General Medicine,B2-012,2026-06-19 18:00:00,2026-06-19,8.7,2026,June,Friday,18,Evening,1
+M0493,A0493,P0493,H001,1,Admission,D00,D02,Outside Hospital,General Medicine,B1-013,2026-07-05 16:00:00,2026-07-05,31.7,2026,July,Sunday,16,Afternoon,0
+M0494,A0494,P0494,H003,2,Transfer,D01,D04,Emergency Department,Orthopedics,B3-014,2026-03-01 13:00:00,2026-03-01,30.2,2026,March,Sunday,13,Afternoon,0
+M0495,A0495,P0495,H002,3,Department Transfer,D07,D07,General Surgery,General Surgery,B2-015,2026-01-26 13:00:00,2026-01-26,21.4,2026,January,Monday,13,Afternoon,0
+M0496,A0496,P0496,H002,1,Discharge,D00,D99,Outside Hospital,Discharge,B2-016,2026-06-23 16:00:00,2026-06-23,31.3,2026,June,Tuesday,16,Afternoon,0
+M0497,A0497,P0497,H002,2,Transfer,D01,D04,Emergency Department,Orthopedics,B2-017,2026-01-29 05:00:00,2026-01-29,24.2,2026,January,Thursday,5,Night,0
+M0498,A0498,P0498,H001,3,Department Transfer,D07,D07,General Surgery,General Surgery,B1-018,2026-01-05 14:00:00,2026-01-05,26.5,2026,January,Monday,14,Afternoon,0
+M0499,A0499,P0499,H002,1,Admission,D00,D04,Outside Hospital,Orthopedics,B2-019,2026-04-09 14:00:00,2026-04-09,7.6,2026,April,Thursday,14,Afternoon,0
+M0500,A0500,P0500,H003,2,Transfer,D01,D01,Emergency Department,Emergency Department,B3-020,2026-05-21 23:00:00,2026-05-21,14.1,2026,May,Thursday,23,Evening,0

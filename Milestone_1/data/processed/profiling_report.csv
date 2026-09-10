@@ -1,0 +1,5 @@
+Dataset,Rows,Columns,Missing Values,Duplicate Rows
+Hospital Overview,500,23,0,0
+Patient Flow,500,20,0,0
+Department Analytics,500,24,0,0
+Resource Utilization,500,24,0,0
