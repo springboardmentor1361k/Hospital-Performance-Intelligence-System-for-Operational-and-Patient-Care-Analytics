@@ -1,0 +1,149 @@
+MedTrack_DV – KPI Definitions
+
+1. Total Admissions
+
+Definition:
+The total number of unique hospital admissions.
+
+Formula:
+COUNTD(admission_id)
+
+Source Dataset:
+Hospital Overview Dataset
+
+Current Dataset Result:
+500 admissions
+
+Interpretation:
+This KPI shows the total number of patients admitted to the hospital during the available data period.
+
+
+2. Average Length of Stay (LOS)
+
+Definition:
+The average number of days patients stayed in the hospital.
+
+Formula:
+Average of length_of_stay_days
+
+Source Dataset:
+Hospital Overview Dataset
+
+Current Dataset Result:
+4.98 days
+
+Interpretation:
+A higher average LOS indicates that patients are staying longer in the hospital on average.
+
+
+3. Readmission Rate
+
+Definition:
+The percentage of hospital admissions marked as readmissions.
+
+Formula:
+(Readmitted Admissions / Total Unique Admissions) × 100
+
+Source Dataset:
+Hospital Overview Dataset
+
+Current Dataset Result:
+13.00%
+
+Readmission Count:
+65
+
+Denominator:
+500 unique admissions
+
+Interpretation:
+This KPI indicates the proportion of admissions that were identified as readmissions.
+
+
+4. Mortality Rate
+
+Definition:
+The percentage of hospital admissions associated with a mortality flag.
+
+Formula:
+(Mortality Count / Total Unique Admissions) × 100
+
+Source Dataset:
+Hospital Overview Dataset
+
+Current Dataset Result:
+1.40%
+
+Mortality Count:
+7
+
+Denominator:
+500 unique admissions
+
+Interpretation:
+This KPI represents the percentage of admissions associated with a mortality flag in the dataset.
+
+
+
+5. Bed Occupancy Rate
+
+Definition:
+The percentage of available department beds represented by occupied beds across the department-level records.
+
+Formula:
+(Total Occupied Beds / Total Available Beds) × 100
+
+Source Dataset:
+Department Analytics Dataset
+
+Current Dataset Result:
+69.66%
+
+Total Occupied Beds:
+11,946
+
+Total Available Beds:
+17,150
+
+Interpretation:
+This KPI indicates how much of the available bed capacity is occupied across the department-level records.
+
+
+6. Bed Utilization Rate
+
+Definition:
+The percentage of available beds that are recorded as being in use in the Resource Utilization Dataset.
+
+Formula:
+(Total Beds in Use / Total Beds Available) × 100
+
+Source Dataset:
+Resource Utilization Dataset
+
+Current Dataset Result:
+62.63%
+
+Total Beds in Use:
+3,077
+
+Total Beds Available:
+4,913
+
+Interpretation:
+This KPI indicates the utilization of beds recorded in the resource utilization data.
+
+
+KPI Validation
+
+All six selected KPIs were independently recalculated during KPI validation.
+
+| KPI                    | Validated Result |
+| ---------------------- | ---------------: |
+| Total Admissions       |              500 |
+| Average Length of Stay |        4.98 days |
+| Readmission Rate       |           13.00% |
+| Mortality Rate         |            1.40% |
+| Bed Occupancy Rate     |           69.66% |
+| Bed Utilization Rate   |           62.63% |
+
+The validation results matched the original KPI calculations.

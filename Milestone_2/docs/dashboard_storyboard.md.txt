@@ -1,0 +1,170 @@
+MedTrack_DV – Dashboard Storyboard
+
+ 1. Hospital Overview Dashboard
+Purpose
+Provide an overall view of hospital operations, admissions, patient outcomes, length of stay, and bed utilization.
+
+KPIs
+
+* Total Admissions
+* Average Length of Stay
+* Readmission Rate
+* Mortality Rate
+* Bed Occupancy Rate
+* Bed Utilization Rate
+
+Charts
+
+* Monthly Admissions Trend – Line Chart
+* Admissions vs Discharges – Line/Bar Chart
+* Admissions by Department – Bar Chart
+* Admissions by Admission Type – Bar Chart
+* Hospital Performance Overview – KPI Cards
+
+ Filters
+
+* Hospital
+* Department
+* Date
+* Year
+* Month
+
+ Interactions
+
+* Selecting a department filters the related information.
+* Selecting a time period updates the KPI cards and charts.
+* Navigation button connects to Patient Flow, Department Analytics, and Resource Utilization dashboards.
+
+ 2. Patient Flow Dashboard
+Purpose
+Analyze patient movement through departments, transfers, department stay duration, and peak patient movement periods.
+
+ KPIs
+
+* Total Admissions
+* Total Discharges
+* Total Transfers
+* Average Department Stay
+
+ Charts
+
+* Patient Movement by Department – Bar Chart
+* Patient Movement Over Time – Line Chart
+* Movement Type Distribution – Bar/Pie Chart
+* Peak Movement Hours – Heatmap
+* Average Stay by Department – Bar Chart
+
+ Filters
+
+* Hospital
+* Department
+* Date
+* Year
+* Month
+* Shift
+* Movement Type
+
+ Interactions
+
+* Selecting a department shows its patient movement details.
+* Selecting a time period updates movement trends.
+* Navigation connects to Department Analytics and Resource Utilization.
+
+ 3. Department Analytics Dashboard
+Purpose
+
+Compare department performance using admissions, discharges, occupancy, length of stay, staffing, and efficiency indicators.
+
+KPIs
+
+* Patients Admitted
+* Patients Discharged
+* Bed Occupancy Rate
+* Average Length of Stay
+* Readmission Rate
+* Staff-to-Patient Ratio
+* Department Efficiency Score
+
+Charts
+
+* Admissions and Discharges by Department – Bar Chart
+* Bed Occupancy by Department – Bar Chart
+* Average Length of Stay by Department – Bar Chart
+* Capacity vs Demand – Bar Chart
+* Department Efficiency Score – Bar Chart
+* Staff-to-Patient Ratio – Bar Chart
+
+Filters
+
+* Hospital
+* Department
+* Date
+* Year
+* Month
+
+Interactions
+
+* Selecting a department highlights its performance.
+* Selecting a department can navigate to Patient Flow.
+* Selecting a department can navigate to Resource Utilization.
+
+4. Resource Utilization Dashboard
+Purpose
+Analyze utilization of hospital beds, equipment, and clinical staff, including shortages, maintenance, downtime, and overtime.
+
+KPIs
+
+* Bed Utilization Rate
+* Units in Use
+* Units Under Maintenance
+* Equipment Downtime
+* Overtime Hours
+* Nurses on Duty
+* Doctors on Duty
+
+Charts
+
+* Bed Utilization – Bar Chart
+* Equipment Utilization – Bar Chart
+* Resource Usage by Department – Bar Chart
+* Equipment Downtime – Bar Chart
+* Resource Shortage Status – Bar/Indicator Chart
+* Staff Overtime – Bar Chart
+
+Filters
+
+* Hospital
+* Department
+* Date
+* Year
+* Month
+* Resource Type
+* Resource Category
+
+Interactions
+
+* Selecting a resource type filters the related resource information.
+* Selecting a department shows department-specific resource utilization.
+* Navigation connects back to Hospital Overview and Department Analytics.
+
+Dashboard Interlinking
+
+The four dashboards will be interconnected using Tableau navigation and dashboard actions.
+
+Hospital Overview
+↓
+Patient Flow
+↓
+Department Analytics
+↓
+Resource Utilization
+
+Common filters:
+
+* Hospital
+* Department
+* Date
+* Year
+* Month
+
+Dashboard interactions will allow users to select a department or time period and explore related operational information across dashboards.

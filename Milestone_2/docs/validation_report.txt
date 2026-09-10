@@ -1,0 +1,81 @@
+
+MEDTRACK_DV DATA VALIDATION REPORT
+==================================
+
+1. ROW COUNTS
+Hospital Overview: 500
+Patient Flow: 500
+Department Analytics: 500
+Resource Utilization: 500
+
+2. MISSING VALUES
+Hospital Overview: 0
+Patient Flow: 0
+Department Analytics: 0
+Resource Utilization: 0
+
+3. EXACT DUPLICATES
+Hospital Overview: 0
+Patient Flow: 0
+Department Analytics: 0
+Resource Utilization: 0
+
+4. PRIMARY KEY VALIDATION
+Duplicate admission IDs: 0
+Duplicate movement IDs: 0
+Duplicate resource utilization IDs: 0
+
+5. RELATIONSHIP VALIDATION
+Unmatched patient IDs: 0
+Unmatched admission IDs: 0
+
+6. HOSPITAL VALIDATION
+Unmatched hospitals in Patient Flow: 0
+Unmatched hospitals in Department Analytics: 0
+Unmatched hospitals in Resource Utilization: 0
+
+7. DEPARTMENT VALIDATION
+Hospital Overview department IDs: 7
+Department Analytics department IDs: 7
+Patient Flow current department IDs: 8
+
+8. DATE VALIDATION
+Hospital Overview:
+2026-01-01 00:00:00 to 2026-06-30 00:00:00
+
+Patient Flow:
+2026-01-03 00:00:00 to 2026-07-05 00:00:00
+
+Department Analytics:
+2026-01-01 00:00:00 to 2026-06-29 00:00:00
+
+Resource Utilization:
+2026-01-01 00:00:00 to 2026-06-25 00:00:00
+
+9. MOVEMENT SEQUENCE VALIDATION
+Minimum movement sequence: 1
+Maximum movement sequence: 3
+Missing movement sequences: 0
+
+10. HOSPITAL-DEPARTMENT COMBINATIONS
+Hospital Overview:
+21
+
+Department Analytics:
+21
+
+Resource Utilization:
+21
+
+OVERALL STATUS
+============
+Data validation completed successfully.
+
+Resource Utilization grain observation:
+Multiple records share the same hospital, department, date,
+resource type, and resource category combination. These records
+were retained because they contain different operational
+measurements and are not exact duplicates.
+
+The four datasets are ready for use as separate analytical
+datasets in Tableau.
