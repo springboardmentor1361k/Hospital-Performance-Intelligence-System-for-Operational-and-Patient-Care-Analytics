@@ -1,0 +1,1863 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='9369241ea1aaf4a782bf7772efd5479eebf97fc04ad9d5b860cfca4468cf6854' _.fcp.WorkbookFingerprinting.true...creator-author-id='441a92ffe47b96ac00e1eb528df725f9a31bdd3b1c109c37f06c1df0d8f73ad6' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='441a92ffe47b96ac00e1eb528df725f9a31bdd3b1c109c37f06c1df0d8f73ad6' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='441a92ffe47b96ac00e1eb528df725f9a31bdd3b1c109c37f06c1df0d8f73ad6' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='DATA MODEL' inline='true' name='federated.0hpck34078oxhm1fids8e1uqsufd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hospital_overview_normalized' name='textscan.0zyu4pz0gy7yvu192q87r0p0v89u'>
+            <connection class='textscan' directory='D:/MedTrack_DV/data/processed' filename='hospital_overview_normalized.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='hospital_overview_normalized.csv' table='[hospital_overview_normalized#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='admission_id' ordinal='0' />
+              <column datatype='string' name='patient_id' ordinal='1' />
+              <column datatype='string' name='hospital_id' ordinal='2' />
+              <column datatype='string' name='hospital_name' ordinal='3' />
+              <column datatype='string' name='department_id' ordinal='4' />
+              <column datatype='string' name='department_name' ordinal='5' />
+              <column datatype='date' name='admission_date' ordinal='6' />
+              <column datatype='date' name='discharge_date' ordinal='7' />
+              <column datatype='string' name='admission_type' ordinal='8' />
+              <column datatype='string' name='admission_source' ordinal='9' />
+              <column datatype='string' name='bed_id' ordinal='10' />
+              <column datatype='string' name='bed_type' ordinal='11' />
+              <column datatype='integer' name='patient_age' ordinal='12' />
+              <column datatype='string' name='patient_gender' ordinal='13' />
+              <column datatype='string' name='diagnosis' ordinal='14' />
+              <column datatype='string' name='insurance_type' ordinal='15' />
+              <column datatype='real' name='total_bill_amount' ordinal='16' />
+              <column datatype='string' name='payment_status' ordinal='17' />
+              <column datatype='string' name='discharge_status' ordinal='18' />
+              <column datatype='real' name='patient_satisfaction_score' ordinal='19' />
+              <column datatype='integer' name='mortality_flag' ordinal='20' />
+              <column datatype='integer' name='readmission_flag' ordinal='21' />
+              <column datatype='integer' name='length_of_stay_days' ordinal='22' />
+              <column datatype='date' name='date' ordinal='23' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='department_analytics_normalized.csv' table='[department_analytics_normalized#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='date' name='date' ordinal='0' />
+              <column datatype='string' name='hospital_id' ordinal='1' />
+              <column datatype='string' name='hospital_name' ordinal='2' />
+              <column datatype='string' name='department_id' ordinal='3' />
+              <column datatype='string' name='department_name' ordinal='4' />
+              <column datatype='string' name='department_type' ordinal='5' />
+              <column datatype='integer' name='total_beds' ordinal='6' />
+              <column datatype='integer' name='occupied_beds_count' ordinal='7' />
+              <column datatype='real' name='bed_occupancy_rate_pct' ordinal='8' />
+              <column datatype='integer' name='patients_admitted_count' ordinal='9' />
+              <column datatype='integer' name='patients_discharged_count' ordinal='10' />
+              <column datatype='integer' name='readmission_count' ordinal='11' />
+              <column datatype='real' name='readmission_rate_pct' ordinal='12' />
+              <column datatype='integer' name='mortality_count' ordinal='13' />
+              <column datatype='real' name='mortality_rate_pct' ordinal='14' />
+              <column datatype='real' name='avg_length_of_stay_days' ordinal='15' />
+              <column datatype='real' name='avg_treatment_time_hours' ordinal='16' />
+              <column datatype='integer' name='transfer_events_count' ordinal='17' />
+              <column datatype='integer' name='nurses_on_duty' ordinal='18' />
+              <column datatype='integer' name='doctors_on_duty' ordinal='19' />
+              <column datatype='real' name='staff_to_patient_ratio' ordinal='20' />
+              <column datatype='real' name='equipment_downtime_hours' ordinal='21' />
+              <column datatype='real' name='avg_satisfaction_score' ordinal='22' />
+              <column datatype='real' name='department_efficiency_score' ordinal='23' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='resource_utilization_normalized.csv' table='[resource_utilization_normalized#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='resource_utilization_id' ordinal='0' />
+              <column datatype='date' name='date' ordinal='1' />
+              <column datatype='string' name='hospital_id' ordinal='2' />
+              <column datatype='string' name='hospital_name' ordinal='3' />
+              <column datatype='string' name='department_id' ordinal='4' />
+              <column datatype='string' name='department_name' ordinal='5' />
+              <column datatype='string' name='resource_type' ordinal='6' />
+              <column datatype='string' name='resource_category' ordinal='7' />
+              <column datatype='integer' name='total_units_available' ordinal='8' />
+              <column datatype='integer' name='units_in_use' ordinal='9' />
+              <column datatype='integer' name='units_under_maintenance' ordinal='10' />
+              <column datatype='real' name='utilization_rate_pct' ordinal='11' />
+              <column datatype='integer' name='shortage_flag' ordinal='12' />
+              <column datatype='integer' name='capacity_hours' ordinal='13' />
+              <column datatype='real' name='utilized_hours' ordinal='14' />
+              <column datatype='real' name='idle_hours' ordinal='15' />
+              <column datatype='real' name='downtime_hours' ordinal='16' />
+              <column datatype='integer' name='nurses_on_duty_snapshot' ordinal='17' />
+              <column datatype='integer' name='doctors_on_duty_snapshot' ordinal='18' />
+              <column datatype='real' name='overtime_hours' ordinal='19' />
+              <column datatype='real' name='avg_response_time_minutes' ordinal='20' />
+              <column datatype='string' name='resource_condition' ordinal='21' />
+              <column datatype='integer' name='maintenance_due_flag' ordinal='22' />
+              <column datatype='date' name='last_maintenance_date' ordinal='23' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='patient_flow_normalized.csv' table='[patient_flow_normalized#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='movement_id' ordinal='0' />
+              <column datatype='string' name='admission_id' ordinal='1' />
+              <column datatype='string' name='patient_id' ordinal='2' />
+              <column datatype='string' name='hospital_id' ordinal='3' />
+              <column datatype='integer' name='movement_sequence' ordinal='4' />
+              <column datatype='string' name='movement_type' ordinal='5' />
+              <column datatype='string' name='from_department_id' ordinal='6' />
+              <column datatype='string' name='current_department_id' ordinal='7' />
+              <column datatype='string' name='from_department_name' ordinal='8' />
+              <column datatype='string' name='current_department_name' ordinal='9' />
+              <column datatype='string' name='bed_id' ordinal='10' />
+              <column datatype='datetime' name='movement_datetime' ordinal='11' />
+              <column datatype='date' name='movement_date' ordinal='12' />
+              <column datatype='real' name='duration_in_department_hours' ordinal='13' />
+              <column datatype='integer' name='year' ordinal='14' />
+              <column datatype='string' name='month' ordinal='15' />
+              <column datatype='string' name='day_of_week' ordinal='16' />
+              <column datatype='integer' name='hour_of_day' ordinal='17' />
+              <column datatype='string' name='shift' ordinal='18' />
+              <column datatype='integer' name='is_peak_hour' ordinal='19' />
+              <column datatype='date' name='date' ordinal='20' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admission_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[admission_id]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>admission_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_id]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>patient_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_id]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>hospital_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_name]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>hospital_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_id]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>department_id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_name]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>department_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admission_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[admission_date]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>admission_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discharge_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[discharge_date]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>discharge_date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admission_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[admission_type]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>admission_type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admission_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[admission_source]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>admission_source</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bed_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bed_id]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>bed_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bed_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bed_type]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>bed_type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patient_age]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>patient_age</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_gender]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>patient_gender</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diagnosis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diagnosis]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>diagnosis</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insurance_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[insurance_type]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>insurance_type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_bill_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_bill_amount]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>total_bill_amount</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_status]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>payment_status</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discharge_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[discharge_status]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>discharge_status</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_satisfaction_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[patient_satisfaction_score]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>patient_satisfaction_score</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mortality_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mortality_flag]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>mortality_flag</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readmission_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[readmission_flag]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>readmission_flag</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>length_of_stay_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[length_of_stay_days]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>length_of_stay_days</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[hospital_overview_normalized.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (department_analytics_normalized.csv)]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_id (department_analytics_normalized.csv)]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>hospital_id</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_name (department_analytics_normalized.csv)]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>hospital_name</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_id (department_analytics_normalized.csv)]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>department_id</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_name (department_analytics_normalized.csv)]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>department_name</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_type]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>department_type</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_beds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_beds]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>total_beds</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occupied_beds_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[occupied_beds_count]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>occupied_beds_count</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bed_occupancy_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bed_occupancy_rate_pct]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>bed_occupancy_rate_pct</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patients_admitted_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patients_admitted_count]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>patients_admitted_count</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patients_discharged_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patients_discharged_count]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>patients_discharged_count</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readmission_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[readmission_count]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>readmission_count</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readmission_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[readmission_rate_pct]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>readmission_rate_pct</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mortality_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mortality_count]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>mortality_count</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mortality_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mortality_rate_pct]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>mortality_rate_pct</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_length_of_stay_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_length_of_stay_days]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>avg_length_of_stay_days</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_treatment_time_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_treatment_time_hours]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>avg_treatment_time_hours</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transfer_events_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transfer_events_count]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>transfer_events_count</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nurses_on_duty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nurses_on_duty]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>nurses_on_duty</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doctors_on_duty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[doctors_on_duty]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>doctors_on_duty</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>staff_to_patient_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[staff_to_patient_ratio]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>staff_to_patient_ratio</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>equipment_downtime_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[equipment_downtime_hours]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>equipment_downtime_hours</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_satisfaction_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_satisfaction_score]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>avg_satisfaction_score</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_efficiency_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[department_efficiency_score]</local-name>
+            <parent-name>[department_analytics_normalized.csv]</parent-name>
+            <remote-alias>department_efficiency_score</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_utilization_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_utilization_id]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>resource_utilization_id</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (resource_utilization_normalized.csv)]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_id (resource_utilization_normalized.csv)]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>hospital_id</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_name (resource_utilization_normalized.csv)]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>hospital_name</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_id (resource_utilization_normalized.csv)]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>department_id</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>department_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[department_name (resource_utilization_normalized.csv)]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>department_name</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_type]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>resource_type</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_category]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>resource_category</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_units_available</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_units_available]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>total_units_available</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>units_in_use</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[units_in_use]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>units_in_use</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>units_under_maintenance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[units_under_maintenance]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>units_under_maintenance</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>utilization_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[utilization_rate_pct]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>utilization_rate_pct</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shortage_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shortage_flag]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>shortage_flag</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity_hours]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>capacity_hours</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>utilized_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[utilized_hours]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>utilized_hours</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>idle_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[idle_hours]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>idle_hours</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>downtime_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[downtime_hours]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>downtime_hours</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nurses_on_duty_snapshot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nurses_on_duty_snapshot]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>nurses_on_duty_snapshot</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doctors_on_duty_snapshot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[doctors_on_duty_snapshot]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>doctors_on_duty_snapshot</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overtime_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[overtime_hours]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>overtime_hours</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_response_time_minutes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_response_time_minutes]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>avg_response_time_minutes</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resource_condition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[resource_condition]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>resource_condition</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maintenance_due_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[maintenance_due_flag]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>maintenance_due_flag</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_maintenance_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_maintenance_date]</local-name>
+            <parent-name>[resource_utilization_normalized.csv]</parent-name>
+            <remote-alias>last_maintenance_date</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movement_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[movement_id]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>movement_id</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>admission_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[admission_id (patient_flow_normalized.csv)]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>admission_id</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patient_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[patient_id (patient_flow_normalized.csv)]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>patient_id</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital_id (patient_flow_normalized.csv)]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>hospital_id</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movement_sequence</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[movement_sequence]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>movement_sequence</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movement_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[movement_type]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>movement_type</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_department_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from_department_id]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>from_department_id</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_department_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[current_department_id]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>current_department_id</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_department_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from_department_name]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>from_department_name</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_department_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[current_department_name]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>current_department_name</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bed_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bed_id (patient_flow_normalized.csv)]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>bed_id</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movement_datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[movement_datetime]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>movement_datetime</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movement_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[movement_date]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>movement_date</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_in_department_hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[duration_in_department_hours]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>duration_in_department_hours</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_of_week]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>day_of_week</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour_of_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour_of_day]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>hour_of_day</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shift</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shift]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>shift</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_peak_hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_peak_hour]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>is_peak_hour</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (patient_flow_normalized.csv)]</local-name>
+            <parent-name>[patient_flow_normalized.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Readmission Rate KPI' datatype='real' name='[Calculation_0428302824022017]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([readmission_flag]) / COUNTD([admission_id])' />
+      </column>
+      <column caption='department_analytics_normalized.csv' datatype='table' name='[__tableau_internal_object_id__].[department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E]' role='measure' type='quantitative' />
+      <column caption='hospital_overview_normalized.csv' datatype='table' name='[__tableau_internal_object_id__].[hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7]' role='measure' type='quantitative' />
+      <column caption='patient_flow_normalized.csv' datatype='table' name='[__tableau_internal_object_id__].[patient_flow_normalized.csv_4564493BE6C448AF97AFBB7754D54C7B]' role='measure' type='quantitative' />
+      <column caption='resource_utilization_normalized.csv' datatype='table' name='[__tableau_internal_object_id__].[resource_utilization_normalized.csv_31C1DB76E6F041F3A70D47F6EDB1C8F1]' role='measure' type='quantitative' />
+      <column caption='Admission Id' datatype='string' name='[admission_id]' role='dimension' type='nominal' />
+      <column caption='Length Of Stay Days' datatype='integer' name='[length_of_stay_days]' role='measure' type='quantitative' />
+      <column caption='Readmission Flag' datatype='integer' name='[readmission_flag]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_02n1vxq0m8o28t199i1w400uwn6y.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/10/2026 06:02:22 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7' table='[Extract].[hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7]' type='table' />
+            <relation name='department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E' table='[Extract].[department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E]' type='table' />
+            <relation name='resource_utilization_normalized.csv_31C1DB76E6F041F3A70D47F6EDB1C8F1' table='[Extract].[resource_utilization_normalized.csv_31C1DB76E6F041F3A70D47F6EDB1C8F1]' type='table' />
+            <relation name='patient_flow_normalized.csv_4564493BE6C448AF97AFBB7754D54C7B' table='[Extract].[patient_flow_normalized.csv_4564493BE6C448AF97AFBB7754D54C7B]' type='table' />
+          </relation>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='department_analytics_normalized.csv' id='department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E'>
+            <properties context=''>
+              <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='department_analytics_normalized.csv' table='[department_analytics_normalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='hospital_id' ordinal='1' />
+                  <column datatype='string' name='hospital_name' ordinal='2' />
+                  <column datatype='string' name='department_id' ordinal='3' />
+                  <column datatype='string' name='department_name' ordinal='4' />
+                  <column datatype='string' name='department_type' ordinal='5' />
+                  <column datatype='integer' name='total_beds' ordinal='6' />
+                  <column datatype='integer' name='occupied_beds_count' ordinal='7' />
+                  <column datatype='real' name='bed_occupancy_rate_pct' ordinal='8' />
+                  <column datatype='integer' name='patients_admitted_count' ordinal='9' />
+                  <column datatype='integer' name='patients_discharged_count' ordinal='10' />
+                  <column datatype='integer' name='readmission_count' ordinal='11' />
+                  <column datatype='real' name='readmission_rate_pct' ordinal='12' />
+                  <column datatype='integer' name='mortality_count' ordinal='13' />
+                  <column datatype='real' name='mortality_rate_pct' ordinal='14' />
+                  <column datatype='real' name='avg_length_of_stay_days' ordinal='15' />
+                  <column datatype='real' name='avg_treatment_time_hours' ordinal='16' />
+                  <column datatype='integer' name='transfer_events_count' ordinal='17' />
+                  <column datatype='integer' name='nurses_on_duty' ordinal='18' />
+                  <column datatype='integer' name='doctors_on_duty' ordinal='19' />
+                  <column datatype='real' name='staff_to_patient_ratio' ordinal='20' />
+                  <column datatype='real' name='equipment_downtime_hours' ordinal='21' />
+                  <column datatype='real' name='avg_satisfaction_score' ordinal='22' />
+                  <column datatype='real' name='department_efficiency_score' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E' table='[Extract].[department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E]' type='table' />
+            </properties>
+          </object>
+          <object caption='hospital_overview_normalized.csv' id='hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7'>
+            <properties context=''>
+              <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='hospital_overview_normalized.csv' table='[hospital_overview_normalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='admission_id' ordinal='0' />
+                  <column datatype='string' name='patient_id' ordinal='1' />
+                  <column datatype='string' name='hospital_id' ordinal='2' />
+                  <column datatype='string' name='hospital_name' ordinal='3' />
+                  <column datatype='string' name='department_id' ordinal='4' />
+                  <column datatype='string' name='department_name' ordinal='5' />
+                  <column datatype='date' name='admission_date' ordinal='6' />
+                  <column datatype='date' name='discharge_date' ordinal='7' />
+                  <column datatype='string' name='admission_type' ordinal='8' />
+                  <column datatype='string' name='admission_source' ordinal='9' />
+                  <column datatype='string' name='bed_id' ordinal='10' />
+                  <column datatype='string' name='bed_type' ordinal='11' />
+                  <column datatype='integer' name='patient_age' ordinal='12' />
+                  <column datatype='string' name='patient_gender' ordinal='13' />
+                  <column datatype='string' name='diagnosis' ordinal='14' />
+                  <column datatype='string' name='insurance_type' ordinal='15' />
+                  <column datatype='real' name='total_bill_amount' ordinal='16' />
+                  <column datatype='string' name='payment_status' ordinal='17' />
+                  <column datatype='string' name='discharge_status' ordinal='18' />
+                  <column datatype='real' name='patient_satisfaction_score' ordinal='19' />
+                  <column datatype='integer' name='mortality_flag' ordinal='20' />
+                  <column datatype='integer' name='readmission_flag' ordinal='21' />
+                  <column datatype='integer' name='length_of_stay_days' ordinal='22' />
+                  <column datatype='date' name='date' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7' table='[Extract].[hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7]' type='table' />
+            </properties>
+          </object>
+          <object caption='patient_flow_normalized.csv' id='patient_flow_normalized.csv_4564493BE6C448AF97AFBB7754D54C7B'>
+            <properties context=''>
+              <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='patient_flow_normalized.csv' table='[patient_flow_normalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='movement_id' ordinal='0' />
+                  <column datatype='string' name='admission_id' ordinal='1' />
+                  <column datatype='string' name='patient_id' ordinal='2' />
+                  <column datatype='string' name='hospital_id' ordinal='3' />
+                  <column datatype='integer' name='movement_sequence' ordinal='4' />
+                  <column datatype='string' name='movement_type' ordinal='5' />
+                  <column datatype='string' name='from_department_id' ordinal='6' />
+                  <column datatype='string' name='current_department_id' ordinal='7' />
+                  <column datatype='string' name='from_department_name' ordinal='8' />
+                  <column datatype='string' name='current_department_name' ordinal='9' />
+                  <column datatype='string' name='bed_id' ordinal='10' />
+                  <column datatype='datetime' name='movement_datetime' ordinal='11' />
+                  <column datatype='date' name='movement_date' ordinal='12' />
+                  <column datatype='real' name='duration_in_department_hours' ordinal='13' />
+                  <column datatype='integer' name='year' ordinal='14' />
+                  <column datatype='string' name='month' ordinal='15' />
+                  <column datatype='string' name='day_of_week' ordinal='16' />
+                  <column datatype='integer' name='hour_of_day' ordinal='17' />
+                  <column datatype='string' name='shift' ordinal='18' />
+                  <column datatype='integer' name='is_peak_hour' ordinal='19' />
+                  <column datatype='date' name='date' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='patient_flow_normalized.csv_4564493BE6C448AF97AFBB7754D54C7B' table='[Extract].[patient_flow_normalized.csv_4564493BE6C448AF97AFBB7754D54C7B]' type='table' />
+            </properties>
+          </object>
+          <object caption='resource_utilization_normalized.csv' id='resource_utilization_normalized.csv_31C1DB76E6F041F3A70D47F6EDB1C8F1'>
+            <properties context=''>
+              <relation connection='textscan.0zyu4pz0gy7yvu192q87r0p0v89u' name='resource_utilization_normalized.csv' table='[resource_utilization_normalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='resource_utilization_id' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='string' name='hospital_id' ordinal='2' />
+                  <column datatype='string' name='hospital_name' ordinal='3' />
+                  <column datatype='string' name='department_id' ordinal='4' />
+                  <column datatype='string' name='department_name' ordinal='5' />
+                  <column datatype='string' name='resource_type' ordinal='6' />
+                  <column datatype='string' name='resource_category' ordinal='7' />
+                  <column datatype='integer' name='total_units_available' ordinal='8' />
+                  <column datatype='integer' name='units_in_use' ordinal='9' />
+                  <column datatype='integer' name='units_under_maintenance' ordinal='10' />
+                  <column datatype='real' name='utilization_rate_pct' ordinal='11' />
+                  <column datatype='integer' name='shortage_flag' ordinal='12' />
+                  <column datatype='integer' name='capacity_hours' ordinal='13' />
+                  <column datatype='real' name='utilized_hours' ordinal='14' />
+                  <column datatype='real' name='idle_hours' ordinal='15' />
+                  <column datatype='real' name='downtime_hours' ordinal='16' />
+                  <column datatype='integer' name='nurses_on_duty_snapshot' ordinal='17' />
+                  <column datatype='integer' name='doctors_on_duty_snapshot' ordinal='18' />
+                  <column datatype='real' name='overtime_hours' ordinal='19' />
+                  <column datatype='real' name='avg_response_time_minutes' ordinal='20' />
+                  <column datatype='string' name='resource_condition' ordinal='21' />
+                  <column datatype='integer' name='maintenance_due_flag' ordinal='22' />
+                  <column datatype='date' name='last_maintenance_date' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='resource_utilization_normalized.csv_31C1DB76E6F041F3A70D47F6EDB1C8F1' table='[Extract].[resource_utilization_normalized.csv_31C1DB76E6F041F3A70D47F6EDB1C8F1]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[hospital_id]' />
+                <expression op='[hospital_id (department_analytics_normalized.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[department_id]' />
+                <expression op='[department_id (department_analytics_normalized.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7' />
+            <second-end-point object-id='department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[admission_id]' />
+              <expression op='[admission_id (patient_flow_normalized.csv)]' />
+            </expression>
+            <first-end-point object-id='hospital_overview_normalized.csv_B9878E44997747DA9C1AFF07F6E5A3D7' />
+            <second-end-point object-id='patient_flow_normalized.csv_4564493BE6C448AF97AFBB7754D54C7B' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[hospital_id (department_analytics_normalized.csv)]' />
+                <expression op='[hospital_id (resource_utilization_normalized.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[department_id (department_analytics_normalized.csv)]' />
+                <expression op='[department_id (resource_utilization_normalized.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[date (department_analytics_normalized.csv)]' />
+                <expression op='[date (resource_utilization_normalized.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='department_analytics_normalized.csv_A4706C4E69A04235AE1334266872958E' />
+            <second-end-point object-id='resource_utilization_normalized.csv_31C1DB76E6F041F3A70D47F6EDB1C8F1' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Length of stay days'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATA MODEL' name='federated.0hpck34078oxhm1fids8e1uqsufd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hpck34078oxhm1fids8e1uqsufd'>
+            <column-instance column='[length_of_stay_days]' derivation='Avg' name='[avg:length_of_stay_days:qk]' pivot='key' type='quantitative' />
+            <column caption='Length Of Stay Days' datatype='integer' name='[length_of_stay_days]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hpck34078oxhm1fids8e1uqsufd].[avg:length_of_stay_days:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D48F16CD-66C0-4873-98D5-7E85AFB6397A}' />
+    </worksheet>
+    <worksheet name='Readmission Rate KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATA MODEL' name='federated.0hpck34078oxhm1fids8e1uqsufd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hpck34078oxhm1fids8e1uqsufd'>
+            <column caption='Readmission Rate KPI' datatype='real' name='[Calculation_0428302824022017]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([readmission_flag]) / COUNTD([admission_id])' />
+            </column>
+            <column caption='Admission Id' datatype='string' name='[admission_id]' role='dimension' type='nominal' />
+            <column caption='Readmission Flag' datatype='integer' name='[readmission_flag]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0428302824022017]' derivation='User' name='[usr:Calculation_0428302824022017:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hpck34078oxhm1fids8e1uqsufd].[usr:Calculation_0428302824022017:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1282D758-4287-450F-8FC4-A4D80F5EC63C}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATA MODEL' name='federated.0hpck34078oxhm1fids8e1uqsufd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hpck34078oxhm1fids8e1uqsufd'>
+            <column caption='Admission Id' datatype='string' name='[admission_id]' role='dimension' type='nominal' />
+            <column-instance column='[admission_id]' derivation='CountD' name='[ctd:admission_id:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0hpck34078oxhm1fids8e1uqsufd].[ctd:admission_id:qk]</cols>
+      </table>
+      <simple-id uuid='{98996128-FA1D-4393-85A9-4750D27E3F46}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E090CE03-3BD6-494B-83C9-23BEB9C1BEF5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{002BB618-EAAF-4785-B22D-98107BCC63A1}' />
+    </window>
+    <window class='worksheet' name='Readmission Rate KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D9E5910C-B666-43DB-8B78-57A04C80F242}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Length of stay days'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BDA13B30-D98E-4DAC-A709-BA44D735D191}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{C8783D45-A014-49B6-920C-613A799F725C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACF0lEQVR4nO3TMQEAIAzAMIZ/z0MGRxMFfTq7uweCZmbu7wj4yQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSHtb
+      egWA0FAUAAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='25' name='Length of stay days' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADn0lEQVRYhe2Yz0siYRjHvzutFipaomElJYEVRP4DWV3qEoHgtfBUHfIgRFAdjLKfBw2C
+      oKLwMJ0iiKLoYCdJ6hgEQkwQaWWeQk2lUZt3D9Gwg7bbsuQsrB+Yw/vwPM88z/ed95lhvhFC
+      CP5jKLELEJuSAGIXIDYlAcQuQGxKAohdgNiUBBC7ALEpCSB2AWLz3wvwvdg3PDw8xNraGiYn
+      J9HR0fGhH03T2NnZQSKRQFtbG8bGxtDY2AgAuLu7A03TYFk2L06pVGJ4eBhKpRIcx+H4+Bg0
+      TSOZTEKhUMBms6G3txcU9bb3RRXg9vYWPp8PdXV1BYt/h+M4PDw8YHd3FxUVFQgEApiensbC
+      wgL0ej10Oh2Ghoby4hiGwfb2Nr/2er24vLyE2+1GfX09wuEw3G43otEoBgcH35xIkWBZljid
+      TuL3+8n4+Dg5OTn50DcUCpFYLCawbWxskJWVlQ9jXl9ficvlIgcHB4QQQmKxGLHb7SQUCuXl
+      ttvtfP6izQCfzweFQgGz2fxb31gsBpVKJbC1t7fj5uYG6XS6YAzDMIhEIvyxkkgkkEqlef7p
+      dBpSqRQSiQRAkYbg/f09fD4fBgYG+LP3K8rKypBKpQQ2rVaLRCKBZDKZ589xHPb29tDT04Oq
+      qioAgEwmg81mg8fjQTAYRDabRTAYhMfjgc1mg0wmA1AEAXK5HGiaRl9fH2praz8VYzQasbW1
+      hZeXFwBAIpHA6elpweYBIBwOIxwOo7OzU2A3mUywWq1wOBywWCxwOBywWq0wmUy8zzdCvu6X
+      2NPTE0ZGRqBWq6HRaHj7xcUFdDodmpub+Yn9O66vr7G+vo7Z2Vl+94C35ufm5jA/Pw+tVivw
+      X15extLSkuA4xeNxTExMYHR0FEaj8WvfApWVlVhdXQXHcQL74uIizGYzurq6oFAoPpXr/Pwc
+      DQ0NguYBYH9/H2azWdA8AGQyGVAUlXfk3m2ZTOZt/adN/QkURUGj0aC6ulpwlZeXQ6VSQaPR
+      gKIo5HI5nJ2d4fHxkY/9WTSGYRAIBGC1WgX5I5EIrq6u0N3dnXdvg8GAbDYLv9/P5+I4Dn6/
+      H9lsFgaDAYAIH0KFYFkWm5ub6O/vR01NDQDAYrGgtbUVz8/PiEajmJmZgV6vF8QdHR2hpaWl
+      4GyRy+VwOp2YmpqC1+tFU1MTGIaBSqWCy+WCXC4H8MUz4G9IpVJIpVKgKApqtfpTb4+PiMfj
+      YFmWf/J+5p8VoFj8AIDHLw2aBTNiAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='25' name='Readmission Rate KPI' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADh0lEQVRYhe2YP0hqfRjHP8YhJUXRaioiQhJsElyaLkhQ5CIRBv0ZamiQWqKloSldChxa
+      wiloCAmJttqChqDFJSqO4lAYhUjlv45knt873QPive81zgV5efuOz/N5vufhy8M5cAxCCMH/
+      WB3tXqDd+g6g3Qu0W98BtHuBdus7gHYv0G59B9DuBdqt7wDavUC79R2AXoNqtcru7i4+nw+f
+      z8fu7i7VarWl2VKpxM7ODvF4vKkXjUYJBAJMTk4SDAY5Pj7m4+Ojgbm+vmZhYYHR0VEWFha4
+      vr5u8vkjI3SoXq+LSCQiwuGwUBRFKIoiwuGwiEQiol6v/3auUqmIWCwm/H6/mJqaErFYrKFf
+      LpfF6empKJfLQgghcrmcWF9fF9FoVPOVZVnMzMyIZDIphBAimUyKmZkZIcuy5tMKo+sCMpkM
+      2WyWUCiEyWTCZDIRCoXIZrNkMpnfzh0fHwNwdHTE+Ph4U99sNjMxMYHZbAagt7eX1dVVHh8f
+      URQFgEQiQTAYxOPxAODxeAgGgyQSCc2nFUZ3AE6nE7vdrtXsdjtOp/NfA5ifn2d5eZmurq6W
+      n/X09ISqqkiSRKlUIp/P4/V6Gxiv10s+n6dUKrXEgM4AHh4eGBoaaqoPDQ3x8PCgx1pTrVbj
+      4uKCvb09lpaWMBqNKIqCqqrYbLYG1mazoaoqiqK0xABIehe0WCy/rOVyOV2+h4eHHBwc8Pr6
+      yo8fP4hGozgcDq1vMpmQpMb1JUnCZDJ9idF1ARaLhVQq1VRPpVK/DOYrmp2d5ezsjKurK7a3
+      tymXyywvL/P8/IwkSby9vVEoFBpmCoUCb29vSJLUEgM6A3C5XMiyrJ0TgKIoyLKMy+XSY92k
+      7u5uOjs7yeVyWK1WbDYb6XS6gUmn09hsNqxWa0sM6AzA7XZjMBg4Pz/Xaufn5xgMBtxuNwCf
+      n59cXl7y9PTUsu/9/T2qqjbUbm9vqdVqDA4OIkkSfr+feDxOsVgEoFgsEo/H8fv92gX8iQEw
+      6P0rnM1mWVtbo6enB4B8Pk80GqW/vx+ASqXCysoKc3NzjI2N8f7+zubmJnd3d1of0D55Gxsb
+      uN1upqen6evrY2BgAFmWkSSJra0thoeHAVBVlf39fU5OThgZGeHm5oZAIMDi4iIdHR0tM7oD
+      +Pmgl5cXABwOh2b+NzxVVcVoNDa9zX+qUqlQqVQwm81aiF9h/koA/2X9A+pLaGGCbjuEAAAA
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='87' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAABXCAYAAABSv0r8AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAGi0lEQVR4nO3cf0yUdRwH8LeezjvghDQXnstAxRxOE6Gclo1QabVKNzerTdOlc8uttcJf
+      w6aTTds6N2vSHzFNCJlmmTSdTJzhNLUmDoT0lOGPRO8QRYHjjl/3+O0PRA8OlcP7wfF5vzb+
+      4Hm+x/P9cN/38/0+D/cwQCmlQCTUwGB3gCiYGAASjQEg0RgAEo0BINEYABKNASDRnhoAp9MZ
+      iH4EnN1uD3YX/KK/1gX4pzbOACQaA0CiDepJo7npe/zdD6Kg4AxAojEAJBoDQKIxACQaA0Ci
+      MQAkGgNAojEAJBoDQKIxACQaA0CiMQAkGgNAog142j/GcjqdCAsLC1R/AsZut8NoNAa7Gz7X
+      X+sC/FMbZwASrUczAFF/1aMHYvrjEqi/Lu36a12Af2rjEohEYwBINAaARGMASLSn3gUi6s84
+      A5BoDACJxgCQaAwAicYAkGgMAInWo88CdaI1oPzAduw9VolaDMe45AVY9v4kDNX5oXfPREND
+      xTHkHzwBy+0WAEMxdvZ8LEge36mvbVV/IWdXPs5da8GQmFcwb+FivPHi4KD12ivaVRw0Z+Gk
+      IRVfffEWRrjtCtm6tDs4+9vPOHDmKmwtQzDMNAFvf7QQybH6h018WpvyiktZ8tJUem6Zqncp
+      pVz1qiw3XaXlWZTLux/kdxW/pqv07/NVaVWjalVKuZruqAv7NqnVO8tUU0ej2iJlTjOrw9db
+      lVJKtV4/rMxpZlVUG6xee8Olruxbr7bt3a02bDykbO67QrauWnV8a7raeuhS+/hSSrXevazK
+      r9S5NfFtbd4FoK5ImdftU1fcR7vritq3zqyK6h77qqCw3bzZTShL1PbPdqqyB99Z8tLUtlON
+      nVo0ntqm0vIsAejhs3HdPKA2mYtUre2Q2tglAKFaV9PfP6i03PNPPJn6ujavrgG0ygrUTk1A
+      rPtyRxeLhKm1qKjUejcF+Um0yQSPVZmjEY2RQxEBALCisiIGiQnhnZqEJyQipqIS1sB0s3c0
+      KwqyL2LGp8kY5rEzVOtqRsmZKsx4Pd7zfXvI97V5FYDbNdUYNXKkx/aRI0ehuuZ2Lw4fQG1V
+      KMjMh3o3GbEAgBrcajEhWt+lnT4appZbqAl8D3tIg7UwF+eTFiLZc/QjdOu6hquXx2FMbBsc
+      Ny6iuLgYxcUXYWt2P7H6vjav7wIZDF2PDugNhl4cOnAclQX47utMXH9zLT6f6TZqDAZ49tyA
+      Pl1O9VHkliVgcWr049uEYl1oRpOzFNlrMvBjwUU0AGi4cRRZq9ZgR6njUTMf1+b1XSBN04Au
+      k1T7tr7Igco/MpF59gUsWrUZic93mVzva7jv8Zr70Dw39hHVKMwpweRFK/GE4R+CdXWYhEWb
+      lyOx421KSkLKnNPIXJuDf8wrME0Pn9fmVQAMhjBYbbcAmDptv2WzIiyir51eHCjdkYHdugXI
+      2JDYzW1aPQz1Vtg0wOS+T7PBWm/AuAD2tKfqT+xB/j0dko7sQk7HxqYbuHcPyM+pgSlhHj6Y
+      HHp1tYvEc8Na0dqGzufX8NcwfdIR1NQBiPZ9bV4FIHJMHFy7Lbj7nsnt4usuLOddiPs4sheH
+      9x/H6Z3YpS3AxqWJCO+2RQzGxm2H5ZKGxPhHv03tkgUVcXH4JFAd9ULEq0uxeVKX2fb2n7ha
+      Dcyam4JofQRCsa52ozFh4jUcO9eM6dPcl9mNsDcMgk4H+KM2764BRs/EbF0h9rutyRyl+1Go
+      m42Zo3txdL+px5mTNzFjzuMGPwDokZQyFeX5hbB2jCnNisL8ckxNSYLnlU7w6fRGREVFdf4y
+      GjBwoAHGqCgY9TqEYl3tdIifnYq63/PgvuTXrCdw3JmAySMAf9Tm/QMxjlJkZ2Tjv9EJiME1
+      lFx/CUvWL8GUx4+0IChH9oos/BsZAc+/D07Bwm8+xEQA7XdUtuDbowMxMT4KdRfO4/6s1ViZ
+      2s0t1L6qugAZWcDy9e+4XReEbl2OC79gy09lML48HsNbq1BuHYH5Xy7D9IfXb76trZdPhLXB
+      UedAGwYjPCq8m0EWWrRmO+zNGnR644OzaP8QsnVpzbDbm6E9YXz5qjY+Ekmi8dOgJBoDQKIx
+      ACQaA0CiMQAkGgNAojEAJBoDQKIxACQaA0CiMQAkGgNAojEAJBoDQKIxACQaA0CiMQAkGgNA
+      ojEAJBoDQKIxACQaA0CiMQAkGgNAojEAJBoDQKIxACQaA0CiMQAkGgNAojEAJBoDQKIxACQa
+      A0Ci/Q+JD9mepKTaIAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
