@@ -1,0 +1,23 @@
+department_id,role,staff_count,department_name,resource_type,snapshot_note
+1,Nurse,6,Emergency,staff,current roster - not date-stamped in source data
+1,Technician,10,Emergency,staff,current roster - not date-stamped in source data
+2,Nurse,11,Internal Medicine,staff,current roster - not date-stamped in source data
+2,Technician,12,Internal Medicine,staff,current roster - not date-stamped in source data
+3,Nurse,14,Surgery,staff,current roster - not date-stamped in source data
+3,Technician,12,Surgery,staff,current roster - not date-stamped in source data
+4,Nurse,8,Pediatrics,staff,current roster - not date-stamped in source data
+4,Technician,4,Pediatrics,staff,current roster - not date-stamped in source data
+5,Nurse,11,Orthopedics,staff,current roster - not date-stamped in source data
+5,Technician,7,Orthopedics,staff,current roster - not date-stamped in source data
+6,Nurse,14,ICU,staff,current roster - not date-stamped in source data
+6,Technician,10,ICU,staff,current roster - not date-stamped in source data
+7,Nurse,15,Radiology,staff,current roster - not date-stamped in source data
+7,Technician,13,Radiology,staff,current roster - not date-stamped in source data
+8,Nurse,4,Pathology,staff,current roster - not date-stamped in source data
+8,Technician,9,Pathology,staff,current roster - not date-stamped in source data
+9,Nurse,10,Pharmacy,staff,current roster - not date-stamped in source data
+9,Technician,5,Pharmacy,staff,current roster - not date-stamped in source data
+10,Nurse,7,Billing,staff,current roster - not date-stamped in source data
+10,Technician,11,Billing,staff,current roster - not date-stamped in source data
+11,Nurse,9,HR,staff,current roster - not date-stamped in source data
+11,Technician,5,HR,staff,current roster - not date-stamped in source data
