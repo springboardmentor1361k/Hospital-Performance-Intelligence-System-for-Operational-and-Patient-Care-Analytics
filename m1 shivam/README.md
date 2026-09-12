@@ -1,3 +1,4 @@
+```text
 MedTrack_DV/
 │
 ├── data/
@@ -103,3 +104,4 @@ MedTrack_DV/
     └── Specifies files and folders that should not be uploaded
         to GitHub, such as large datasets, cache files,
         virtual environments, and secret/API key files.
+```
