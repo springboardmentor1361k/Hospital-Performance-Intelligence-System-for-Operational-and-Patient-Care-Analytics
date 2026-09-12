@@ -1,0 +1,7 @@
+KPI,Value,Unit,Validation_Status
+Total Admissions,45000,Admissions,Validated
+Average Length of Stay,5.16,Days,Validated
+Occupancy Rate,25.36,Percentage,Calculated using ward capacity and patient-days
+Readmission Rate,Not available,Percentage,Not available in current dataset
+Bed Utilization Rate,34.94,Percentage,Calculated using registered and used beds
+Average Department Efficiency Score,90.13,Score out of 100,Normalized preliminary score
