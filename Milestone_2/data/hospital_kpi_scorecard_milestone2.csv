@@ -1,0 +1,12 @@
+kpi_id,kpi_name,category,value,unit,benchmark,is_differentiated
+KPI-01,Total Admissions,Volume & Demand,1000.0,Patients,"1,000",False
+KPI-02,Average Length of Stay,Operational Throughput,7.41,Days,< 7.0,False
+KPI-03,Bed Occupancy Rate,Capacity Management,20.47,%,80-85%,False
+KPI-04,Bed Utilization Rate,Resource Efficiency,92.47,%,85.0%,False
+KPI-05,30-Day Readmission Rate,Clinical Quality,0.0,%,< 5.0%,False
+KPI-06,Department Efficiency Score,Composite Performance,88.45,/ 100,> 80.0,False
+KPI-07,Patient Turnaway Rate,Unmet Demand Shortfall,56.64,%,< 20.0%,True
+KPI-08,Demand Fulfillment Rate,Service Capability,43.36,%,> 80.0%,True
+KPI-09,Clinical Workforce Stress Index,Workforce Strain,88.98,%,75-85%,True
+KPI-10,Staff Morale Index,Human Capital,72.57,/ 100,> 75.0,True
+KPI-11,Net Patient Satisfaction,Care Experience,80.0,/ 100,> 85.0,True

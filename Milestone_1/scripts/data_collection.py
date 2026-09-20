@@ -3,7 +3,13 @@
 from pathlib import Path
 import pandas as pd
 
-RAW_DIR = Path("data/raw")
+SCRIPT_DIR = Path(__file__).resolve().parent
+CANDIDATES = [
+    SCRIPT_DIR.parent / "data" / "raw",
+    Path("Milestone_1/data/raw"),
+    Path("data/raw"),
+]
+RAW_DIR = next((p for p in CANDIDATES if p.exists()), SCRIPT_DIR.parent / "data" / "raw")
 
 def verify_and_load_datasets():
     print("=" * 60)

@@ -1,0 +1,5 @@
+department,total_admissions,avg_length_of_stay_days,bed_utilization_pct,occupancy_rate_pct,turnaway_rate_pct,demand_fulfillment_pct,staff_utilization_pct,staff_morale_score,patient_satisfaction_score,department_efficiency_score
+Emergency,263,7.16,100.0,23.25,80.87,19.13,89.42,73.56,77.88,53.33
+Surgery,254,7.87,88.19,13.95,24.77,75.23,89.82,72.63,79.27,74.36
+General_Medicine,242,7.0,97.32,10.85,45.39,54.61,87.66,73.1,81.23,67.85
+Icu,241,7.61,84.38,33.82,17.87,82.13,89.03,70.98,81.62,77.64

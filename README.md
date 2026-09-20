@@ -1,75 +1,66 @@
-# Hospital-Performance-Intelligence-System-for-Operational-and-Patient-Care-Analytics
+# Hospital Performance Intelligence System for Operational and Patient Care Analytics
 
-## MedTrack_DV — Milestone 1: Data Collection & Preparation
-
-This repository contains the completed **Milestone 1** work for the **MedTrack_DV Hospital Operations & Patient Care Analytics System**. The datasets have been collected, profiled, cleaned, validated, and structured into Tableau-ready datasets.
+**MedTrack_DV** is an end-to-end enterprise healthcare operational intelligence and clinical quality analytics system. The repository is organized into dedicated milestone directories to ensure modularity, clear governance, and reproducible analytics.
 
 ---
 
-### Project Structure
+## Milestone Directory Navigation
+
+| Milestone | Title | Focus Area | Directory Link |
+| :--- | :--- | :--- | :--- |
+| **Milestone 1** | **Data Collection & Preparation** | Raw dataset profiling, ETL normalization, star-schema data modeling, and data quality validation. | [Milestone_1/](file:///d:/Downloads/info/Milestone_1/README.md) |
+| **Milestone 2** | **Dashboard Storyboard & KPI Specification** | Tableau visual architecture, 3 executive dashboards, 5 novel operational KPIs, and benchmark scorecards. | [Milestone_2/](file:///d:/Downloads/info/Milestone_2/README.md) |
+
+---
+
+## Repository Architecture
 
 ```text
-├── data/
-│   ├── raw/                                # Original source operational files
-│   │   ├── patients.csv
-│   │   ├── services_weekly.csv
-│   │   ├── staff_schedule.csv
-│   │   ├── staff.csv
-│   │   └── hospital_insights_summary.csv
-│   └── processed/                          # Cleaned, standardized, Tableau-ready datasets
-│       ├── hospital_overview_dataset.csv   (1,000 rows × 14 cols) — Grain: 1 admission
-│       ├── patient_flow_dataset.csv        (2,000 rows × 10 cols) — Grain: 1 movement event
-│       ├── department_analytics_dataset.csv (208 rows × 12 cols)  — Grain: 1 dept + week
-│       └── resource_utilization_dataset.csv (628 rows × 8 cols)   — Grain: 1 dept + week + role
-├── docs/                                   # Data dictionary & methodology documentation
-│   ├── dataset_sources.md
-│   ├── methodology.md
-│   └── profiling_output.txt
-├── notebooks/                              # Jupyter analysis & ETL notebooks
-│   ├── 01_data_profiling.ipynb
-│   └── data_cleaning.ipynb
-├── .gitignore
-├── requirements.txt
-└── README.md
+├── Milestone_1/                                    # Milestone 1: Data Collection & Preparation
+│   ├── data/
+│   │   ├── raw/                                    # Source operational files (patients, services, staff)
+│   │   └── processed/                              # Cleaned, standardized, Tableau-ready star-schema tables
+│   ├── docs/                                       # Data dictionary, profiling outputs & methodology
+│   ├── notebooks/                                  # Data profiling and production ETL notebooks
+│   ├── scripts/                                    # Automated data loading and integrity verifier
+│   └── README.md                                   # Milestone 1 documentation & reproducibility guide
+│
+├── Milestone_2/                                    # Milestone 2: Dashboard Storyboard & KPI Framework
+│   ├── data/                                       # Department KPI summaries & hospital scorecards
+│   ├── docs/                                       # KPI mathematical specifications & visual catalog
+│   ├── reports/                                    # Executive visual presentation & storyboard PDF
+│   └── README.md                                   # Milestone 2 dashboard architecture documentation
+│
+├── .gitignore                                      # Environment and cache ignore configuration
+├── LICENSE                                         # Project open-source license
+├── README.md                                       # Repository master index
+└── requirements.txt                                # Python runtime dependencies
 ```
 
 ---
 
-### Completed Milestone 1 Tasks
+## Quick Start & Setup
 
-1. **Dataset Collection & Profiling**:
-   - Organized core operational data covering admissions, departmental weekly flows, and clinical staff schedules.
-   - Identified the unique grain of each operational dataset before merging or aggregation to prevent metric inflation.
-
-2. **Data Cleaning & Normalization**:
-   - **Deduplication**: Verified 0 duplicate rows across operational datasets.
-   - **Text Standardization**: Normalized department names (`emergency`, `icu`, `surgery`, `general_medicine`) and role classifications.
-   - **Identifier Formatting**: Standardized keys with stable prefixes (`ADM-`, `PAT-`, `MOV-`, `RES-`).
-   - **Temporal Dimensions**: Cleaned and converted date fields (`arrival_date`, `departure_date`), deriving `year`, `month`, `quarter`, and `day_of_week`.
-
-3. **Data Quality & Validation**:
-   - **Missing Values**: 0% missing values in core admission records (exceeds the <2% missing value evaluation standard).
-   - **Numeric Bounds**: Validated physiological ranges (Age ∈ [0, 120], LOS ≥ 0, Satisfaction ∈ [0, 100]).
-   - **Relationship Integrity**: Ensured 100% referential integrity between patient movements and admissions.
-
-4. **Tableau-Ready Output Generation**:
-   - Saved 4 separated star-schema tables in `data/processed/` avoiding Cartesian product inflation.
-
----
-
-### Setup & Reproducibility
-
-1. Create and activate a Python virtual environment:
+1. **Environment Setup**:
    ```bash
    python -m venv .venv
    # Windows:
    .venv\Scripts\activate
+   # Linux/macOS:
+   source .venv/bin/activate
    ```
 
-2. Install dependencies:
+2. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Run the cleaning notebook:
-   - Launch Jupyter and run `notebooks/data_cleaning.ipynb` to regenerate all processed datasets in `data/processed/`.
+3. **Verify Milestone 1 Pipeline**:
+   ```bash
+   python Milestone_1/scripts/data_collection.py
+   ```
+
+4. **Explore Milestone 2 Storyboard & KPIs**:
+   - Review [Milestone_2/docs/kpi_definitions_milestone2.md](file:///d:/Downloads/info/Milestone_2/docs/kpi_definitions_milestone2.md) for formulas and novel metrics.
+   - Review [Milestone_2/docs/dashboard_storyboard_alternative_designs.md](file:///d:/Downloads/info/Milestone_2/docs/dashboard_storyboard_alternative_designs.md) for the visual encoding design catalog.
+   - Open [Milestone_2/reports/Milestone 2.pdf](file:///d:/Downloads/info/Milestone_2/reports/Milestone%202.pdf) for the executive storyboard report.
