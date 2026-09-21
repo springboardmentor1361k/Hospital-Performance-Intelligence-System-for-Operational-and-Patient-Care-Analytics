@@ -1,0 +1,21 @@
+disease_name,benchmark_mortality_rate,benchmark_readmission_rate,benchmark_satisfaction_score,benchmark_sample_size,benchmark_match_type
+Acute Myocardial Infarction,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Stroke,0.3498542274052478,0.42857142857142855,51.995262390670554,343,disease-specific
+Road Traffic Accident,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Sepsis,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Acute Respiratory Distress,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Diabetes Mellitus,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Hypertension,0.32041343669250644,0.42377260981912146,52.90374677002584,387,disease-specific
+Chronic Kidney Disease,0.3387096774193548,0.40860215053763443,53.13172043010753,372,disease-specific
+Chronic Obstructive Pulmonary Disease,0.36220472440944884,0.4304461942257218,51.797900262467195,381,disease-specific
+Anemia,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Fracture Femur,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Appendicitis,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Gallstones,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Hernia,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Pneumonia,0.38461538461538464,0.3901098901098901,52.71119505494506,364,disease-specific
+Neonatal Jaundice,0.3319,0.4142,52.987625,10000,dataset-average fallback
+Urinary Tract Infection,0.32978723404255317,0.3962765957446808,52.267287234042556,376,disease-specific
+Viral Fever,0.3319,0.4142,52.987625,10000,dataset-average fallback
+COVID-19,0.2714285714285714,0.36,52.02857142857143,350,disease-specific
+Tuberculosis,0.3319,0.4142,52.987625,10000,dataset-average fallback

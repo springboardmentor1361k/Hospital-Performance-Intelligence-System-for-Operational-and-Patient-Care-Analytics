@@ -1,199 +1,147 @@
 # MedTrack_DV — Data Dictionary
 
-This document describes every source dataset and every field in the four final analytical tables
-(`data/processed/*.csv`) that support the Tableau dashboards. Produced by
-`notebooks/03_data_normalization.ipynb`, verified by `notebooks/04_data_validation.ipynb`.
+Documents every column in the four final analytical tables built from the HMIS dataset:
+`hospital_overview_dataset.csv`, `patient_flow_dataset.csv`, `department_analytics_dataset.csv`,
+`resource_utilization_dataset.csv`. For each table: grain, row count, column-by-column source/derivation,
+and fields that were evaluated but are genuinely not available in this dataset.
 
-**Legend used throughout:**
-🟢 direct from source · 🔵 derived/computed from source(s) · 🟡 bridged from Beds Management ·
-🟠 benchmark from Readmission dataset · ⚪ not available (documented gap)
-
----
-
-## 1. Source Datasets
-
-### 1.1 HMIS — Hospital HMIS Dataset for Healthcare Analytics (PRIMARY / BACKBONE)
-
-A relational schema of 19 tables (patient, admission, department, ward, bed, doctor, employee,
-disease, billing, prescriptions, insurance, etc.) simulating **one hospital**, with real
-primary/foreign-key relationships. Verified during profiling and cleaning: zero orphaned foreign
-keys, zero duplicate primary keys, zero bad admission/discharge date ordering across all 19 tables.
-Numeric sequential IDs. Every row of all four final tables originates here — it is the only
-dataset with true admission-level detail.
-
-**Known source-data issue:** 1,007 patients (4.3%) have at least one admission dated before their
-recorded `date_of_birth`, producing an impossible negative age for 1,630 admissions. Flagged and
-nulled in `hospital_overview_dataset.patient_age`, not silently fixed or dropped.
-
-### 1.2 Beds Management (SUPPLEMENT)
-
-4 flat files (`patients.csv`, `staff.csv`, `services_weekly.csv`, `staff_schedule.csv`) describing
-a **different simulated hospital's** weekly staffing and bed demand. No shared key with HMIS —
-`patient_id`/`staff_id` use their own hex namespace (`PAT-xxxx`, `STF-xxxx`), confirmed zero
-overlap with HMIS's numeric IDs. `staff_id` also has **zero overlap between Beds Management's own
-two files** (`staff.csv` vs `staff_schedule.csv`) — the real, working key between them is
-`staff_name`. Aggregated at the week level (52 weeks + month, no year, no day — a calendar bridge
-assuming year 2025 was built and verified against the data's own `month` column, 0 mismatches).
-Covers only 4 of HMIS's 6 clinical departments (`emergency`, `surgery`, `general_medicine`→
-Internal Medicine, `ICU`; `Pediatrics`/`Orthopedics` have no counterpart).
-
-### 1.3 Readmission Dataset — Hospital Data for Patient Readmission Prediction (BENCHMARK ONLY)
-
-1 flat file, 10,000 rows, another unrelated synthetic population. IDs renamed
-`readm_patient_id`/`readm_doctor_id`/`readm_hospital_id` on load specifically so they can never be
-mistaken for HMIS's own IDs. **Operational fields fail internal logic checks and are excluded
-entirely**: `occupied_beds > hospital_beds_available` in 27.8% of rows, `checkout` before `checkin`
-in 47.5% of rows, `patient_length_of_stay` matches the actual date gap in only 1.8% of rows,
-`hospital_id` has 6,074 unique values despite a single constant `hospital_name`. Only
-`discharge_status`, `readmission`, and `patient_disease` are trustworthy, used purely as a
-disease-level statistical benchmark (7 of 19 HMIS diseases match by name after stripping
-parenthetical abbreviations like "(COPD)"; the remaining 12 fall back to the dataset-wide average).
+Single-hospital note: HMIS has no `hospital_id`/`hospital_name` column anywhere in the source data.
+A placeholder `hospital_id = 1`, `hospital_name = "HMIS Hospital"` is applied uniformly across all
+four tables so Tableau/BI tooling has a consistent field to key off, even though there is only one hospital.
 
 ---
 
-## 2. `hospital_overview_dataset.csv`
+## 1. `hospital_overview_dataset.csv`
+**Grain:** one row per admission. **Rows:** 45,000.
 
-**Grain:** 1 row = 1 HMIS admission · **Row count:** 45,000 · **Primary key:** `admission_id`
+| Column | Source / Derivation |
+|---|---|
+| hospital_id, hospital_name | Placeholder constant (see note above) |
+| admission_id | admission.admission_id (primary key) |
+| patient_id | admission.patient_id |
+| department_id, department_name, department_type | admission.department_id → department |
+| ward_id, ward_name, ward_type | admission.ward_id → ward |
+| bed_id, bed_number | admission.bed_id → bed |
+| admission_date, discharge_date | admission |
+| length_of_stay_days | discharge_date − admission_date |
+| admission_type | admission.admission_type (Elective / Emergency) |
+| patient_age_at_admission | admission_date − patient.date_of_birth |
+| patient_gender, blood_group, city | patient |
+| disease_name, disease_category | admission.disease_id → disease |
+| primary_doctor_id / name / specialization | **Proxy.** Doctor who ordered the *earliest* diagnostic test for that admission (via patient_diagnostic → doctor → employee). Resolves for **70.0%** of admissions; remainder = "No diagnostic record." HMIS has no literal "attending physician" field on `admission`. |
+| diagnostic_test_count | count(patient_diagnostic) per admission |
+| prescription_count, distinct_drug_count | count / nunique(prescription) per admission |
+| total_bill_amount, insurance_covered_amount, patient_payable_amount | billing (joined via admission_id → bill_id) |
+| payment_status, payment_mode | billing |
+| insurance_provider_name, insurance_provider_type | **Proxy.** patient_insurance policy whose [policy_start_date, policy_end_date] window covers admission_date. Resolves for only **24.0%** of admissions (most patients have no policy active on that exact date); remainder = "No active policy on file." Note: this is a *provider-attribution* rate — `billing.payment_mode = "Insurance"` (80% of bills) is the reliable signal for whether insurance was *used*, separate from which provider. |
+| readmission_flag | **Derived proxy, not clinically verified.** 1 if admission_date falls within 30 days of the same patient's previous discharge_date, else 0. 1,120 of 45,000 admissions (2.49%) flagged. |
+| readmission_gap_days | Days between this admission and the same patient's prior discharge; null for a patient's first admission (51.7% of rows — expected, not a defect). |
+| year, quarter, month, month_name, day_of_week | Derived from admission_date |
 
-| Field | Source | Description |
+**Evaluated but not available:** discharge_status / disposition, mortality_flag, patient_satisfaction_score, admission_source (referral / walk-in / transfer). None of these exist anywhere in HMIS.
+
+---
+
+## 2. `patient_flow_dataset.csv`
+**Grain:** one row per flow event. HMIS has no literal patient-transfer/movement log, so every admission
+contributes an **Admission** event and a **Discharge** event, and every diagnostic test contributes a
+**Diagnostic Test** event (a genuine, date-validated move to Radiology/Pathology — confirmed 100% of
+test_date values fall inside their admission's stay). **Rows:** 153,269 (45,000 + 45,000 + 63,269).
+
+| Column | Source / Derivation |
+|---|---|
+| flow_event_id | Derived surrogate key (primary key) |
+| event_type | 'Admission' / 'Discharge' / 'Diagnostic Test' |
+| event_date | admission_date / discharge_date / test_date respectively |
+| admission_id, patient_id | admission / patient_diagnostic |
+| department_id, department_name | Home department for Admission/Discharge rows; the **test's own department** (Radiology/Pathology) for Diagnostic Test rows — this is what makes cross-department movement visible |
+| ward_id, ward_name, ward_type, bed_id | Populated only on Admission/Discharge rows — null by design on Diagnostic Test rows (a test isn't tied to a ward) |
+| admission_type, disease_name, disease_category, patient_gender, patient_age_at_admission | Carried from the parent admission |
+| length_of_stay_days | Populated only on Discharge rows |
+| doctor_id / name / specialization | Populated only on Diagnostic Test rows (the test-ordering doctor) |
+| test_name, test_category, result_status | Populated only on Diagnostic Test rows |
+| year, quarter, month, month_name, day_of_week | Derived from event_date |
+
+**Evaluated but not available:** hour_of_day, shift, is_peak_hour (admission/discharge/test dates carry no time component — date only), true ward-to-ward transfer sequence, duration_in_department_hours, movement_sequence within a single stay.
+
+---
+
+## 3. `department_analytics_dataset.csv`
+**Grain:** one row per department per calendar day. Built as a full daily calendar spine
+(2020-01-01 → latest discharge date) × all 11 departments, so trend lines have no gaps.
+**Rows:** 24,244.
+
+| Column | Source / Derivation |
+|---|---|
+| hospital_id, hospital_name, date, year, quarter, month, month_name, day_of_week | Calendar spine |
+| department_id, department_name, department_type | department |
+| total_beds | sum(ward.total_beds) for wards in this department. **Static capacity**, not day-specific. The 5 non-clinical departments (Radiology, Pathology, Pharmacy, Billing, HR) correctly show 0 — they have no wards. |
+| admissions_count | count(admissions where admission_date = date & department) |
+| discharges_count | count(admissions where discharge_date = date & department) |
+| estimated_census | **Modeled estimate, not measured.** Running cumulative sum of (admissions_count − discharges_count) per department, clipped at 0. HMIS's `bed.csv` is only ever a current snapshot (270 occupied / 145 available at time of extraction), so there is no real historical daily census to use instead. |
+| bed_occupancy_rate_pct | estimated_census / total_beds × 100 |
+| readmission_count | Count of readmission_flag = 1 admissions that date/department |
+| readmission_rate_pct | readmission_count / admissions_count × 100 (daily grain — noisy; recommend rolling up to monthly for stable KPI reporting, see kpi_definitions.md) |
+| avg_length_of_stay_days | Mean length_of_stay_days of that day's discharges, per department |
+| total_bill_amount, avg_bill_amount | billing summed/averaged via admission → department → date |
+| diagnostic_test_count | count(patient_diagnostic) that date, joined via diagnostic_test.department_id — the field that brings Radiology/Pathology meaningfully into this table despite having zero admissions |
+| doctor_headcount, nurse_headcount | **Static proxy.** count(employee.role = 'Doctor'/'Nurse') where employee.department_id = this department. Constant across every date — not a true daily on-duty count (no such data exists in HMIS). |
+| staff_to_patient_ratio | (doctor_headcount + nurse_headcount) / estimated_census |
+| department_efficiency_score | See formula in kpi_definitions.md. **Null 45–51% of days** by design (needs both admission and discharge activity that day) — never average this raw column directly; roll up components first. |
+
+**Evaluated but not available:** mortality_count/rate, equipment_downtime_hours, avg_satisfaction_score, transfer_events_count, true daily doctors/nurses on duty (only a static headcount proxy is possible).
+
+---
+
+## 4. `resource_utilization_dataset.csv`
+**Grain:** department + date + resource_type — but only the **Bed** block is genuinely daily.
+Built as three honest blocks rather than pretending all three are equally time-series data.
+**Rows:** 13,549 (13,224 Bed + 75 Staff + 250 Drug Inventory).
+
+**Block A — Bed** (daily, 6 clinical departments only)
+| Column | Source |
+|---|---|
+| date, department_id/name | Calendar spine |
+| total_units_available | ward.total_beds |
+| units_in_use | estimated_census (same modeled derivation as table 3) |
+| utilization_rate_pct | units_in_use / total_units_available × 100 |
+
+**Block B — Staff** (static snapshot — **no date axis**, one row per ward/shift)
+| Column | Source |
+|---|---|
+| ward_id, ward_name, department_id/name, shift | staff_assignment.ward_id → ward → department |
+| units_in_use | count(staff_assignment) by ward + shift |
+| doctor_count, nurse_count, technician_count, pharmacist_count, admin_count | employee.role, pivoted by ward + shift. Note: staff_assignment.csv in this dataset only ever carries **Nurse** and **Technician** roles — doctors are not ward-assigned, so doctor_count is 0 throughout Block B (doctor staffing is only available via the department-level headcount proxy in table 3). |
+
+**Block C — Drug Inventory** (snapshot as of last_restock_date; **assumption**: assigned to the Pharmacy department, since individual drugs aren't tied to a specific clinical department in HMIS)
+| Column | Source |
+|---|---|
+| drug_id, drug_name, drug_category | drug |
+| units_in_use, reorder_level_threshold | drug_inventory (current_stock, reorder_level, renamed) |
+| shortage_flag | derived: units_in_use < reorder_level_threshold (44 of 250 drugs flagged) |
+| manufacturer_name, reliability_rating | drug_manufacturer |
+
+**Important caveat — checked and confirmed not predictive:** `reliability_rating` shows essentially zero correlation with either stock level (r = 0.047) or shortage_flag (r = −0.044). Shortage rate is nearly identical across reliability bands (17.4% vs 17.7%). Do not build charts or narratives implying reliability drives shortages in this dataset — it doesn't.
+
+**Also note:** `drug_name` is **not unique** — only 142 distinct names across 250 drugs (e.g., "Nostrum" appears on 6 different drug_ids). Always key/group by `drug_id`, never by `drug_name` alone, or values from unrelated drugs will be silently combined.
+
+**Evaluated but not available:** equipment (no equipment table exists in HMIS at all), true daily staff on-duty counts, overtime_hours, avg_response_time_minutes, maintenance_due_flag/downtime.
+
+---
+
+## Fields present but confirmed non-actionable (checked, not assumed)
+
+| Field | Table | Finding |
 |---|---|---|
-| admission_id | 🟢 HMIS | `admission.admission_id` |
-| patient_id | 🟢 HMIS | `admission.patient_id` |
-| hospital_id | 🔵 HMIS | hardcoded `1` — HMIS models only one hospital |
-| hospital_name | 🔵 HMIS | hardcoded `"HMIS Hospital"` |
-| department_id | 🟢 HMIS | `admission.department_id` |
-| department_name | 🔵 HMIS | joined from `department.department_name` |
-| admission_date | 🟢 HMIS | `admission.admission_date` |
-| discharge_date | 🟢 HMIS | `admission.discharge_date` |
-| admission_type | 🟢 HMIS | `admission.admission_type` |
-| admission_source | ⚪ | no field for this in any of the 3 datasets |
-| bed_id | 🟢 HMIS | `admission.bed_id` |
-| bed_type | 🔵 HMIS | proxy via `bed.ward_id → ward.ward_type` |
-| patient_age | 🔵 HMIS | `admission_date − patient.date_of_birth`; 1,630 rows nulled (impossible values, see §1.1) |
-| patient_gender | 🟢 HMIS | `patient.gender` |
-| diagnosis | 🔵 HMIS | joined from `disease.disease_name` via `admission.disease_id` |
-| insurance_type | 🔵 HMIS | matched `patient_insurance` policy active on `admission_date`; ~24% match rate, rest NaN |
-| total_bill_amount | 🔵 HMIS | joined from `billing.total_amount` |
-| payment_status | 🔵 HMIS | joined from `billing.payment_status` |
-| discharge_status | 🟢 HMIS | `admission.admission_status`, renamed — only ever `"Discharged"` in this data |
-| patient_satisfaction_score | ⚪ | no survey/feedback table anywhere in HMIS |
-| mortality_flag | ⚪ | no death/outcome field in HMIS; `admission_status` has only 1 unique value |
-| readmission_flag | 🔵 HMIS | proxy: same patient re-admitted within 30 days of a prior discharge (not ground truth) |
-| benchmark_mortality_rate | 🟠 Readmission | disease-level `% Deceased`, matched by normalized disease name |
-| benchmark_readmission_rate | 🟠 Readmission | disease-level `mean(readmission)` |
-| benchmark_satisfaction_score | 🟠 Readmission | disease-level `mean(patient_sat_score) / 16` (rescaled from a 1600-point scale) |
-| benchmark_sample_size | 🟠 Readmission | row count the benchmark is based on |
-| benchmark_match_type | 🟠 Readmission | `"disease-specific"` (7 diseases) or `"dataset-average fallback"` (12 diseases) |
+| `city` | hospital_overview | 14,868 distinct values across 45,000 admissions; top city = 0.13% of admissions. Faker-generated placeholder names (e.g., "North Thomasside," "Espinozaberg") — not real, geocodable places. **Do not build a map from this field** — Tableau's geocoding will not resolve it and any result would be misleading, not just incomplete. |
+| `blood_group` | hospital_overview | Distribution is near-uniform across all 8 types (12.0%–13.1% each, including within individual departments) — does not reproduce real-world population skew. Still legitimate for blood-bank stock planning based on *this hospital's own* patient mix, but should not be presented as matching general clinical statistics. |
+| `reliability_rating` | resource_utilization (Drug Inventory) | See Block C note above — not correlated with shortage risk in this dataset. |
 
 ---
 
-## 3. `patient_flow_dataset.csv`
+## Rejected external datasets (not merged into any table)
 
-**Grain:** 1 row = 1 movement event · **Row count:** 90,000 (exactly 2 per admission) ·
-**Primary key:** `movement_id`
+- **Healthcare_Data_Analysis_for_readmission.csv** — no genuine shared key with HMIS (patient_id/doctor_id overlaps were coincidental or zero), plus internal integrity failures (27.8% of rows show occupied_beds > available_beds; inconsistent date formats). Excluded entirely.
+- **Hospital Beds Management** (beds_patients, beds_services_weekly, beds_staff, beds_staff_schedule) — weekly data has no year anchor (cannot be mapped to HMIS's 2020–2025 real calendar); covers only 4 of HMIS's 6 clinical departments; staff/patient IDs belong to a different, unrelated population. Excluded entirely.
 
-> **Known limitation:** HMIS has no movement/transfer log at all. A real patient path
-> (ED → Ward → ICU → Discharge) cannot be reconstructed from any of the 3 datasets. This table is
-> limited to 2 synthetic events per admission — Admission and Discharge — using the same
-> department/bed for both.
-
-| Field | Source | Description |
-|---|---|---|
-| movement_id | 🔵 HMIS | generated sequential ID |
-| admission_id | 🟢 HMIS | `admission.admission_id` |
-| patient_id | 🟢 HMIS | `admission.patient_id` |
-| hospital_id | 🔵 HMIS | hardcoded `1` |
-| movement_sequence | 🔵 HMIS | `1` = Admission event, `2` = Discharge event |
-| movement_type | 🔵 HMIS | `"Admission"` or `"Discharge"` only |
-| from_department_id | ⚪ | no transfer log exists — always NaN |
-| from_department_name | ⚪ | no transfer log exists — always NaN |
-| current_department_id | 🟢 HMIS | `admission.department_id` |
-| current_department_name | 🔵 HMIS | joined from `department.department_name` |
-| bed_id | 🟢 HMIS | `admission.bed_id` |
-| movement_datetime | 🟢 HMIS | `admission_date` or `discharge_date` |
-| movement_date | 🔵 HMIS | date part of `movement_datetime` |
-| duration_in_department_hours | 🔵 HMIS | full LOS in hours on the Admission row, `0` on Discharge |
-| year, month, day_of_week | 🔵 HMIS | derived from `movement_datetime` |
-| hour_of_day | 🔵 HMIS | derived; always `0` — HMIS dates carry no real time-of-day component |
-| shift | 🔵 HMIS | binned from `hour_of_day` (Night/Morning/Evening) |
-| is_peak_hour | 🔵 HMIS | `hour_of_day` between 9 and 17 |
-
----
-
-## 4. `department_analytics_dataset.csv`
-
-**Grain:** 1 row = 1 department + 1 day, scoped to the **6 clinical departments** (the 5
-Admin/Diagnostic departments have no wards/beds and never receive admissions) ·
-**Row count:** 13,224 · **Primary key:** `(department_id, date)`
-
-| Field | Source | Description |
-|---|---|---|
-| date | 🔵 HMIS | generated calendar range spanning min/max admission and discharge dates |
-| hospital_id, hospital_name | 🔵 HMIS | hardcoded |
-| department_id, department_name, department_type | 🟢 HMIS | `department` table |
-| total_beds | 🔵 HMIS | summed from `ward.total_beds` per department |
-| occupied_beds_count | 🔵 HMIS | event-delta + cumulative-sum over admission/discharge dates |
-| bed_occupancy_rate_pct | 🔵 HMIS | `occupied_beds_count / total_beds × 100` |
-| patients_admitted_count | 🔵 HMIS | daily admission count per department |
-| patients_discharged_count | 🔵 HMIS | daily discharge count per department |
-| readmission_count, readmission_rate_pct | 🔵 HMIS | Table 2's `readmission_flag`, aggregated by department + discharge date |
-| mortality_count, mortality_rate_pct | ⚪ | no mortality outcome field anywhere in HMIS |
-| avg_length_of_stay_days | 🔵 HMIS | mean LOS of patients discharged that department+day |
-| avg_treatment_time_hours | ⚪ | no treatment-time concept in any of the 3 datasets |
-| transfer_events_count | ⚪ | no movement log exists (same limitation as Table 3) |
-| nurses_on_duty, doctors_on_duty | 🟡 Beds Management | `staff_schedule.csv` (`present=1`), bridged via department+week → daily; only for the 4 mapped departments |
-| staff_to_patient_ratio | 🔵 derived | `(nurses + doctors) / patients_admitted_count`, only where staffing data matched |
-| equipment_downtime_hours | ⚪ | no equipment table exists in any of the 3 datasets |
-| avg_satisfaction_score | 🟡 Beds Management | `services_weekly.patient_satisfaction`, same department+week bridge |
-| department_efficiency_score | ⚪ in this table | computed separately, department-grain, in `department_efficiency_scores.csv` (see §6) |
-| external_benchmark_available_beds | 🟡 Beds Management | `services_weekly.available_beds` — kept separate, never blended into `total_beds` (different simulated hospital) |
-| external_benchmark_patients_refused | 🟡 Beds Management | `services_weekly.patients_refused` — same reasoning |
-
----
-
-## 5. `resource_utilization_dataset.csv`
-
-**Grain:** 1 row = 1 department + 1 day + 1 resource type · **Row count:** 13,224 ·
-**Primary key:** `resource_utilization_id`
-
-> **Known limitation:** only `resource_type = 'Bed'` rows exist. No Equipment rows are possible
-> (no equipment table in any of the 3 datasets). A dated Clinical Staff resource row is not yet
-> built in this version, though `beds_staff.csv` + `beds_staff_schedule.csv` could support one for
-> the 4 mapped departments — see the project's methodology notes for this as a proposed next step.
-
-| Field | Source | Description |
-|---|---|---|
-| resource_utilization_id | 🔵 HMIS | generated sequential ID |
-| date, hospital_id, hospital_name, department_id, department_name | 🔵 HMIS | same as Table 3 |
-| resource_type | 🔵 HMIS | hardcoded `"Bed"` |
-| resource_category | ⚪ | not yet built — could be filled from `ward.ward_type` (pure HMIS, no external bridge needed) |
-| total_units_available | 🔵 HMIS | = Table 3's `total_beds` |
-| units_in_use | 🔵 HMIS | = Table 3's `occupied_beds_count` |
-| units_under_maintenance | ⚪ | no such concept for beds in HMIS |
-| utilization_rate_pct | 🔵 HMIS | = Table 3's `bed_occupancy_rate_pct` |
-| shortage_flag | 🔵 HMIS | `utilization_rate_pct > 90%` (assumed threshold) |
-| capacity_hours, utilized_hours, idle_hours | 🔵 HMIS | `total_units_available/units_in_use × 24` and the difference — approximations, not true occupied-hours |
-| downtime_hours | ⚪ | no maintenance/downtime data for beds in HMIS |
-| external_benchmark_available_beds, external_benchmark_patients_refused | 🟡 Beds Management | same bridge as Table 3 |
-
----
-
-## 6. Supporting Output Files
-
-| File | Grain | Purpose |
-|---|---|---|
-| `disease_outcome_benchmarks.csv` | 1 row per HMIS disease (19/20 rows) | Disease-level mortality/readmission/satisfaction benchmark from the Readmission dataset, feeding Table 2's `benchmark_*` columns |
-| `validation_report.csv` | 1 row per check | Output of `04_data_validation.ipynb` — PK uniqueness, grain sanity, value-range validity, cross-table consistency, completeness scoring |
-| `kpi_summary.csv` | 1 row per KPI (6 rows) | The 6 mandatory KPIs — see `kpi_definitions.md` |
-| `department_efficiency_scores.csv` | 1 row per department (6 rows) | KPI 6 breakdown — connect to `department_analytics_dataset` via a Tableau relationship on `department_id`, not a flat merge (avoids repeating one department-level number ~2,200 times) |
-
----
-
-## 7. Fields That Remain Genuinely Unfillable
-
-These are not cleaning failures or a sign the wrong datasets were chosen — no field like these
-exists in **any** of the 3 approved datasets:
-
-- `admission_source`, real per-admission `mortality_flag` (Hospital Overview)
-- `from_department_id`/`from_department_name`, `transfer_events_count` (no movement/transfer log exists anywhere)
-- `equipment_downtime_hours`, `units_under_maintenance`, any Equipment resource row (no equipment table exists anywhere)
+Full rejection rationale is documented in `dataset_sources.md`.

@@ -1,0 +1,20 @@
+table,check,result,detail
+hospital_overview_dataset,admission_id unique,PASS,
+patient_flow_dataset,movement_id unique,PASS,
+resource_utilization_dataset,resource_utilization_id unique,PASS,
+department_analytics_dataset,"(department_id, date) unique",PASS,
+patient_flow_dataset,exactly 2 rows per admission,PASS,(90000 vs expected 90000)
+resource_utilization_dataset,row count matches department_analytics (1 resource type: Bed),PASS,(13224 vs 13224)
+hospital_overview_dataset,"patient_age (non-null) in [0, 120]",PASS,(0 out of range among 43370 non-null)
+hospital_overview_dataset,patient_age null count matches known source-data issue,PASS,(1630 nulled - HMIS admissions predating date_of_birth)
+hospital_overview_dataset,length of stay >= 0,PASS,(0 negative)
+department_analytics_dataset,"bed_occupancy_rate_pct in [0, 100]",PASS,(0 out of range)
+resource_utilization_dataset,"utilization_rate_pct in [0, 100]",PASS,(0 out of range)
+hospital_overview_dataset,total_bill_amount >= 0,PASS,
+department_analytics_dataset,department_ids consistent with hospital_overview,PASS,(both have the same 6 clinical departments)
+resource_utilization_dataset,department_ids match department_analytics,PASS,
+patient_flow_dataset,department_ids match hospital_overview,PASS,
+hospital_overview_dataset,core-field completeness > 95%,PASS,(99.84%)
+patient_flow_dataset,core-field completeness > 95%,PASS,(100.00%)
+department_analytics_dataset,core-field completeness > 95%,PASS,(100.00%)
+resource_utilization_dataset,core-field completeness > 95%,PASS,(100.00%)

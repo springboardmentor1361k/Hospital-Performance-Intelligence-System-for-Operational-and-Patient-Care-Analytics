@@ -1,171 +1,145 @@
 # MedTrack_DV — KPI Definitions
 
-The project requires 6 mandatory KPIs. Every formula and source field below is implemented in
-`notebooks/05_kpi_engineering.ipynb` and `scripts/generate_hospital_kpis.py` (the two are
-kept in sync — the script is the re-runnable CLI version of the notebook), and produces
-`data/processed/kpi_summary.csv` and `data/processed/department_efficiency_scores.csv`.
+The 6 mandatory KPIs required by the project doc, each with its formula, source table, grain(s) computed,
+denominator/proxy decisions, and the actual cross-validation result produced by
+`05_kpi_engineering.ipynb`. Numbers below are real output, not illustrative — reproduced and verified
+before this document was written.
 
-**Verified results (current data):**
-
-| KPI | Value |
-|---|---|
-| Total Admissions | 45,000 |
-| Occupancy Rate | 30.28% |
-| Average Length of Stay | 5.16 days |
-| Readmission Rate | 2.19% |
-| Bed Utilization Rate | 30.28% |
-| Department Efficiency Score | 51.97 – 81.95 (per department, see §6) |
+**Cross-cutting rules applied to every KPI:**
+- Computed at three grains: hospital-wide overall, by department, and (where a date exists) by month.
+- Never average a pre-computed daily rate to get a coarser-grain figure — the raw numerator/denominator
+  are re-summed first, then divided once.
+- Every proxy or estimate is labeled at the point of use, not buried in a separate file.
+- Cross-validated against a second, independent calculation wherever the data allows it.
 
 ---
 
 ## 1. Total Admissions
+**Formula:** `COUNTD(admission_id)`
+**Source:** `hospital_overview_dataset`
 
-**Definition:** The total number of distinct hospital admissions in the dataset.
+| Grain | Result |
+|---|---|
+| Overall | **45,000** |
+| Emergency | 8,777 |
+| ICU | 4,040 |
+| Internal Medicine | 7,695 |
+| Orthopedics | 5,924 |
+| Pediatrics | 8,438 |
+| Surgery | 10,126 |
 
-**Formula:**
-```
-COUNTD(admission_id)
-```
-
-**Source:** `hospital_overview_dataset.admission_id`
-
-**Calculation note:** Counted from Hospital Overview only — never from Patient Flow, which has
-exactly 2 rows per admission and would silently double the count.
+**Cross-check:** `COUNTD(admission_id)` in `hospital_overview_dataset` vs `SUM(admissions_count)` in `department_analytics_dataset` — **45,000 = 45,000, MATCH** (overall and by every department, 0 mismatches).
 
 ---
 
 ## 2. Occupancy Rate
+**Formula:** `SUM(estimated_census) / SUM(total_beds) × 100`
+**Source:** `department_analytics_dataset`, filtered to the 6 clinical departments only (the 5 non-clinical departments have `total_beds = 0` by definition and must not dilute this KPI).
 
-**Definition:** The share of total bed capacity that is occupied, across all departments and days.
+**Modeled, not measured** — `estimated_census` is a derived proxy (see data_dictionary.md); label this everywhere it's shown.
 
-**Formula:**
-```
-sum(occupied_beds_count) / sum(total_beds) x 100
-```
+| Grain | Result |
+|---|---|
+| Overall | **25.36%** |
+| Emergency | 24.92% |
+| ICU | 28.15% |
+| Internal Medicine | 25.01% |
+| Orthopedics | 25.15% |
+| Pediatrics | 25.66% |
+| Surgery | 23.86% |
 
-**Source:** `department_analytics_dataset.occupied_beds_count`, `department_analytics_dataset.total_beds`
-
-**Calculation note:** This is a **capacity-weighted average**, not a simple mean of each day's
-percentage. A simple mean would treat a 6-bed department and a 90-bed department as equally
-important; weighting by actual bed count avoids that distortion.
+**Reasonableness check:** max single-day occupancy observed across all departments = 58.0% — within plausible bounds (does not run away to implausible multiples of bed capacity, a known risk of an uncapped cumulative-sum estimate).
 
 ---
 
-## 3. Average Length of Stay (LOS)
+## 3. Average Length of Stay
+**Formula:** `MEAN(discharge_date − admission_date)`
+**Source:** `hospital_overview_dataset`
 
-**Definition:** The average number of days between admission and discharge, per admission.
+| Grain | Mean | Median |
+|---|---|---|
+| Overall | **5.16 days** | 4.0 days |
+| Emergency | 4.69 | 4.0 |
+| ICU | **9.98** | 10.0 |
+| Internal Medicine | 4.66 | 4.0 |
+| Orthopedics | 4.68 | 4.0 |
+| Pediatrics | 4.69 | 4.0 |
+| Surgery | 4.67 | 4.0 |
 
-**Formula:**
-```
-mean(discharge_date - admission_date)
-```
+Both mean and median reported — protects against a few long stays quietly skewing the headline number. ICU's mean is more than double every other department's, driven by genuinely longer clinical stays (not a data error).
 
-**Source:** `hospital_overview_dataset.admission_date`, `hospital_overview_dataset.discharge_date`
-
-**Calculation note:** Computed at admission-level (Hospital Overview), as the project doc
-specifies, rather than re-derived from Department Analytics' daily aggregates.
+**Cross-check:** direct department-level mean (hospital_overview) vs a discharges-weighted reconstruction from `department_analytics_dataset`'s daily `avg_length_of_stay_days` — **exact match on all 6 departments, diff = 0.0 everywhere.**
 
 ---
 
 ## 4. Readmission Rate
+**Formula:** 30-day same-patient proxy. **Documented, not clinically verified** — HMIS has no discharge-disposition or same-diagnosis linkage to confirm a true unplanned readmission.
+**Source:** `hospital_overview_dataset`
 
-**Definition:** The share of admissions that represent a readmission of the same patient.
+**Denominator decision:** uses *eligible discharges*, not all admissions. A discharge is only "eligible" to show a subsequent readmission if at least 30 days remained in the observed data window after it — otherwise the case is right-censored and would unfairly count as "no readmission" just because the window ran out. Observed window ends 2026-01-12; eligibility cutoff = 2025-12-13. **476 discharges were excluded from the denominator** for this reason.
 
-**Formula:**
-```
-count(readmission_flag = 1) / count(all admissions) x 100
-```
+| Grain | Rate |
+|---|---|
+| Overall (eligibility-adjusted, **documented default**) | **2.52%** |
+| Overall (naive: numerator / all admissions — reference only) | 2.49% |
+| Emergency | 2.43% |
+| ICU | **2.76%** |
+| Internal Medicine | 2.58% |
+| Orthopedics | 2.17% (lowest) |
+| Pediatrics | 2.51% |
+| Surgery | 2.65% |
 
-**Source:** `hospital_overview_dataset.readmission_flag`
-
-**Definition of `readmission_flag`:** `1` if the same `patient_id` has a prior discharge within
-**30 days** before this admission's start date; `0` otherwise (including every patient's first
-admission).
-
-**⚠️ Known limitation — read before citing this number:** This is a **documented proxy**, built
-entirely from HMIS's own admission history. It is **not** the Readmission dataset's real
-`readmission` flag, because no patient-level link exists between HMIS and that dataset (different,
-unrelated synthetic populations — see `data_dictionary.md` §1.3). The Readmission dataset's real
-flag only contributes a **disease-level benchmark** (`benchmark_readmission_rate` in Hospital
-Overview), which can be compared against this proxy but should not be confused with it.
-
-**Eligible population:** every admission is eligible (denominator = all admissions); a patient's
-first-ever admission simply scores 0, it is not excluded from the denominator.
+**Cross-check:** readmission count (numerator only — eligibility adjustment affects the denominator, not the count) — `SUM(readmission_flag)` in hospital_overview vs `SUM(readmission_count)` in department_analytics — **1,120 = 1,120, MATCH.**
 
 ---
 
 ## 5. Bed Utilization Rate
+**Formula:** `SUM(units_in_use) / SUM(total_units_available) × 100`
+**Source:** `resource_utilization_dataset`, filtered to `resource_type = 'Bed'` first (the table also contains Staff and Drug Inventory rows where these same column names mean something different).
 
-**Definition:** The share of available bed capacity currently in use.
+| Grain | Result |
+|---|---|
+| Overall | **25.36%** |
+| Emergency | 24.92% |
+| ICU | 28.15% |
+| Internal Medicine | 25.01% |
+| Orthopedics | 25.15% |
+| Pediatrics | 25.66% |
+| Surgery | 23.86% |
 
-**Formula:**
-```
-sum(units_in_use) / sum(total_units_available) x 100     [resource_type = 'Bed' only]
-```
-
-**Source:** `resource_utilization_dataset.units_in_use`, `resource_utilization_dataset.total_units_available`
-
-**Calculation note:** Restricted to `resource_type == 'Bed'` — the only resource type any of the 3
-datasets can support (no equipment table, no dated staff schedule exists for a general resource
-calculation). **This value is numerically identical to Occupancy Rate (KPI 2)** in the current
-data, because Resource Utilization's Bed rows were themselves derived from the same
-`department_analytics_dataset` occupancy numbers. This is expected given the current data
-sources, not a calculation error — if a Clinical Staff resource row is added in a future revision,
-this KPI would need to be scoped explicitly to `resource_type == 'Bed'` to keep meaning "beds," not
-"all resources."
+**Cross-check:** this is functionally the same underlying number as Occupancy Rate (KPI 2), reshaped through the long resource table — **25.36% = 25.36%, MATCH**, confirming the reshape introduced no distortion.
 
 ---
 
 ## 6. Department Efficiency Score
+**Formula:** weighted composite, 0–100 scale:
+`0.4 × Occupancy Score + 0.3 × LOS Score + 0.3 × Readmission Score`
+- Occupancy Score = `MIN(100, Occupancy Rate)`
+- LOS Score = `MAX(0, MIN(100, 100 − (Avg LOS / 15 × 100)))` — 15 days = the observed maximum LOS in this dataset, used as the "worst case" anchor
+- Readmission Score = `MAX(0, MIN(100, 100 − Readmission Rate))`
 
-**Definition:** A composite 0–100 score per department reflecting how efficiently it is operating,
-combining occupancy, length of stay, readmissions, and (where available) patient satisfaction.
+**Source:** `department_analytics_dataset` — computed from **rolled-up components**, never by averaging the raw daily `department_efficiency_score` column (which is null 45–51% of days by design).
 
-**Why a composite, and why these components:** The project doc requires a documented score built
-from "relevant departmental indicators such as occupancy, LOS, readmission, downtime." Downtime and
-mortality — two indicators a full implementation might include — are not available from any of the
-3 approved datasets (see `data_dictionary.md` §7) and are excluded rather than estimated.
+| Department | Occupancy % | Avg LOS | Readmission % | **Efficiency Score** |
+|---|---|---|---|---|
+| Pediatrics | 25.66 | 4.69 | 2.51 | **60.13** |
+| Orthopedics | 25.15 | 4.68 | 2.17 | 60.05 |
+| Internal Medicine | 25.01 | 4.66 | 2.58 | 59.92 |
+| Emergency | 24.92 | 4.69 | 2.43 | 59.85 |
+| Surgery | 23.86 | 4.67 | 2.65 | 59.40 |
+| ICU | 28.15 | **9.98** | 2.76 | **50.47** (lowest) |
 
-**Components** (each independently normalized to a 0–100 "higher is better" scale):
-
-| Component | Weight | Formula | Rationale |
-|---|---|---|---|
-| Occupancy fit | 30% | `100 - |occupancy_pct - 80|`, floored at 0 | Efficiency peaks near 80% occupancy — too low wastes capacity, too high risks overcrowding |
-| LOS efficiency | 30% | Relative rank across departments: shortest average LOS = 100, longest = 0 | A relative comparison across this hospital's own departments, not an absolute clinical judgment |
-| Readmission | 25% | `100 - readmission_rate_pct` | Lower readmission rate = higher score |
-| Satisfaction | 15% | `avg_satisfaction_score` directly | Only available for the 4 departments the Beds Management bridge matched (Emergency, Surgery, ICU, Internal Medicine) |
-
-**Combination formula:**
-```
-department_efficiency_score = weighted average of available components,
-                                re-weighted to sum to 100% when a component is missing
-```
-
-For example, Pediatrics and Orthopedics have no satisfaction data (Beds Management doesn't cover
-them), so their score is `(occupancy×30 + los×30 + readmission×25) / 85`, not penalized for a
-missing input.
-
-**Source:** `department_analytics_dataset` (all components), aggregated per `department_id`.
-
-**Output:** `department_efficiency_scores.csv` — 1 row per department (6 rows), **not** merged
-into `department_analytics_dataset` (which is department+day grain) to avoid repeating one
-department-level number ~2,200 times. Connect the two in Tableau via a relationship on
-`department_id`.
-
-**Interpretation of current results:** Five departments score 80.7–82.0. **ICU scores 51.97** —
-driven almost entirely by an `los_score` of 0.00, meaning ICU has the longest average length of
-stay relative to every other department. This is the formula correctly surfacing a real,
-clinically-expected pattern (ICU stays are longer by nature), not a data or calculation error.
+**Face-validity note (documented, not a defect):** ICU has the *highest* occupancy of any department but scores *lowest* on efficiency. This is not a scoring error — ICU's average LOS (9.98 days) is nearly double every other department's, and LOS carries 30% weight in the formula, which correctly drags its score down despite strong occupancy. Interpret ICU's score in the context of its structurally different patient population, not as a straight comparison against the other five departments.
 
 ---
 
-## Change Log / Known Next Steps
+## Summary — all cross-checks passing
 
-- `resource_category` (Resource Utilization) is not yet split by `ward.ward_type` — feasible from
-  HMIS alone, would add real granularity (confirmed real variety exists per department).
-- `avg_treatment_time_hours` (Department Analytics) is not yet populated — a proxy (admission →
-  first diagnostic test) is feasible from HMIS alone, covering ~70% of admissions.
-- A dated `Clinical Staff` resource row is not yet built — feasible via `beds_staff.csv` (roster
-  capacity) + `beds_staff_schedule.csv` (daily present count) for the 4 mapped departments.
-- Hospital Overview's `patient_satisfaction_score` could be strengthened using `beds_patients.csv`
-  (currently unused, per-patient satisfaction data) alongside `services_weekly`'s weekly average.
+| Check | Result |
+|---|---|
+| Total Admissions: hospital_overview vs department_analytics | 45,000 = 45,000 ✓ |
+| Avg LOS: direct vs department_analytics-reweighted | exact match, all 6 departments ✓ |
+| Readmission count: hospital_overview vs department_analytics | 1,120 = 1,120 ✓ |
+| Bed Utilization Rate vs Occupancy Rate (same grain) | 25.36% = 25.36% ✓ |
+
+Every KPI above was independently recomputed from a second source table where the data allowed it, per the project doc's explicit instruction not to claim a figure without actually calculating it.
