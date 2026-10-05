@@ -8,9 +8,9 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 
-DATA_PATH = ROOT / "data" / "processed"
+DATA_PATH = ROOT.parent / "Milestone 1" / "data" / "processed"
 
-OUTPUT_PATH = DATA_PATH / "hospital_final_dataset.xlsx"
+OUTPUT_PATH = ROOT / "data" / "hospital_final_dataset.xlsx"
 
 
 def load_data():
