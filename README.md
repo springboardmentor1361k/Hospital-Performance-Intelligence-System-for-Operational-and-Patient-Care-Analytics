@@ -22,22 +22,26 @@ The dashboard suite utilizes an **Executive Dark Mode** (`#0F172A` background, `
 ### 1️⃣ Hospital Overview
 *High-level executive summary presenting hospital-wide operational status, total admissions, overall bed occupancy, and monthly inflow/outflow trends.*
 
-(<Screenshot 2026-10-07 132606.png>)
+[Hospital Overview Dashboard]<img width="1667" height="1027" alt="Screenshot 2026-10-07 132606" src="https://github.com/user-attachments/assets/de91d802-5a7a-4a96-a8dd-16946a0aeba2" />
+
 
 ### 2️⃣ Patient Flow Analytics
 *Deep dive into patient intake dynamics, admission vs. discharge velocity, Average Length of Stay (ALOS) across departments, and readmission breakdown.*
+[Patient Flow Dashboard]<img width="1650" height="831" alt="Screenshot 2026-10-07 132632" src="https://github.com/user-attachments/assets/fb563dca-6bba-4aca-9fe7-a30669c0503f" />
 
-![Patient Flow Dashboard](Screenshot 2026-10-07 132632.png)
 
 ### 3️⃣ Department Analytics
 *Comparative evaluation of departmental workload, capacity vs. occupancy treemaps, efficiency scoring, and clinical staff allocation.*
+[Department Analysis Dashboard]<img width="1622" height="847" alt="Screenshot 2026-10-07 132650" src="https://github.com/user-attachments/assets/e7374bfb-b8ae-487f-a3d7-814fb5959ade" />
 
-![Department Analytics Dashboard](Screenshot 2026-10-07 132650.png) 
+
 
 ### 4️⃣ Resource Utilization
 *Real-time asset tracking covering bed utilization rates, active clinical staff deployment (doctors/nurses), equipment status grids, and filter reset extension.*
 
-![Resource Utilization Dashboard](Screenshot 2026-10-07 132705.png)
+[Resource Utilization Dashboard]<img width="1642" height="915" alt="Screenshot 2026-10-07 132705" src="https://github.com/user-attachments/assets/84b3db5e-bfe0-451f-a24d-dbd79d744b65" />
+
+
 
 ---
 ## MedTrack_DV – Complete Project Documentation (Milestone 1 to Milestone 4)
