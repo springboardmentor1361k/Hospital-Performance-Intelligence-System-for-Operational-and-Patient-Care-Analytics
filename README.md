@@ -25,14 +25,24 @@ The dashboard suite utilizes an **Executive Dark Mode** (`#0F172A` background, `
 [Hospital Overview Dashboard]<img width="1667" height="1027" alt="Screenshot 2026-10-07 132606" src="https://github.com/user-attachments/assets/de91d802-5a7a-4a96-a8dd-16946a0aeba2" />
 
 
+
+
+
 ### 2️⃣ Patient Flow Analytics
 *Deep dive into patient intake dynamics, admission vs. discharge velocity, Average Length of Stay (ALOS) across departments, and readmission breakdown.*
+
+
 [Patient Flow Dashboard]<img width="1650" height="831" alt="Screenshot 2026-10-07 132632" src="https://github.com/user-attachments/assets/fb563dca-6bba-4aca-9fe7-a30669c0503f" />
+
+
 
 
 ### 3️⃣ Department Analytics
 *Comparative evaluation of departmental workload, capacity vs. occupancy treemaps, efficiency scoring, and clinical staff allocation.*
+
+
 [Department Analysis Dashboard]<img width="1622" height="847" alt="Screenshot 2026-10-07 132650" src="https://github.com/user-attachments/assets/e7374bfb-b8ae-487f-a3d7-814fb5959ade" />
+
 
 
 
