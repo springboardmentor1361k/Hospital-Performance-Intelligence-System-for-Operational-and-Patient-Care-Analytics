@@ -17,9 +17,7 @@ The dashboard suite utilizes an **Executive Dark Mode** (`#0F172A` background, `
 
 ## 🌐 Live Interactive Dashboards & Previews
 
-> 🔗 **[Click Here to Explore Live Tableau Dashboard]([MedTrack_DV.twbx](https://drive.google.com/file/d/1IdykGftatk46Od2CythAYZoLfaOh3eWr/view?usp=drive_link
-)<img width="893" height="48" alt="image" src="https://github.com/user-attachments/assets/756d7db3-b134-4da4-a00d-81ecf6158f3e" />
-](https://drive.google.com/file/d/1IdykGftatk46Od2CythAYZoLfaOh3eWr/view))**
+> 🔗 **[Click Here to Explore Live Tableau Dashboard](https://drive.google.com/file/d/1IdykGftatk46Od2CythAYZoLfaOh3eWr/view)
 
 ### 1️⃣ Hospital Overview
 *High-level executive summary presenting hospital-wide operational status, total admissions, overall bed occupancy, and monthly inflow/outflow trends.*
