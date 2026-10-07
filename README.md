@@ -22,7 +22,7 @@ The dashboard suite utilizes an **Executive Dark Mode** (`#0F172A` background, `
 ### 1️⃣ Hospital Overview
 *High-level executive summary presenting hospital-wide operational status, total admissions, overall bed occupancy, and monthly inflow/outflow trends.*
 
-(Screenshot 2026-10-07 132606.png)
+(<Screenshot 2026-10-07 132606.png>)
 
 ### 2️⃣ Patient Flow Analytics
 *Deep dive into patient intake dynamics, admission vs. discharge velocity, Average Length of Stay (ALOS) across departments, and readmission breakdown.*
