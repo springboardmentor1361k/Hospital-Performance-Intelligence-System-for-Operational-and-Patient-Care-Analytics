@@ -81,5 +81,6 @@
    - Open [Milestone_3/reports/Infosys_Milestone3_Dashboard_Export.pdf](Milestone_3/reports/Infosys_Milestone3_Dashboard_Export.pdf) to inspect the 3 interactive dashboards.
 
 6. **Review Milestone 4 QA & Verification Deliverables**:
-   - Open the presentation deck: [Milestone_4/reports/Medtrack_Milestone4_Presentation.pptx](Milestone_4/reports/Medtrack_Milestone4_Presentation.pptx).
+   - Open the presentation deck: [Milestone_4/reports/medtrackppt.pptx](Milestone_4/reports/medtrackppt.pptx).
    - Read the comprehensive verification, filter, and navigation report: [Milestone_4/report.md](Milestone_4/report.md).
+   - Explore the live interactive workbook: [Tableau Public Live Dashboard](https://public.tableau.com/app/profile/vikram.simha.m.k/viz/Infosys_17914708025670/).

@@ -117,12 +117,14 @@ flowchart TD
     Tab3 -->|Stress Alert Link| Tab1
 ```
 
-### 1. Multi-Tier Navigation Hierarchy
-- **Executive Navigation Ribbon**: Prominently pinned atop each view, providing 1-click transitions between:
-  1. **Hospital Overview**: Executive situational awareness, macro KPIs, intake velocity, and satisfaction benchmarks.
-  2. **Patient Flow and Quality Analysis**: Inpatient movement velocity, age distributions, event surges, and stay distributions.
-  3. **Resource and Utilization Dashboard**: Bed utilization against the 85% safety threshold, 52-week hospital load, and clinical workforce stress heatmaps.
-- **Contextual Story Points**: Sequential storyboard flow guiding users from high-level institutional health down to granular department shift stresses.
+### 1. Multi-Tier Storyboard Navigation Hierarchy
+- **Storyboard Arrow Navigation (`<` and `>`)**: Sequential storyboard tabs featuring 1-click arrow transitions:
+  - **Tier 1 (Hospital Overview)**: Macro throughput, weekly demand, and department intake. Clicking **Next (`>`)** navigates forward to Patient Flow.
+  - **Tier 2 (Patient Flow & Quality)**: Movements, age mix, ALOS, and event triggers. Clicking **Back (`<`)** returns to Overview; clicking **Next (`>`)** advances to Resources.
+  - **Tier 3 (Resource & Utilization)**: Bed saturation, workforce strain heatmaps, and role saturation. Clicking **Back (`<`)** returns to Patient Flow.
+- **Contextual Story Points**: Seamless 1-click movement taking leaders from institutional volume to patient journey to frontline workforce strain.
+- **Live Interactive Deployment**: [MedTrack Tableau Public Live Workbook](https://public.tableau.com/app/profile/vikram.simha.m.k/viz/Infosys_17914708025670/)
+- **Accompanying Brief Deck**: [Milestone_4/reports/medtrackppt.pptx](reports/medtrackppt.pptx)
 
 ### 2. Coordinated Cross-Filtering Interactions
 - **Visual Click-to-Filter**: Clicking any departmental bar (e.g., `Surgery`) in the overview dynamically filters:
@@ -130,7 +132,7 @@ flowchart TD
   - Bed occupancy totals
   - ALOS versus target comparisons
   - Patient satisfaction scores
-- **Bidirectional Filtering**: Selecting a clinical event category (e.g., `flu` surge) highlights corresponding arrival days and departmental distribution across adjacent charts.
+- **Bidirectional Filtering**: Selecting a clinical event category (e.g., `flu` surge) highlights corresponding arrival days and departmental distribution across adjacent charts while preserving narrative context.
 
 ### 3. Viz-in-Tooltip Drill-Down Architecture
 - **Hover Micro-Analytics**: Hovering over any summary data mark opens an embedded micro-chart:

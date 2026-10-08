@@ -13,7 +13,7 @@ This milestone bridges the gap between raw data collection and trusted executive
 Milestone_4/
 ├── docs/                                   # Audit logs and detailed findings
 ├── reports/                                # Presentation slide decks and deliverables
-│   └── Medtrack_Milestone4_Presentation.pptx (Executive verification presentation)
+│   └── medtrackppt.pptx                    (Executive verification & operational brief)
 ├── README.md                               # Milestone 4 summary & entry point
 └── report.md                               # Complete Milestone 4 QA & Verification Report
 ```
@@ -27,4 +27,5 @@ Milestone_4/
   2. The 11 business-logic findings across billing, bed states, and policies.
   3. Complete breakdown of **which filters were used and WHY**.
   4. Inter-dashboard navigation, cross-filtering, viz-in-tooltips, and accessibility design.
-- **Executive Presentation Deck**: Open [Milestone_4/reports/Medtrack_Milestone4_Presentation.pptx](reports/Medtrack_Milestone4_Presentation.pptx).
+- **Executive Presentation Deck**: Open [Milestone_4/reports/medtrackppt.pptx](reports/medtrackppt.pptx).
+- **Live Tableau Dashboard**: [MedTrack Tableau Public Workbook](https://public.tableau.com/app/profile/vikram.simha.m.k/viz/Infosys_17914708025670/)
