@@ -8,8 +8,10 @@
 
 | Milestone | Title | Focus Area | Directory Link |
 | :--- | :--- | :--- | :--- |
-| **Milestone 1** | **Data Collection & Preparation** | Raw dataset profiling, ETL normalization, star-schema data modeling, and data quality validation. | [Milestone_1/](file:///d:/Downloads/info/Milestone_1/README.md) |
-| **Milestone 2** | **Dashboard Storyboard & KPI Specification** | Tableau visual architecture, 3 executive dashboards, 5 novel operational KPIs, and benchmark scorecards. | [Milestone_2/](file:///d:/Downloads/info/Milestone_2/README.md) |
+| **Milestone 1** | **Data Collection & Preparation** | Raw dataset profiling, ETL normalization, star-schema data modeling, and data quality validation. | [Milestone_1/](Milestone_1/README.md) |
+| **Milestone 2** | **Dashboard Storyboard & KPI Specification** | Tableau visual architecture, 3 executive dashboards, 5 novel operational KPIs, and benchmark scorecards. | [Milestone_2/](Milestone_2/README.md) |
+| **Milestone 3** | **Interactive Tableau Dashboards** | Hospital overview, patient clinical flow trajectories, department analysis, and resource utilization. | [Milestone_3/](Milestone_3/README.md) |
+| **Milestone 4** | **Data Testing & Dashboard Verification** | Primary/foreign key integrity, Python/Pandas KPI re-computation, defect isolation, filter and navigation QA. | [Milestone_4/](Milestone_4/README.md) |
 
 ---
 
@@ -30,6 +32,16 @@
 │   ├── docs/                                       # KPI mathematical specifications & visual catalog
 │   ├── reports/                                    # Executive visual presentation & storyboard PDF
 │   └── README.md                                   # Milestone 2 dashboard architecture documentation
+│
+├── Milestone_3/                                    # Milestone 3: Tableau Analytical Dashboards
+│   ├── reports/                                    # Exported Tableau executive reports & PDF dashboards
+│   └── README.md                                   # Milestone 3 dashboard architecture documentation
+│
+├── Milestone_4/                                    # Milestone 4: QA, Data Testing & Verification
+│   ├── docs/                                       # Audit logs and edge-case findings
+│   ├── reports/                                    # Executive verification presentations & slide decks
+│   ├── README.md                                   # Milestone 4 summary documentation
+│   └── report.md                                   # Comprehensive Milestone 4 QA & Verification Report
 │
 ├── .gitignore                                      # Environment and cache ignore configuration
 ├── LICENSE                                         # Project open-source license
@@ -61,6 +73,13 @@
    ```
 
 4. **Explore Milestone 2 Storyboard & KPIs**:
-   - Review [Milestone_2/docs/kpi_definitions_milestone2.md](file:///d:/Downloads/info/Milestone_2/docs/kpi_definitions_milestone2.md) for formulas and novel metrics.
-   - Review [Milestone_2/docs/dashboard_storyboard_alternative_designs.md](file:///d:/Downloads/info/Milestone_2/docs/dashboard_storyboard_alternative_designs.md) for the visual encoding design catalog.
-   - Open [Milestone_2/reports/Milestone 2.pdf](file:///d:/Downloads/info/Milestone_2/reports/Milestone%202.pdf) for the executive storyboard report.
+   - Review [Milestone_2/docs/kpi_definitions_milestone2.md](Milestone_2/docs/kpi_definitions_milestone2.md) for formulas and novel metrics.
+   - Review [Milestone_2/docs/dashboard_storyboard_alternative_designs.md](Milestone_2/docs/dashboard_storyboard_alternative_designs.md) for the visual encoding design catalog.
+   - Open [Milestone_2/reports/Milestone 2.pdf](Milestone_2/reports/Milestone%202.pdf) for the executive storyboard report.
+
+5. **Review Milestone 3 Tableau Visual Analytics**:
+   - Open [Milestone_3/reports/Infosys_Milestone3_Dashboard_Export.pdf](Milestone_3/reports/Infosys_Milestone3_Dashboard_Export.pdf) to inspect the 3 interactive dashboards.
+
+6. **Review Milestone 4 QA & Verification Deliverables**:
+   - Open the presentation deck: [Milestone_4/reports/Medtrack_Milestone4_Presentation.pptx](Milestone_4/reports/Medtrack_Milestone4_Presentation.pptx).
+   - Read the comprehensive verification, filter, and navigation report: [Milestone_4/report.md](Milestone_4/report.md).
