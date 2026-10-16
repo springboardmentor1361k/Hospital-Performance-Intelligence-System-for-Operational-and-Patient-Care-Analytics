@@ -1,6 +1,5 @@
 # Hospital-Performance-Intelligence-System-for-Operational-and-Patient-Care-Analytics
 
-# Hospital Performance Analytics Dashboard
 
 ## Project Overview
 
